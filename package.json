@@ -4,7 +4,7 @@
   "description": "A fan-made ToF discord bot",
   "main": "index.js",
   "scripts": {
-    "start": "node -r dotenv/config .",
+    "start": "node .",
     "dev": "nodemon -r dotenv/config ./index.js",
     "deploy-cmds": "node -r dotenv/config ./src/deploy-commands.js"
   },
