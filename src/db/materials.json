@@ -1,0 +1,72 @@
+[
+  {
+    "id": "weapon-battery-ii",
+    "name": "Weapon Battery II",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/8/86/Item_Weapon_Battery_II.png",
+    "rarity": "N",
+    "type": "Standard Energy Battery"
+  },
+  {
+    "id": "weapon-battery-i",
+    "name": "Weapon Battery I",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/1/1e/Item_Weapon_Battery_I.png",
+    "rarity": "C",
+    "type": "Small Energy Battery"
+  },
+  {
+    "id": "heart-of-lava",
+    "name": "Heart of Lava",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/8/8c/Item_Heart_of_Lava.png",
+    "rarity": "R",
+    "type": "Elementheart"
+  },
+  {
+    "id": "heart-of-winter",
+    "name": "Heart of Winter",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/a/a3/Item_Heart_of_Winter.png",
+    "rarity": "R",
+    "type": "Elementheart"
+  },
+  {
+    "id": "heart-of-lightning",
+    "name": "Heart of Lightning",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/5/56/Item_Heart_of_Lightning.png",
+    "rarity": "R",
+    "type": "Elementheart"
+  },
+  {
+    "id": "heart-of-summit",
+    "name": "Heart of Summit",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/3/3c/Item_Heart_of_Summit.png",
+    "rarity": "R",
+    "type": "Elementheart"
+  },
+  {
+    "id": "firecore",
+    "name": "Firecore",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/f/fe/Item_Firecore.png",
+    "rarity": "N",
+    "type": "Elementcore"
+  },
+  {
+    "id": "icecore",
+    "name": "Icecore",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/d/d4/Item_Icecore.png",
+    "rarity": "N",
+    "type": "Elementcore"
+  },
+  {
+    "id": "magcore",
+    "name": "Magcore",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/1/1b/Item_Magcore.png",
+    "rarity": "N",
+    "type": "Elementcore"
+  },
+  {
+    "id": "rockcore",
+    "name": "Rockcore",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/8/82/Item_Rockcore.png",
+    "rarity": "N",
+    "type": "Elementcore"
+  }
+]

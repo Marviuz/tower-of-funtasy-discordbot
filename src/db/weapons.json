@@ -1,0 +1,154 @@
+[
+  {
+    "id": "combat-blade",
+    "name": "Combat Blade",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/3/34/Weapon_Combat_Blade.png",
+    "rarity": "R",
+    "type": "dps",
+    "element": "physical"
+  },
+  {
+    "id": "composite-bow",
+    "name": "Composite Bow",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/2/22/Weapon_Composite_Bow.png",
+    "rarity": "R",
+    "type": "dps",
+    "element": "flame"
+  },
+  {
+    "id": "em-blade",
+    "name": "EM Blade",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/b/b3/Weapon_EM_Blade.png",
+    "rarity": "R",
+    "type": "dps",
+    "element": "volt"
+  },
+  {
+    "id": "frosted-spear",
+    "name": "Frosted Spear",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/a/a4/Weapon_Frosted_Spear.png",
+    "rarity": "R",
+    "type": "dps",
+    "element": "ice"
+  },
+  {
+    "id": "venus",
+    "name": "Venus",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/a/a4/Weapon_Venus.png",
+    "rarity": "SSR",
+    "type": "support",
+    "element": "volt"
+  },
+  {
+    "id": "absolute-zero",
+    "name": "Absolute Zero",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/7/70/Weapon_Absolute_Zero.png",
+    "rarity": "SSR",
+    "type": "support",
+    "element": "ice"
+  },
+  {
+    "id": "molten-shield-v2",
+    "name": "Molten Shield V2",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/9/9c/Weapon_Molten_Shield_V2.png",
+    "rarity": "SSR",
+    "type": "defense",
+    "element": "flame"
+  },
+  {
+    "id": "thunderblades",
+    "name": "Thunderblades",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/5/5c/Weapon_Thunderblades.png",
+    "rarity": "SSR",
+    "type": "dps",
+    "element": "volt"
+  },
+  {
+    "id": "scythe-of-the-crow",
+    "name": "Scythe of the Crow",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/1/1d/Weapon_Scythe_of_the_Crow.png",
+    "rarity": "SSR",
+    "type": "dps",
+    "element": "flame"
+  },
+  {
+    "id": "rosy-edge",
+    "name": "Rosy Edge",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/8/81/Weapon_Rosy_Edge.png",
+    "rarity": "SSR",
+    "type": "defense",
+    "element": "ice"
+  },
+  {
+    "id": "dual-em-stars",
+    "name": "Dual EM Stars",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/e/ea/Weapon_Dual_EM_Stars.png",
+    "rarity": "SSR",
+    "type": "dps",
+    "element": "volt"
+  },
+  {
+    "id": "chakram-of-the-seas",
+    "name": "Chakram of the Seas",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/0/07/Weapon_Chakram_of_the_Seas.png",
+    "rarity": "SSR",
+    "type": "dps",
+    "element": "physical"
+  },
+  {
+    "id": "icewind-arrow",
+    "name": "Icewind Arrow",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/2/2d/Weapon_Icewind_Arrow.png",
+    "rarity": "SSR",
+    "type": "dps",
+    "element": "ice"
+  },
+  {
+    "id": "negating-cube",
+    "name": "Negating Cube",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/6/65/Weapon_Negating_Cube.png",
+    "rarity": "SSR",
+    "type": "support",
+    "element": "flame"
+  },
+  {
+    "id": "nightingale-s-feather",
+    "name": "Nightingale's Feather",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/5/5d/Weapon_Nightingale%27s_Feather.png",
+    "rarity": "SR",
+    "type": "dps",
+    "element": "physical"
+  },
+  {
+    "id": "thunderous-halberd",
+    "name": "Thunderous Halberd",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/9/92/Weapon_Thunderous_Halberd.png",
+    "rarity": "SR",
+    "type": "dps",
+    "element": "volt"
+  },
+  {
+    "id": "pummeler",
+    "name": "Pummeler",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/2/2e/Weapon_Pummeler.png",
+    "rarity": "SR",
+    "type": "defense",
+    "element": "ice"
+  },
+  {
+    "id": "the-terminator",
+    "name": "The Terminator",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/1/16/Weapon_The_Terminator.png",
+    "rarity": "SR",
+    "type": "dps",
+    "element": "ice"
+  },
+  {
+    "id": "staff-of-scars",
+    "name": "Staff of Scars",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/f/f4/Weapon_Staff_of_Scars.png",
+    "rarity": "SR",
+    "type": "support",
+    "element": "volt"
+  }
+]

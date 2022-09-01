@@ -1,0 +1,30 @@
+{
+  "name": "tower-of-funtasy-discordbot",
+  "version": "0.1.0",
+  "description": "A fan-made ToF discord bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r dotenv/config .",
+    "dev": "nodemon -r dotenv/config ./index.js",
+    "deploy-cmds": "node -r dotenv/config ./src/deploy-commands.js"
+  },
+  "keywords": [
+    "discord",
+    "tower of fantasy",
+    "tof",
+    "gacha"
+  ],
+  "author": "Marviuz",
+  "license": "MIT",
+  "dependencies": {
+    "@discordjs/rest": "^1.1.0",
+    "discord.js": "^14.3.0",
+    "imgur": "^2.2.0",
+    "lodash.sample": "^4.2.1",
+    "node-html-to-image": "^3.2.4"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.1",
+    "nodemon": "^2.0.19"
+  }
+}

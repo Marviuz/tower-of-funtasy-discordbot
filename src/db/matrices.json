@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Huma",
+    "rarity": "SSR",
+    "two": "Hitting targets with dodge skills inflicts bleed, dealing damage equal to 15%/19%/22.5%/26% of ATK every second for 5 seconds.",
+    "four": "Reduce ATK of all targets within 8 meters that are taking damage over time by 10%/12%/13%/15%. Only the highest level's effect is applied when obtained repeatedly."
+  },
+  {
+    "name": "Nemesis",
+    "rarity": "SSR",
+    "two": "When a target is being healed, their volt ATK is increased by 8%/10%/12%/15% for 20 seconds. The effect does not stack, and only the highest level's effect is applied when obtained repeatedly.",
+    "four": "When healing yourself or your Electrode, the healed target gains a charge of \"Lightning\". The next attack within 30 seconds will cast lightning upon the target, dealing volt damage equal to 240%/300%/360%/420% of volt ATK, and damage caused by electrodes is reduced by 50%. Cannot be triggered more than once in 10 seconds. \"Lightning\" charges do not stack. Only the highest level's effect is applied when obtained repeatedly."
+  },
+  {
+    "name": "Coco Ritter",
+    "rarity": "SSR",
+    "two": "Increase healing capability and healing received by 10%/12%/14%/16%.",
+    "four": "When you or your teammates are healed, increase ATK by 12.5%/15%/17.5%/20% for 6 seconds. Only the highest level's effect is applied when obtained repeatedly."
+  },
+  {
+    "name": "Crow",
+    "rarity": "SSR",
+    "two": "Increase crit damage to targets with less than 60% HP by 24%/30%/36%/42%.",
+    "four": "Crits deal additional damage over time equal to 18%/22%/26%/30% of ATK every second for 5 seconds. Does not stack."
+  },
+  {
+    "name": "King",
+    "rarity": "SSR",
+    "two": "When a target is shattered, grant 8%/10%/12%/14% damage boost for 25 seconds. Only the highest level is applied when the effect is obtained repeatedly.",
+    "four": "When there are more than 2 enemies around, hits restore HP equal to 14%/18%/22%/26% of damage dealt upon attacking. The maximum HP restored every 0.5 seconds must not exceed 36%/42%/48%/54% of ATK."
+  },
+  {
+    "name": "Meryl",
+    "rarity": "SSR",
+    "two": "If HP is less than 30% after being attacked, gain a shield equal to 20%/26%/32%/40% of Max HP for 10 seconds. Cooldown: 90 seconds.",
+    "four": "Increase Whirlwind's damage by 36%/45%/54%/63% and restore HP equal to 30%/38%/44%/50% of the damage dealt while Whirlwind is active. The maximum HP restored every 0.5 seconds cannot exceed 60%/72%/81%/90% of ATK."
+  },
+  {
+    "name": "Samir",
+    "rarity": "SSR",
+    "two": "Increase damage progressively by 1% upon hitting a target. Stack up to 10/13/16/20 times. Lasts 1.5 seconds.",
+    "four": "Increase Dual EM Stars' electrical explosion damage by 16%/22%/30%/40% of ATK."
+  },
+  {
+    "name": "Shiro",
+    "rarity": "SSR",
+    "two": "Increase both damage and shatter to targets with more than 50% HP by 15%/19%/22.5%/26%.",
+    "four": "Upon entering battle, gain a 20%/25%/30%/35% damage boost for 35 seconds. Reset 5 seconds after exiting battle."
+  },
+  {
+    "name": "Tsubasa",
+    "rarity": "SSR",
+    "two": "Increase damage dealt by 14%/16%/18%/20% when there are no enemies within 4 meters.",
+    "four": "Upon a headshot or using Icewind Arrow: Piercing Shot, increase ATK by 15%/18%/21%/25% for 8 seconds."
+  },
+  {
+    "name": "Zero",
+    "rarity": "SSR",
+    "two": "Upon using a discharge skill to switch to the current weapon, gain a shield equal to 150%/200%/250%/300% of ATK for 6 seconds.",
+    "four": "While the shield is active, you and your teammates deal 16%/20%/24%/28% more damage."
+  }
+]

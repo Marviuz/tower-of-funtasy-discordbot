@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body,
+    #app {
+      width: 1920px;
+      height: 1080px;
+      margin: 0;
+      padding: 0;
+      background-color: transparent !important;
+    }
+
+    #app {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .pull {
+      width: 192px;
+      height: 1080px;
+      background-position: center;
+      background-repeat: no-repeat;
+      box-shadow: inset 20px 0px 25px -25px rgb(0 0 0 / 64%), inset -20px 0px 25px -25px rgb(0 0 0 / 64%), inset 0px 20px 25px -25px rgb(255 255 255), inset 0px -20px 20px -25px rgb(255 255 255);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    {{#each data}}
+    <div class="pull" style="background-image: url({{this.img}}); background-color: {{this.bgColor}}; background-size: {{this.bgSize}}">
+    </div>
+    {{/each}}
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,748 @@
+[
+  {
+    "id": "nemesis",
+    "weaponId": "venus",
+    "simulacraImg": "https://static.wikia.nocookie.net/toweroffantasy/images/a/a1/Simulacrum_Nemesis_Prototype.png",
+    "weaponImg": "https://static.wikia.nocookie.net/toweroffantasy/images/a/a4/Weapon_Venus.png",
+    "name": "Nemesis",
+    "rarity": "SSR",
+    "weapon": "Venus",
+    "element": "volt",
+    "type": "support",
+    "baseStats": ["attack", "health", "crit"],
+    "shatter": { "rank": "B", "value": 6 },
+    "charge": { "rank": "A", "value": 8 },
+    "materials": ["volt", "green", "blue"],
+    "effect": [
+      {
+        "title": "Volt",
+        "description": "When the weapon is fully charged, the next attack will paralyze targets for 1 second and electrify them for 6 seconds, negating all buffs and dealing damage equal to 144.00% of ATK. Targets can't receive any buffs for the next 6 seconds."
+      },
+      {
+        "title": "Volt Resonance",
+        "description": "Increase volt ATK by **15%** and volt resistance by **25%**. Activate by equipping **2** or more volt weapons. This set's effects do not work with others."
+      }
+    ],
+    "advancement": [
+      "After using **Pulse Lock** or **Particle Beam Burst**, creates **1** Electrode that immediately grants the user **5** stacks of healing chain enhance. In addition, unleash a healing chain that heals nearby allies by **135%** of the Wanderer's ATK.",
+      "Increase the current weapon's base ATK growth by **16%**.",
+      "Every **6** seconds, the Electrode will unleash **Ring Lightning**, which deals damage equal to a maximum of **205%** of ATK in a target area.",
+      "Increase the current weapon's base ATK growth by **32%**.",
+      "After using **Pulse Lock**, increase the Wanderer's ATK by (**5** + (Number of Electrodes &times; **5**)) % for **25** seconds.",
+      "Up to **2** Electrodes can be active at the same time. Summoning more Electrodes will replace the ones furthest from the user."
+    ],
+    "awakening": {
+      "1200": "After summoning an Electrode, deal volt damage equal to **60%** of ATK to all enemies within **30** meters of the Electrode and heal all allies (including the user) within its range by **120%** of ATK.",
+      "4000": "After summoning an Electrode, deal volt damage equal to **100%** of ATK to all enemies within **30** meters of the Electrode and heal all allies (including the user) within its range by **200%** of ATK."
+    },
+    "gifts": {
+      "15": ["flowers", "photoAlbum", "plant", "scarf", "pinwheel"],
+      "30": [
+        "tataPlush",
+        "suit",
+        "catPlush",
+        "perfume",
+        "spiderFigure",
+        "elfFigure",
+        "robotFigure",
+        "bunnyDoll"
+      ],
+      "60": ["tataCards", "present", "snowglobe", "foxFigure", "catFigure"],
+      "80": ["peppaFigure", "princeTataFigure"]
+    }
+  },
+  {
+    "id": "coco-ritter",
+    "weaponId": "absolute-zero",
+    "simulacraImg": "https://static.wikia.nocookie.net/toweroffantasy/images/8/8a/Simulacrum_Cocoritter_Prototype.png",
+    "weaponImg": "https://static.wikia.nocookie.net/toweroffantasy/images/7/70/Weapon_Absolute_Zero.png",
+    "name": "Coco Ritter",
+    "rarity": "SSR",
+    "weapon": "Absolute Zero",
+    "element": "ice",
+    "type": "support",
+    "baseStats": ["attack", "defense", "health"],
+    "shatter": { "rank": "B", "value": 4 },
+    "charge": { "rank": "S", "value": 12.5 },
+    "materials": ["ice", "green", "blue"],
+    "effect": [
+      {
+        "title": "Ice Shell",
+        "description": "Fully charged weapons will freeze the target for 2 seconds and leave it frostbitten for 6 seconds. Breaking the ice shell causes additional damage equal to 151.00% of ATK. While frostbitten, the target's weapon charge rate is reduced by 50%."
+      }
+    ],
+    "advancement": [
+      "After dodging, summon a healing bee that follows the user and heals the ally with the lowest percentage of HP within **15** meters. Heal for **25%** of ATK and restore **50** weapon charge points each time and last for **25** seconds. Cooldown: **25** seconds.",
+      "Increase the current weapon's base HP growth by **16%**.",
+      "Use ***Sanctuary*** or discharge skills to remove debuffs from targets, can be used while being affected by control effects. Increase shatter and damage dealt for all teammates within range by **20%**, and grant them immunity to control effects and shatter.",
+      "Increase the current weapon's base HP growth by **32%**.",
+      "Increase healing effect by **15%**, plus an additional **20%** when healing targets with less than **60%** HP.",
+      "Whenever a healing bee is summoned or disappears from battle, heal all allies for **100%** of the user's ATK. All allies within **10** meters of the healing bee also gain **15%** all damage and healing boost (cannot stack)."
+    ],
+    "awakening": {
+      "1200": "When Cocoritter uses a support weapon, increase healing effects she inflicts on others and receives by **20%**.",
+      "4000": "When Cocoritter uses a support weapon, increase healing and healing received by **20%**. And when Cocoritter uses a support-type weapon's discharge skill or weapon skill, increase nearby allies' ATK by **15%** for **5**."
+    },
+    "gifts": {
+      "15": ["photoAlbum", "photo", "plant", "harmonica", "pinwheel"],
+      "30": [
+        "tataPlush",
+        "spiderFigure",
+        "vial",
+        "elfFigure",
+        "bunnyDoll",
+        "catPlush",
+        "robotFigure"
+      ],
+      "60": ["foxFigure", "catFigure", "present", "ufo", "miaFigure", "seal"]
+    }
+  },
+  {
+    "id": "huma",
+    "weaponId": "molten-shield-v2",
+    "simulacraImg": "https://static.wikia.nocookie.net/toweroffantasy/images/b/b7/Simulacrum_Huma_Prototype.png",
+    "weaponImg": "https://static.wikia.nocookie.net/toweroffantasy/images/9/9c/Weapon_Molten_Shield_V2.png",
+    "name": "Huma",
+    "rarity": "SSR",
+    "weapon": "Molten Shield V2",
+    "element": "flame",
+    "type": "defense",
+    "baseStats": ["attack", "defense", "health"],
+    "shatter": { "rank": "A", "value": 10 },
+    "charge": { "rank": "A", "value": 10 },
+    "materials": ["flame", "green", "blue"],
+    "effect": [
+      {
+        "title": "Flame",
+        "description": "Fully charged weapons will set the target on fire for 8 seconds with the next attack, causing ongoing damage of 58.00% of ATK every second. Ignited targets receive 50% efficacy from healing."
+      }
+    ],
+    "advancement": [
+      "Gain a stack of Strong Shield upon casting Discharge: Seething Rage. Using a dodge skill or branch skill while in shield form grants a stack of Strong Shield, which grants **10%** damage reduction for **15** seconds and stacks up to **3** times. Switching to axe form converts all Strong Shield stacks to Sharp Axe stacks, each of which increases damage dealt by **15%** for **15** seconds. Switching to a different weapon cancels this effect.",
+      "Increase the current weapon's base HP growth by **16%**.",
+      "While in shield form, branch/dodge attacks deal additional damage to targets equal to **4%** of the user's current HP.",
+      "Increase the current weapon's base ATK growth by **32%**.",
+      "After switching to a shield axe, immediately grant **30%** damage reduction that diminishes by **10%** every **3** seconds, down to a minimum of **10%**. Switching weapons cancels this effect. Cooldown: **30** seconds.",
+      "Enhance conversion skills. Shield Conversion Enhancement: Increase damage dealt by **60%** and expand the radius of the flame zone by **30%**. Axe Conversion Enhancement: Does not share cooldown with Shield Conversion. For the next **5** seconds after using this skill, turns all damage received into HP (up to a maximum of **15%** of the user's Max HP)."
+    ],
+    "awakening": {
+      "1200": "Each time Huma receives damage, gain **1** Fortitude mark and gain **1** more Fortitude mark if it is flame damage, up to **1** time per **1** second and **12** stacks in total. Upon using a weapon skill, use all Fortitude marks and gain an HP shield equal to the number of marks &times; **0.4%** HP for **12** seconds. If Fortitude marks are used when the effect is stacked up to the maximum, then gain an HP shield equal to the number of marks &times; **0.6%** HP.",
+      "4000": "Each time Huma receives damage, gain **1** Fortitude mark and gain **1** more Fortitude mark if it is flame damage, up to **1** time per **1** second and **12** stacks in total. Upon using a weapon skill, use all Fortitude marks and gain an HP shield equal to the number of marks &times; **0.6%** HP for **12** seconds. If Fortitude marks are used when the effect is stacked up to the maximum, then gain an HP shield equal to the number of marks &times; **0.9%** HP."
+    },
+    "gifts": {
+      "15": ["flowers", "photoAlbum", "scarf", "tradingCard", "plant"],
+      "30": [
+        "chessSet",
+        "diary",
+        "juicePouch",
+        "suit",
+        "perfume",
+        "spiderFigure",
+        "elfFigure"
+      ],
+      "60": [
+        "catFigure",
+        "tataCards",
+        "ufo",
+        "psp",
+        "pearl",
+        "snowglobe",
+        "princeTataFigure"
+      ],
+      "80": ["peppaFigure"]
+    }
+  },
+  {
+    "id": "crow",
+    "weaponId": "thunderblades",
+    "simulacraImg": "https://static.wikia.nocookie.net/toweroffantasy/images/6/68/Simulacrum_Crow_Prototype.png",
+    "weaponImg": "https://static.wikia.nocookie.net/toweroffantasy/images/5/5c/Weapon_Thunderblades.png",
+    "name": "Crow",
+    "rarity": "SSR",
+    "weapon": "Thunderblades",
+    "element": "volt",
+    "type": "dps",
+    "baseStats": ["attack", "health", "crit"],
+    "shatter": { "rank": "B", "value": 6 },
+    "charge": { "rank": "A", "value": 8 },
+    "materials": ["volt", "red", "blue"],
+    "effect": [
+      {
+        "title": "Volt",
+        "description": "When the weapon is fully charged, the next attack will paralyze targets for 1 second and electrify them for 6 seconds, negating all buffs and dealing damage equal to 144.00% of ATK. Targets can't receive any buffs for the next 6 seconds."
+      }
+    ],
+    "advancement": [
+      "Attacking targets from behind increases crit rate of all dual blades attacks by **40%**. Backstabbing an electrified target increases crit rate by **100%** and crit damage by **30%**.",
+      "Increase the current weapon's base ATK growth by **16%**.",
+      "Increase damage by **30%** to targets with less than **60%** HP.",
+      "Increase the current weapon's base HP growth by **32%**.",
+      "Triggering a Back Attack grants a 100% crit chance for the next **4** seconds and increases crit damage by **50%**. Cooldown: **10** seconds.",
+      "After using a skill, increase volt damage dealt to the target by **20%** for **20** seconds."
+    ],
+    "awakening": {
+      "1200": "When Crow is not in a team, increase damage dealt by **6%** and reduce damage received by **4%**.",
+      "4000": "When Crow is not in a team, increase damage dealt by **10%** and reduce damage received by **6%** When Crow enters combat, increase damage dealt by **12%** for **12** seconds."
+    },
+    "gifts": {
+      "15": ["flowers", "snackBox", "scarf"],
+      "30": ["suit", "juicePouch", "perfume", "pumpkinFigure", "androidFigure"],
+      "60": [
+        "goldCoin",
+        "catFigure",
+        "miaFigure",
+        "peppaFigure",
+        "bearFigure",
+        "psp",
+        "linyeFigure"
+      ],
+      "80": ["tataCards", "tataFigure"]
+    }
+  },
+  {
+    "id": "king",
+    "weaponId": "scythe-of-the-crow",
+    "simulacraImg": "https://static.wikia.nocookie.net/toweroffantasy/images/d/d6/Simulacrum_KING_Prototype.png",
+    "weaponImg": "https://static.wikia.nocookie.net/toweroffantasy/images/1/1d/Weapon_Scythe_of_the_Crow.png",
+    "name": "KING",
+    "rarity": "SSR",
+    "weapon": "Scythe of the Crow",
+    "element": "flame",
+    "type": "dps",
+    "baseStats": ["attack", "defense", "health"],
+    "shatter": { "rank": "S", "value": 12.5 },
+    "charge": { "rank": "B", "value": 5 },
+    "materials": ["flame", "green", "blue"],
+    "effect": [
+      {
+        "title": "Flame",
+        "description": "Fully charged weapons will set the target on fire for 8 seconds with the next attack, causing ongoing damage of 58.00% of ATK every second. Ignited targets receive 50% efficacy from healing."
+      }
+    ],
+    "advancement": [
+      "Increase shatter by **15%**. After shattering the target's shield, deal burn damage equal to **120%** of ATK to the target every second for **15** seconds.",
+      "Increase the current weapon's base HP growth by **16%**.",
+      "Increase damage dealt by **10%** for each enemy within **6** meters, up to a maximum of **30%**.",
+      "Increase the current weapon's base ATK growth by **32%**.",
+      "Increase damage dealt against HP shields or shielded enemies by **100%**.",
+      "Increase damage dealt by **10%** for each enemy slain for **30** seconds. Stack up to **3** times."
+    ],
+    "awakening": {
+      "1200": "Every **7** enemies killed by KING restores HP equal to **8%** of Max HP.",
+      "4000": "Every **5** enemies killed by KING restores HP equal to **10%** of Max HP."
+    },
+    "gifts": {
+      "15": ["photo", "snackBox", "harmonica", "strangePlant"],
+      "30": ["necklace", "vial"],
+      "60": [
+        "kitchenware",
+        "tataCards",
+        "foxFigure",
+        "catFigure",
+        "miaFigure",
+        "tataFigure",
+        "ufo",
+        "psp",
+        "snowglobe",
+        "linyeFigure"
+      ],
+      "80": ["seal", "goldCoin"]
+    }
+  },
+  {
+    "id": "meryl",
+    "weaponId": "rosy-edge",
+    "simulacraImg": "https://static.wikia.nocookie.net/toweroffantasy/images/f/f7/Simulacrum_Meryl_Prototype.png",
+    "weaponImg": "https://static.wikia.nocookie.net/toweroffantasy/images/8/81/Weapon_Rosy_Edge.png",
+    "name": "Meryl",
+    "rarity": "SSR",
+    "weapon": "Rosy Edge",
+    "element": "ice",
+    "type": "defense",
+    "baseStats": ["attack", "defense", "health"],
+    "shatter": { "rank": "S", "value": 12 },
+    "charge": { "rank": "B", "value": 4 },
+    "materials": ["ice", "red", "black"],
+    "effect": [
+      {
+        "title": "Ice Shell",
+        "description": "Fully charged weapons will freeze the target for 2 seconds and leave it frostbitten for 6 seconds. Breaking the ice shell causes additional damage equal to 151.00% of ATK. While frostbitten, the target's weapon charge rate is reduced by 50%."
+      }
+    ],
+    "advancement": [
+      "Increase shatter by **15%** and restore **10%** of HP after shattering the target's shield.",
+      "Increase the current weapon's base HP growth by **16%**.",
+      "Upon switching to the weapon, gain an Ice Shield equal to **10%** of Max HP. Cooldown **20** seconds. The Ice Shield lasts up to **10** seconds.",
+      "Increase the current weapon's base HP growth by **32%**.",
+      "Increase damage and shatter by **50%** while the shield is active.",
+      "Upon switching to the weapon, gain an Ice Shield equal to **20%** of Max HP and immmune to controls when shield is active. Cooldown: **20** seconds. The Ice Shield lasts up to **10** seconds."
+    ],
+    "awakening": {
+      "1200": "Reduce frost damage received by Meryl by **20%**, gain immunity to the frostbitten effect, and reduce duration of being frozen by **50%**.",
+      "4000": "Reduce frost damage received by Meryl by **25%**, gain immunity to the frostbitten effect, and reduce duration of being frozen by **50%**."
+    },
+    "gifts": {
+      "15": ["photo", "harmonica", "strangePlant"],
+      "30": ["necklace", "vial"],
+      "60": [
+        "goldCoin",
+        "miaFigure",
+        "foxFigure",
+        "snowglobe",
+        "kitchenware",
+        "ufo",
+        "linyeFigure"
+      ],
+      "80": ["seal"]
+    }
+  },
+  {
+    "id": "samir",
+    "weaponId": "dual-em-stars",
+    "simulacraImg": "https://static.wikia.nocookie.net/toweroffantasy/images/9/90/Simulacrum_Samir_Prototype.png",
+    "weaponImg": "https://static.wikia.nocookie.net/toweroffantasy/images/e/ea/Weapon_Dual_EM_Stars.png",
+    "name": "Samir",
+    "rarity": "SSR",
+    "weapon": "Dual EM Stars",
+    "element": "volt",
+    "type": "dps",
+    "baseStats": ["attack", "health", "crit"],
+    "shatter": { "rank": "B", "value": 6 },
+    "charge": { "rank": "S", "value": 10.7 },
+    "materials": ["volt", "red", "black"],
+    "effect": [
+      {
+        "title": "Volt",
+        "description": "When the weapon is fully charged, the next attack will paralyze targets for 1 second and electrify them for 6 seconds, negating all buffs and dealing damage equal to 144.00% of ATK. Targets can't receive any buffs for the next 6 seconds."
+      }
+    ],
+    "advancement": [
+      "Trigger an electrical explosion on the target after landing a critical hit, dealing additional damage equal to **30%** of ATK to the target and nearby enemies. Cooldown: **0.2** seconds.",
+      "Increase the current weapon's base ATK growth by **16%**.",
+      "Increase crit rate to electrified targets by **40%**. Electrical explosions extend the duration of electrified effects by **0.5** seconds, up to a maximum of **5** seconds.",
+      "Increase the current weapon's base ATK growth by **32%**.",
+      "Double the duration of Electro Field and pull targets into the center of the attack.",
+      "Triggering an electrical explosion reduces skill cooldowns by 1 second."
+    ],
+    "awakening": {
+      "1200": "Grant **1** stack of Concentration for every **4** seconds when Samir receives no damage. Each stack increases damage dealt by **3%**, and can stack up to **4** times. After being hit, Samir loses **1** stack of Concentration, up to **1** stack per **1** second.",
+      "4000": "Grant **1** stack of Concentration for every **4** seconds when Samir receives no damage. Each stack increases damage dealt by **4%**, and can stack up to **5** times. After being hit, Samir loses **1** stack of Concentration, up to **1** stack per **2** second."
+    },
+    "gifts": {
+      "15": ["tradingCard", "pinwheel"],
+      "30": [
+        "tataPlush",
+        "chessSet",
+        "catPlush",
+        "diary",
+        "robotFigure",
+        "bunnyDoll"
+      ],
+      "60": ["foxFigure", "psp", "present", "ufo", "pearl", "princeTataFigure"]
+    }
+  },
+  {
+    "id": "shiro",
+    "weaponId": "chakram-of-the-seas",
+    "simulacraImg": "https://static.wikia.nocookie.net/toweroffantasy/images/6/66/Simulacrum_Shiro_Prototype.png",
+    "weaponImg": "https://static.wikia.nocookie.net/toweroffantasy/images/0/07/Weapon_Chakram_of_the_Seas.png",
+    "name": "Shiro",
+    "rarity": "SSR",
+    "weapon": "Chakram of the Seas",
+    "element": "physical",
+    "type": "dps",
+    "baseStats": ["attack", "health", "crit"],
+    "shatter": { "rank": "A", "value": 10 },
+    "charge": { "rank": "B", "value": 6 },
+    "materials": ["physical", "green", "black"],
+    "effect": [
+      {
+        "title": "Grievous",
+        "description": "Fully charged weapons will inflict damage equal to 137.00% of ATK with the next attack, and make the target grievous for 7 seconds, taking 20% extra damage."
+      }
+    ],
+    "advancement": [
+      "Increase damage dealt to and all elemental shattering effects on targets within *Full Bloom*'s range by **30%**.",
+      "Increase the current weapon's base ATK growth by **16%**.",
+      "Increase shatter by **15%** and reset all weapon skill cooldowns upon shattering the target's shield. Can only be triggered once every **30** seconds.",
+      "Increase the current weapon's base HP growth by **32%**.",
+      "Attacking a grievous target extends the duration of grievous by an additional **7** seconds (only take effect once for the same effect).",
+      "After using *Full Bloom*, grant a 100% crit chance for the next **8** seconds."
+    ],
+    "awakening": {
+      "1200": "When Shiro uses a weapon skill/discharge skill, increase all kinds of ATK by **10%** and physical ATK by an additional **7%** for **8** seconds. Cooldown: **16** seconds.",
+      "4000": "When Shiro uses a weapon skill/discharge skill, increase all kinds of ATK by **16%** and physical ATK by an additional **10%** for **8** seconds. Cooldown: **16** seconds."
+    },
+    "gifts": {
+      "15": ["dumbbells", "harmonica", "photo", "strangePlant"],
+      "30": ["vial", "necklace", "toolbox", "strangeFragment"],
+      "60": [
+        "miaFigure",
+        "goldCoin",
+        "foxFigure",
+        "ufo",
+        "bearFigure",
+        "snowglobe",
+        "present",
+        "pearl",
+        "linyeFigure"
+      ],
+      "80": ["kitchenware", "seal"]
+    }
+  },
+  {
+    "id": "tsubasa",
+    "weaponId": "icewind-arrow",
+    "simulacraImg": "https://static.wikia.nocookie.net/toweroffantasy/images/0/0b/Simulacrum_Tsubasa_Prototype.png",
+    "weaponImg": "https://static.wikia.nocookie.net/toweroffantasy/images/2/2d/Weapon_Icewind_Arrow.png",
+    "name": "Tsubasa",
+    "rarity": "SSR",
+    "weapon": "Icewind Arrow",
+    "element": "ice",
+    "type": "dps",
+    "baseStats": ["attack", "health", "crit"],
+    "shatter": { "rank": "B", "value": 4 },
+    "charge": { "rank": "S", "value": 11.5 },
+    "materials": ["ice", "red", "blue"],
+    "effect": [
+      {
+        "title": "Ice Shell",
+        "description": "Fully charged weapons will freeze the target for 2 seconds and leave it frostbitten for 6 seconds. Breaking the ice shell causes additional damage equal to 151.00% of ATK. While frostbitten, the target's weapon charge rate is reduced by 50%."
+      }
+    ],
+    "advancement": [
+      "Grant a stack of Sharp Arrow each time the arrow fired by a Dodge attack hits a target. Each stack increases damage by **5%** for **15** seconds. Stack up to **3** times.",
+      "Increase the current weapon's base ATK growth by **16%**.",
+      "Launching a Dodge attack fires **3** Charged Arrows.",
+      "Increase the current weapon's base ATK growth by **32%**.",
+      "Double duration of Arrow Rain and slow targets by **25%**.",
+      "Sharp Arrow stacks up to **5** times. Hitting a target with Charged Arrow immediately grants **3** stacks, headshots grant **5** stacks."
+    ],
+    "awakening": {
+      "1200": "Each time Tsubasa deals damage, gain **1** stack of Fierce Strike, up to **1** stack per **1** second. Each stack adds **0.5%** ATK, up to **15** stacks. Refreshes effect duration upon gaining the effect again. The effect lasts for **30** seconds.",
+      "4000": "Each time Tsubasa deals damage, gain **1** stack of Fierce Strike, up to **1** stack per **1** second. Each stack adds **0.6%** ATK, up to **30** stacks. Refreshes effect duration upon gaining the effect again. The effect lasts for **30** seconds."
+    },
+    "gifts": {
+      "15": ["photo", "snackBox", "harmonica"],
+      "30": ["vial", "pumpkinFigure", "androidFigure"],
+      "60": [
+        "seal",
+        "tataCards",
+        "bearFigure",
+        "catFigure",
+        "ufo",
+        "psp",
+        "goldCoin",
+        "snowglobe",
+        "linyeFigure"
+      ],
+      "80": ["tataPlush", "miaFigure"]
+    }
+  },
+  {
+    "id": "zero",
+    "weaponId": "negating-cube",
+    "simulacraImg": "https://static.wikia.nocookie.net/toweroffantasy/images/3/33/Simulacrum_Zero_Prototype.png",
+    "weaponImg": "https://static.wikia.nocookie.net/toweroffantasy/images/6/65/Weapon_Negating_Cube.png",
+    "name": "Zero",
+    "rarity": "SSR",
+    "weapon": "Negating Cube",
+    "element": "flame",
+    "type": "support",
+    "baseStats": ["attack", "defense", "health"],
+    "shatter": { "rank": "B", "value": 5 },
+    "charge": { "rank": "S", "value": 13 },
+    "materials": ["flame", "green", "blue"],
+    "effect": [
+      {
+        "title": "Flame",
+        "description": "Fully charged weapons will set the target on fire for 8 seconds with the next attack, causing ongoing damage of 58.00% of ATK every second. Ignited targets receive 50% efficacy from healing."
+      }
+    ],
+    "advancement": [
+      "Deal damage and produce a healing orb, which lasts for **20** seconds and restore HP of any teammate who picks it up equal to **60%** of ATK. **2**-second cooldown.",
+      "Increase the current weapon's base ATK growth by **16%**.",
+      "Reduce skill cooldown from **60** seconds to **30** seconds. Restore HP equal to **30%** of ATK every second while the shield is active.",
+      "Increase the current weapon's base HP growth by **32%**.",
+      "Damaging a target also produces a damage orb, which lasts for **20** seconds and increases all damage and healing of any teammate who picks it up by **2%** for **30** seconds. Stack up to **10** times. Skill cooldown is **2.5** seconds.",
+      "Using a Skill grants allies healing orbs and damage orbs equal to the number of Omnium Cubes."
+    ],
+    "awakening": {
+      "1200": "When Zero uses a weapon skill, reduce cooldown time for Relics in cooldown by **1.5** seconds. Can only activate for the same weapon **1** time every **5** seconds.",
+      "4000": "When Zero uses a weapon skill, reduce cooldown time for Relics in cooldown by **3** seconds. Can only activate for the same weapon **1** time every **5** seconds."
+    },
+    "gifts": {
+      "15": ["tradingCard", "snackBox"],
+      "30": ["chessSet", "diary"],
+      "60": [
+        "goldCoin",
+        "tataCards",
+        "pearl",
+        "catFigure",
+        "ufo",
+        "tataFigure"
+      ],
+      "80": ["psp"]
+    }
+  },
+  {
+    "id": "bai-ling",
+    "weaponId": "nightingale-s-feather",
+    "simulacraImg": "https://static.wikia.nocookie.net/toweroffantasy/images/5/57/Simulacrum_Bai_Ling_Prototype.png",
+    "weaponImg": "https://static.wikia.nocookie.net/toweroffantasy/images/5/5d/Weapon_Nightingale%27s_Feather.png",
+    "name": "Bai Ling",
+    "rarity": "SR",
+    "weapon": "Nightingale's Feather",
+    "element": "physical",
+    "type": "dps",
+    "baseStats": ["attack", "health", "crit"],
+    "shatter": { "rank": "B", "value": 6 },
+    "charge": { "rank": "A", "value": 10 },
+    "materials": ["physical", "green", "blue"],
+    "effect": [{ "title": "Physical" }],
+    "advancement": [
+      "Restore 1 dodge attempt every fifth normal attack or after using *Piercing Shot*.",
+      "Increase the current weapon's base ATK growth by **10%**.",
+      "Increase headshot damage by **30%**.",
+      "Increase the current weapon's base ATK growth by **20%**.",
+      "Dodge skills inflict grievous on targets for **7** seconds.",
+      "Increase crit rate to grievous targets by **30%** and crit damage by **50%**."
+    ],
+    "awakening": {
+      "1200": "When Bai Ling puts the Glider or the Wayboard away, increase speed by **8%** for **12** seconds. Cooldown: **60** seconds.",
+      "4000": "When Bai Ling puts the Glider or the Wayboard away, increase speed by **15%** for **12** seconds. Cooldown: **60** seconds."
+    },
+    "gifts": {
+      "15": ["photoAlbum", "harmonica", "photo", "plant", "strangePlant"],
+      "30": ["necklace", "vial", "spiderFigure", "elfFigure"],
+      "60": [
+        "miaFigure",
+        "goldCoin",
+        "foxFigure",
+        "catFigure",
+        "ufo",
+        "peppaFigure",
+        "kitchenware",
+        "princeTataFigure",
+        "linyeFigure"
+      ],
+      "80": ["snowglobe", "seal"]
+    }
+  },
+  {
+    "id": "echo",
+    "weaponId": "thunderous-halberd",
+    "simulacraImg": "https://static.wikia.nocookie.net/toweroffantasy/images/a/af/Simulacrum_Echo_Prototype.png",
+    "weaponImg": "https://static.wikia.nocookie.net/toweroffantasy/images/9/92/Weapon_Thunderous_Halberd.png",
+    "name": "Echo",
+    "rarity": "SR",
+    "weapon": "Thunderous Halberd",
+    "element": "volt",
+    "type": "dps",
+    "baseStats": ["attack", "defense", "health"],
+    "shatter": { "rank": "S", "value": 11 },
+    "charge": { "rank": "B", "value": 7 },
+    "materials": ["volt", "red", "black"],
+    "effect": [
+      {
+        "title": "Volt",
+        "description": "When the weapon is fully charged, the next attack will paralyze targets for 1 second and electrify them for 6 seconds, negating all buffs and dealing damage equal to 144.00% of ATK. Targets can't receive any buffs for the next 6 seconds."
+      }
+    ],
+    "advancement": [
+      "Increase shatter by **15%**. After shattering the target's shield, increase all teammates' ATK by **15%** for **30** seconds. This cannot be stacked.",
+      "Increase the current weapon's base HP growth by **10%**.",
+      "After hitting a target with *Moonchase*, reduce their ATK by **5%** and increase the user's ATK by **5%** for **15** seconds (effect can be stacked up to **3** times by hitting multiple targets). Effect is doubled to grievous targets.",
+      "Increase the current weapon's base ATK growth by **20%**.",
+      "Double stun duration from dodge skills.",
+      "Discharge deals more damage the further it travels, up to **100%** more damage."
+    ],
+    "awakening": {
+      "1200": "When teamed up with Echo, allies within **10** meters around Echo gain a damage boost of **4%** (excluding Echo).",
+      "4000": "When teamed up with Echo, allies within **10** meters around Echo gain a damage boost of **6%** (excluding Echo)."
+    },
+    "gifts": {
+      "15": ["flowers", "snackBox", "tradingCard", "harmonica", "scarf"],
+      "30": ["chessSet", "suit", "juicePouch", "diary", "perfume"],
+      "60": [
+        "goldCoin",
+        "ufo",
+        "peppaFigure",
+        "catFigure",
+        "pearl",
+        "tataFigure"
+      ],
+      "80": ["psp", "tataCards"]
+    }
+  },
+  {
+    "id": "ene",
+    "weaponId": "pummeler",
+    "simulacraImg": "https://static.wikia.nocookie.net/toweroffantasy/images/1/1b/Simulacrum_Ene_Prototype.png",
+    "weaponImg": "https://static.wikia.nocookie.net/toweroffantasy/images/2/2e/Weapon_Pummeler.png",
+    "name": "Ene",
+    "rarity": "SR",
+    "weapon": "Pummeler",
+    "element": "ice",
+    "type": "defense",
+    "baseStats": ["attack", "defense", "health"],
+    "shatter": { "rank": "A", "value": 10 },
+    "charge": { "rank": "B", "value": 6 },
+    "materials": ["ice", "green", "black"],
+    "effect": [
+      {
+        "title": "Ice Shell",
+        "description": "Fully charged weapons will freeze the target for 2 seconds and leave it frostbitten for 6 seconds. Breaking the ice shell causes additional damage equal to 151.00% of ATK. While frostbitten, the target's weapon charge rate is reduced by 50%."
+      }
+    ],
+    "advancement": [
+      "Taunt nearby targets after switching to this weapon, preventing **1** instance of damage in the next **8** seconds and granting hyperbody for the next **8** seconds. Cooldown: **15** seconds.",
+      "Increase the current weapon's base HP growth by **10%**.",
+      "After taking damage, reduce all damage received by **50%** for the next **6** seconds. Cooldown: **20** seconds.",
+      "Increase the current weapon's base HP growth by **20%**.",
+      "Normal attacks **stun** targets for **2.5** seconds. Cooldown: **20** seconds.",
+      "Discharge skills deal an additional **10%** damage to targets and increase frost damage by an additional **10%** for **25** seconds."
+    ],
+    "awakening": {
+      "1200": "When Ene swims, climbs, or glides, reduce endurance consumption by **12%**.",
+      "4000": "When Ene swims, climbs, or glides, reduce endurance consumption by **20%**."
+    },
+    "gifts": {
+      "15": ["photoAlbum", "tradingCard", "pinwheel", "plant"],
+      "30": [
+        "chessSet",
+        "diary",
+        "catPlush",
+        "tataPlush",
+        "spiderFigure",
+        "elfFigure",
+        "robotFigure",
+        "bunnyDoll"
+      ],
+      "60": [
+        "peppaFigure",
+        "ufo",
+        "foxFigure",
+        "catFigure",
+        "present",
+        "psp",
+        "pearl",
+        "snowglobe"
+      ],
+      "80": ["princeTataFigure"]
+    }
+  },
+  {
+    "id": "hilda",
+    "weaponId": "the-terminator",
+    "simulacraImg": "https://static.wikia.nocookie.net/toweroffantasy/images/9/9a/Simulacrum_Hilda_Prototype.png",
+    "weaponImg": "https://static.wikia.nocookie.net/toweroffantasy/images/1/16/Weapon_The_Terminator.png",
+    "name": "Hilda",
+    "rarity": "SR",
+    "weapon": "The Terminator",
+    "element": "ice",
+    "type": "dps",
+    "baseStats": ["attack", "defense", "health"],
+    "shatter": { "rank": "A", "value": 10 },
+    "charge": { "rank": "A", "value": 10 },
+    "materials": ["ice", "red", "blue"],
+    "effect": [
+      {
+        "title": "Ice Shell",
+        "description": "Fully charged weapons will freeze the target for 2 seconds and leave it frostbitten for 6 seconds. Breaking the ice shell causes additional damage equal to 151.00% of ATK. While frostbitten, the target's weapon charge rate is reduced by 50%."
+      }
+    ],
+    "advancement": [
+      "Every successful normal attack increases damage by **1%** for **2** seconds. Stack up to **15** times. Increase ammo count to **60**.",
+      "Increase the current weapon's base ATK growth by **10%**.",
+      "Within **10** seconds of switching to the weapon, increase damage of normal attacks and shatter by **30%**. Cooldown: **25** seconds. Increase ammo to **80**.",
+      "Increase the current weapon's base ATK growth by **20%**.",
+      "Reduce cooldown of normal attacks while in turret mode by **2** seconds.",
+      "Within **10** seconds upon switching to the weapon, increase damage of normal attacks and shatter by **60%**. Cooldown: **25** seconds."
+    ],
+    "awakening": {
+      "1200": "When Hilda uses a vehicle, increase speed by **7%**.",
+      "4000": "When Hilda uses a vehicle, increase speed by **10%**."
+    },
+    "gifts": {
+      "15": ["pinwheel", "snackBox"],
+      "30": [
+        "tataPlush",
+        "catPlush",
+        "robotFigure",
+        "pumpkinFigure",
+        "androidFigure",
+        "bunnyDoll"
+      ],
+      "60": [
+        "goldCoin",
+        "tataCards",
+        "foxFigure",
+        "catFigure",
+        "bearFigure",
+        "miaFigure",
+        "present",
+        "psp",
+        "princeTataFigure",
+        "linyeFigure"
+      ],
+      "80": ["tataFigure"]
+    }
+  },
+  {
+    "id": "pepper",
+    "weaponId": "staff-of-scars",
+    "simulacraImg": "https://static.wikia.nocookie.net/toweroffantasy/images/f/f5/Simulacrum_Pepper_Prototype.png",
+    "weaponImg": "https://static.wikia.nocookie.net/toweroffantasy/images/f/f4/Weapon_Staff_of_Scars.png",
+    "name": "Pepper",
+    "rarity": "SR",
+    "weapon": "Staff of Scars",
+    "element": "volt",
+    "type": "support",
+    "baseStats": ["attack", "defense", "health"],
+    "shatter": { "rank": "B", "value": 4 },
+    "charge": { "rank": "A", "value": 10 },
+    "materials": ["volt", "red", "black"],
+    "effect": [
+      {
+        "title": "Volt",
+        "description": "When the weapon is fully charged, the next attack will paralyze targets for 1 second and electrify them for 6 seconds, negating all buffs and dealing damage equal to 144.00% of ATK. Targets can't receive any buffs for the next 6 seconds."
+      }
+    ],
+    "advancement": [
+      "Heal all teammates within **10** meters for **100%** of ATK after using a Dodge skill.",
+      "Increase the current weapon's base HP growth by **10%**.",
+      "Normal attacks also fire two missiles, each dealing damage equal to **5%** of ATK to the target and restoring **5** weapon charge points.",
+      "Increase the current weapon's base HP growth by **20%**.",
+      "Increase speed of obtaining weapon charge by **20%** (not applicable to missile attacks).",
+      "Grant all teammates within range of the skill **60%** damage reduction whenever a skill dispels control effects from the target."
+    ],
+    "awakening": {
+      "1200": "When Pepper spends satiety to restore HP, increase restoration effect by **100%**.",
+      "4000": "When Pepper spends satiety to restore HP, increase restoration effect by **200%**."
+    },
+    "gifts": {
+      "15": ["photoAlbum", "flowers", "plant", "scarf", "strangePlant"],
+      "30": [
+        "suit",
+        "juicePouch",
+        "necklace",
+        "perfume",
+        "spiderFigure",
+        "elfFigure"
+      ],
+      "60": [
+        "seal",
+        "tataCards",
+        "foxFigure",
+        "catFigure",
+        "goldCoin",
+        "snowglobe",
+        "kitchenware",
+        "princeTataFigure",
+        "linyeFigure"
+      ],
+      "80": ["peppaFigure"]
+    }
+  }
+]
