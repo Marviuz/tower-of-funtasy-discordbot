@@ -40,3 +40,16 @@ for (const file of eventFiles) {
 }
 
 client.login(process.env.DISCORD_CLIENT_TOKEN);
+
+
+//*********//
+// EXPRESS //
+//*********//
+
+const express = require('express');
+const app = express();
+const port = process.env.PORT;
+app.get('*', (req, res) => {
+  res.send('Hello world');
+});
+app.listen(port, () => console.log(port));
