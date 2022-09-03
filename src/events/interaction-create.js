@@ -8,6 +8,12 @@ module.exports = {
     if (!command) return;
 
     try {
+      const { username, discriminator } = await interaction.user;
+      const cmd = await interaction.commandName;
+      const { name: guildName, id: guildId } = await interaction.member.guild;
+
+      console.log(`User *${username}#${discriminator}* used *${cmd}* at *${guildName}(guild id: ${guildId})*`);
+
       await command.execute(await interaction);
     } catch (error) {
       console.error(error);
