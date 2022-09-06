@@ -31,12 +31,10 @@
       "Shattering shields using frost weapons in the Frost Domain will freeze the target for **2** seconds and cause frostiness points &times; Frost ATK &times; **35%** of additional damage (if the target cannot be frozen, double the additional damage dealt).",
       "When frostiness reaches **15** points and you are in the Frost Domain, you will get an additional \"Domain of Frost II\" that increases Frost ATK by **12%** when frost weapons are used."
     ],
-    "awakening": [
-      {
-        "1200": "Increase frost ATK by **1.5%** every **3** seconds upon entering battle. Stack up to **10** times. Lasts for **5** seconds.",
-        "4000": "Frost ATK is boosted by **2.4%** every **3** seconds upon entering combat. Stack up to **10** times. Lasts for **5** seconds. In addition, gain hyperbody and become immune to control effects in the Frost Domain."
-      }
-    ],
+    "awakening": {
+      "1200": "Increase frost ATK by **1.5%** every **3** seconds upon entering battle. Stack up to **10** times. Lasts for **5** seconds.",
+      "4000": "Frost ATK is boosted by **2.4%** every **3** seconds upon entering combat. Stack up to **10** times. Lasts for **5** seconds. In addition, gain hyperbody and become immune to control effects in the Frost Domain."
+    },
     "gifts": {
       "15": ["flowers", "dumbbells", "scarf"],
       "30": ["juicePouch", "suit", "toolbox", "perfume", "strangeFragment"],
