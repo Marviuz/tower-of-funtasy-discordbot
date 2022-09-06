@@ -1,62 +1,211 @@
 [
   {
+    "matrixId": "huma-matrix",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/huma.webp",
     "name": "Huma",
     "rarity": "SSR",
     "two": "Hitting targets with dodge skills inflicts bleed, dealing damage equal to 15%/19%/22.5%/26% of ATK every second for 5 seconds.",
     "four": "Reduce ATK of all targets within 8 meters that are taking damage over time by 10%/12%/13%/15%. Only the highest level's effect is applied when obtained repeatedly."
   },
   {
+    "matrixId": "frigg-matrix",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/frigg.webp",
+    "name": "Frigg",
+    "rarity": "SSR",
+    "two": "Increase frost ATK by 8%/10%/12%/15% for 10 seconds when switching between frost weapons. This effect works in the background, and if multiple sets are used, the highest star set will take effect.",
+    "four": "When unleashing a frost domain with the weapon \"Balmung\", enemies within the frost domain receive frost damage equal to 55%/65%/75%/85% of frost ATK every second."
+  },
+  {
+    "matrixId": "nemesis-matrix",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/nemesis.webp",
     "name": "Nemesis",
     "rarity": "SSR",
     "two": "When a target is being healed, their volt ATK is increased by 8%/10%/12%/15% for 20 seconds. The effect does not stack, and only the highest level's effect is applied when obtained repeatedly.",
     "four": "When healing yourself or your Electrode, the healed target gains a charge of \"Lightning\". The next attack within 30 seconds will cast lightning upon the target, dealing volt damage equal to 240%/300%/360%/420% of volt ATK, and damage caused by electrodes is reduced by 50%. Cannot be triggered more than once in 10 seconds. \"Lightning\" charges do not stack. Only the highest level's effect is applied when obtained repeatedly."
   },
   {
+    "matrixId": "coco-ritter-matrix",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/cocoritter.webp",
     "name": "Coco Ritter",
     "rarity": "SSR",
     "two": "Increase healing capability and healing received by 10%/12%/14%/16%.",
     "four": "When you or your teammates are healed, increase ATK by 12.5%/15%/17.5%/20% for 6 seconds. Only the highest level's effect is applied when obtained repeatedly."
   },
   {
+    "matrixId": "crow-matrix",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/crow.webp",
     "name": "Crow",
     "rarity": "SSR",
     "two": "Increase crit damage to targets with less than 60% HP by 24%/30%/36%/42%.",
     "four": "Crits deal additional damage over time equal to 18%/22%/26%/30% of ATK every second for 5 seconds. Does not stack."
   },
   {
+    "matrixId": "king-matrix",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/king.webp",
     "name": "King",
     "rarity": "SSR",
     "two": "When a target is shattered, grant 8%/10%/12%/14% damage boost for 25 seconds. Only the highest level is applied when the effect is obtained repeatedly.",
     "four": "When there are more than 2 enemies around, hits restore HP equal to 14%/18%/22%/26% of damage dealt upon attacking. The maximum HP restored every 0.5 seconds must not exceed 36%/42%/48%/54% of ATK."
   },
   {
+    "matrixId": "meryl-matrix",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/meryl.webp",
     "name": "Meryl",
     "rarity": "SSR",
     "two": "If HP is less than 30% after being attacked, gain a shield equal to 20%/26%/32%/40% of Max HP for 10 seconds. Cooldown: 90 seconds.",
     "four": "Increase Whirlwind's damage by 36%/45%/54%/63% and restore HP equal to 30%/38%/44%/50% of the damage dealt while Whirlwind is active. The maximum HP restored every 0.5 seconds cannot exceed 60%/72%/81%/90% of ATK."
   },
   {
+    "matrixId": "samir-matrix",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/samir.webp",
     "name": "Samir",
     "rarity": "SSR",
     "two": "Increase damage progressively by 1% upon hitting a target. Stack up to 10/13/16/20 times. Lasts 1.5 seconds.",
     "four": "Increase Dual EM Stars' electrical explosion damage by 16%/22%/30%/40% of ATK."
   },
   {
+    "matrixId": "shiro-matrix",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/shiro.webp",
     "name": "Shiro",
     "rarity": "SSR",
     "two": "Increase both damage and shatter to targets with more than 50% HP by 15%/19%/22.5%/26%.",
     "four": "Upon entering battle, gain a 20%/25%/30%/35% damage boost for 35 seconds. Reset 5 seconds after exiting battle."
   },
   {
+    "matrixId": "tsubasa-matrix",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/tsubasa.webp",
     "name": "Tsubasa",
     "rarity": "SSR",
     "two": "Increase damage dealt by 14%/16%/18%/20% when there are no enemies within 4 meters.",
     "four": "Upon a headshot or using Icewind Arrow: Piercing Shot, increase ATK by 15%/18%/21%/25% for 8 seconds."
   },
   {
+    "matrixId": "zero-matrix",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/zero.webp",
     "name": "Zero",
     "rarity": "SSR",
     "two": "Upon using a discharge skill to switch to the current weapon, gain a shield equal to 150%/200%/250%/300% of ATK for 6 seconds.",
     "four": "While the shield is active, you and your teammates deal 16%/20%/24%/28% more damage."
+  },
+
+  {
+    "matrixId": "bai-ling-matrix",
+    "matrixImg": "https://static.wikia.nocookie.net/toweroffantasy/images/7/70/Matrix_Icon_Bai_Ling.png",
+    "name": "Bai Ling",
+    "rarity": "SR",
+    "three": "Increase damage dealt to grievous targets by **12%/15%/18%**."
+  },
+  {
+    "matrixId": "echo-matrix",
+    "matrixImg": "https://static.wikia.nocookie.net/toweroffantasy/images/1/1d/Matrix_Icon_Echo.png",
+    "name": "Echo",
+    "rarity": "SR",
+    "three": "Using a discharge skill to switch to the current weapon grants **80/100/120** weapon charge."
+  },
+  {
+    "matrixId": "ene-matrix",
+    "matrixImg": "https://static.wikia.nocookie.net/toweroffantasy/images/8/82/Matrix_Icon_Ene.png",
+    "name": "Ene",
+    "rarity": "SR",
+    "three": "When dealing damage greater than **100%** of ATK, deal additional damage equal to **60%/75%/90%** of ATK. Cooldown: **3** seconds."
+  },
+  {
+    "matrixId": "hilda-matrix",
+    "matrixImg": "https://static.wikia.nocookie.net/toweroffantasy/images/e/e1/Matrix_Icon_Hilda.png",
+    "name": "Hilda",
+    "rarity": "SR",
+    "three": "Increase ATK by **15%/19%/22.5%** when there are no enemies within 6 meters."
+  },
+  {
+    "matrixId": "pepper-matrix",
+    "matrixImg": "https://static.wikia.nocookie.net/toweroffantasy/images/d/d5/Matrix_Icon_Pepper.png",
+    "name": "Pepper",
+    "rarity": "SR",
+    "three": "Increase speed of obtaining weapon charge by **10%/12.5%/15%**."
+  },
+  {
+    "matrixId": "robarg-matrix",
+    "matrixImg": "https://static.wikia.nocookie.net/toweroffantasy/images/f/f9/Matrix_Icon_Robarg.png",
+    "name": "Robarg",
+    "rarity": "SR",
+    "three": "When a target is shattered, poison the target and deal damage equal to **45%/56%/67.5%** of ATK every second for **10** seconds."
+  },
+  {
+    "matrixId": "apophis-matrix",
+    "matrixImg": "https://static.wikia.nocookie.net/toweroffantasy/images/c/cb/Matrix_Icon_Apophis.png",
+    "name": "Apophis",
+    "rarity": "SR",
+    "three": "Deal higher damage at lower HP. Deal maximum damage when HP is **20%**. The damage can be increased by up to **20%/25%/30%**."
+  },
+  {
+    "matrixId": "frost-bot-matrix",
+    "matrixImg": "https://static.wikia.nocookie.net/toweroffantasy/images/d/d5/Matrix_Icon_Frost_Bot.png",
+    "name": "Frost Bot",
+    "rarity": "SR",
+    "three": "When HP is below **40%**, using a discharge skill to switch to the current weapon restores HP equal to **160%/200%/240%** of ATK."
+  },
+  {
+    "matrixId": "sobek-matrix",
+    "matrixImg": "https://static.wikia.nocookie.net/toweroffantasy/images/0/08/Matrix_Icon_Sobek.png",
+    "name": "Sobek",
+    "rarity": "SR",
+    "three": "Increase damage dealt by **6%/7.5%/9%** for each enemy nearby. Up to 3 stacks."
+  },
+  {
+    "matrixId": "barbarossa-matrix",
+    "matrixImg": "https://static.wikia.nocookie.net/toweroffantasy/images/7/77/Matrix_Icon_Barbarossa.png",
+    "name": "Barbarossa",
+    "rarity": "SR",
+    "three": "Upon switching to the weapon, gain **50%/62.5%/75%** damage reflection for **3** seconds. Cooldown: **30** seconds. Upon switching to another weapon, gain a **20%/25%/30%** damage boost for **5** seconds. Cooldown: **30** seconds."
+  },
+  {
+    "matrixId": "wind-blade-matrix",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/windblade.webp",
+    "name": "Wind Blade",
+    "rarity": "R",
+    "three": "Increase shatter capability by **18%**."
+  },
+  {
+    "matrixId": "obstacle-removal-matrix",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/obstacleremoval.webp",
+    "name": "Obstacle Removal",
+    "rarity": "R",
+    "three": "Damage taken reduced by **6%**"
+  },
+  {
+    "matrixId": "self-explosive-matrix",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/selfexplosive.webp",
+    "name": "Self Explosive",
+    "rarity": "R",
+    "three": "Increase damage dealt by flame weapons by **6%**."
+  },
+  {
+    "matrixId": "functional-dash-matrix",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/functionaldash.webp",
+    "name": "Functional Dash",
+    "rarity": "R",
+    "three": "Increase damage dealt by frost weapons by **6%**."
+  },
+  {
+    "matrixId": "standard-operation-matrix",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/standardoperation.webp",
+    "name": "Standard Operation",
+    "rarity": "R",
+    "three": "Increase damage dealt by volt weapons by **6%**."
+  },
+  {
+    "matrixId": "plunder-matrix",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/plunder.webp",
+    "name": "Plunder",
+    "rarity": "R",
+    "three": "Increase damage dealt by physical weapons by **6%**."
+  },
+
+  {
+    "matrixId": "wandering-aberrant-matrix",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/wanderingaberrant.webp",
+    "name": "Wandering Aberrant",
+    "rarity": "N",
+    "three": "Increase damage dealt by **4%**."
   }
 ]

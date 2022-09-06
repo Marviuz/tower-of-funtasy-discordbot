@@ -4,6 +4,17 @@ const materials = require('../db/materials.json');
 
 const RULES = {
   BLACK_NUCLEUS: {
+    excluded: ['venus', 'balmung'],
+    ssr: .3,
+    eheart: 1, // Element Heart
+    sr: 3,
+    steb: 5, // Standard Energy Battery
+    ecore: 20, // Element Core
+    r: 30.7,
+    smeb: 40, // Small Energy Battery
+  },
+  GOLD_NUCLEUS: { // TODO: Gold nucleus
+    excludeIds: ['venus', 'balmung'],
     ssr: .3,
     eheart: 1, // Element Heart
     sr: 3,
@@ -14,6 +25,13 @@ const RULES = {
   }
 };
 
+/**
+ * Generate a random number.
+ * 
+ * @param {Number} min Minimum number
+ * @param {Number} max maximum number
+ * @returns Random number
+ */
 const getRandomArbitrary = (min, max) => Math.random() * (max - min) + min;
 
 /**
@@ -36,14 +54,17 @@ const blackNucleus = (isTenPull) => {
     else if (gacha <= bn.ssr + bn.eheart + bn.sr + bn.steb + bn.ecore) pulls.push('Elementcore');
     else if (gacha <= bn.ssr + bn.eheart + bn.sr + bn.steb + bn.ecore + bn.r) pulls.push('R');
     else if (gacha <= bn.ssr + bn.eheart + bn.sr + bn.steb + bn.ecore + bn.r + bn.smeb) pulls.push('Small Energy Battery');
-    else pulls.push('If this showed up... my formula is wrong...');
+    else throw new Error('My gacha is wrong!');
   }
 
   for (let i = 0; i < pulls.length; i++) {
     const pull = pulls[i];
 
     if (pull === 'SSR' || pull === 'SR' || pull === 'R') {
-      const _weaponCollection = weapons.filter($ => $.rarity === pull);
+      const _weaponCollection = weapons.filter($ => {
+        if (pull === 'SSR') return !bn.excluded.includes($.id);
+        return ($.rarity === pull);
+      });
       pulls[i] = sample(_weaponCollection);
     } else {
       pulls[i] = sample(materials);

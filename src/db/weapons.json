@@ -39,6 +39,16 @@
     "type": "support",
     "element": "volt"
   },
+
+  {
+    "id": "balmung",
+    "name": "Balmung",
+    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/0/00/Weapon_Balmung.png",
+    "rarity": "SSR",
+    "type": "dps",
+    "element": "ice"
+  },
+
   {
     "id": "absolute-zero",
     "name": "Absolute Zero",

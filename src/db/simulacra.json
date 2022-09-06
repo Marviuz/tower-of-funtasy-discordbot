@@ -1,5 +1,56 @@
 [
   {
+    "id": "frigg",
+    "weaponId": "balmung",
+    "simulacraImg": "https://static.wikia.nocookie.net/toweroffantasy/images/7/76/Simulacrum_Frigg_Prototype.png",
+    "weaponImg": "https://static.wikia.nocookie.net/toweroffantasy/images/0/00/Weapon_Balmung.png",
+    "name": "Frigg",
+    "rarity": "SSR",
+    "weapon": "Balmung",
+    "element": "ice",
+    "type": "dps",
+    "baseStats": ["attack", "health", "crit"],
+    "shatter": { "rank": "A", "value": 8 },
+    "charge": { "rank": "A", "value": 8 },
+    "materials": ["ice", "red", "black"],
+    "effect": [
+      {
+        "title": "Ice Shell",
+        "description": "Fully charged weapons will freeze the target for 2 seconds and leave it frostbitten for 6 seconds. Breaking the ice shell causes additional damage equal to 151.00% of ATK. While frostbitten, the target's weapon charge rate is reduced by 50%."
+      },
+      {
+        "title": "Frost Resonance",
+        "description": "Increase frost ATK by **15%** and frost resistance by **25%**. Activate by equipping **2** or more frost weapons. This set's effect also works with weapons in the off-hand slot. This effect does not stack."
+      }
+    ],
+    "advancement": [
+      "Gain **1** frostiness point every time you deal **550%** &times; Frost ATK of damage in the Frost Domain. Up to **10** points can be accumulated. When Frost Domain ends, frostiness points &times; Frost ATK &times; **95%** of blast damage will be dealt to all enemies in the Frost Domain. After leaving the Frost Domain lose **1** frostiness point every **3** seconds.",
+      "Increase the current weapon's base HP growth by **16%**.",
+      "Increase frostiness limit to **15**. When using discharge skills of frost weapons in the frost domain, deal damage equal to **20%** of frost ATK &times; (current frostiness +5) to all targets in the frost domain.",
+      "Increase the current weapon's base ATK growth by **32%**.",
+      "Shattering shields using frost weapons in the Frost Domain will freeze the target for **2** seconds and cause frostiness points &times; Frost ATK &times; **35%** of additional damage (if the target cannot be frozen, double the additional damage dealt).",
+      "When frostiness reaches **15** points and you are in the Frost Domain, you will get an additional \"Domain of Frost II\" that increases Frost ATK by **12%** when frost weapons are used."
+    ],
+    "awakening": [
+      {
+        "1200": "Increase frost ATK by **1.5%** every **3** seconds upon entering battle. Stack up to **10** times. Lasts for **5** seconds.",
+        "4000": "Frost ATK is boosted by **2.4%** every **3** seconds upon entering combat. Stack up to **10** times. Lasts for **5** seconds. In addition, gain hyperbody and become immune to control effects in the Frost Domain."
+      }
+    ],
+    "gifts": {
+      "15": ["flowers", "dumbbells", "scarf"],
+      "30": ["juicePouch", "suit", "toolbox", "perfume", "strangeFragment"],
+      "60": [
+        "present",
+        "tataCards",
+        "pearl",
+        "peppaFigure",
+        "catFigure",
+        "kitchenware"
+      ]
+    }
+  },
+  {
     "id": "nemesis",
     "weaponId": "venus",
     "simulacraImg": "https://static.wikia.nocookie.net/toweroffantasy/images/a/a1/Simulacrum_Nemesis_Prototype.png",

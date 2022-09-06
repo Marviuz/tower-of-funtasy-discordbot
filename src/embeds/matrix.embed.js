@@ -1,9 +1,8 @@
 const { EmbedBuilder, AttachmentBuilder } = require('discord.js');
 const rarities = require('../db/rarities.json');
 
-const matrixEmbed = ({ name, rarity, two, three, four }) => {
-  const fileName = `${name.toLowerCase().replace(' ', '')}-matrix.webp`;
-  const attachment = new AttachmentBuilder(`src/assets/matrices/${fileName}`); // Might have problems with relative pathing
+const matrixEmbed = ({ matrixImg, matrixId, name, rarity, two, three, four }) => {
+  const attachment = new AttachmentBuilder(matrixImg, { name: `${matrixId}.webp` });
   let piece = rarity === 'SSR' ?
     ([{ name: '2-piece set', value: two }, { name: '4-piece set', value: four }]) :
     ({ name: '3-piece set', value: three });
@@ -12,7 +11,7 @@ const matrixEmbed = ({ name, rarity, two, three, four }) => {
     embed: new EmbedBuilder()
       .setColor(rarities[rarity])
       .setTitle(name)
-      .setThumbnail(`attachment://${fileName}`)
+      .setThumbnail(`attachment://${matrixId}.webp`)
       .addFields(piece),
     attachment
   };
