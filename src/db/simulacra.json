@@ -2,7 +2,7 @@
   {
     "id": "frigg",
     "weaponId": "balmung",
-    "simulacraImg": "https://i.imgur.com/ia4xBq0.jpg",
+    "simulacraImg": "https://i.imgur.com/aIGOiOV.png",
     "weaponImg": "https://i.imgur.com/dO77ioc.png",
     "name": "Frigg",
     "rarity": "SSR",
@@ -51,7 +51,7 @@
   {
     "id": "nemesis",
     "weaponId": "venus",
-    "simulacraImg": "https://i.imgur.com/psXyQOh.jpg",
+    "simulacraImg": "https://i.imgur.com/pknkLy5.png",
     "weaponImg": "https://i.imgur.com/FiZr52H.png",
     "name": "Nemesis",
     "rarity": "SSR",
@@ -149,7 +149,7 @@
   {
     "id": "huma",
     "weaponId": "molten-shield-v2",
-    "simulacraImg": "https://i.imgur.com/3ODxn4M.jpg",
+    "simulacraImg": "https://i.imgur.com/3c7iD9G.png",
     "weaponImg": "https://i.imgur.com/8B2Y0Tp.png",
     "name": "Huma",
     "rarity": "SSR",
@@ -251,7 +251,7 @@
   {
     "id": "king",
     "weaponId": "scythe-of-the-crow",
-    "simulacraImg": "https://i.imgur.com/ymEUCdX.jpg",
+    "simulacraImg": "https://i.imgur.com/DIzXCpe.png",
     "weaponImg": "https://i.imgur.com/DWWzRCB.png",
     "name": "KING",
     "rarity": "SSR",
@@ -348,7 +348,7 @@
   {
     "id": "samir",
     "weaponId": "dual-em-stars",
-    "simulacraImg": "https://i.imgur.com/D3eVxrN.jpg",
+    "simulacraImg": "https://i.imgur.com/Wi8GibP.png",
     "weaponImg": "https://i.imgur.com/nhcFE0q.png",
     "name": "Samir",
     "rarity": "SSR",
@@ -442,7 +442,7 @@
   {
     "id": "tsubasa",
     "weaponId": "icewind-arrow",
-    "simulacraImg": "https://i.imgur.com/bTzj0wS.jpg",
+    "simulacraImg": "https://i.imgur.com/nIOAtDR.png",
     "weaponImg": "https://i.imgur.com/PkVAKJ7.png",
     "name": "Tsubasa",
     "rarity": "SSR",
@@ -491,7 +491,7 @@
   {
     "id": "zero",
     "weaponId": "negating-cube",
-    "simulacraImg": "https://i.imgur.com/Msn9ehM.jpg",
+    "simulacraImg": "https://i.imgur.com/uqstbDD.png",
     "weaponImg": "https://i.imgur.com/CFGi6ra.png",
     "name": "Zero",
     "rarity": "SSR",
@@ -627,7 +627,7 @@
   {
     "id": "ene",
     "weaponId": "pummeler",
-    "simulacraImg": "https://i.imgur.com/Zd9TQhr.jpg",
+    "simulacraImg": "https://i.imgur.com/IjrrpxW.png",
     "weaponImg": "https://i.imgur.com/qGbJrCS.png",
     "name": "Ene",
     "rarity": "SR",
@@ -684,7 +684,7 @@
   {
     "id": "hilda",
     "weaponId": "the-terminator",
-    "simulacraImg": "https://i.imgur.com/TKv2yrT.jpg",
+    "simulacraImg": "https://i.imgur.com/cft5SmN.png",
     "weaponImg": "https://i.imgur.com/VvGBjEl.png",
     "name": "Hilda",
     "rarity": "SR",
