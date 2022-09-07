@@ -1,7 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 const nodeHtmlToImage = require('node-html-to-image');
-// const imgur = require('imgur'); // imgur@^0.2.1
 const { ImgurClient } = require('imgur');
 
 const simulacra = require('../db/simulacra.json');
@@ -54,10 +53,6 @@ const pull = async (isTen, type) => {
   const response = await imgurClient.upload({ image: base64Image, type: 'base64' });
 
   return response.data.link;
-
-  // const { data: imgurData } = await imgur.uploadBase64(base64Image); // imgur@^0.2.1
-  // return imgurData.link; // imgur@^0.2.1
-
 };
 
 module.exports = pull;

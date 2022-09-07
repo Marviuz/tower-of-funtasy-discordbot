@@ -2,70 +2,70 @@
   {
     "id": "weapon-battery-ii",
     "name": "Weapon Battery II",
-    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/8/86/Item_Weapon_Battery_II.png",
+    "img": "https://i.imgur.com/SDxPc4s.png",
     "rarity": "N",
     "type": "Standard Energy Battery"
   },
   {
     "id": "weapon-battery-i",
     "name": "Weapon Battery I",
-    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/1/1e/Item_Weapon_Battery_I.png",
+    "img": "https://i.imgur.com/oN5kQRs.png",
     "rarity": "C",
     "type": "Small Energy Battery"
   },
   {
     "id": "heart-of-lava",
     "name": "Heart of Lava",
-    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/8/8c/Item_Heart_of_Lava.png",
+    "img": "https://i.imgur.com/H7ksgdj.png",
     "rarity": "R",
     "type": "Elementheart"
   },
   {
     "id": "heart-of-winter",
     "name": "Heart of Winter",
-    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/a/a3/Item_Heart_of_Winter.png",
+    "img": "https://i.imgur.com/gdOJqkI.png",
     "rarity": "R",
     "type": "Elementheart"
   },
   {
     "id": "heart-of-lightning",
     "name": "Heart of Lightning",
-    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/5/56/Item_Heart_of_Lightning.png",
+    "img": "https://i.imgur.com/3KTdXRd.png",
     "rarity": "R",
     "type": "Elementheart"
   },
   {
     "id": "heart-of-summit",
     "name": "Heart of Summit",
-    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/3/3c/Item_Heart_of_Summit.png",
+    "img": "https://i.imgur.com/LyrUS9N.png",
     "rarity": "R",
     "type": "Elementheart"
   },
   {
     "id": "firecore",
     "name": "Firecore",
-    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/f/fe/Item_Firecore.png",
+    "img": "https://i.imgur.com/OicK0jL.png",
     "rarity": "N",
     "type": "Elementcore"
   },
   {
     "id": "icecore",
     "name": "Icecore",
-    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/d/d4/Item_Icecore.png",
+    "img": "https://i.imgur.com/6sgocsK.png",
     "rarity": "N",
     "type": "Elementcore"
   },
   {
     "id": "magcore",
     "name": "Magcore",
-    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/1/1b/Item_Magcore.png",
+    "img": "https://i.imgur.com/1uomgm3.png",
     "rarity": "N",
     "type": "Elementcore"
   },
   {
     "id": "rockcore",
     "name": "Rockcore",
-    "img": "https://static.wikia.nocookie.net/toweroffantasy/images/8/82/Item_Rockcore.png",
+    "img": "https://i.imgur.com/LadLn52.png",
     "rarity": "N",
     "type": "Elementcore"
   }

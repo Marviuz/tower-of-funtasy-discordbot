@@ -87,73 +87,72 @@
     "two": "Upon using a discharge skill to switch to the current weapon, gain a shield equal to 150%/200%/250%/300% of ATK for 6 seconds.",
     "four": "While the shield is active, you and your teammates deal 16%/20%/24%/28% more damage."
   },
-
   {
     "matrixId": "bai-ling-matrix",
-    "matrixImg": "https://static.wikia.nocookie.net/toweroffantasy/images/7/70/Matrix_Icon_Bai_Ling.png",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/bailing.webp",
     "name": "Bai Ling",
     "rarity": "SR",
     "three": "Increase damage dealt to grievous targets by **12%/15%/18%**."
   },
   {
     "matrixId": "echo-matrix",
-    "matrixImg": "https://static.wikia.nocookie.net/toweroffantasy/images/1/1d/Matrix_Icon_Echo.png",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/echo.webp",
     "name": "Echo",
     "rarity": "SR",
     "three": "Using a discharge skill to switch to the current weapon grants **80/100/120** weapon charge."
   },
   {
     "matrixId": "ene-matrix",
-    "matrixImg": "https://static.wikia.nocookie.net/toweroffantasy/images/8/82/Matrix_Icon_Ene.png",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/ene.webp",
     "name": "Ene",
     "rarity": "SR",
     "three": "When dealing damage greater than **100%** of ATK, deal additional damage equal to **60%/75%/90%** of ATK. Cooldown: **3** seconds."
   },
   {
     "matrixId": "hilda-matrix",
-    "matrixImg": "https://static.wikia.nocookie.net/toweroffantasy/images/e/e1/Matrix_Icon_Hilda.png",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/hilda.webp",
     "name": "Hilda",
     "rarity": "SR",
     "three": "Increase ATK by **15%/19%/22.5%** when there are no enemies within 6 meters."
   },
   {
     "matrixId": "pepper-matrix",
-    "matrixImg": "https://static.wikia.nocookie.net/toweroffantasy/images/d/d5/Matrix_Icon_Pepper.png",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/pepper.webp",
     "name": "Pepper",
     "rarity": "SR",
     "three": "Increase speed of obtaining weapon charge by **10%/12.5%/15%**."
   },
   {
     "matrixId": "robarg-matrix",
-    "matrixImg": "https://static.wikia.nocookie.net/toweroffantasy/images/f/f9/Matrix_Icon_Robarg.png",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/robarg.webp",
     "name": "Robarg",
     "rarity": "SR",
     "three": "When a target is shattered, poison the target and deal damage equal to **45%/56%/67.5%** of ATK every second for **10** seconds."
   },
   {
     "matrixId": "apophis-matrix",
-    "matrixImg": "https://static.wikia.nocookie.net/toweroffantasy/images/c/cb/Matrix_Icon_Apophis.png",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/apophis.webp",
     "name": "Apophis",
     "rarity": "SR",
     "three": "Deal higher damage at lower HP. Deal maximum damage when HP is **20%**. The damage can be increased by up to **20%/25%/30%**."
   },
   {
     "matrixId": "frost-bot-matrix",
-    "matrixImg": "https://static.wikia.nocookie.net/toweroffantasy/images/d/d5/Matrix_Icon_Frost_Bot.png",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/frostbot.webp",
     "name": "Frost Bot",
     "rarity": "SR",
     "three": "When HP is below **40%**, using a discharge skill to switch to the current weapon restores HP equal to **160%/200%/240%** of ATK."
   },
   {
     "matrixId": "sobek-matrix",
-    "matrixImg": "https://static.wikia.nocookie.net/toweroffantasy/images/0/08/Matrix_Icon_Sobek.png",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/sobek.webp",
     "name": "Sobek",
     "rarity": "SR",
     "three": "Increase damage dealt by **6%/7.5%/9%** for each enemy nearby. Up to 3 stacks."
   },
   {
     "matrixId": "barbarossa-matrix",
-    "matrixImg": "https://static.wikia.nocookie.net/toweroffantasy/images/7/77/Matrix_Icon_Barbarossa.png",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/barbarossa.webp",
     "name": "Barbarossa",
     "rarity": "SR",
     "three": "Upon switching to the weapon, gain **50%/62.5%/75%** damage reflection for **3** seconds. Cooldown: **30** seconds. Upon switching to another weapon, gain a **20%/25%/30%** damage boost for **5** seconds. Cooldown: **30** seconds."
@@ -200,7 +199,6 @@
     "rarity": "R",
     "three": "Increase damage dealt by physical weapons by **6%**."
   },
-
   {
     "matrixId": "wandering-aberrant-matrix",
     "matrixImg": "https://toweroffantasy.info/static/images/matrices/wanderingaberrant.webp",
