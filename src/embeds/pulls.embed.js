@@ -5,39 +5,45 @@ const gachaTypes = [
   {
     id: 'black-nucleus',
     label: 'Black Nucleus',
-    emoji: '⚫'
+    emoji: '⚫',
+    disabled: false
   },
   {
     id: 'gold-nucleus',
     label: 'Gold Nucleus',
-    emoji: '🟡'
+    emoji: '🟡',
+    disabled: false
   },
   {
     id: 'red-nucleus',
     label: 'Red Nucleus',
-    emoji: '🔴'
+    emoji: '🔴',
+    disabled: true
   },
   {
     id: 'matrix',
     label: 'Matrix',
-    emoji: '🟨'
+    emoji: '🟨',
+    disabled: true
   },
   {
     id: 'limited-matrix',
     label: 'Limited Matrix',
-    emoji: '🟥'
+    emoji: '🟥',
+    disabled: true
   },
 ];
 
 const embed = async (user, type) => {
-  const img = await pull(true, type.id);
+  const { pulls, img, pity } = await pull(true, type.id, user);
   const attachment = new AttachmentBuilder(img, { name: 'pull.png' });
 
   return {
     pullsEmbed: new EmbedBuilder()
-      .setTitle(`${user}'s ${type.label} pulls!`)
+      .setTitle(`${user.username}'s ${type.label} pulls!`)
       .setImage('attachment://pull.png')
-      .setTimestamp(),
+      .setTimestamp()
+      .addFields({ name: `Pity ${pity}/80`, value: pulls.map(_ => _.name).join('\n') }),
     attachment
   };
 };
@@ -52,7 +58,7 @@ const actions = () => {
         .setStyle(1)
         .setLabel('x10')
         .setEmoji(type.emoji)
-        .setDisabled(type.id !== 'black-nucleus') // TODO: create logic for other gacha types and remove this method chain
+        .setDisabled(type.disabled) // TODO: create logic for other gacha types and remove this method chain
     );
   });
 

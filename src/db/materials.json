@@ -1,5 +1,12 @@
 [
   {
+    "id": "weapon-battery-iii",
+    "name": "Weapon Battery III",
+    "img": "https://i.imgur.com/5WrGPjz.png",
+    "rarity": "R",
+    "type": "High Efficiency Energy Battery"
+  },
+  {
     "id": "weapon-battery-ii",
     "name": "Weapon Battery II",
     "img": "https://i.imgur.com/SDxPc4s.png",

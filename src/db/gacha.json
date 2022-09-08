@@ -1,0 +1,301 @@
+[
+  {
+    "id": "combat-blade",
+    "name": "Combat Blade",
+    "img": "https://i.imgur.com/O5rtSts.png",
+    "rarity": "R",
+    "type": "weapon",
+    "element": "physical",
+    "rate": "r",
+    "in": ["black", "gold", "red"]
+  },
+  {
+    "id": "composite-bow",
+    "name": "Composite Bow",
+    "img": "https://i.imgur.com/SjdWys4.png",
+    "rarity": "R",
+    "type": "weapon",
+    "element": "flame",
+    "rate": "r",
+    "in": ["black", "gold", "red"]
+  },
+  {
+    "id": "em-blade",
+    "name": "EM Blade",
+    "img": "https://i.imgur.com/logJodz.png",
+    "rarity": "R",
+    "type": "weapon",
+    "element": "volt",
+    "rate": "r",
+    "in": ["black", "gold", "red"]
+  },
+  {
+    "id": "frosted-spear",
+    "name": "Frosted Spear",
+    "img": "https://i.imgur.com/4HZWizO.png",
+    "rarity": "R",
+    "type": "weapon",
+    "element": "ice",
+    "rate": "r",
+    "in": ["black", "gold", "red"]
+  },
+  {
+    "id": "venus",
+    "name": "Venus",
+    "img": "https://i.imgur.com/FiZr52H.png",
+    "rarity": "SSR",
+    "type": "weapon",
+    "element": "volt",
+    "rate": "ssr",
+    "in": []
+  },
+  {
+    "id": "balmung",
+    "name": "Balmung",
+    "img": "https://i.imgur.com/dO77ioc.png",
+    "rarity": "SSR",
+    "type": "weapon",
+    "element": "ice",
+    "rate": "ssr",
+    "in": ["red"]
+  },
+  {
+    "id": "absolute-zero",
+    "name": "Absolute Zero",
+    "img": "https://i.imgur.com/sJqskhc.png",
+    "rarity": "SSR",
+    "type": "weapon",
+    "element": "ice",
+    "rate": "ssr",
+    "in": ["black", "gold", "red"]
+  },
+  {
+    "id": "molten-shield-v2",
+    "name": "Molten Shield V2",
+    "img": "https://i.imgur.com/8B2Y0Tp.png",
+    "rarity": "SSR",
+    "type": "weapon",
+    "element": "flame",
+    "rate": "ssr",
+    "in": ["black", "gold", "red"]
+  },
+  {
+    "id": "thunderblades",
+    "name": "Thunderblades",
+    "img": "https://i.imgur.com/G2G9iWv.png",
+    "rarity": "SSR",
+    "type": "weapon",
+    "element": "volt",
+    "rate": "ssr",
+    "in": ["black", "gold", "red"]
+  },
+  {
+    "id": "scythe-of-the-crow",
+    "name": "Scythe of the Crow",
+    "img": "https://i.imgur.com/DWWzRCB.png",
+    "rarity": "SSR",
+    "type": "weapon",
+    "element": "flame",
+    "rate": "ssr",
+    "in": ["black", "gold", "red"]
+  },
+  {
+    "id": "rosy-edge",
+    "name": "Rosy Edge",
+    "img": "https://i.imgur.com/875Cb7j.png",
+    "rarity": "SSR",
+    "type": "weapon",
+    "element": "ice",
+    "rate": "ssr",
+    "in": ["black", "gold", "red"]
+  },
+  {
+    "id": "dual-em-stars",
+    "name": "Dual EM Stars",
+    "img": "https://i.imgur.com/nhcFE0q.png",
+    "rarity": "SSR",
+    "type": "weapon",
+    "element": "volt",
+    "rate": "ssr",
+    "in": ["black", "gold", "red"]
+  },
+  {
+    "id": "chakram-of-the-seas",
+    "name": "Chakram of the Seas",
+    "img": "https://i.imgur.com/ulpc8Ds.png",
+    "rarity": "SSR",
+    "type": "weapon",
+    "element": "physical",
+    "rate": "ssr",
+    "in": ["black", "gold", "red"]
+  },
+  {
+    "id": "icewind-arrow",
+    "name": "Icewind Arrow",
+    "img": "https://i.imgur.com/PkVAKJ7.png",
+    "rarity": "SSR",
+    "type": "weapon",
+    "element": "ice",
+    "rate": "ssr",
+    "in": ["black", "gold", "red"]
+  },
+  {
+    "id": "negating-cube",
+    "name": "Negating Cube",
+    "img": "https://i.imgur.com/CFGi6ra.png",
+    "rarity": "SSR",
+    "type": "weapon",
+    "element": "flame",
+    "rate": "ssr",
+    "in": ["black", "gold", "red"]
+  },
+  {
+    "id": "nightingale-s-feather",
+    "name": "Nightingale's Feather",
+    "img": "https://i.imgur.com/LudN92V.png",
+    "rarity": "SR",
+    "type": "weapon",
+    "element": "physical",
+    "rate": "sr",
+    "in": ["black", "gold", "red"]
+  },
+  {
+    "id": "thunderous-halberd",
+    "name": "Thunderous Halberd",
+    "img": "https://i.imgur.com/rDCctzY.png",
+    "rarity": "SR",
+    "type": "weapon",
+    "element": "volt",
+    "rate": "sr",
+    "in": ["black", "gold", "red"]
+  },
+  {
+    "id": "pummeler",
+    "name": "Pummeler",
+    "img": "https://i.imgur.com/qGbJrCS.png",
+    "rarity": "SR",
+    "type": "weapon",
+    "element": "ice",
+    "rate": "sr",
+    "in": ["black", "gold", "red"]
+  },
+  {
+    "id": "the-terminator",
+    "name": "The Terminator",
+    "img": "https://i.imgur.com/VvGBjEl.png",
+    "rarity": "SR",
+    "type": "weapon",
+    "element": "ice",
+    "rate": "sr",
+    "in": ["black", "gold", "red"]
+  },
+  {
+    "id": "staff-of-scars",
+    "name": "Staff of Scars",
+    "img": "https://i.imgur.com/JgCxp1E.png",
+    "rarity": "SR",
+    "type": "weapon",
+    "element": "volt",
+    "rate": "sr",
+    "in": ["black", "gold", "red"]
+  },
+  {
+    "id": "weapon-battery-iii",
+    "name": "Weapon Battery III",
+    "img": "https://i.imgur.com/5WrGPjz.png",
+    "rarity": "R",
+    "type": "material",
+    "rate": "heeb",
+    "in": ["gold", "red"]
+  },
+  {
+    "id": "weapon-battery-ii",
+    "name": "Weapon Battery II",
+    "img": "https://i.imgur.com/SDxPc4s.png",
+    "rarity": "N",
+    "type": "material",
+    "rate": "steb",
+    "in": ["black"]
+  },
+  {
+    "id": "weapon-battery-i",
+    "name": "Weapon Battery I",
+    "img": "https://i.imgur.com/oN5kQRs.png",
+    "rarity": "C",
+    "type": "material",
+    "rate": "smeb",
+    "in": ["black"]
+  },
+  {
+    "id": "heart-of-lava",
+    "name": "Heart of Lava",
+    "img": "https://i.imgur.com/H7ksgdj.png",
+    "rarity": "R",
+    "type": "material",
+    "rate": "eheart",
+    "in": ["black"]
+  },
+  {
+    "id": "heart-of-winter",
+    "name": "Heart of Winter",
+    "img": "https://i.imgur.com/gdOJqkI.png",
+    "rarity": "R",
+    "type": "material",
+    "rate": "eheart",
+    "in": ["black"]
+  },
+  {
+    "id": "heart-of-lightning",
+    "name": "Heart of Lightning",
+    "img": "https://i.imgur.com/3KTdXRd.png",
+    "rarity": "R",
+    "type": "material",
+    "rate": "eheart",
+    "in": ["black"]
+  },
+  {
+    "id": "heart-of-summit",
+    "name": "Heart of Summit",
+    "img": "https://i.imgur.com/LyrUS9N.png",
+    "rarity": "R",
+    "type": "material",
+    "rate": "eheart",
+    "in": ["black"]
+  },
+  {
+    "id": "firecore",
+    "name": "Firecore",
+    "img": "https://i.imgur.com/OicK0jL.png",
+    "rarity": "N",
+    "type": "material",
+    "rate": "ecore",
+    "in": ["black"]
+  },
+  {
+    "id": "icecore",
+    "name": "Icecore",
+    "img": "https://i.imgur.com/6sgocsK.png",
+    "rarity": "N",
+    "type": "material",
+    "rate": "ecore",
+    "in": ["black"]
+  },
+  {
+    "id": "magcore",
+    "name": "Magcore",
+    "img": "https://i.imgur.com/1uomgm3.png",
+    "rarity": "N",
+    "type": "material",
+    "rate": "ecore",
+    "in": ["black"]
+  },
+  {
+    "id": "rockcore",
+    "name": "Rockcore",
+    "img": "https://i.imgur.com/LadLn52.png",
+    "rarity": "N",
+    "type": "material",
+    "rate": "ecore",
+    "in": ["black"]
+  }
+]

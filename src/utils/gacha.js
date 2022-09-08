@@ -1,10 +1,9 @@
-const sample = require('lodash.sample');
-const weapons = require('../db/weapons.json');
-const materials = require('../db/materials.json');
+const GachaJS = require('gacha-js');
+
+const gachaItems = require('../db/gacha.json');
 
 const RULES = {
   BLACK_NUCLEUS: {
-    excluded: ['venus', 'balmung'],
     ssr: .3,
     eheart: 1, // Element Heart
     sr: 3,
@@ -14,25 +13,12 @@ const RULES = {
     smeb: 40, // Small Energy Battery
   },
   GOLD_NUCLEUS: { // TODO: Gold nucleus
-    excludeIds: ['venus', 'balmung'],
-    ssr: .3,
-    eheart: 1, // Element Heart
-    sr: 3,
-    steb: 5, // Standard Energy Battery
-    ecore: 20, // Element Core
-    r: 30.7,
-    smeb: 40, // Small Energy Battery
+    ssr: .75, // Guarantee every 80
+    sr: 1, // Guarantee every 10
+    heeb: 6.85,
+    r: 91.4
   }
 };
-
-/**
- * Generate a random number.
- * 
- * @param {Number} min Minimum number
- * @param {Number} max maximum number
- * @returns Random number
- */
-const getRandomArbitrary = (min, max) => Math.random() * (max - min) + min;
 
 /**
  * Pull on black nucleus
@@ -41,37 +27,55 @@ const getRandomArbitrary = (min, max) => Math.random() * (max - min) + min;
  * @returns {Array}
  */
 const blackNucleus = (isTenPull) => {
-  const { BLACK_NUCLEUS: bn } = RULES;
-  let pulls = [];
+  let bn = new GachaJS(
+    RULES.BLACK_NUCLEUS,
+    {
+      collection: gachaItems.filter(_ => _.in.includes('black')),
+      findKey: 'rate'
+    }
+  );
 
-  for (let i = 0; i < (isTenPull ? 10 : 1); i++) {
-    const gacha = getRandomArbitrary(1, 100);
+  const pulls = bn.getPullByCollection(isTenPull ? 10 : 1);
 
-    if (gacha <= bn.ssr) pulls.push('SSR');
-    else if (gacha <= bn.ssr + bn.eheart) pulls.push('Elementheart');
-    else if (gacha <= bn.ssr + bn.eheart + bn.sr) pulls.push('SR');
-    else if (gacha <= bn.ssr + bn.eheart + bn.sr + bn.steb) pulls.push('Standard Energy Battery');
-    else if (gacha <= bn.ssr + bn.eheart + bn.sr + bn.steb + bn.ecore) pulls.push('Elementcore');
-    else if (gacha <= bn.ssr + bn.eheart + bn.sr + bn.steb + bn.ecore + bn.r) pulls.push('R');
-    else if (gacha <= bn.ssr + bn.eheart + bn.sr + bn.steb + bn.ecore + bn.r + bn.smeb) pulls.push('Small Energy Battery');
-    else throw new Error('My gacha is wrong!');
+  return pulls;
+};
+
+const goldNucleus = (isTenPull, isSSRPity) => {
+  let gn = new GachaJS(
+    RULES.GOLD_NUCLEUS,
+    {
+      collection: gachaItems.filter(_ => _.in.includes('gold')),
+      findKey: 'rate'
+    }
+  );
+
+  const pulls = gn.getPullByCollection(isTenPull ? 8 : 1); // Only pull 8 to check if pulls has SSR & SR
+
+  // Check if has SR (Guaranteed SR @ 10 pulls)
+  if (!pulls.some(pull => pull.rate === 'sr')) {
+    const onlySR = gachaItems.filter(_ => (_.in.includes('gold') && _.rate === 'sr')); // Take only SR
+    pulls.push(
+      new GachaJS({ sr: 100 }, { collection: onlySR, findKey: 'rate' })
+        .getPullByCollection()
+    );
+  } else {
+    pulls.push(gn.getPullByCollection());
   }
 
-  for (let i = 0; i < pulls.length; i++) {
-    const pull = pulls[i];
-
-    if (pull === 'SSR' || pull === 'SR' || pull === 'R') {
-      const _weaponCollection = weapons.filter($ => {
-        if (pull === 'SSR') return !bn.excluded.includes($.id);
-        return ($.rarity === pull);
-      });
-      pulls[i] = sample(_weaponCollection);
-    } else {
-      pulls[i] = sample(materials);
-    }
+  // TODO: FIX PITY!!!
+  // Check if has SSR (Guaranteed SSR @ 80 pulls)
+  if (!(isSSRPity % 79)) { // Check if divisible by 79 'cuz 80th is the last KEKW
+    const onlySSR = gachaItems.filter(_ => (_.in.includes('gold') && _.rate === 'ssr')); // Take only SSR
+    pulls.push(
+      new GachaJS({ ssr: 100 }, { collection: onlySSR, findKey: 'rate' })
+        .getPullByCollection()
+    );
+  } else {
+    pulls.push(gn.getPullByCollection());
   }
 
   return pulls;
 };
 
 exports.blackNucleus = blackNucleus;
+exports.goldNucleus = goldNucleus;

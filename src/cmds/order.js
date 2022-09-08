@@ -23,7 +23,7 @@ module.exports = {
         await i.deferUpdate();
         await i.editReply({ content: '*Pulling Gacha...*', components: [] });
 
-        const { pullsEmbed, attachment } = await embed(i.user.username, type);
+        const { pullsEmbed, attachment } = await embed(i.user, type);
         await i.editReply({ content: `<@${i.user.id}>`, embeds: [pullsEmbed], files: [attachment] });
       });
 
