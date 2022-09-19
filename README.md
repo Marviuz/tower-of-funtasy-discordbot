@@ -5,17 +5,19 @@ A fan-made ToF discord bot!
 
 ## Commands
 
-| Command     | Description                     |
-| ----------- | ------------------------------- |
-| /help       | See all commands                |
-| /matrix     | View matrix details             |
-| /order      | GACHAAAAAAAAAAAAAAAAA           |
-| /reminder   | ToF View dailies/weeklies!      |
-| /simulacra  | View simulacra details          |
-| /about      | Nothing much in here            |
-| /contribute | Contribute to this project      |
-| /invite     | Invite this bot to youre server |
-| /support    | Oh! You wanna support me?!      |
+| Command          | Description                                                 |
+| ---------------- | ----------------------------------------------------------- |
+| /help            | See all commands                                            |
+| /joint-operation | View today's Joint Operations                               |
+| /matrix          | View matrix details                                         |
+| /order           | GACHAAAAAAAAAAAAAAAAA                                       |
+| /reminder        | ToF View dailies/weeklies!                                  |
+| /simulacra       | View simulacra details                                      |
+| /about           | Nothing much in here                                        |
+| /contribute      | Contribute to this project                                  |
+| /invite          | Invite this bot to youre server                             |
+| /support         | Oh! You wanna support me?!                                  |
+| /vote            | idk... Every bot seems to have this so I'll add one as well |
 
 ## Support
 
