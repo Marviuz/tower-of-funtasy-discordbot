@@ -60,6 +60,16 @@
     "in": ["red"]
   },
   {
+    "id": "guren-blade",
+    "name": "Guren Blade",
+    "img": "https://i.imgur.com/r2BqpAk.png",
+    "rarity": "SSR",
+    "type": "weapon",
+    "element": "physical",
+    "rate": "ssr",
+    "in": ["red"]
+  },
+  {
     "id": "absolute-zero",
     "name": "Absolute Zero",
     "img": "https://i.imgur.com/sJqskhc.png",

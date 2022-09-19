@@ -12,7 +12,7 @@ const gachaTypes = [
     id: 'gold-nucleus',
     label: 'Gold Nucleus',
     emoji: '🟡',
-    disabled: false
+    disabled: true
   },
   {
     id: 'red-nucleus',

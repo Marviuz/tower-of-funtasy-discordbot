@@ -1,5 +1,13 @@
 [
   {
+    "id": "guren-blade",
+    "name": "Guren Blade",
+    "img": "https://i.imgur.com/r2BqpAk.png",
+    "rarity": "SSR",
+    "type": "dps",
+    "element": "physical"
+  },
+  {
     "id": "combat-blade",
     "name": "Combat Blade",
     "img": "https://i.imgur.com/O5rtSts.png",
