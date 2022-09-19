@@ -1,6 +1,6 @@
 {
   "name": "tower-of-funtasy-discordbot",
-  "version": "0.1.5",
+  "version": "0.2.0",
   "description": "A fan-made ToF discord bot",
   "main": "index.js",
   "scripts": {
