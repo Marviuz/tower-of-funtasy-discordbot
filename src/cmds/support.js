@@ -14,6 +14,10 @@ const buttons = new ActionRowBuilder()
       .setLabel('Ko-fi')
       .setStyle('Link')
       .setURL('https://ko-fi.com/Marviuz/'),
+    new ButtonBuilder()
+      .setLabel('Donatebot')
+      .setStyle('Link')
+      .setURL('https://donatebot.io/checkout/901250917402288149'),
   );
 
 module.exports = {

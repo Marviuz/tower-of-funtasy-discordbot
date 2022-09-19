@@ -1,0 +1,50 @@
+<html lang="en">
+
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body,
+    #app {
+      width: 1920px;
+      margin: 0;
+      padding: 0;
+      background-color: transparent !important;
+    }
+
+    img {
+      height: 100%;
+      width: auto;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .col {
+      width: 384px;
+      height: 360px;
+      display: flex;
+      justify-content: center;
+      padding: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="app">
+    <div class="row">
+      {{#each data}}
+        <div class="col">
+          <img src="{{this.img}}" style="background-color: {{this.bgColor}};">
+        </div>
+      {{/each}}
+    </div>
+  </div>
+</body>
+
+</html>
