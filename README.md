@@ -1,7 +1,6 @@
 # Tower of FUNtasy
 
-A fan-made ToF discord bot!
-[Invite this bot!](https://discord.com/api/oauth2/authorize?client_id=1013445171536482326&permissions=8&scope=applications.commands%20bot)
+A fan-made ToF discord bot! [![InviteB Bot](https://img.shields.io/badge/-Invite%20Bot!-5865F2?logo=discord&logoColor=white)](https://top.gg/bot/1013445171536482326)
 
 ## Commands
 
