@@ -5,6 +5,7 @@
     "simulacraImg": "https://i.imgur.com/cimh8Ti.png",
     "weaponImg": "https://i.imgur.com/ODDgHiX.png",
     "name": "Cobalt-B",
+    "rarity": "SSR",
     "weapon": "Blazing Revolver",
     "element": "flame",
     "type": "dps",
@@ -54,9 +55,7 @@
         "seal"
       ]
     }
-
   },
-
   {
     "id": "claudia",
     "weaponId": "guren-blade",
