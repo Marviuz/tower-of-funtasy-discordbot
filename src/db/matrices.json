@@ -1,5 +1,13 @@
 [
   {
+    "matrixId": "cobalt-b-matrix",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/cobalt-b.webp",
+    "name": "Cobalt-B",
+    "rarity": "SSR",
+    "two": "Restore 1 dodge every 4 dodges. Dodge attacks add burn to the target, dealing 13%/17%/21%/25% attack damage per second for 10 seconds.",
+    "four": "Increases damage by 13%/17%/21%/25% to targets with abnormal statuses"
+  },
+  {
     "matrixId": "claudia-matrix",
     "matrixImg": "https://toweroffantasy.info/static/images/matrices/claudia.webp",
     "name": "Claudia",
