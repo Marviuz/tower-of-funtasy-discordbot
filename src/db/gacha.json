@@ -67,6 +67,16 @@
     "type": "weapon",
     "element": "physical",
     "rate": "ssr",
+    "in": []
+  },
+  {
+    "id": "blazing-revolver",
+    "name": "Blazing Revolver",
+    "img": "https://i.imgur.com/ODDgHiX.png",
+    "rarity": "SSR",
+    "type": "weapon",
+    "element": "flame",
+    "rate": "ssr",
     "in": ["red"]
   },
   {
