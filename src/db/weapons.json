@@ -1,5 +1,13 @@
 [
   {
+    "id": "blazing-revolver",
+    "name": "Blazing Revolver",
+    "img": "https://i.imgur.com/ODDgHiX.png",
+    "rarity": "SSR",
+    "type": "dps",
+    "element": "flame"
+  },
+  {
     "id": "guren-blade",
     "name": "Guren Blade",
     "img": "https://i.imgur.com/r2BqpAk.png",
