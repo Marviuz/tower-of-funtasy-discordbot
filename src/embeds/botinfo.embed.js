@@ -6,7 +6,17 @@ const { repository } = require('../../package.json');
 const client = require("../../index")
 
 const botinfoEmbed = () => {
-    const result = new EmbedBuilder()
+
+    let totalMembers = 0
+
+    client.guilds.cache.forEach(guild => {
+        totalMembers += guild.memberCount
+    });
+
+    console.log(client.guilds.cache.size) // Number on guilds
+    console.log(totalMembers) //total members
+
+    const embed = new EmbedBuilder()
         .setColor("White")
         .setTitle('Some title')
         .setURL('https://discord.js.org/')
@@ -16,7 +26,7 @@ const botinfoEmbed = () => {
         .setTimestamp()
         .setFooter({ text: 'Some footer text here', iconURL: 'https://i.imgur.com/AfFp7pu.png' });
 
-  return result;
+  return embed;
 };
 
 module.exports = botinfoEmbed;
