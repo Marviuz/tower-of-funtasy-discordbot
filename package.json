@@ -1,6 +1,6 @@
 {
   "name": "tower-of-funtasy-discordbot",
-  "version": "0.1.4",
+  "version": "0.2.0",
   "description": "A fan-made ToF discord bot",
   "main": "index.js",
   "scripts": {
@@ -23,8 +23,9 @@
     "gacha-js": "github:marviuz/gacha-js",
     "imgur": "^2.2.0",
     "lodash.sample": "^4.2.1",
-    "lokijs": "^1.5.12",
-    "node-html-to-image": "^3.2.4"
+    "mysql2": "^2.3.3",
+    "node-html-to-image": "^3.2.4",
+    "sequelize": "^6.25.0"
   },
   "devDependencies": {
     "dotenv": "^16.0.1",

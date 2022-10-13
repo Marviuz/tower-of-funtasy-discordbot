@@ -1,7 +1,7 @@
 const { SlashCommandBuilder } = require('discord.js');
 const path = require('path');
+const { getSimulacrum } = require('../controllers/simulacra.controller');
 
-const simulacra = require('../db/simulacra.json');
 const simulacraEmbed = require('../embeds/simulacra.embed');
 
 const NAME = path.parse(__filename).name;
@@ -17,17 +17,19 @@ module.exports = {
     .addStringOption(option => option.setName(NAME).setDescription('Name of the simulacra').setRequired(true)),
   async execute(interaction) {
     await interaction.deferReply();
-    const simulacrum = await interaction.options.getString(NAME);
-    const [match] = simulacra.filter(({ name }) => name.toLowerCase() === simulacrum.toLowerCase());
 
-    if (!match) return await interaction.editReply('No match!'); // TODO: Better message
+    const _simulacrumInput = await interaction.options.getString(NAME);
+    const _simulacrum = await getSimulacrum(_simulacrumInput);
 
-    const { embed, actions, buttons } = simulacraEmbed(match);
+    if (!_simulacrum) return await interaction.editReply('No match!');
+
+    const { embed, actions, buttons } = simulacraEmbed(_simulacrum);
     await interaction.editReply({ embeds: [embed.basicDetails], components: [actions('basicDetails')] });
 
     buttons.forEach(button => {
       const filter = i => i.customId === button.id && i.message.interaction.id === interaction.id;
       const collector = interaction.channel.createMessageComponentCollector({ filter });
+
       collector.on('collect', async i => {
         await i.deferUpdate();
         await i.editReply({ embeds: [embed[button.id]], components: [actions(button.id)] });

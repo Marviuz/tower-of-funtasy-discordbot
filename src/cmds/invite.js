@@ -9,7 +9,7 @@ const button = new ActionRowBuilder()
     new ButtonBuilder()
       .setLabel('Invite!')
       .setStyle('Link')
-      .setURL('https://discord.com/api/oauth2/authorize?client_id=1013445171536482326&permissions=8&scope=applications.commands%20bot')
+      .setURL('https://top.gg/bot/1013445171536482326')
   );
 
 module.exports = {
