@@ -2,7 +2,7 @@ const { Client, GatewayIntentBits, Collection } = require('discord.js');
 const path = require('path');
 const fs = require('fs');
 
-const client = new Client({
+module.exports = client = new Client({
   restRequestTimeout: 60000,
   intents: [GatewayIntentBits.Guilds],
   presence: {
@@ -10,6 +10,7 @@ const client = new Client({
     activities: [{ name: '/help', }]
   }
 });
+
 
 require('./src/deploy-commands'); // Register commands
 
