@@ -12,7 +12,7 @@ const gachaTypes = [
     id: 'gold-nucleus',
     label: 'Gold Nucleus',
     emoji: '🟡',
-    disabled: false
+    disabled: true
   },
   {
     id: 'red-nucleus',
@@ -42,8 +42,7 @@ const embed = async (user, type) => {
     pullsEmbed: new EmbedBuilder()
       .setTitle(`${user.username}'s ${type.label} pulls!`)
       .setImage('attachment://pull.png')
-      .setTimestamp()
-      .addFields({ name: `Pity ${pity}/80`, value: pulls.map(_ => _.name).join('\n') }),
+      .setTimestamp(),
     attachment
   };
 };

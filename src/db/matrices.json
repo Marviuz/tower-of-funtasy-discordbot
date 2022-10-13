@@ -1,5 +1,21 @@
 [
   {
+    "matrixId": "cobalt-b-matrix",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/cobalt-b.webp",
+    "name": "Cobalt-B",
+    "rarity": "SSR",
+    "two": "Restore 1 dodge every 4 dodges. Dodge attacks add burn to the target, dealing 13%/17%/21%/25% attack damage per second for 10 seconds.",
+    "four": "Increases damage by 13%/17%/21%/25% to targets with abnormal statuses"
+  },
+  {
+    "matrixId": "claudia-matrix",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/claudia.webp",
+    "name": "Claudia",
+    "rarity": "SSR",
+    "two": "Increase damage by 13%/17%/20%/23% when hitting a target in mid-air or initiating an aerial attack. Reset double-jump upon hitting the target in mid-air.",
+    "four": "Hitting an enemy with a skill reduces the cooldowns of all weapon skills by 1.5/2/2.5/3 seconds and increases the damage of discharge skills by 58%/80%/103%/126% for 15 seconds."
+  },
+  {
     "matrixId": "huma-matrix",
     "matrixImg": "https://toweroffantasy.info/static/images/matrices/huma.webp",
     "name": "Huma",

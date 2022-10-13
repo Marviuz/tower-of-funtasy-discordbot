@@ -1,0 +1,170 @@
+[
+  {
+    "id": "fortress-bracers",
+    "type": "equipment",
+    "name": "Fortress Bracers",
+    "img": "https://i.imgur.com/t0EhgqZ.png",
+    "rarity": "SSR"
+  },
+  {
+    "id": "fortress-armor",
+    "type": "equipment",
+    "name": "Fortress Armor",
+    "img": "https://i.imgur.com/7XcP0cA.png",
+    "rarity": "SSR"
+  },
+  {
+    "id": "fortress-legguards",
+    "type": "equipment",
+    "name": "Fortress Legguards",
+    "img": "https://i.imgur.com/wHf0e3T.png",
+    "rarity": "SSR"
+  },
+  {
+    "id": "fortress-handguards",
+    "type": "equipment",
+    "name": "Fortress Handguards",
+    "img": "https://i.imgur.com/9Fu6ucr.png",
+    "rarity": "SSR"
+  },
+  {
+    "id": "fortress-sabatons",
+    "type": "equipment",
+    "name": "Fortress Sabatons",
+    "img": "https://i.imgur.com/nG7e7tU.png",
+    "rarity": "SSR"
+  },
+  {
+    "id": "fortress-belt",
+    "type": "equipment",
+    "name": "Fortress Belt",
+    "img": "https://i.imgur.com/STwOVqT.png",
+    "rarity": "SSR"
+  },
+  {
+    "id": "fortress-spaulders",
+    "type": "equipment",
+    "name": "Fortress Spaulders",
+    "img": "https://i.imgur.com/VWkZOUI.png",
+    "rarity": "SSR"
+  },
+  {
+    "id": "fortress-helm",
+    "type": "equipment",
+    "name": "Fortress Helm",
+    "img": "https://i.imgur.com/eTETATJ.png",
+    "rarity": "SSR"
+  },
+  {
+    "id": "elite-armbands",
+    "type": "equipment",
+    "name": "Elite Armbands",
+    "img": "https://i.imgur.com/VCYnwNS.png",
+    "rarity": "SR"
+  },
+  {
+    "id": "elite-combat-suit",
+    "type": "equipment",
+    "name": "Elite Combat Suit",
+    "img": "https://i.imgur.com/uy3GZGI.png",
+    "rarity": "SR"
+  },
+  {
+    "id": "elite-combat-leggings",
+    "type": "equipment",
+    "name": "Elite Combat Leggings",
+    "img": "https://i.imgur.com/1ICFoLD.png",
+    "rarity": "SR"
+  },
+  {
+    "id": "elite-gloves",
+    "type": "equipment",
+    "name": "Elite Gloves",
+    "img": "https://i.imgur.com/dghisZt.png",
+    "rarity": "SR"
+  },
+  {
+    "id": "elite-combat-boots",
+    "type": "equipment",
+    "name": "Elite Combat Boots",
+    "img": "https://i.imgur.com/dvn0NQf.png",
+    "rarity": "SR"
+  },
+  {
+    "id": "elite-combat-belt",
+    "type": "equipment",
+    "name": "Elite Combat Belt",
+    "img": "https://i.imgur.com/ctzrZjG.png",
+    "rarity": "SR"
+  },
+  {
+    "id": "elite-shoulderguards",
+    "type": "equipment",
+    "name": "Elite Shoulderguards",
+    "img": "https://i.imgur.com/e3EpWUI.png",
+    "rarity": "SR"
+  },
+  {
+    "id": "elite-combat-helmet",
+    "type": "equipment",
+    "name": "Elite Combat Helmet",
+    "img": "https://i.imgur.com/TipgdUs.png",
+    "rarity": "SR"
+  },
+  {
+    "id": "falcon-wristbands",
+    "type": "equipment",
+    "name": "Falcon Wristbands",
+    "img": "https://i.imgur.com/4Ia0Udc.png",
+    "rarity": "R"
+  },
+  {
+    "id": "falcon-combat-suit",
+    "type": "equipment",
+    "name": "Falcon Combat Suit",
+    "img": "https://i.imgur.com/hosFXLq.png",
+    "rarity": "R"
+  },
+  {
+    "id": "falcon-combat-leggings",
+    "type": "equipment",
+    "name": "Falcon Combat Leggings",
+    "img": "https://i.imgur.com/tMAI3JV.png",
+    "rarity": "R"
+  },
+  {
+    "id": "falcon-gloves",
+    "type": "equipment",
+    "name": "Falcon Gloves",
+    "img": "https://i.imgur.com/QChNbFU.png",
+    "rarity": "R"
+  },
+  {
+    "id": "falcon-combat-boots",
+    "type": "equipment",
+    "name": "Falcon Combat Boots",
+    "img": "https://i.imgur.com/79Wy3rL.png",
+    "rarity": "R"
+  },
+  {
+    "id": "falcon-belt",
+    "type": "equipment",
+    "name": "Falcon Belt",
+    "img": "https://i.imgur.com/W4dQPmx.png",
+    "rarity": "R"
+  },
+  {
+    "id": "falcon-shoulderguards",
+    "type": "equipment",
+    "name": "Falcon Shoulderguards",
+    "img": "https://i.imgur.com/0FYmaKQ.png",
+    "rarity": "R"
+  },
+  {
+    "id": "falcon-combat-helmet",
+    "type": "equipment",
+    "name": "Falcon Combat Helmet",
+    "img": "https://i.imgur.com/PsTVvzs.png",
+    "rarity": "R"
+  }
+]

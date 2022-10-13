@@ -1,5 +1,119 @@
 [
   {
+    "id": "cobalt-b",
+    "weaponId": "blazing-revolver",
+    "simulacraImg": "https://i.imgur.com/cimh8Ti.png",
+    "weaponImg": "https://i.imgur.com/ODDgHiX.png",
+    "name": "Cobalt-B",
+    "rarity": "SSR",
+    "weapon": "Blazing Revolver",
+    "element": "flame",
+    "type": "dps",
+    "baseStats": ["attack", "health", "crit"],
+    "shatter": { "rank":"S", "value": 12.5 },
+    "charge": { "rank": "A", "value": 10 },
+    "materials": ["flame", "red", "black"],
+    "effect": [
+      {
+        "title": "Flame",
+        "description": "Fully charged weapons will set the target on fire for 8 seconds with the next attack, causing ongoing damage of 58.00% of ATK every second. Ignited targets receive 50% efficacy from healing."
+      },
+      {
+        "title": "Flame Resonance",
+        "description": "Increase flame attack by 15% and flame resistance by 25%. Activate by equipping two or more flame weapons. This set effect also works with weapons in the off-hand slot. This effect does not stack repeatedly."
+      }
+    ], 
+    "advancement": [
+      "Each round of attacks deals additional damage equal to 2% of the target's current HP (cannot exceed 180% of ATK).",
+      "Increase the current weapon's base ATK growth by 16%.",
+      "Heavy Bombardment branch skill and Close Quarters dodge attack inflict Ion Scorch on targets that are already burned, dealing flame damage equal to 40% of ATK every second for 10 seconds.",
+      "Increase the current weapon's base ATK growth by 32%.",
+      "The damage from Ion Scorch increases to 60% of ATK. Successful attacks with any weapon's dodge skill will refresh the duration of Ion Scorch.",
+      "Barrage inflicts burn for 15 seconds. Successful attacks with any weapon's dodge skills reduce the cooldown of Barrage by 4 seconds. This effect has a 1.5 second cooldown."
+    ],
+    "awakening": {
+      "1200": "After Cobalt-B uses her discharge skill, restores a random amount of weapons charge between 50 to 120 points.",
+      "4000": "After Cobalt-B uses her discharge skill, restores a random amount of weapons charge between 90 to 180 points."
+    },
+    "gifts": {
+      "15": ["dumbbells", "snackBox", "strangePlant"],
+      "30": ["necklace", "toolbox", "strangeFragment"],
+      "60": [
+        "tataCards",
+        "foxFigure",
+        "catFigure",
+        "bearFigure",
+        "tataFigure",
+        "present",
+        "psp",
+        "linyeFigure",
+        "pearl"
+      ],
+      "80": [
+        "kitchenware",
+        "goldCoin",
+        "seal"
+      ]
+    }
+  },
+  {
+    "id": "claudia",
+    "weaponId": "guren-blade",
+    "simulacraImg": "https://i.imgur.com/IwT2ddq.png",
+    "weaponImg": "https://i.imgur.com/r2BqpAk.png",
+    "name": "Claudia",
+    "rarity": "SSR",
+    "weapon": "Guren Blade",
+    "element": "physical",
+    "type": "dps",
+    "baseStats": ["attack", "resistance", "health"],
+    "shatter": { "rank": "A", "value": 7.5 },
+    "charge": { "rank": "S", "value": 12 },
+    "materials": ["physical", "red", "blue"],
+    "effect": [
+      {
+        "title": "Grievous",
+        "description": "Fully charged weapons will inflict damage equal to 137.00% of ATK with the next attack, and make the target grievous for 7 seconds, taking 20% extra damage."
+      },
+      {
+        "title": "Physical Resonance",
+        "description": "Increase physical ATK by **15%** and physical resistance by **25%**. Activate by equipping **2** or more physical-damage weapons. This set also works with weapons in the off-hand slot. This effect does not stack repeatedly."
+      }
+    ],
+    "advancement": [
+      "After hitting a target with a skill or discharge skill, grant 1 stack of the following buff: Increase damage dealt by **8%** for **25** seconds, stacking up to **3** times for a maximum of 1 stack per skill use.",
+      "Increase the current weapon's base ATK growth by **16%**.",
+      "When hitting a target with a skill or discharge skill, apply 1 stack of War Wounds to the target: Increase incoming physical damage and shatter from physical weapons by **10%** for **15** seconds. Stack up to **1** time.",
+      "Increase the current weapon's base HP growth by **32%**.",
+      "Hitting targets with skills or discharge skills grants Skill Damage Boost, which increases all weapon skill damage by **20%** for **25** seconds. This effect cannot be stacked.",
+      "Skills hitting the same target no longer have reduced damage. After using Guren Blade's skills or discharge skill, all targets with War Wounds within 8 meters gain another **1** stack of War Wounds."
+    ],
+    "awakening": {
+      "1200": "Go invisible for **1** seconds upon dodging.",
+      "4000": "Go invisible for **1.5** seconds upon dodging."
+    },
+    "gifts": {
+      "15": ["flowers", "photoAlbum", "photo", "scarf", "plant", "harmonica"],
+      "30": [
+        "suit",
+        "juicePouch",
+        "vial",
+        "perfume",
+        "spiderFigure",
+        "elfFigure"
+      ],
+      "60": [
+        "seal",
+        "tataCards",
+        "miaFigure",
+        "catFigure",
+        "princeTataFigure",
+        "ufo"
+      ],
+      "80": ["snowglobe", "peppaFigure"]
+    }
+  },
+  {
     "id": "frigg",
     "weaponId": "balmung",
     "simulacraImg": "https://i.imgur.com/aIGOiOV.png",

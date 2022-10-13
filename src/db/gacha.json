@@ -60,6 +60,26 @@
     "in": ["red"]
   },
   {
+    "id": "guren-blade",
+    "name": "Guren Blade",
+    "img": "https://i.imgur.com/r2BqpAk.png",
+    "rarity": "SSR",
+    "type": "weapon",
+    "element": "physical",
+    "rate": "ssr",
+    "in": []
+  },
+  {
+    "id": "blazing-revolver",
+    "name": "Blazing Revolver",
+    "img": "https://i.imgur.com/ODDgHiX.png",
+    "rarity": "SSR",
+    "type": "weapon",
+    "element": "flame",
+    "rate": "ssr",
+    "in": ["red"]
+  },
+  {
     "id": "absolute-zero",
     "name": "Absolute Zero",
     "img": "https://i.imgur.com/sJqskhc.png",

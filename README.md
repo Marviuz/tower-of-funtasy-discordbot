@@ -1,21 +1,22 @@
 # Tower of FUNtasy
 
-A fan-made ToF discord bot!
-[Invite this bot!](https://discord.com/api/oauth2/authorize?client_id=1013445171536482326&permissions=8&scope=applications.commands%20bot)
+A fan-made ToF discord bot! [![Invite Bot](https://img.shields.io/badge/-Invite%20Bot!-5865F2?logo=discord&logoColor=white)](https://top.gg/bot/1013445171536482326)
 
 ## Commands
 
-| Command     | Description                     |
-| ----------- | ------------------------------- |
-| /help       | See all commands                |
-| /matrix     | View matrix details             |
-| /order      | GACHAAAAAAAAAAAAAAAAA           |
-| /reminder   | ToF View dailies/weeklies!      |
-| /simulacra  | View simulacra details          |
-| /about      | Nothing much in here            |
-| /contribute | Contribute to this project      |
-| /invite     | Invite this bot to youre server |
-| /support    | Oh! You wanna support me?!      |
+| Command          | Description                                                 |
+| ---------------- | ----------------------------------------------------------- |
+| /help            | See all commands                                            |
+| /joint-operation | View today's Joint Operations                               |
+| /matrix          | View matrix details                                         |
+| /order           | GACHAAAAAAAAAAAAAAAAA                                       |
+| /reminder        | ToF View dailies/weeklies!                                  |
+| /simulacra       | View simulacra details                                      |
+| /about           | Nothing much in here                                        |
+| /contribute      | Contribute to this project                                  |
+| /invite          | Invite this bot to youre server                             |
+| /support         | Oh! You wanna support me?!                                  |
+| /vote            | idk... Every bot seems to have this so I'll add one as well |
 
 ## Support
 
