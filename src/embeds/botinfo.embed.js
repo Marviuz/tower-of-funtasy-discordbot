@@ -77,7 +77,7 @@ const botinfoEmbed = () => {
             { 
                 name: 'Links:',
                 value:`
-                <:github:892323399806890084> [Repository Github](${repository.url.replace('.git', ' ')})
+                <:github:892323399806890084> [Github Repository](${repository.url.replace('.git', ' ')})
                 :globe_with_meridians: Website not available
                 `
             },
