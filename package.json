@@ -31,7 +31,7 @@
     "lokijs": "^1.5.12",
     "mongoose": "^6.6.5",
     "node-html-to-image": "^3.2.4",
-    "pretty-ms": "^8.0.0"
+    "pretty-ms": "^7.0.1"
   },
   "devDependencies": {
     "dotenv": "^16.0.1",
