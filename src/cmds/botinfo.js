@@ -16,8 +16,6 @@ module.exports = {
     .setName(NAME)
     .setDescription(DESCRIPTION),
   async execute(interaction) {
-    const embed = botinfoEmbed();
-
-    await interaction.reply({ embeds: [embed] });
+    await interaction.reply({ embeds: [botinfoEmbed()] });
   },
 };
