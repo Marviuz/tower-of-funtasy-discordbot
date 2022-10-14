@@ -13,6 +13,7 @@ A fan-made ToF discord bot! [![Invite Bot](https://img.shields.io/badge/-Invite%
 | /reminder        | ToF View dailies/weeklies!                                  |
 | /simulacra       | View simulacra details                                      |
 | /about           | Nothing much in here                                        |
+| /botinfo         | Give information about the bot                              |
 | /contribute      | Contribute to this project                                  |
 | /invite          | Invite this bot to youre server                             |
 | /support         | Oh! You wanna support me?!                                  |
