@@ -14,17 +14,24 @@
     "tof",
     "gacha"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Marviuz/tower-of-funtasy-discordbot"
+  },
   "author": "Marviuz",
   "license": "MIT",
   "dependencies": {
     "@discordjs/rest": "^1.1.0",
+    "cpu-stat": "^2.0.1",
     "discord.js": "^14.3.0",
     "express": "^4.18.1",
     "gacha-js": "github:marviuz/gacha-js",
     "imgur": "^2.2.0",
     "lodash.sample": "^4.2.1",
     "lokijs": "^1.5.12",
-    "node-html-to-image": "^3.2.4"
+    "mongoose": "^6.6.5",
+    "node-html-to-image": "^3.2.4",
+    "pretty-ms": "^7.0.1"
   },
   "devDependencies": {
     "dotenv": "^16.0.1",
