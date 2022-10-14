@@ -28,8 +28,6 @@
     "gacha-js": "github:marviuz/gacha-js",
     "imgur": "^2.2.0",
     "lodash.sample": "^4.2.1",
-    "lokijs": "^1.5.12",
-    "mongoose": "^6.6.5",
     "node-html-to-image": "^3.2.4",
     "pretty-ms": "^7.0.1"
   },
