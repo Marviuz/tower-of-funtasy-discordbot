@@ -1,5 +1,4 @@
 const { EmbedBuilder, version } = require('discord.js');
-var cpuStat = require('cpu-stat');
 const { repository } = require('../../package.json');
 const prettyMilliseconds = require("pretty-ms")
 const path = require("path")
@@ -7,11 +6,11 @@ const fs = require('fs')
 
 const client = require("../../index")
 
+
 const botinfoEmbed = () => {
 
     let totalMembers = 0
     let totalCommands = 0
-    let CPUpercent
 
     client.guilds.cache.forEach(guild => {
         totalMembers += guild.memberCount
@@ -21,10 +20,24 @@ const botinfoEmbed = () => {
         totalCommands += 1
     })
 
-    cpuStat.usagePercent(function(err, percent, seconds) {
-        CPUpercent = percent
-    });
+    var startTime  = process.hrtime()
+    var startUsage = process.cpuUsage()
 
+    // spin the CPU for 500 milliseconds
+    var now = Date.now()
+    while (Date.now() - now < 500)
+
+    var elapTime = process.hrtime(startTime)
+    var elapUsage = process.cpuUsage(startUsage)
+
+    var cpuPercent = Math.round(100 * (secNSec2ms(elapUsage.user) + secNSec2ms(elapUsage.system)) / secNSec2ms(elapTime))
+
+    function secNSec2ms (secNSec) {
+        if (Array.isArray(secNSec)) { 
+            return secNSec[0] * 1000 + secNSec[1] / 1000000; 
+        }
+        return secNSec / 1000;
+    }
 
     const embed = new EmbedBuilder()
         .setColor("White")
@@ -70,7 +83,7 @@ const botinfoEmbed = () => {
                 value:`
                 :chart_with_downwards_trend: **Total memory used :** ${(process.memoryUsage().heapTotal / 1024 / 1024).toFixed(2)} MB
                 :bar_chart: **Memory used :** ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB
-                :chart_with_upwards_trend: **CPU percent :** ${Math.round(CPUpercent)}%
+                :chart_with_upwards_trend: **CPU percent :** ${cpuPercent}%
                 :arrows_counterclockwise: **Last restart :** ${prettyMilliseconds(process.uptime().toFixed(2) * 1000)}
                 `
             },
@@ -82,7 +95,6 @@ const botinfoEmbed = () => {
                 `
             },
         )
-
 
   return embed;
 };
