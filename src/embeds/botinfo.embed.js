@@ -54,7 +54,7 @@ const botinfoEmbed = () => {
                 value:`
                 :hash: **Tag :** ${client.user.tag}
                 :gear: **Version :** ${require("../../package.json").version}
-                :pushpin: **Prefix :** /
+                :pushpin: **Prefix :** Slash Commands (/)
                 <:discorddeveloperbadge:892323387408519218> **Developers :** Marviuz#8781
                 `
             },
