@@ -14,7 +14,12 @@ module.exports = {
   data: new SlashCommandBuilder()
     .setName(NAME)
     .setDescription(DESCRIPTION)
-    .addStringOption(option => option.setName(NAME).setDescription('Name of the simulacra').setRequired(true)),
+    .addStringOption(option => 
+      option.setName(NAME)
+        .setDescription('Name of the simulacra')
+        .setRequired(true)
+        .addChoices(...simulacra.map(simulacra => ({ name: simulacra.name, value: simulacra.name.toLowerCase() })))
+      ),
   async execute(interaction) {
     await interaction.deferReply();
     const simulacrum = await interaction.options.getString(NAME);
