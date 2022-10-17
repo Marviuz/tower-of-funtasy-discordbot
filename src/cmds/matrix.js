@@ -14,7 +14,12 @@ module.exports = {
   data: new SlashCommandBuilder()
     .setName(NAME)
     .setDescription(DESCRIPTION)
-    .addStringOption(option => option.setName(NAME).setDescription('Name of the matrix').setRequired(true)),
+    .addStringOption(option => 
+      option.setName(NAME)
+        .setDescription('Name of the matrix')
+        .setRequired(true)
+        //.setChoices(...matrices.map(matrix => ({ name: matrix.name, value: matrix.name.toLowerCase() }))) choices must be <= 25 but they have 30 matrix
+      ),
   async execute(interaction) {
     const matrix = await interaction.options.getString(NAME);
 
