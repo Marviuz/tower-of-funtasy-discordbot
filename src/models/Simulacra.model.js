@@ -12,7 +12,7 @@ const Simulacra = (sequelize) => {
     weapon: DataTypes.STRING,
     weaponImg: DataTypes.STRING,
     name: DataTypes.STRING,
-    rarity: DataTypes.ENUM("SSR", "SR", "R", "C"),
+    rarity: DataTypes.ENUM("SSR", "SR", "R", "N"),
     element: DataTypes.ENUM("flame", "ice", 'volt', 'physical', 'aberration'),
     type: DataTypes.ENUM("dps", 'support', 'defense'),
     baseStats: DataTypes.JSON,

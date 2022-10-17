@@ -14,3 +14,4 @@ sequelize
 
 exports.sequelize = sequelize;
 exports.Simulacra = require('./Simulacra.model')(sequelize);
+exports.Matrices = require('./Matrices.model')(sequelize);
