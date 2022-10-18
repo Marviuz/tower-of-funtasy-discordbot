@@ -1,9 +1,14 @@
 module.exports = {
   name: 'interactionCreate',
   async execute(interaction) {
-    if (!interaction.isChatInputCommand() || interaction.isButton()) return;
-
+    
     const command = interaction.client.commands.get(interaction.commandName);
+
+    if(interaction.isAutocomplete()) {
+      await command.autocomplete(interaction)
+    }
+
+    if (!interaction.isChatInputCommand() || interaction.isButton()) return;
 
     if (!command) return;
 
