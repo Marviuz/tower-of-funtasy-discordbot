@@ -40,7 +40,7 @@ module.exports = {
     const _jointOps = selectedJo.map(async _ => await jointOperationsEmbed(_));
     Promise.all(_jointOps)
       .then(values => {
-        interaction.editReply({ embeds: values.map(_ => _.embed), files: values.map(_ => _.attachment) });
+        interaction.editReply({ embeds: values.map(_ => _.embed) });
       });
   },
 };
