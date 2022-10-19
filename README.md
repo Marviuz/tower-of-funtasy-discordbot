@@ -12,6 +12,7 @@ A fan-made ToF discord bot! [![Invite Bot](https://img.shields.io/badge/-Invite%
 | /order           | GACHAAAAAAAAAAAAAAAAA                                       |
 | /reminder        | ToF View dailies/weeklies!                                  |
 | /simulacra       | View simulacra details                                      |
+| /userinfo        | View information of a player in ToF.                        |
 | /about           | Nothing much in here                                        |
 | /botinfo         | Give information about the bot                              |
 | /contribute      | Contribute to this project                                  |
