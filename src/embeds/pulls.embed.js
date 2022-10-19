@@ -1,35 +1,36 @@
 const { EmbedBuilder, ActionRowBuilder, ButtonBuilder, AttachmentBuilder } = require('discord.js');
+const { blackNucleus, goldNucleus, redNucleus, proofOfPurchase, specialVoucher, blackNucleusColor } = require('../utils/app-constants');
 const pull = require('../utils/pull');
 
 const gachaTypes = [
   {
     id: 'black-nucleus',
     label: 'Black Nucleus',
-    emoji: '⚫',
+    emoji: blackNucleus,
     disabled: false
   },
   {
     id: 'gold-nucleus',
     label: 'Gold Nucleus',
-    emoji: '🟡',
+    emoji: goldNucleus,
     disabled: true
   },
   {
     id: 'red-nucleus',
     label: 'Red Nucleus',
-    emoji: '🔴',
+    emoji: redNucleus,
     disabled: true
   },
   {
     id: 'matrix',
     label: 'Matrix',
-    emoji: '🟨',
+    emoji: proofOfPurchase,
     disabled: true
   },
   {
     id: 'limited-matrix',
     label: 'Limited Matrix',
-    emoji: '🟥',
+    emoji: specialVoucher,
     disabled: true
   },
 ];
@@ -37,13 +38,15 @@ const gachaTypes = [
 const embed = async (user, type) => {
   const { pulls, img, pity } = await pull(true, type.id, user);
   const attachment = new AttachmentBuilder(img, { name: 'pull.png' });
+  const color = type.id === 'black-nucleus' ? blackNucleusColor : blackNucleus; // Everything is colored to black nuc for now
 
   return {
     pullsEmbed: new EmbedBuilder()
       .setTitle(`${user.username}'s ${type.label} pulls!`)
       .setImage('attachment://pull.png')
       .setTimestamp()
-      .setFooter({ text: 'Artwork by Ao#9968' }),
+      .setFooter({ text: 'Artwork by Ao#9968' })
+      .setColor(color),
     attachment
   };
 };

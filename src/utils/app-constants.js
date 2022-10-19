@@ -146,3 +146,11 @@ exports.suppresors = {
   '07_4': '<:07_4:1032123132607213608>',
   '07_5': '<:07_5:1032123153171877908>'
 };
+
+exports.goldNucleus = '<:goldNuc:1032262629315596419>';
+exports.blackNucleus = '<:blackNuc:1032259811091419136>';
+exports.redNucleus = '<:redNuc:1032262624781541437>';
+exports.specialVoucher = '<:specialVoucher:1032262626891288689>';
+exports.proofOfPurchase = '<:proofOfPurchase:1032262622705364993>';
+
+exports.blackNucleusColor = 0x912cd2;
