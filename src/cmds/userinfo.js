@@ -61,7 +61,7 @@ module.exports = {
       await interaction.editReply({ components: [selectMenu(response)], embeds: [embed] });
 
       const filter = i => (i.customId === 'player-menu') && i.message.interaction.id === interaction.id;
-      const collector = interaction.channel.createMessageComponentCollector({ time: 15000, filter });
+      const collector = interaction.channel.createMessageComponentCollector({ time: 30000, filter });
       collector.on('collect', async i => {
         await i.update({ embeds: [userInfoEmbed(response[Number(i.values[0])])] });
         collector.resetTimer(); // Reset timer when user is still interacting
