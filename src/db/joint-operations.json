@@ -1,8 +1,10 @@
 [
-  {
+  { 
     "name": "Spacetime Training Ground",
     "availability": ["friday", "sunday"],
-    "resistance": ["frost", "flame"],
+    "resistance": ["ice", "flame"],
+    "img": "https://i.imgur.com/zzk8Pmq.png",
+    "timestamp": [1666321200, 1666494000],
     "rewards": [
       { "type": "equipment", "id": "fortress-bracers" },
       { "type": "equipment", "id": "fortress-armor" },
@@ -20,7 +22,9 @@
   {
     "name": "Deepsea Stronghold",
     "availability": ["tuesday", "saturday"],
-    "resistance": ["physical", "frost"],
+    "resistance": ["physical", "ice"],
+    "img": "https://i.imgur.com/xjFmoag.png",
+    "timestamp": [1666062000, 1666407600],
     "rewards": [
       { "type": "equipment", "id": "fortress-legguards" },
       { "type": "equipment", "id": "fortress-handguards" },
@@ -39,6 +43,8 @@
     "name": "Deepsea Proving Ground",
     "availability": ["thursday", "sunday"],
     "resistance": ["volt", "physical"],
+    "img": "https://i.imgur.com/jeWgSBr.png",
+    "timestamp": [1666234800, 1666494000],
     "rewards": [
       { "type": "equipment", "id": "fortress-sabatons" },
       { "type": "equipment", "id": "fortress-belt" },
@@ -56,7 +62,9 @@
   {
     "name": "Quarantine Zone",
     "availability": ["monday", "saturday"],
-    "resistance": [],
+    "resistance": ["no resistance"],
+    "img": "https://i.imgur.com/48Vboxa.png",
+    "timestamp": [1665975600, 1666407600],
     "rewards": [
       { "type": "equipment", "id": "fortress-bracers" },
       { "type": "equipment", "id": "fortress-armor" },
@@ -75,6 +83,8 @@
     "name": "Hyena Arena",
     "availability": ["wednesday", "sunday"],
     "resistance": ["flame", "volt"],
+    "img": "https://i.imgur.com/7HUyc5D.png",
+    "timestamp": [1666148400, 1666494000],
     "rewards": [
       { "type": "equipment", "id": "fortress-spaulders" },
       { "type": "equipment", "id": "fortress-helm" },

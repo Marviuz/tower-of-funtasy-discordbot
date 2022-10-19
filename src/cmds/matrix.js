@@ -15,11 +15,32 @@ module.exports = {
     .setName(NAME)
     .setDescription(DESCRIPTION)
     .addStringOption(option => 
-      option.setName(NAME)
-        .setDescription('Name of the matrix')
+      option.setName("rarity")
+        .setDescription('Quality of the matrix')
         .setRequired(true)
-        //.setChoices(...matrices.map(matrix => ({ name: matrix.name, value: matrix.name.toLowerCase() }))) choices must be <= 25 but they have 30 matrix
+        .setChoices(
+          { name: "SSR", value: "SSR"},
+          { name: "SR", value: "SR"},
+          { name: "R", value: "R" },
+          { name: "N", value: "N"}
+        )
+      )
+      .addStringOption(optionn => 
+        optionn.setName(NAME)
+          .setDescription('Name of the matrix')
+          .setRequired(true)
+          .setAutocomplete(true)
       ),
+  
+  async autocomplete(interaction) {
+    const matrixs = matrices.filter(matrix => matrix.rarity === interaction.options.getString("rarity"))
+
+		await interaction.respond(
+			matrixs.map(matrix => ({ name: matrix.name, value: matrix.name.toLowerCase() })),
+		);
+  },
+
+
   async execute(interaction) {
     const matrix = await interaction.options.getString(NAME);
 
