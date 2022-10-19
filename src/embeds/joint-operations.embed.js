@@ -1,6 +1,6 @@
 const { EmbedBuilder } = require('discord.js');
 const jointOperations = require('../db/joint-operations.json');
-const { elements } = require("../utils/emoji")
+const { emojis } = require('../utils/app-constants');
 
 module.exports = async (data) => {
   let date = data.timestamp[0]
@@ -32,7 +32,7 @@ module.exports = async (data) => {
   let res = ""
   data.resistance.forEach(element => {
     if (element != "no resistance") {
-        res += `${elements[element]} ${element}, `
+        res += `${emojis[element]} ${element}, `
       } else {
         res = ":x: " + element
       }
