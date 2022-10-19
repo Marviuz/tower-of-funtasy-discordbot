@@ -6,7 +6,6 @@ const fs = require('fs')
 
 const client = require("../../index")
 
-
 const botinfoEmbed = () => {
 
     let totalMembers = 0
@@ -51,7 +50,7 @@ const botinfoEmbed = () => {
         .addFields(
             { 
                 name: 'Basical information:',
-                value:`
+                value: `
                 :hash: **Tag :** ${client.user.tag}
                 :gear: **Version :** ${require("../../package.json").version}
                 :pushpin: **Prefix :** Slash Commands (/)
@@ -60,27 +59,27 @@ const botinfoEmbed = () => {
             },
             { 
                 name: 'Servers information:',
-                value:`
+                value: `
                 :notepad_spiral: **Number of server :** ${client.guilds.cache.size}
                 :abacus: **Members in total :** ${totalMembers}
                 `
             },
             { 
                 name: 'Commands information:',
-                value:`
+                value: `
                 :bookmark_tabs: **Number of command :** ${totalCommands}
                 `
             },
             { 
                 name: 'System version:',
-                value:`
+                value: `
                 <:nodejs:892323938397483018> **Node.js version:** ${process.version}
                 <:discordjs:892324059847741490> **Discord.js version:** v${version}
                 `
             },
             { 
                 name: 'Machine statistics:',
-                value:`
+                value: `
                 :chart_with_downwards_trend: **Total memory used :** ${(process.memoryUsage().heapTotal / 1024 / 1024).toFixed(2)} MB
                 :bar_chart: **Memory used :** ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)} MB
                 :chart_with_upwards_trend: **CPU percent :** ${cpuPercent}%
@@ -89,7 +88,7 @@ const botinfoEmbed = () => {
             },
             { 
                 name: 'Links:',
-                value:`
+                value: `
                 <:github:892323399806890084> [Github Repository](${repository.url.replace('.git', ' ')})
                 :globe_with_meridians: Website not available
                 `

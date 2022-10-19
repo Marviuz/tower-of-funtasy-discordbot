@@ -13,7 +13,7 @@ const solveCritRate = (crit, level) => {
 
 const formatStats = (statsToFormat) => {
   const _stats = Object.entries(statsToFormat).map(([k, v]) => {
-    const _stat = k === 'PhyAtk' ? `${stats[k]} **Phys**` : k === 'PhyDef' ? `${stats[k]} **Phys**` : stats[k];
+    const _stat = k === 'PhyAtk' ? `${stats[k]} **Phys**` : stats[k];
 
     return `${_stat} ${Number(v).toFixed(0)}`;
   }).join('\n');

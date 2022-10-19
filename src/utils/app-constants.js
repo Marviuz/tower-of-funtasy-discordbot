@@ -30,6 +30,24 @@ exports.emojis = {
   iRes: '<:endreg:1031776328044793997>',
   aRes: '<:ares:1031776450136789002>',
   vRes: '<:vres:1031776391856918558>',
+
+  B: "<:B_:1031328664614359060>",
+  A: "<:A_:1031328730024521841>",
+  S: "<:S_:1031328509836144690>",
+
+  volt: "<:volt:1031331135281705031>",
+  flame: "<:flame:1031331192559116368>",
+  ice: "<:ice:1031330891424870490>",
+  physical: "<:physical:1031331106471039006>",
+  aberation: "<:aberration:1031331164746686586>",
+
+  dps: "<:dps:1031331937291337889>",
+  support: "<:support:1031331878436880385>",
+  defense: "<:defense:1031331902818361444>",
+
+  attack: "<:attack:1031341132925386772>",
+  health: "<:health:1031341765866836049>",
+  resistance: "<:resistance:1031341792999780413>"
 };
 
 exports.stats = {
@@ -43,7 +61,7 @@ exports.stats = {
 
   // defensive
   MaxHealth: this.emojis.hp,
-  ElementDef: this.emojis.pRes, // Resistance Icon needed
+  ElementDef: '<:resistance:1031341792999780413>',
   FireDef: this.emojis.fRes,
   IceDef: this.emojis.iRes,
   ThunderDef: this.emojis.vRes,
@@ -51,6 +69,7 @@ exports.stats = {
 };
 
 exports.weapons = {
+  // SSR
   bow_ice: '<:icewindarrow:1031807119596458014>',
   frigg_ice: '<:balmung:1031804896489517077>',
   suspension_thunder: '<:venus:1031807227679485982>',
@@ -65,14 +84,14 @@ exports.weapons = {
   sickle_fire: '<:scytheofcrow:1031821176596615188>',
   gun_fire: '<:blazingrevolver:1031821885043904512>',
 
-  // 4*
+  // SR
   hammer_ice: '<:pummeler:1031815906717859942>',
   spear_thunder: '<:thunderoushalberd:1031815804733370458>',
   cannon_ice: '<:theterminator:1031815678455451648>',
   stave_thunder: '<:staffofscars:1031817766740701234>',
   bow_physic: '<:nightingalesfeather:1031818253963628616>',
 
-  // 3*
+  // R
   digger_physic: '<:combatblade:1031825025940078612>',
   bow_fire: '<:compositebow:1031818600861925437>',
   sword_thunder: '<:emblade:1031820544443695114>',
@@ -80,6 +99,7 @@ exports.weapons = {
 };
 
 exports.equippedWeapon = {
+  // SSR
   bow_ice: 'https://i.imgur.com/nIOAtDR.png',
   frigg_ice: 'https://i.imgur.com/aIGOiOV.png',
   suspension_thunder: 'https://i.imgur.com/pknkLy5.png',
@@ -94,14 +114,14 @@ exports.equippedWeapon = {
   sickle_fire: 'https://i.imgur.com/DIzXCpe.png',
   gun_fire: 'https://i.imgur.com/cimh8Ti.png',
 
-  // 4*
+  // SR
   hammer_ice: 'https://i.imgur.com/IjrrpxW.png',
   spear_thunder: 'https://i.imgur.com/UtNFLRW.png',
   cannon_ice: 'https://i.imgur.com/cft5SmN.png',
   stave_thunder: 'https://i.imgur.com/CUMLmhD.png',
   bow_physic: 'https://i.imgur.com/VdUIRTD.png',
 
-  // 3*
+  // R
   digger_physic: 'https://i.imgur.com/O5rtSts.png',
   bow_fire: 'https://i.imgur.com/SjdWys4.png',
   sword_thunder: 'https://i.imgur.com/logJodz.png',

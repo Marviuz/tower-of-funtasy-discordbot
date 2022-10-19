@@ -1,6 +1,6 @@
 const { ActionRowBuilder, ButtonBuilder } = require('discord.js');
 const rarities = require('../db/rarities.json');
-const { rank, elements, baseStat, types } = require("../utils/emoji")
+const { emojis } = require("../utils/app-constants")
 
 const buttons = [
   {
@@ -33,11 +33,11 @@ const simulacraEmbed = ({ name, rarity, weapon, element, type, baseStats, shatte
       thumbnail: { url: weaponImg },
       fields: [
         { name: 'Weapon', value: weapon, inline: true },
-        { name: 'Element', value: `${elements[element]} ${element.toUpperCase()}`, inline: true },
-        { name: 'Type', value: `${types[type]} ${type.toUpperCase()}`, inline: true },
-        { name: 'Base Stats', value: baseStats.map($ => `${baseStat[$]}  ` + $.charAt(0).toUpperCase() + $.slice(1)).join(', ') },
-        { name: 'Shatter', value: `${rank[shatter.rank]} — ${shatter.value.toFixed(2)}`, inline: true },
-        { name: 'Charge', value: `${rank[charge.rank]} — ${charge.value.toFixed(2)}`, inline: true },
+        { name: 'Element', value: `${emojis[element]} ${element.toUpperCase()}`, inline: true },
+        { name: 'Type', value: `${emojis[type]} ${type.toUpperCase()}`, inline: true },
+        { name: 'Base Stats', value: baseStats.map($ => `${emojis[$]}  ` + $.charAt(0).toUpperCase() + $.slice(1)).join(', ') },
+        { name: 'Shatter', value: `${emojis[shatter.rank]} — ${shatter.value.toFixed(2)}`, inline: true },
+        { name: 'Charge', value: `${emojis[charge.rank]} — ${charge.value.toFixed(2)}`, inline: true },
       ],
       image: { url: simulacraImg }
     },
