@@ -52,7 +52,7 @@ module.exports = {
     const region = await interaction.options.getString('region');
     const nickname = await interaction.options.getString('name');
 
-    const response = (await axios({ url: 'https://tofapi.incin.net/scryglass/player/scan', method: 'get', params: { region, nickname } })).data.results.sort((a, b) => (a.cs && b.cs ? -(a.cs - b.cs) : 0));
+    const response = (await axios({ url: 'https://tofapi.incin.net/scryglass/player/scan', method: 'get', params: { region, nickname } })).data.results.sort((a, b) => -((a.cs || 0) - (b.cs || 0)));
     const embed = userInfoEmbed(response[0]);
 
     if (response.length < 2) {
