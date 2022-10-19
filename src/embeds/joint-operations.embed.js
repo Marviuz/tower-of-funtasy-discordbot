@@ -41,7 +41,7 @@ module.exports = async (data) => {
 
   const embed = new EmbedBuilder()
     .setTitle(data.name)
-    .setURL("https://docs.google.com/spreadsheets/d/1C5iTOojsbDiankeiCr910sHwrwHTW0mSut_GObfHw0M/edit?usp=sharing")
+
     .addFields(
       { name: 'Availability:', value: data.availability.join(', ') },
       { name: 'Enemy Resistances:', value: res },
