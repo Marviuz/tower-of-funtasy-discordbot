@@ -4,7 +4,7 @@ const axios = require('axios');
 const userInfoEmbed = require('../embeds/userinfo.embed');
 
 const NAME = path.parse(__filename).name;
-const DESCRIPTION = 'Nothing much in here';
+const DESCRIPTION = 'View information of a player in ToF.';
 
 const selectMenu = (data) => {
   data.forEach(_ => ({ label: `${data.nickname} ${data.level} ${data.guildName}`, description: `${data.nickname} ${data.level} ${data.guildName}`, value: `${data.nickname} ${data.level} ${data.guildName}` }));
