@@ -23,18 +23,31 @@ const pull = async (isTen, type, { id, username, discriminator }) => {
       break;
   }
 
-  let _pulls = pulls.map($ => {
+  let _pulls = pulls.map(($, index) => {
     $.bgColor = rarities[$.rarity];
 
     // Change all styles and image of SSR and SR pulls to Simulacra.
     if ($.rarity === "SSR" || $.rarity === "SR") {
       const [$simulacra] = simulacra.filter($$ => $.id === $$.weaponId);
 
-      $.name = `**${$simulacra.name}**`; // Bold text
-      $.img = $simulacra.simulacraImg;
-      $.bgSize = 'initial';
-    } else {
-      $.bgSize = 'contain';
+      $.name = $simulacra.weapon;
+      $.img = $simulacra.gacha10pull;
+    }
+
+    switch ($.rarity) {
+      case 'SSR':
+        if (!(index % 2)) $.class = 'card--srr1-new';
+        else $.class = 'card--srr2-new';
+        break;
+      case 'SR':
+        if (!(index % 2)) $.class = 'card--sr1-new';
+        else $.class = 'card--sr2-new';
+        break;
+      case 'R':
+        $.class = 'card--rare';
+        break;
+      default:
+        $.class = 'card--common';
     }
 
     return $;

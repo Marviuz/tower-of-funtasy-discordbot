@@ -42,7 +42,8 @@ const embed = async (user, type) => {
     pullsEmbed: new EmbedBuilder()
       .setTitle(`${user.username}'s ${type.label} pulls!`)
       .setImage('attachment://pull.png')
-      .setTimestamp(),
+      .setTimestamp()
+      .setFooter({ text: 'Artwork by Ao#9968' }),
     attachment
   };
 };
