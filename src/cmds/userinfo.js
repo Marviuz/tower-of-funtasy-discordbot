@@ -2,6 +2,7 @@ const path = require('path');
 const { SlashCommandBuilder, ActionRowBuilder, SelectMenuBuilder } = require('discord.js');
 const axios = require('axios');
 const userInfoEmbed = require('../embeds/userinfo.embed');
+const { YELLOW } = require('../utils/app-constants');
 
 const NAME = path.parse(__filename).name;
 const DESCRIPTION = 'View information of a player in ToF.';
@@ -52,18 +53,21 @@ module.exports = {
     const region = await interaction.options.getString('region');
     const nickname = await interaction.options.getString('name');
 
-    const response = (await axios({ url: 'https://tofapi.incin.net/scryglass/player/scan', method: 'get', params: { region, nickname } })).data.results.sort((a, b) => -((a.cs || 0) - (b.cs || 0)));
-    const embed = userInfoEmbed(response[0]);
+    const response = (await axios({ url: 'https://tofapi.incin.net/scryglass/player/scan', method: 'get', params: { region, nickname } })).data;
+    if (response.msg.includes('down') || response.msg.includes('maintenance')) return await interaction.editReply({ embeds: [{ color: YELLOW, title: 'Server temporarily down for maintenance' }] });
 
-    if (response.length < 2) {
+    const results = response.results.sort((a, b) => -((a.cs || 0) - (b.cs || 0)));
+    const embed = userInfoEmbed(results[0]);
+
+    if (results.length < 2) {
       await interaction.editReply({ embeds: [embed] });
     } else {
-      await interaction.editReply({ components: [selectMenu(response)], embeds: [embed] });
+      await interaction.editReply({ components: [selectMenu(results)], embeds: [embed] });
 
       const filter = i => (i.customId === 'player-menu') && i.message.interaction.id === interaction.id;
       const collector = interaction.channel.createMessageComponentCollector({ time: 30000, filter });
       collector.on('collect', async i => {
-        await i.update({ embeds: [userInfoEmbed(response[Number(i.values[0])])] });
+        await i.update({ embeds: [userInfoEmbed(results[Number(i.values[0])])] });
         collector.resetTimer(); // Reset timer when user is still interacting
       });
 
