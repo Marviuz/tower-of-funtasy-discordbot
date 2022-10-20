@@ -25,7 +25,7 @@
     },
     {
         "name": "Shattered Realm",
-        "weakness": ["fire", "ice"],
+        "weakness": ["flame", "ice"],
         "level": "70",
         "cs": 48000,
         "boss": "Apostle Nemesis",
