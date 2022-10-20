@@ -1,0 +1,39 @@
+[
+    {
+        "name": "Midlevel Control Room",
+        "weakness": ["ice"],
+        "level": 60,
+        "cs": 36000,
+        "boss": "Apophis",
+        "mecanims": "● Apophis does not have a shield here\n● Blast attack has huge radius, can be blocked with Omnium Handcannon\n● Generally the same attack pattern as the Apophis World Boss",
+        "rewards": [
+            { "name": "Energy Crystal Dust", "value": 1200},
+            { "name": "Cluster", "value": 10}
+        ]
+    },
+    {
+        "name": "Phantasmic Zenith",
+        "weakness": ["volt", "physical"],
+        "level": 66,
+        "cs": 42000,
+        "boss": "Frigg and Valkyrie",
+        "mecanims": "● Both Frigg and Valkyrie must be defeated at the same time.\n● There are two portals; one leads to Frigg, the other leads to Valkyrie",
+        "rewards": [
+            { "name": "Energy Crystal Dust", "value": 1500},
+            { "name": "Cluster", "value": 15}
+        ]
+    },
+    {
+        "name": "Shattered Realm",
+        "weakness": ["fire", "ice"],
+        "level": "70",
+        "cs": 48000,
+        "boss": "Apostle Nemesis",
+        "mecanims": "● Two bosses much like Frigg and Valkyrie\n● If the bosses are close to one another, they will begin to heal rapidly.\n● A random teammate will be taken into a different dimension and receive damage over time; under any circumstances, **do not die here**\n● The other players must break the shield as quickly as possible if this happens.",
+        "rewards": [
+            { "name": "Energy Crystal Dust", "value": 1800},
+            { "name": "Cluster", "value": 20}
+        ]
+    }
+]
+

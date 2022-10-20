@@ -48,7 +48,11 @@ exports.emojis = {
 
   attack: "<:attack:1031341132925386772>",
   health: "<:health:1031341765866836049>",
-  resistance: "<:resistance:1031341792999780413>"
+  resistance: "<:resistance:1031341792999780413>",
+
+  energycrystaldust: "<:EnergyCrystalDust:1032557017254084618>",
+  cluster: "<:Cluster:1032557031690870905>"
+
 };
 
 exports.stats = {
@@ -62,7 +66,7 @@ exports.stats = {
 
   // defensive
   MaxHealth: this.emojis.hp,
-  ElementDef: '<:resistance:1031341792999780413>',
+  ElementDef: this.emojis.resistance,
   FireDef: this.emojis.fRes,
   IceDef: this.emojis.iRes,
   ThunderDef: this.emojis.vRes,
