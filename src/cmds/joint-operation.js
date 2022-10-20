@@ -17,13 +17,13 @@ module.exports = {
       .setName('weekday')
       .setDescription('View today\'s/specific weekday\'s Join Operation')
       .addChoices(
-        { name: 'Sunday', value: 'sunday' },
         { name: 'Monday', value: 'monday' },
         { name: 'Tuesday', value: 'tuesday' },
         { name: 'Wednesday', value: 'wednesday' },
         { name: 'Thursday', value: 'thursday' },
         { name: 'Friday', value: 'friday' },
         { name: 'Saturday', value: 'saturday' },
+        { name: 'Sunday', value: 'sunday' }
       )),
   async execute(interaction) {
     await interaction.deferReply();
