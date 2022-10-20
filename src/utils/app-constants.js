@@ -2,6 +2,7 @@ exports.ZERO_WIDTH_SPACE = '\u200b';
 
 // Colors
 exports.RED = 0xf44336;
+exports.YELLOW = 0xffeb3b;
 
 // Emojis
 exports.emojis = {
