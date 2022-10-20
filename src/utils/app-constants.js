@@ -61,7 +61,7 @@ exports.stats = {
 
   // defensive
   MaxHealth: this.emojis.hp,
-  ElementDef: '<:resistance:1031341792999780413>',
+  ElementDef: this.emojis.resistance,
   FireDef: this.emojis.fRes,
   IceDef: this.emojis.iRes,
   ThunderDef: this.emojis.vRes,
