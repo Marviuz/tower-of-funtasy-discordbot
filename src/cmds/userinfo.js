@@ -54,12 +54,8 @@ module.exports = {
     const nickname = await interaction.options.getString('name');
 
     const response = (await axios({ url: 'https://tofapi.incin.net/scryglass/player/scan', method: 'get', params: { region, nickname } })).data;
-    
-    try {
-      if (response.msg.includes('down') || response.msg.includes('maintenance')) return await interaction.editReply({ embeds: [{ color: YELLOW, title: 'Server temporarily down for maintenance' }] });
-    } catch (error) {}
 
-    //if (response.msg.includes('down') || response.msg.includes('maintenance')) return await interaction.editReply({ embeds: [{ color: YELLOW, title: 'Server temporarily down for maintenance' }] });
+    if (!response.results.length && response.msg) return await interaction.editReply({ embeds: [{ color: YELLOW, title: 'Server temporarily down for maintenance' }] });
 
     const results = response.results.sort((a, b) => -((a.cs || 0) - (b.cs || 0)));
     const embed = userInfoEmbed(results[0]);
