@@ -7,8 +7,6 @@ module.exports = async (data) => {
 
   const getDay = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'][new Date(date * 1000).getDay()]
 
-
-
   console.log(getDay)
   let datemessage = "";
 
@@ -25,12 +23,9 @@ module.exports = async (data) => {
     date = date2
   }
 
-  //console.log(['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'][new Date(Date.now()).getDay()-1])
-
   if (data.availability.includes(['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'][new Date(Date.now()).getDay()-1])) {
     datemessage = "(Available) Ends in:"
     date = jointOperations.filter(_ => _.availability.includes(['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'][(new Date(date * 1000).getDay())]))[0].timestamp[0]
-    //date += 86400*2
   } else {
     datemessage = "Available in:"
   }
