@@ -1,5 +1,50 @@
 [
   {
+    "id": "ruby",
+    "weaponId": "spark",
+    "simulacraImg": "https://i.imgur.com/WFxzFlG.jpg",
+    "gacha10pull": "https://i.imgur.com/IPR2Ss5.png",
+    "weaponImg": "https://i.imgur.com/uibDpT6.png",
+    "name": "Ruby",
+    "rarity": "SSR",
+    "weapon": "Spark",
+    "element": "flame",
+    "type": "dps",
+    "baseStats": ["attack", "health", "crit"],
+    "shatter": { "rank": "S", "value": 11.5 },
+    "charge": { "rank": "A", "value": 8 },
+    "materials": ["flame", "green", "blue"],
+    "effect": [
+      {
+        "title": "Flame",
+        "description": "Fully charged weapons will set the target on fire for 8 seconds with the next attack, causing ongoing damage of 58.00% of ATK every second. Ignited targets receive 50% efficacy from healing."
+      },
+      {
+        "title": "Flame Resonance",
+        "description": "Increase flame ATK by **15%** and flame resistance by **25%**. Activate by equipping **2** or more flame weapons. This set effect works in the off-hand slot. Cannot stack with effects of the same type."
+      }
+    ],
+    "advancement": [
+      "Emblazen boosts the damage of Spark Attack to **80%**. Skill cooldown drops to **24** seconds.",
+      "Increase the current weapon's base ATK growth by **16%**.",
+      "Emblazen increases flame boost by **8%** and the burn multiplier to **75%**",
+      "Increase the current weapon's base ATK growth by **32%**.",
+      "Restore an additional **75** points of weapon charge each time Spark Attack hits an enemy. Cooldown: 0.9 seconds. Shatter increases by **25%** when Ultimate Heat is active.",
+      "Emblazen boosts the damage of Spark Attack to **160%** and double Heat acquisition efficiency. Skill cooldown drops to **16** seconds."
+    ],
+    "awakening": {
+      "1200": "Increases the flame damage taken by all enemies within **5** meters of Dolly by **8%**. This effect does not stack.",
+      "4000": "Increases the flame damage taken by all enemies within **5** meters of Dolly by **8%**. Not stackable. Increases flame ATK after throwing Dolly for **12%** for **10** seconds. This effect does not stack."
+    },
+    "gifts": {
+      "15": ["strangePlant"],
+      "30": ["strangeFragment"],
+      "40": ["bunnyDoll"],
+      "60": ["linyeFigure"],
+      "80": ["princeTataFigure"]
+    }
+  },
+  {
     "id": "cobalt-b",
     "weaponId": "blazing-revolver",
     "simulacraImg": "https://i.imgur.com/cimh8Ti.png",

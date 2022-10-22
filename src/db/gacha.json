@@ -1,5 +1,15 @@
 [
   {
+    "id": "spark",
+    "name": "Spark",
+    "img": "https://i.imgur.com/uibDpT6.png",
+    "rarity": "SSR",
+    "type": "weapon",
+    "element": "flame",
+    "rate": "SSR",
+    "in": ["red"]
+  },
+  {
     "id": "combat-blade",
     "name": "Combat Blade",
     "img": "https://i.imgur.com/O5rtSts.png",
