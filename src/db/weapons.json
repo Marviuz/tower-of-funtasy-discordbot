@@ -1,5 +1,13 @@
 [
   {
+    "id": "spark",
+    "name": "Spark",
+    "img": "https://i.imgur.com/uibDpT6.png",
+    "rarity": "SSR",
+    "type": "dps",
+    "element": "flame"
+  },
+  {
     "id": "blazing-revolver",
     "name": "Blazing Revolver",
     "img": "https://i.imgur.com/ODDgHiX.png",
