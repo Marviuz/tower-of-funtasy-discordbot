@@ -16,6 +16,13 @@ exports.emojis = {
   shawl: '<:shawl:1031755606916333598>',
   shoes: '<:shoes:1031755354037551154>',
 
+  physicalcore: '<:physicalcore:1034209217059508274>',
+  firecore: '<:firecore:1034209197803454504>',
+  voltcore: '<:voltcore:1034211162537087046>',
+  icecore: '<:icecore:1034209235409567744>',
+  purplecore: '<:purplecore:1034223043284828291>',
+  bluecore: '<:bluecore:1034231835951108136>',
+
   pAtk: '<:patk:1031775869145980990>',
   fAtk: '<:fatk:1031776047630401607>',
   iAtk: '<:iatk:1031776179486728202>',

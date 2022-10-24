@@ -32,11 +32,10 @@ module.exports = async (data) => {
     }
 
   } else {
-    date +=86400
+    date += 86400
     while (Math.round(Date.now() / 1000) > date) {
       date += 604800
     }
-    date -= 86400
 
     datemessage = "(Available) Ends in:"
   }
