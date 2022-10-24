@@ -4,30 +4,32 @@ const { emojis } = require('../utils/app-constants');
 
 module.exports = async (data) => {
   let date = data.timestamp[0]
-
-  const getDay = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'][new Date(date * 1000).getDay()]
-
-  console.log(getDay)
   let datemessage = "";
 
-  while (Math.round(Date.now() / 1000) > date) {
-    date += 604800
-  }
+  if(new Date().getHours() >= 5 && (new Date().getDay()-1)%7 != new Date(data.timestamp[0] * 1000).getDay() || new Date().getHours() >= 5 && (new Date().getDay()-1)%7 != new Date(data.timestamp[1] * 1000).getDay()) {
 
-  let date2 = data.timestamp[1]
-  while (Math.round(Date.now() / 1000) > date2) {
-    date2 += 604800
-  }
+    while (Math.round(Date.now() / 1000) > date) {
+      date += 604800
+    }
 
-  if (date - Math.round(Date.now() / 1000) > date2 - Math.round(Date.now() / 1000)) {
-    date = date2
-  }
+    while (Math.round(Date.now() / 1000) > date2) {
+      date2 += 604800
+    }
 
-  if (data.availability.includes(['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'][new Date(Date.now()).getDay()-1])) {
-    datemessage = "(Available) Ends in:"
-    date = jointOperations.filter(_ => _.availability.includes(['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'][(new Date(date * 1000).getDay())]))[0].timestamp[0]
+    if (date - Math.round(Date.now() / 1000) > date2 - Math.round(Date.now() / 1000)) {
+      date = date2
+    }
+
+    if (data.availability.includes(['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'][(new Date(Date.now()).getDay()-1)%7])) {
+      datemessage = "(Available) Ends in:"
+      date = jointOperations.filter(_ => _.availability.includes(['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'][(new Date(date * 1000).getDay())]))[0].timestamp[0]
+    } else {
+      datemessage = "Available in:"
+    }
+
   } else {
-    datemessage = "Available in:"
+    date -= 518400
+    datemessage = "(Available) Ends in:"
   }
 
 
