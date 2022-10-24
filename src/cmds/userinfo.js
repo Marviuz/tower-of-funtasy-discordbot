@@ -35,7 +35,7 @@ module.exports = {
         .addChoices(
           { name: 'NA', value: 'na' },
           { name: 'SA', value: 'sa' },
-          { name: 'AP', value: 'ap' },
+          { name: 'AP', value: 'apac' },
           { name: 'EU', value: 'eu' },
           { name: 'SEA', value: 'sea' },
         )
