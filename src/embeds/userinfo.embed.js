@@ -13,9 +13,19 @@ const solveCritRate = (crit, level) => {
 
 const formatStats = (statsToFormat) => {
   const _stats = Object.entries(statsToFormat).map(([k, v]) => {
-    const _stat = k === 'PhyAtk' ? `${stats[k]} **Phys**` : stats[k];
+    
+    if(k.endsWith("Mult")) {
 
-    return `${_stat} ${Number(v).toFixed(0)}`;
+      if(k.substring(0, 3) == "Thu") {
+        return `${stats["ThunderAtk"]} ${(Number(v) * 100).toFixed(2)}%`
+      } else if (k.substring(0, 4) == "Fire") {
+        return `${stats['FireAtk']} ${(Number(v) * 100).toFixed(2)}%`
+      }
+      
+      return `${stats[`${k.substring(0, 3)}Atk`]} ${(Number(v) * 100).toFixed(2)}%`;
+    }
+
+    return `${stats[k]} ${Number(v).toFixed(0)}`;
   }).join('\n');
 
   return _stats;
@@ -43,6 +53,11 @@ module.exports = (_data) => {
       { name: `${emojis.glove} Handguards`, value: equipments.glove ? formatStats(equipments.glove.stats) : 'Nothing equipped', inline: true },
       { name: `${emojis.helmet} Helm`, value: equipments.helmet ? formatStats(equipments.helmet.stats) : 'Nothing equipped', inline: true },
       { name: `${emojis.armband} Bracers`, value: equipments.armband ? formatStats(equipments.armband.stats) : 'Nothing equipped', inline: true },
+
+      { name: equipments.core ? `${emojis[`${equipments.core.element}core`]} Core` : `${emojis.bluecore} Core`, value: equipments.core ? formatStats(equipments.core.stats) : 'Nothing equipped', inline: true },
+
+
+
       { name: ZERO_WIDTH_SPACE, value: ZERO_WIDTH_SPACE, inline: true },
 
       { name: 'Weapons', value: _data.weapons.length ? _data.weapons.map(_ => `${weapons[_.id]} ・ **Level: **${_.level} ・ ${Number(_.advancement) ? [...Array(Number(_.advancement))].map(() => ':star:').join('') : 'No Advancement'}`).join('\n') : 'No weapons equipped' },
