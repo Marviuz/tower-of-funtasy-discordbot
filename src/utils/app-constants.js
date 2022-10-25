@@ -3,6 +3,7 @@ exports.ZERO_WIDTH_SPACE = '\u200b';
 // Colors
 exports.RED = 0xf44336;
 exports.YELLOW = 0xffeb3b;
+exports.blackNucleusColor = 0x912cd2;
 
 // Emojis
 exports.emojis = {
@@ -23,7 +24,7 @@ exports.emojis = {
   purplecore: '<:purplecore:1034223043284828291>',
   bluecore: '<:bluecore:1034231835951108136>',
 
-  pAtk: '<:patk:1031775869145980990>',
+  pAtk: '<:patk:1034276156754641007>',
   fAtk: '<:fatk:1031776047630401607>',
   iAtk: '<:iatk:1031776179486728202>',
   vAtk: '<:vatk:1031776235442950194>',
@@ -64,7 +65,7 @@ exports.emojis = {
 
 exports.stats = {
   // offensive
-  CommonAtk: this.emojis.pAtk,
+  CommonAtk: '<:atk:1031775869145980990>',
   PhyAtk: this.emojis.pAtk,
   IceAtk: this.emojis.iAtk,
   ThunderAtk: this.emojis.vAtk,
@@ -184,5 +185,3 @@ exports.blackNucleus = '<:blackNuc:1032259811091419136>';
 exports.redNucleus = '<:redNuc:1032262624781541437>';
 exports.specialVoucher = '<:specialVoucher:1032262626891288689>';
 exports.proofOfPurchase = '<:proofOfPurchase:1032262622705364993>';
-
-exports.blackNucleusColor = 0x912cd2;
