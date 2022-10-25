@@ -13,15 +13,15 @@ const solveCritRate = (crit, level) => {
 
 const formatStats = (statsToFormat) => {
   const _stats = Object.entries(statsToFormat).map(([k, v]) => {
-    
-    if(k.endsWith("Mult")) {
 
-      if(k.substring(0, 3) == "Thu") {
-        return `${stats["ThunderAtk"]} ${(Number(v) * 100).toFixed(2)}%`
+    if (k.endsWith("Mult")) {
+
+      if (k.substring(0, 3) == "Thu") {
+        return `${stats["ThunderAtk"]} ${(Number(v) * 100).toFixed(2)}%`;
       } else if (k.substring(0, 4) == "Fire") {
-        return `${stats['FireAtk']} ${(Number(v) * 100).toFixed(2)}%`
+        return `${stats['FireAtk']} ${(Number(v) * 100).toFixed(2)}%`;
       }
-      
+
       return `${stats[`${k.substring(0, 3)}Atk`]} ${(Number(v) * 100).toFixed(2)}%`;
     }
 
@@ -90,6 +90,7 @@ module.exports = (_data) => {
         inline: true
       }
     ],
-    image: { url: equippedWeapon[_data.equippedWeapon.toLowerCase()] }
+    image: { url: equippedWeapon[_data.equippedWeapon.toLowerCase()] },
+    footer: { text: 'From https://www.incin.net/' }
   };
 };
