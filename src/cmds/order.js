@@ -2,7 +2,7 @@ const { SlashCommandBuilder } = require('discord.js');
 const path = require('path');
 
 const { embed, actions, gachaTypes } = require('../embeds/pulls.embed');
-const { ZERO_WIDTH_SPACE, blackNucleusColor, RED } = require('../utils/app-constants');
+const { blackNucleusColor, RED } = require('../utils/app-constants');
 
 const NAME = path.parse(__filename).name;
 const DESCRIPTION = 'GACHAAAAAAAAAAAAAAAAA';
