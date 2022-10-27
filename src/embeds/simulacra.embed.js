@@ -1,6 +1,6 @@
 const { ActionRowBuilder, ButtonBuilder } = require('discord.js');
 const rarities = require('../db/rarities.json');
-const { emojis } = require("../utils/app-constants")
+const { emojis } = require("../utils/app-constants");
 
 const buttons = [
   {
@@ -25,11 +25,11 @@ const buttons = [
   },
 ];
 
-const simulacraEmbed = ({ name, rarity, weapon, element, type, baseStats, shatter, charge, effect, advancement, awakening, weaponImg, simulacraImg }) => {
+const simulacraEmbed = ({ name, rarity, weapon, element, type, baseStats, shatter, charge, effect, advancement, awakening, weaponImg, simulacraImg, chinaOnly }) => {
   const embed = {
     basicDetails: {
       color: Number(rarities[rarity].replace('#', '0x')),
-      title: name,
+      title: chinaOnly ? `${emojis.cn} ${name}` : name,
       thumbnail: { url: weaponImg },
       fields: [
         { name: 'Weapon', value: weapon, inline: true },
@@ -43,20 +43,20 @@ const simulacraEmbed = ({ name, rarity, weapon, element, type, baseStats, shatte
     },
     effect: {
       color: Number(rarities[rarity].replace('#', '0x')),
-      title: name,
+      title: chinaOnly ? `${emojis.cn} ${name}` : name,
       fields: effect.map($ => ({ name: $.title, value: $.description })),
       image: { url: simulacraImg }
     },
     advancement: {
       color: Number(rarities[rarity].replace('#', '0x')),
-      title: name,
+      title: chinaOnly ? `${emojis.cn} ${name}` : name,
       thumbnail: { url: weaponImg },
       fields: advancement.map(($, i) => ({ name: `${i + 1} ⭐`, value: $ })),
       image: { url: simulacraImg }
     },
     awakening: {
       color: Number(rarities[rarity].replace('#', '0x')),
-      title: name,
+      title: chinaOnly ? `${emojis.cn} ${name}` : name,
       thumbnail: { url: weaponImg },
       fields: [
         { name: 1200, value: awakening['1200'] },

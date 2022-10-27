@@ -48,7 +48,7 @@ exports.emojis = {
   flame: "<:flame:1031331192559116368>",
   ice: "<:ice:1031330891424870490>",
   physical: "<:physical:1031331106471039006>",
-  aberation: "<:aberration:1031331164746686586>",
+  aberration: "<:aberration:1031331164746686586>",
 
   dps: "<:dps:1031331937291337889>",
   support: "<:support:1031331878436880385>",
@@ -59,8 +59,9 @@ exports.emojis = {
   resistance: "<:resistance:1031341792999780413>",
 
   energycrystaldust: "<:EnergyCrystalDust:1032557017254084618>",
-  cluster: "<:Cluster:1032557031690870905>"
+  cluster: "<:Cluster:1032557031690870905>",
 
+  cn: '<:CN:1035098249687744542>'
 };
 
 exports.stats = {

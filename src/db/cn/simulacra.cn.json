@@ -1,0 +1,363 @@
+[
+  {
+    "id": "alyss",
+    "weaponId": "immortal-wings",
+    "simulacraImg": "https://i.imgur.com/TCdA86x.png",
+    "weaponImg": "https://i.imgur.com/QInIlcX.png",
+    "chinaOnly": true,
+    "name": "Alyss",
+    "rarity": "SSR",
+    "weapon": "Immortal Wings",
+    "element": "ice",
+    "type": "dps",
+    "baseStats": ["attack", "resistance", "health"],
+    "shatter": { "rank": "A", "value": 8 },
+    "charge": { "rank": "S", "value": 12 },
+    "materials": ["ice", "green", "blue"],
+    "effect": [
+      {
+        "title": "Ice Shell",
+        "description": "Fully charged weapons will freeze the target for 2 seconds and leave it frostbitten for 6 seconds. Breaking the ice shell causes additional damage equal to 151.00% of ATK. While frostbitten, the target's weapon charge rate is reduced by 50%."
+      },
+      {
+        "title": "Frost Reaction",
+        "description": "Increase frost ATK by **20%** and frost resistance by **40%**. Activate by equipping **2** or more frost weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Frost Resonance."
+      }
+    ],
+    "advancement": [
+      "Using a frost weapon's skill while inside Cold Field will activate Alyss' support. Alyss will cast her discharge skill and then the weapon skill that triggered Alyss' support. This will be considered as using a discharge skill, triggering effects activated by discharge.",
+      "Increase the current weapon's base ATK growth by **16%**.",
+      "Every time Night of the White Star is triggered, gain Alyss' aid, increasing Night of the White Star's and \"Frostbite\" damage by **30%** for **12** seconds, stacking up to **3** times.",
+      "Increase the current weapon's base ATK growth by **32%**.",
+      "Increase Immortal Wing's basic attack and Space Fracture damage by **50%**. When taking fatal damage, receive Alyss' protection one time, resisting the hit and becomming immune to damage for a short time, cooldown **60** seconds.",
+      "When Alyss' aid reaches 3 stacks, increase frost damage by **15%**."
+    ],
+    "awakening": {
+      "1200": "After successfully casting a weapon skill, gain **13%** final damage boost for **12** seconds.",
+      "4000": "After successfully casting a weapon skill, gain **18%** final damage boost for **18** seconds. If Immortal Wings is advanced to 1 star, receive Alyss' support when using **Physical/Flame/Volt** weapon skill while inside the Cold Field. Alyss will cast her discharge skill and then the weapon skill that triggered Alyss' support. This will be considered as using a discharge skill, triggering effects activated by discharge."
+    },
+    "gifts": {
+      "20": ["strangePlant"],
+      "30": ["strangeFragment", "bunnyDoll"],
+      "60": ["princeTataFigure"],
+      "80": ["linyeFigure"]
+    }
+  },
+  {
+    "id": "annabella",
+    "weaponId": "cross-sniper",
+    "simulacraImg": "https://i.imgur.com/om9gMII.png",
+    "weaponImg": "https://i.imgur.com/vg8h8Al.png",
+    "chinaOnly": true,
+    "name": "Annabella",
+    "rarity": "SSR",
+    "weapon": "Cross Sniper",
+    "element": "flame",
+    "type": "dps",
+    "baseStats": ["attack", "health", "crit"],
+    "shatter": { "rank": "S", "value": 12 },
+    "charge": { "rank": "A", "value": 9 },
+    "materials": ["flame", "red", "black"],
+    "effect": [
+      {
+        "title": "Flame",
+        "description": "Hitting a target with a Flame weapon increases final damage by 6%/7%/8%/9% and final crit rate by 2.5%/2.5%/3%/3% for 30 seconds, up to 2 stacks. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
+      },
+      {
+        "title": "Flame Reaction",
+        "description": "Increase flame ATK by **20%** and flame resistance by **40%**. Activate by equipping **2** or more flame weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Flame Resonance."
+      }
+    ],
+    "advancement": [
+      "Hitting the target **2** times with Scoped Shot will create an **optical space** at the target location for **12** seconds. Enemies within the space will trigger a burn settlement and then automatically trigger 2 burn settlements. When enemies leave the space, their movement speed is reduced by **80%** for **5** seconds, cooldown **12** seconds.  \n                Enemies targeted by the Scoped Shot shot will be scared for **1.5** seconds, reducing their attack speed and movement speed by **80%**, cooldown **4** seconds.",
+      "Increase the current weapon's base ATK growth by **16%**.",
+      "After a critical hit by Scoped Shot, recover **50%** of damage dealt as HP (up to **15%** of Max HP) and gain **50** weapon charge.  \n                Peace of Mind: each stack increases final crit rate by **9%** (up to **27%**), and maximum crit damage conversion is **13.5%**.",
+      "Increase the current weapon's base ATK growth by **32%**.",
+      "**Violent Bullet Enhancement** - \"Enhanced Scorch\" state increases the target's scorching damage to **30%**.  \n                **Deception Magic Bullet Enhancement** - Gas detonation damage ignores the target's flame resistance by **30%**.",
+      "Increase Scoped Shot's damage by **20%**."
+    ],
+    "awakening": {
+      "1200": "Every time gas explosion hits at least **1** enemy, the damage of Cross Sniper is increased by **10%** for **20** seconds, stacks **2** times.",
+      "4000": "Every time gas explosion hits at least **1** enemy, the damage of Cross Sniper is increased by **18%** for **20** seconds, stacks **2** times."
+    },
+    "gifts": {
+      "15": ["strangePlant"],
+      "30": ["strangeFragment", "bunnyDoll"],
+      "60": ["linyeFigure"],
+      "80": ["princeTataFigure"]
+    }
+  },
+  {
+    "id": "tian-lang",
+    "weaponId": "powerbreak",
+    "simulacraImg": "https://i.imgur.com/jFlpgF4.png",
+    "weaponImg": "https://i.imgur.com/aXDOUUB.png",
+    "chinaOnly": true,
+    "name": "Tian Lang",
+    "rarity": "SSR",
+    "weapon": "Powerbreak",
+    "element": "volt",
+    "type": "dps",
+    "baseStats": ["attack", "health", "crit"],
+    "shatter": { "rank": "A", "value": 8 },
+    "charge": { "rank": "S", "value": 12.5 },
+    "materials": ["volt", "green", "blue"],
+    "effect": [
+      {
+        "title": "Volt",
+        "description": "When the weapon is fully charged, the next attack will paralyze targets for 1 second and electrify them for 6 seconds, negating all buffs and dealing damage equal to 144.00% of ATK. Targets can't receive any buffs for the next 6 seconds."
+      },
+      {
+        "title": "Volt Reaction",
+        "description": "Increase volt ATK by **20%** and volt resistance by **40%**. Activate by equipping **2** or more volt weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Volt Resonance."
+      }
+    ],
+    "advancement": [
+      "Charging battery grants 1 stack of Overload, increasing max HP by **20%** but increases damage received by **12%** (except when your HP is lower than 50 &times; volt ATK). Stacks up to **8** times and if not refreshed, lose one stack every **6** seconds.",
+      "Increase the current weapon's base ATK growth by **16%**.",
+      "Unleash any volt weapon's skill or discharge skill to gain **2** stacks of Overload. At **8** stacks gain immunity to control effects.",
+      "Increase the current weapon's base HP growth by **32%**.",
+      "Every stack of Overload grants a **1.5%** final damage buff.",
+      "Greedy Wolf's lightning conductor effect is increased to: **25%** lightning damage boost for every conductor for **25** seconds."
+    ],
+    "awakening": {
+      "1200": "Using a volt weapon's skill or discharge skill grants **1** free dodge, stacking up to **2** times, and increases volt damage by **12%** for **8** seconds, does not stack.",
+      "4000": "Using a volt weapon's skill or discharge skill grants **1** free dodge, stacking up to **3** times, and increases volt damage by **18%** for **8** seconds, does not stack."
+    },
+    "gifts": {
+      "20": ["strangePlant"],
+      "30": ["strangeFragment", "bunnyDoll"],
+      "80": ["princeTataFigure", "linyeFigure"]
+    }
+  },
+  {
+    "id": "lyra",
+    "weaponId": "vespers",
+    "simulacraImg": "https://i.imgur.com/r02nXC9.png",
+    "weaponImg": "https://i.imgur.com/ZnbFHJo.png",
+    "chinaOnly": true,
+    "name": "Lyra",
+    "rarity": "SSR",
+    "weapon": "Vespers",
+    "element": "physical",
+    "type": "support",
+    "baseStats": ["attack", "resistance", "health"],
+    "shatter": { "rank": "S", "value": 12 },
+    "charge": { "rank": "A", "value": 10 },
+    "materials": ["physical", "black", "red"],
+    "effect": [
+      {
+        "title": "Grievous",
+        "description": "Attacking an enemy adds a life shield to all teammates for 15% of your current HP, lasting 15 seconds and resetting after leaving combat for 10 seconds. This shield combines with other shields. When the shield is activated, damage received is reduced by 11%/13%/15%/17% for 15 seconds (not stackable). This effect works in the background, and if multiple sets are used, the highest star set will take effect."
+      },
+      {
+        "title": "Physical Resonance",
+        "description": "When equipped with **2** or more Physical weapons, increase Physical ATK by **20%** and Physical Resistance by **40%**, taking effect in the background."
+      }
+    ],
+    "advancement": [
+      "When using any weapon skill or discharge skill, if your personal Guardian count is maxed, your Guardians' durations will be refreshed, and deal damage equal to the number of guardians on the field * **100%** of Physical ATK, (maximum 8 guardians for supports and 6 for non-supports).",
+      "Increase the current weapon's base ATK growth by **16%**.",
+      "Increases Guardian damage by **20%**. Using any weapon skill or discharge skill while you have the Blessing Resonance will increase Guardian final damage by **15%** for 10 seconds.",
+      "Increase the current weapon's base ATK growth by **32%**.",
+      "Triggering Guardian of Forgiveness 5 times protects you and your guarded target from fatal damage **1** time. Afterwards, the Guardian of Forgiveness will be consumed and restore **15%** HP (does not take effect in Apex League).\n                Triggering Guardian of Repentance 5 times protects you from fatal damage **2** times. Can protect up to **5** maximum times, after which one usage will be consumed to restore **15%** HP (does not take effect in Apex League).",
+      "Using any weapon skill or discharge skill will increase your final damage and healing equivalent to the number of Guardians. Each Guardian will increase final damage and healing by **3%** for a maximum of **15%** for 25 seconds."
+    ],
+    "awakening": {
+      "1200": "While you have Blessing Resonance active, increase the HP of all team members by 12.5%, does not stack.",
+      "4000": "While you have Blessing Resonance active, increase the HP of all team members by 12.5%, does not stack. Increase your own HP an additional 12.5%.Each time you successfully release a skill while having Hyperbody, or your health is greater than 50%, provide 12 seconds of Hyperbody to all allies."
+    },
+    "gifts": {
+      "15": ["strangePlant"],
+      "30": ["strangeFragment", "bunnyDoll"],
+      "60": ["princeTataFigure", "linyeFigure"]
+    }
+  },
+  {
+    "id": "lin",
+    "weaponId": "shadow-weaver",
+    "simulacraImg": "https://i.imgur.com/2EVdvIN.png",
+    "weaponImg": "https://i.imgur.com/DhoVehA.png",
+    "chinaOnly": true,
+    "name": "Lin",
+    "rarity": "SSR",
+    "weapon": "Shadow Weaver",
+    "element": "aberration",
+    "type": "dps",
+    "baseStats": ["attack", "health", "crit"],
+    "shatter": { "rank": "S", "value": 11.5 },
+    "charge": { "rank": "S", "value": 11.5 },
+    "materials": ["red", "green", "black", "blue"],
+    "effect": [
+      {
+        "title": "Aberration",
+        "description": "When the weapon is fully charged, the next attack will leave a mark on the enemy that explodes after 5 seconds. The explosion deals 25% of the damage dealt during the marked period, up to 560% of ATK. Only one mark can exist at a time."
+      },
+      {
+        "title": "Weapon Mastery",
+        "description": "Activate **Weapon Mastery** when used with other weapons. Nightblooms will randomly appear around the target and explode within **1-3** seconds, dealing **60%** AoE damage."
+      }
+    ],
+    "advancement": [
+      "Normal attacks deal AoE damage. When Nightblooms are in explosion range of each other, increase the damage of subsequent explosions by **10%** each (up to **50%**). **Moonlight Realm** reduces the spawn time of Nightblooms to **0.5** seconds.",
+      "Increase the current weapon's base ATK growth by **16%**.",
+      "**Moonlight Realm** reduces the spawn time of Nightblooms to **0.3** seconds. Nightblooms now attach to enemy targets. The duration of **Moonlight Realm** is increased to **20** seconds.",
+      "Increase the current weapon's base ATK growth by **32%**.",
+      "While inside **Moonlight Realm**, gain **30** weapon charge per second and increase damage of discharge skills by **15%**.",
+      "**Moonlight Realm** can be activated up to **2** times. Gain **1** charge from skill cooldown. Gain **1** charge from using discharge skills **3** times (effective in the background). The damage bonus while inside **Moonlight Realm** is increased to **15%**."
+    ],
+    "awakening": {
+      "1200": "Nightbloom's explosion damage increased by **15%**",
+      "4000": "Nightbloom's explosion damage increased by **20%**. Nightbloom explosions reduce all elemental resistances of the affected targets by **7%** for **7** seconds. This effect cannot stack."
+    },
+    "gifts": {
+      "15": ["strangePlant"],
+      "30": ["bunnyDoll"],
+      "40": ["strangeFragment"],
+      "60": ["linyeFigure"],
+      "80": ["princeTataFigure"]
+    }
+  },
+  {
+    "id": "saki-fuwa",
+    "weaponId": "ryusen-toshin",
+    "simulacraImg": "https://i.imgur.com/IpU77HD.png",
+    "weaponImg": "https://i.imgur.com/LalxRZS.png",
+    "chinaOnly": true,
+    "name": "Saki Fuwa",
+    "rarity": "SSR",
+    "weapon": "Ryusen Toshin",
+    "element": "ice",
+    "type": "defense",
+    "baseStats": ["attack", "resistance", "health"],
+    "shatter": { "rank": "S", "value": 13.9 },
+    "charge": { "rank": "A", "value": 8 },
+    "materials": ["ice", "red", "black"],
+    "effect": [
+      {
+        "title": "Ice Shell",
+        "description": "Fully charged weapons will freeze the target for 2 seconds and leave it frostbitten for 6 seconds. Breaking the ice shell causes additional damage equal to 151.00% of ATK. While frostbitten, the target's weapon charge rate is reduced by 50%."
+      },
+      {
+        "title": "Frost Resonance",
+        "description": "When equipped with **2** or more Frost weapons, increase Frost ATK by **20%** and Frost Resistance by **40%**, taking effect in the background."
+      }
+    ],
+    "advancement": [
+      "When Frost Resonance is active, release any weapon skill **5** times in total to clear the cooldown of all weapon skills, and **double** the damage of [Circulation] and [Counterattack] for **25** seconds.",
+      "Increase the current weapon's base ATK growth by **16%**.",
+      "Flowing Heart: Sword Shadow [Surge] damage increased to **900%** of Frost ATK.  \n                Silent Flow: Sword Shadow [Surge] cooldown reduced to **5** seconds.",
+      "Increase the current weapon's base HP growth by **32%**.",
+      "Sword Shadow's [Surge] triggers Phantasia upon hitting a target, shares cooldown with Phantasia trigged by dodging.",
+      "Sword Shadow's [Surge] increases your Frost damage by **20%** for **15** seconds upon hitting a target. Activating Sword Shadow's block reduces surrounding enemies' Frost damage by **25%** for **12** seconds."
+    ],
+    "awakening": {
+      "1200": "When health is below **70%**, gain **40%** all-element resistance.",
+      "4000": "When health is below **70%**, gain **40%** all-element resistance and an additional **60%** Frost resistance.  \n            When blocking with Silent Flow [Surge], provide 3 blocks to the teammate with the lowest health (excluding yourself) for **10** seconds. The block amount will not exceed **15%** of the teammate's maximum health."
+    },
+    "gifts": {
+      "15": ["strangePlant"],
+      "30": ["bunnyDoll"],
+      "40": ["strangeFragment"],
+      "60": ["princeTataFigure", "linyeFigure"]
+    }
+  },
+  {
+    "id": "marc",
+    "weaponId": "dawn",
+    "simulacraImg": "https://i.imgur.com/1hRE8Ax.png",
+    "weaponImg": "https://i.imgur.com/0KFPKZu.png",
+    "chinaOnly": true,
+    "name": "Marc",
+    "rarity": "SSR",
+    "weapon": "Dawn",
+    "element": "physical",
+    "type": "defense",
+    "baseStats": ["attack", "resistance", "health"],
+    "shatter": { "rank": "A", "value": 9 },
+    "charge": { "rank": "S", "value": 12 },
+    "materials": ["physical", "red", "black"],
+    "effect": [
+      {
+        "title": "Grievous",
+        "description": "Attacking an enemy adds a life shield to all teammates for 15% of your current HP, lasting 15 seconds and resetting after leaving combat for 10 seconds. This shield combines with other shields. When the shield is activated, damage received is reduced by 11%/13%/15%/17% for 15 seconds (not stackable). This effect works in the background, and if multiple sets are used, the highest star set will take effect."
+      },
+      {
+        "title": "Guardian",
+        "description": "**[GROUP PLAY]** When using Re-entry, Form Switch, or Full Shot, take **40%** damage for your lowest HP ally and recover 10% of it back after **10** seconds. Only activates while using Fortitude Resonance and the effect cannot be removed early or reactivated until it ends."
+      }
+    ],
+    "advancement": [
+      "Activating Re-entry, Form Switch, or Full Shot will instantly grant [Omni Shield].",
+      "Increase the current weapon's base HP growth by **16%**.",
+      "When [Omni Shield] breaks or refreshes, increase final damage by **35%** for **20** seconds, does not stack.",
+      "Increase the current weapon's base HP growth by **32%**.",
+      "When [Omni Shield] breaks or refreshes, inflict **160%** of ATK + **5%** of lost HP to nearby targets and gains **50** weapon charge points on hit.",
+      "While [Omni Shield] is active, Physical Resistance is **doubled** and provides Dominance effect. [Omni Shield] can be obtained when another Weapon Skill or Discharge Skill hits the target while the shield is active."
+    ],
+    "awakening": {
+      "1200": "When Marc takes lethal damage from an enemy, he survives the attack and is granted Ressurection, provoking the surrounding enemies for **5** seconds. During Ressurection, Marc cannot perform any actions, does not take damage, recovers **1%** HP every second, and healing received is increased by **20%**. This effect has a cooldown of **10** minutes. Damage from Stinging Eel and Ground Roar is reduced by **50%**.",
+      "4000": "When Marc takes lethal damage from an enemy, he survives the attack and is granted Ressurection, provoking the surrounding enemies for **5** seconds. During Ressurection, Marc cannot perform any actions, does not take damage, recovers **2%** HP every second, and healing received is increased by **50%**. This effect has a cooldown of **10** minutes. Damage from Stinging Eel and Ground Roar is reduced by **50%**."
+    },
+    "gifts": {
+      "15": ["dumbbells"],
+      "30": ["toolbox", "strangeFragment"],
+      "60": ["kitchenware", "present", "pearl", "bearFigure"]
+    }
+  },
+  {
+    "id": "baiyuekui",
+    "weaponId": "alaya",
+    "simulacraImg": "https://i.imgur.com/sBTp3l1.png",
+    "weaponImg": "https://i.imgur.com/hU322gL.png",
+    "chinaOnly": true,
+    "name": "Baiyuekui",
+    "rarity": "SSR",
+    "weapon": "Alaya",
+    "element": "volt",
+    "type": "dps",
+    "baseStats": ["attack", "resistance", "health"],
+    "shatter": { "rank": "S", "value": 12.5 },
+    "charge": { "rank": "A", "value": 8 },
+    "materials": ["volt", "green", "blue"],
+    "effect": [
+      {
+        "title": "Volt",
+        "description": "When the weapon is fully charged, the next attack will paralyze targets for 1 second and electrify them for 6 seconds, negating all buffs and dealing damage equal to 144.00% of ATK. Targets can't receive any buffs for the next 6 seconds."
+      },
+      {
+        "title": "War Intent",
+        "description": "When entering combat, trigger War Intent, increasing your final damage by **15%** but accelerating your cellular aging (lose **1%** of your current HP every **5** seconds). The effect disappears when leaving battle or switching weapons. If your HP drops below **50%**, cellular aging stops but the damage boost from War Intent remains (switching weapons causes the effect to disappear)."
+      }
+    ],
+    "advancement": [
+      "**Dodge attacks** gain an additional hit dealing **80%** of ATK + **2.5%** of HP lost.  \n                The **Weapon Skill** explodes for an additional **160%** of ATK + **5%** of HP lost.  \n                The **Discharge Skill** deals an additional **160%** of ATK + **5%** of lost HP (does not apply to the DoT).",
+      "Increase the current weapon's base ATK growth by **16%**.",
+      "Increase shatter by **15%**. Breaking a shield releases an instant burst of damage at the target's location, dealing **680%** of ATK to targets within range, or **1500%** of ATK if there is only one target within range.",
+      "Increase the current weapon's base HP growth by **32%**.",
+      "When attacked, automatically trigger a **1** second block (immediately negates crowd control), blocking one hit up to **20%** of your max HP. Performing a basic attack during the block period will initiate a **counter attack**, dealing **240%** of ATK and **launching the target airborne**, cooldown **18** seconds. ",
+      "While inside the area of the **Discharge Skill** or **Phantasia**, trigger War Intent for **7** seconds, increasing your final damage by **40%** and halting cellular aging (switching weapons causes the effect to disappear)."
+    ],
+    "awakening": {
+      "1200": "When Baiyuekui enters combat, increase Volt ATK by **21%**, decreasing over a period of **120** seconds. The effect can be reset after **5** seconds out of combat. Damage dealt to Stinging Eels and Earth Roar is increased by **50%**.",
+      "4000": "When Baiyuekui enters combat, increase Volt ATK by **33%**, decreasing over a period of **120** seconds. The effect can be reset after **5** seconds out of combat. Damage dealt to Stinging Eels and Earth Roar is increased by **50%**."
+    },
+    "gifts": {
+      "15": ["photoAlbum", "snackBox", "plant", "strangePlant"],
+      "30": ["necklace", "elfFigure", "spiderFigure"],
+      "60": [
+        "kitchenware",
+        "tataFigure",
+        "tataCards",
+        "peppaFigure",
+        "snowglobe",
+        "psp",
+        "foxFigure",
+        "seal",
+        "princeTataFigure",
+        "linyeFigure"
+      ],
+      "80": ["goldCoin", "catFigure"]
+    }
+  }
+]
