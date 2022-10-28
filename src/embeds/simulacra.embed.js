@@ -30,6 +30,7 @@ const simulacraEmbed = ({ name, rarity, weapon, element, type, baseStats, shatte
     basicDetails: {
       color: Number(rarities[rarity].replace('#', '0x')),
       title: chinaOnly ? `${emojis.cn} ${name}` : name,
+      url: `https://toweroffantasy.info/simulacra/${name.replace(' ', '-').toLowerCase()}`,
       thumbnail: { url: weaponImg },
       fields: [
         { name: 'Weapon', value: weapon, inline: true },

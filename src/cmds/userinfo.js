@@ -57,7 +57,10 @@ module.exports = {
 
     if (!response.results.length && response.msg) return await interaction.editReply({ embeds: [{ color: YELLOW, title: 'Server temporarily down for maintenance' }] });
 
-    const results = response.results.sort((a, b) => -((a.cs || 0) - (b.cs || 0)));
+    let results = response.results.sort((a, b) => -((a.cs || 0) - (b.cs || 0)));
+    
+    if(results.length > 25) { results = results.slice(0, 25) }
+
     const embed = userInfoEmbed(results[0]);
 
     if (results.length < 2) {
