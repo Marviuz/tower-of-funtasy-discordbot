@@ -73,6 +73,12 @@ exports.stats = {
   FireAtk: this.emojis.fAtk,
   Crit: this.emojis.crit,
 
+  // percentage 
+  ThunderAtkExtraUpMult: '<:thunderatkextraupmult:1035597405720170516>',
+  IceAtkExtraUpMult: '<:iceatkextraupmult:1035597409507622932>',
+  PhyAtkExtraUpMult: '<:phyatkextraupmult:1035597408152846476>',
+  FireAtkExtraUpMult: '<:fireatkextraupmult:1035597406911352903>',
+
   // defensive
   MaxHealth: this.emojis.hp,
   ElementDef: this.emojis.resistance,
