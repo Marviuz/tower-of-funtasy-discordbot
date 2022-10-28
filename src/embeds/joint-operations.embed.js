@@ -13,17 +13,11 @@ module.exports = async (data) => {
       date += 86400;
     }
 
-    while (Math.round(Date.now() / 1000) > date) {
-      date += 604800;
-    }
+    while (Math.round(Date.now() / 1000) > date) { date += 604800; }
 
-    while (Math.round(Date.now() / 1000) > date2) {
-      date2 += 604800;
-    }
+    while (Math.round(Date.now() / 1000) > date2) { date2 += 604800; }
 
-    if (date - Math.round(Date.now() / 1000) > date2 - Math.round(Date.now() / 1000)) {
-      date = date2;
-    }
+    if (date - Math.round(Date.now() / 1000) > date2 - Math.round(Date.now() / 1000)) { date = date2; }
 
     if (data.availability.includes(['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'][(new Date(Date.now()).getDay() - 1) % 7])) {
       datemessage = "(Available) Ends in:";
