@@ -13,16 +13,13 @@ const solveCritRate = (crit, level) => {
 
 const formatStats = (statsToFormat) => {
   const _stats = Object.entries(statsToFormat).map(([k, v]) => {
+    
+    if(k.endsWith("DefMult")) { 
+      return `${stats[`${k.substring(0, k.length - 7)}Def`]} ${(Number(v) * 100).toFixed(2)}%`; 
+    }
 
-    if (k.endsWith("Mult")) {
-
-      if (k.substring(0, 3) == "Thu") {
-        return `${stats["ThunderAtk"]} ${(Number(v) * 100).toFixed(2)}%`;
-      } else if (k.substring(0, 4) == "Fire") {
-        return `${stats['FireAtk']} ${(Number(v) * 100).toFixed(2)}%`;
-      }
-
-      return `${stats[`${k.substring(0, 3)}Atk`]} ${(Number(v) * 100).toFixed(2)}%`;
+    if(k.endsWith("AtkExtraUpMult")) {
+      return `${stats[`${k.substring(0, k.length - 14)}Atk`]} ${(Number(v) * 100).toFixed(2)}%`;
     }
 
     return `${stats[k]} ${Number(v).toFixed(0)}`;
