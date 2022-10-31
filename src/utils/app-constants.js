@@ -58,7 +58,6 @@ exports.emojis = {
   health: "<:health:1031341765866836049>",
   resistance: "<:resistance:1031341792999780413>",
 
-
   supplypodi: "<:SupplyPodI:1036036187451822100>",
   supplypodii: "<:SupplyPodII:1036036188731093022>",
 

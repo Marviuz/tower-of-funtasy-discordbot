@@ -8,6 +8,9 @@ const raidEmbed = ({ name, weakness, level, cs, boss, mecanims, rewards }) => {
       reset += 604800
     }
 
+    // UTC management
+    reset += (new Date().getHours() - new Date().getUTCHours()) * 3600
+
     console.log(weakness.map($ => `${emojis[$]} ${$.Upper}: ${$.toUpperCase()}`).join(", "))
 
   return {
