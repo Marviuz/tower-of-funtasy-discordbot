@@ -8,6 +8,9 @@ const raidEmbed = ({ name, weakness, level, cs, boss, mecanims, rewards }) => {
       reset += 604800
     }
 
+    // UTC management
+    reset += (new Date().getHours() - new Date().getUTCHours()) * 3600
+
     console.log(weakness.map($ => `${emojis[$]} ${$.Upper}: ${$.toUpperCase()}`).join(", "))
 
   return {
@@ -26,28 +29,5 @@ const raidEmbed = ({ name, weakness, level, cs, boss, mecanims, rewards }) => {
     ),
   };
 };
-
-
-//1500 15
-//1800 20
-
-
-/* 
-
-{
-  name: 'Midlevel Control Room',
-  weakness: 'ice',
-  level: 60,
-  CS: 36000,
-  mecanims: '● Apophis does not have a shield here\n' +
-    '● Blast attack has huge radius, can be blocked with Omnium Handcannon\n' +
-    '● Generally the same attack pattern as the Apophis World Boss',
-  rewards: [
-    { name: 'Energy Crystal Dust', value: 1200 },
-    { name: 'Cluster', value: 10 }
-  ]
-}
-
-*/
 
 module.exports = raidEmbed;

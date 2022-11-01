@@ -9,17 +9,24 @@ module.exports = async (data) => {
 
   if (new Date().getHours() >= 5 && (new Date().getDay() - 1) % 7 != new Date(data.timestamp[0] * 1000).getDay() || new Date().getHours() >= 5 && (new Date().getDay() - 1) % 7 != new Date(data.timestamp[1] * 1000).getDay()) {
 
-    if (new Date().getDay() === new Date(date * 1000).getDay()) {
-      date += 86400;
-    }
+    // get the day of the reset (the next day)    
+    if (new Date().getDay() === new Date(date * 1000).getDay()) { date += 86400; }
+    
+    if (new Date().getDay() === new Date(date2 * 1000).getDay()) { date2 += 86400; }
 
-    while (Math.round(Date.now() / 1000) > date) { date += 604800; }
+    
+    while (Date.now() > date * 1000) { date += 604800; }
 
-    while (Math.round(Date.now() / 1000) > date2) { date2 += 604800; }
+    while (Date.now() > date2 * 1000) { date2 += 604800; }
 
+
+    // we compare the dates of the 2 days when the jo is available to know which is the closest 
     if (date - Math.round(Date.now() / 1000) > date2 - Math.round(Date.now() / 1000)) { date = date2; }
 
-    if (data.availability.includes(['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday'][(new Date(Date.now()).getDay() - 1) % 7])) {
+    // UTC management
+    date += (new Date().getHours() - new Date().getUTCHours()) * 3600
+
+    if (data.availability.includes(['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'][new Date().getDay()])) {
       datemessage = "(Available) Ends in:";
     } else {
       datemessage = "Available in:";
