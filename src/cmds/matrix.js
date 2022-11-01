@@ -2,11 +2,12 @@ const { SlashCommandBuilder } = require('discord.js');
 const path = require('path');
 
 const matrices = require('../db/matrices.json');
-const matricesCn = require('../db/cn/matrix.cn.json');
+const matricesCN = require('../db/cn/matrices.cn.json');
 const matrixEmbed = require('../embeds/matrix.embed');
 
 const NAME = path.parse(__filename).name;
 const DESCRIPTION = 'View matrix details';
+let version = ""
 
 module.exports = {
   name: NAME,
@@ -15,6 +16,15 @@ module.exports = {
   data: new SlashCommandBuilder()
     .setName(NAME)
     .setDescription(DESCRIPTION)
+    .addStringOption(option =>
+      option.setName("version")
+        .setDescription('Version of the matrix')
+        .setRequired(true)
+        .setChoices(
+          { name: "Global", value: "GLOBAL" },
+          { name: "CN", value: "CN" }
+        )
+    )
     .addStringOption(option =>
       option.setName("rarity")
         .setDescription('Quality of the matrix')
@@ -34,7 +44,9 @@ module.exports = {
     ),
 
   async autocomplete(interaction) {
-    const matrixs = [...matrices, ...matricesCn].filter(matrix => matrix.rarity === interaction.options.getString("rarity"));
+    version = interaction.options.getString("version") === "GLOBAL" ? matrices : matricesCN
+
+    const matrixs = [...version].filter(matrix => matrix.rarity === interaction.options.getString("rarity"));
 
     await interaction.respond(
       matrixs.map(matrix => ({ name: matrix.name, value: matrix.name.toLowerCase() })),
@@ -45,7 +57,7 @@ module.exports = {
   async execute(interaction) {
     const matrix = await interaction.options.getString(NAME);
 
-    const [match] = [...matrices, ...matricesCn].filter(({ name }) => name.toLowerCase() === matrix.toLowerCase());
+    const [match] = [...version].filter(({ name }) => name.toLowerCase() === matrix.toLowerCase());
 
     if (!match) return await interaction.reply('No match!'); // TODO: Better message
 
