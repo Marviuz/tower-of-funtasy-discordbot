@@ -1,8 +1,8 @@
-const { SlashCommandBuilder } = require('discord.js');
+const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const path = require('path');
 
 const simulacra = require('../db/simulacra.json');
-const simulacraCn = require('../db/cn/simulacra.cn.json');
+const simulacraCN = require('../db/cn/simulacra.cn.json');
 const simulacraEmbed = require('../embeds/simulacra.embed');
 const { ZERO_WIDTH_SPACE, emojis } = require('../utils/app-constants');
 
@@ -26,21 +26,40 @@ module.exports = {
     await interaction.deferReply();
     const simulacrum = await interaction.options.getString(NAME);
 
-    if (!simulacrum) return await interaction.editReply({ embeds: [{ title: 'Simulacra', fields: [{ name: ZERO_WIDTH_SPACE, value: [...simulacra, ...simulacraCn].map(_ => (_.chinaOnly ? `${_.name} ${emojis.cn}` : _.name)).sort().join('\n') }] }] });
+    if (!simulacrum) return await interaction.editReply({ embeds: [{ title: 'Simulacra', fields: [{ name: ZERO_WIDTH_SPACE, value: [...simulacraCN].map(_ => (_.chinaOnly ? `${_.name} ${emojis.cn}` : _.name)).sort().join('\n') }] }] });
 
-    const [match] = [...simulacra, ...simulacraCn].filter(({ name }) => name.toLowerCase() === simulacrum.toLowerCase());
+    const [match] = [...simulacra, ...simulacraCN].filter(({ name }) => name.toLowerCase() === simulacrum.toLowerCase());
 
-    if (!match) return await interaction.editReply('No match!'); // TODO: Better message
+
+    const error = new EmbedBuilder()
+      .setColor("Red")
+      .setTitle("No match!")
+      .setDescription("Try `/simulacra` to see the list of simulacra avaible")
+    if (!match) return await interaction.editReply({ embeds: [error] }); // TODO: Better message
 
     const { embed, actions, buttons } = simulacraEmbed(match);
+
     await interaction.editReply({ embeds: [embed.basicDetails], components: [actions('basicDetails')] });
+
+    let page = "basicDetails"
+    let CN = ""
 
     buttons.forEach(button => {
       const filter = i => i.customId === button.id && i.message.interaction.id === interaction.id;
       const collector = interaction.channel.createMessageComponentCollector({ filter });
       collector.on('collect', async i => {
         await i.deferUpdate();
-        await i.editReply({ embeds: [embed[button.id]], components: [actions(button.id)] });
+        if (i.customId == 'cn' || i.customId == 'global') {
+          button.emoji === '🌍' ? button.emoji = '<:CN:1035098249687744542>' : button.emoji = '🌍'
+          button.id === 'global' ? button.id = 'cn' : button.id = 'global'
+          button.label === 'global' ? button.id = 'cn' : button.id = 'cn'
+          CN === '' ? CN = 'CN' : CN = ''
+          
+          await i.editReply({ embeds: [embed[page+CN]], components: [actions(page+CN)] });
+        } else {
+          page = button.id;
+          await i.editReply({ embeds: [embed[button.id+CN]], components: [actions(button.id+CN)] });
+        }        
       });
 
       collector.on('end', async collected => {
