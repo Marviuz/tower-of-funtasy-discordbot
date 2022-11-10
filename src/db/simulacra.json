@@ -17,7 +17,7 @@
     "effect": [
       {
         "title": "Flame",
-        "description": "Fully charged weapons will set the target on fire for 8 seconds with the next attack, causing ongoing damage of 58.00% of ATK every second. Ignited targets receive 50% efficacy from healing."
+        "description": "Fully charged weapons will set the target on fire for **8** seconds with the next attack, causing ongoing damage of **58.00%** of ATK every second. Ignited targets receive **50%** efficacy from healing."
       },
       {
         "title": "Flame Resonance",
@@ -62,24 +62,24 @@
     "effect": [
       {
         "title": "Flame",
-        "description": "Fully charged weapons will set the target on fire for 8 seconds with the next attack, causing ongoing damage of 58.00% of ATK every second. Ignited targets receive 50% efficacy from healing."
+        "description": "Fully charged weapons will set the target on fire for **8** seconds with the next attack, causing ongoing damage of **58.00%** of ATK every second. Ignited targets receive **50%** efficacy from healing."
       },
       {
         "title": "Flame Resonance",
-        "description": "Increase flame attack by 15% and flame resistance by 25%. Activate by equipping two or more flame weapons. This set effect also works with weapons in the off-hand slot. This effect does not stack repeatedly."
+        "description": "Increase flame attack by **15%** and flame resistance by **25%**. Activate by equipping two or more flame weapons. This set effect also works with weapons in the off-hand slot. This effect does not stack repeatedly."
       }
     ],
     "advancement": [
-      "Each round of attacks deals additional damage equal to 2% of the target's current HP (cannot exceed 180% of ATK).",
-      "Increase the current weapon's base ATK growth by 16%.",
-      "Heavy Bombardment branch skill and Close Quarters dodge attack inflict Ion Scorch on targets that are already burned, dealing flame damage equal to 40% of ATK every second for 10 seconds.",
-      "Increase the current weapon's base ATK growth by 32%.",
-      "The damage from Ion Scorch increases to 60% of ATK. Successful attacks with any weapon's dodge skill will refresh the duration of Ion Scorch.",
-      "Barrage inflicts burn for 15 seconds. Successful attacks with any weapon's dodge skills reduce the cooldown of Barrage by 4 seconds. This effect has a 1.5 second cooldown."
+      "Each round of Barrage deals additional damage equal to **2%** of the target's current HP (cannot exceed **200%** of ATK).",
+      "Increase the current weapon's base ATK growth by **16%**.",
+      "Heavy Bombardment branch skill and Close Quarters dodge attack inflict **Ion Scorch** on targets that are already burned, dealing flame damage equal to **40%** of ATK every second for **10** seconds.",
+      "Increase the current weapon's base ATK growth by **32%**.",
+      "The damage from **Ion Scorch** increases to **60%** of ATK. Successful attacks with any weapon's dodge skill will refresh the duration of **Ion Scorch**.",
+      "**Barrage** inflicts burn for 15 seconds. Successful attacks with any weapon's dodge skills reduce the cooldown of **Barrage** by **4** seconds. This effect has a **1.5** second cooldown."
     ],
     "awakening": {
-      "1200": "After Cobalt-B uses her discharge skill, restores a random amount of weapons charge between 50 to 120 points.",
-      "4000": "After Cobalt-B uses her discharge skill, restores a random amount of weapons charge between 90 to 180 points."
+      "1200": "After Cobalt-B uses her discharge skill, restores a random amount of weapons charge between **50** to **120** points.",
+      "4000": "After Cobalt-B uses her discharge skill, restores a random amount of weapons charge between **90** to **180** points."
     },
     "gifts": {
       "15": ["dumbbells", "snackBox", "strangePlant"],
@@ -116,7 +116,7 @@
     "effect": [
       {
         "title": "Grievous",
-        "description": "Fully charged weapons will inflict damage equal to 137.00% of ATK with the next attack, and make the target grievous for 7 seconds, taking 20% extra damage."
+        "description": "Fully charged weapons will inflict damage equal to **137.00%** of ATK with the next attack, and make the target grievous for **7** seconds, taking **20%** extra damage."
       },
       {
         "title": "Physical Resonance",
@@ -174,7 +174,7 @@
     "effect": [
       {
         "title": "Ice Shell",
-        "description": "Fully charged weapons will freeze the target for 2 seconds and leave it frostbitten for 6 seconds. Breaking the ice shell causes additional damage equal to 151.00% of ATK. While frostbitten, the target's weapon charge rate is reduced by 50%."
+        "description": "Fully charged weapons will **freeze** the target for **2** seconds and leave it frostbitten for **6** seconds. Breaking the ice shell causes additional damage equal to **151.00%** of ATK. While frostbitten, the target's weapon charge rate is reduced by **50%**."
       },
       {
         "title": "Frost Resonance",
@@ -224,7 +224,7 @@
     "effect": [
       {
         "title": "Volt",
-        "description": "When the weapon is fully charged, the next attack will paralyze targets for 1 second and electrify them for 6 seconds, negating all buffs and dealing damage equal to 144.00% of ATK. Targets can't receive any buffs for the next 6 seconds."
+        "description": "When the weapon is fully charged, the next attack will **paralyze** targets for **1** second and electrify them for **6** seconds, negating all buffs and dealing damage equal to **144.00%** of ATK. Targets can't receive any buffs for the next **6** seconds."
       },
       {
         "title": "Volt Resonance",
@@ -277,7 +277,7 @@
     "effect": [
       {
         "title": "Ice Shell",
-        "description": "Fully charged weapons will freeze the target for 2 seconds and leave it frostbitten for 6 seconds. Breaking the ice shell causes additional damage equal to 151.00% of ATK. While frostbitten, the target's weapon charge rate is reduced by 50%."
+        "description": "Fully charged weapons will **freeze** the target for **2** seconds and leave it frostbitten for **6** seconds. Breaking the ice shell causes additional damage equal to **151.00%** of ATK. While frostbitten, the target's weapon charge rate is reduced by **50%**."
       }
     ],
     "advancement": [
@@ -324,7 +324,7 @@
     "effect": [
       {
         "title": "Flame",
-        "description": "Fully charged weapons will set the target on fire for 8 seconds with the next attack, causing ongoing damage of 58.00% of ATK every second. Ignited targets receive 50% efficacy from healing."
+        "description": "Fully charged weapons will set the target on fire for **8** seconds with the next attack, causing ongoing damage of **58.00%** of ATK every second. Ignited targets receive **50%** efficacy from healing."
       }
     ],
     "advancement": [
@@ -380,7 +380,7 @@
     "effect": [
       {
         "title": "Volt",
-        "description": "When the weapon is fully charged, the next attack will paralyze targets for 1 second and electrify them for 6 seconds, negating all buffs and dealing damage equal to 144.00% of ATK. Targets can't receive any buffs for the next 6 seconds."
+        "description": "When the weapon is fully charged, the next attack will **paralyze** targets for **1** second and electrify them for **6** seconds, negating all buffs and dealing damage equal to **144.00%** of ATK. Targets can't receive any buffs for the next **6** seconds."
       }
     ],
     "advancement": [
@@ -428,7 +428,7 @@
     "effect": [
       {
         "title": "Flame",
-        "description": "Fully charged weapons will set the target on fire for 8 seconds with the next attack, causing ongoing damage of 58.00% of ATK every second. Ignited targets receive 50% efficacy from healing."
+        "description": "Fully charged weapons will set the target on fire for **8** seconds with the next attack, causing ongoing damage of **58.00%** of ATK every second. Ignited targets receive **50%** efficacy from healing."
       }
     ],
     "advancement": [
@@ -479,7 +479,7 @@
     "effect": [
       {
         "title": "Ice Shell",
-        "description": "Fully charged weapons will freeze the target for 2 seconds and leave it frostbitten for 6 seconds. Breaking the ice shell causes additional damage equal to 151.00% of ATK. While frostbitten, the target's weapon charge rate is reduced by 50%."
+        "description": "Fully charged weapons will **freeze** the target for **2** seconds and leave it frostbitten for **6** seconds. Breaking the ice shell causes additional damage equal to **151.00%** of ATK. While frostbitten, the target's weapon charge rate is reduced by **50%**."
       }
     ],
     "advancement": [
@@ -527,7 +527,7 @@
     "effect": [
       {
         "title": "Volt",
-        "description": "When the weapon is fully charged, the next attack will paralyze targets for 1 second and electrify them for 6 seconds, negating all buffs and dealing damage equal to 144.00% of ATK. Targets can't receive any buffs for the next 6 seconds."
+        "description": "When the weapon is fully charged, the next attack will **paralyze** targets for **1** second and electrify them for **6** seconds, negating all buffs and dealing damage equal to **144.00%** of ATK. Targets can't receive any buffs for the next **6** seconds."
       }
     ],
     "advancement": [
@@ -573,7 +573,7 @@
     "effect": [
       {
         "title": "Grievous",
-        "description": "Fully charged weapons will inflict damage equal to 137.00% of ATK with the next attack, and make the target grievous for 7 seconds, taking 20% extra damage."
+        "description": "Fully charged weapons will inflict damage equal to **137.00%** of ATK with the next attack, and make the target grievous for **7** seconds, taking **20%** extra damage."
       }
     ],
     "advancement": [
@@ -623,7 +623,7 @@
     "effect": [
       {
         "title": "Ice Shell",
-        "description": "Fully charged weapons will freeze the target for 2 seconds and leave it frostbitten for 6 seconds. Breaking the ice shell causes additional damage equal to 151.00% of ATK. While frostbitten, the target's weapon charge rate is reduced by 50%."
+        "description": "Fully charged weapons will **freeze** the target for **2** seconds and leave it frostbitten for **6** seconds. Breaking the ice shell causes additional damage equal to **151.00%** of ATK. While frostbitten, the target's weapon charge rate is reduced by **50%**."
       }
     ],
     "advancement": [
@@ -673,7 +673,7 @@
     "effect": [
       {
         "title": "Flame",
-        "description": "Fully charged weapons will set the target on fire for 8 seconds with the next attack, causing ongoing damage of 58.00% of ATK every second. Ignited targets receive 50% efficacy from healing."
+        "description": "Fully charged weapons will set the target on fire for **8** seconds with the next attack, causing ongoing damage of **58.00%** of ATK every second. Ignited targets receive **50%** efficacy from healing."
       }
     ],
     "advancement": [

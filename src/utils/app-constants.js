@@ -23,6 +23,7 @@ exports.emojis = {
   icecore: '<:icecore:1034209235409567744>',
   purplecore: '<:purplecore:1034223043284828291>',
   bluecore: '<:bluecore:1034231835951108136>',
+  orangecore: '<:orangecore:1039222810603692133>',
 
   pAtk: '<:patk:1034276156754641007>',
   fAtk: '<:fatk:1031776047630401607>',
