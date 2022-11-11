@@ -64,6 +64,9 @@ exports.emojis = {
 
   energycrystaldust: "<:EnergyCrystalDust:1032557017254084618>",
   cluster: "<:Cluster:1032557031690870905>",
+  spacetimecrystaldust: "<:SpacetimeCrystalDust:1040750111610916884>",
+  spacetimecrystalfragments: "<:SpacetimeCrystalFragments:1040750112839835809>",
+  boostermoduleii: "<:BoosterModuleII:1040750116832825434>",
 
   cn: '<:CN:1035098249687744542>'
 };

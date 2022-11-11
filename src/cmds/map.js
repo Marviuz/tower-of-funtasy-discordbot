@@ -43,7 +43,6 @@ module.exports = {
         .setTitle(map.split(' ').slice(0, -2).join(' '))
         .setColor('White')
         .setURL(`https://toweroffantasy.interactivemap.app/?map=${map.split(' ').slice(0, -1).pop()}`)
-        //.setDescription(`https://toweroffantasy.interactivemap.app/?map=${map.split(' ').slice(0, -1).pop()}`)
         .setImage(map.split(' ').pop())
 
     await interaction.reply({ embeds: [embed], components: [button] });
