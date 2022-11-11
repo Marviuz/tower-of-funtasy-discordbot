@@ -108,6 +108,8 @@ exports.weapons = {
   sickle_fire: '<:scytheofcrow:1031821176596615188>',
   gun_fire: '<:blazingrevolver:1031821885043904512>',
   dkatana_ice: '<:RyusenToshin:1040670807086596246>',
+  dkatana_ice: '<:heartstream:1040486961556762674>',
+  funnel_fire: '<:spark:1040488755640938537>',
 
   // SR
   hammer_ice: '<:pummeler:1031815906717859942>',
