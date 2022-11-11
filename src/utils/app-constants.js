@@ -107,6 +107,8 @@ exports.weapons = {
   stave_ice: '<:absolutezero:1031816828130951188>',
   sickle_fire: '<:scytheofcrow:1031821176596615188>',
   gun_fire: '<:blazingrevolver:1031821885043904512>',
+  dkatana_ice: '<:heartstream:1040486961556762674>',
+  funnel_fire: '<:spark:1040488755640938537>',
 
   // SR
   hammer_ice: '<:pummeler:1031815906717859942>',
@@ -137,6 +139,8 @@ exports.equippedWeapon = {
   stave_ice: 'https://i.imgur.com/bfsOa0t.png',
   sickle_fire: 'https://i.imgur.com/DIzXCpe.png',
   gun_fire: 'https://i.imgur.com/cimh8Ti.png',
+  dkatana_ice: 'https://i.imgur.com/IpU77HD.png',
+  funnel_fire: 'https://i.imgur.com/7mAZA2E.png',
 
   // SR
   hammer_ice: 'https://i.imgur.com/IjrrpxW.png',
