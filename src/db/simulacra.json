@@ -1,5 +1,48 @@
 [
   {
+    "id": "saki-fuwa",
+    "weaponId": "ryusen-toshin",
+    "simulacraImg": "https://i.imgur.com/IpU77HD.png",
+    "weaponImg": "https://i.imgur.com/LalxRZS.png",
+    "name": "Saki Fuwa",
+    "rarity": "SSR",
+    "weapon": "Ryusen Toshin",
+    "element": "ice",
+    "type": "defense",
+    "baseStats": ["attack", "resistance", "health"],
+    "shatter": { "rank": "S", "value": 13.9 },
+    "charge": { "rank": "A", "value": 8 },
+    "materials": ["ice", "red", "black"],
+    "effect": [
+      {
+        "title": "Ice Shell",
+        "description": "Fully charged weapons will **freeze** the target for **2** seconds and leave it frostbitten for **6** seconds. Breaking the ice shell causes additional damage equal to **151.00%** of ATK. While frostbitten, the target's weapon charge rate is reduced by **50%**."
+      },
+      {
+        "title": "Frost Resonance",
+        "description": "When equipped with **2** or more Frost weapons, increase Frost ATK by **20%** and Frost Resistance by **40%**, taking effect in the background."
+      }
+    ],
+    "advancement": [
+      "When Frost Resonance is active, release any weapon skill **5** times in total to clear the cooldown of all weapon skills, and **double** the damage of [Circulation] and [Counterattack] for **25** seconds.",
+      "Increase the current weapon's base ATK growth by **16%**.",
+      "Flowing Heart: Sword Shadow [Surge] damage increased to **350%** of Frost ATK.  \n                Silent Flow: Sword Shadow [Surge] cooldown reduced to **5** seconds.",
+      "Increase the current weapon's base HP growth by **32%**.",
+      "Sword Shadow's [Surge] triggers Phantasia upon hitting a target, shares cooldown with Phantasia trigged by dodging.",
+      "Sword Shadow's [Surge] increases your Frost damage by **11%** for **15** seconds upon hitting a target. Activating Sword Shadow's block reduces surrounding enemies' Frost damage by **25%** for **12** seconds."
+    ],
+    "awakening": {
+      "1200": "When health is below **70%**, gain **40%** all-element resistance.",
+      "4000": "When health is below **70%**, gain **40%** all-element resistance and an additional **60%** Frost resistance.  \n            When blocking with Silent Flow [Surge], provide 3 blocks to the teammate with the lowest health (excluding yourself) for **10** seconds. The block amount will not exceed **15%** of the teammate's maximum health."
+    },
+    "gifts": {
+      "15": ["strangePlant"],
+      "30": ["bunnyDoll"],
+      "40": ["strangeFragment"],
+      "60": ["princeTataFigure", "linyeFigure"]
+    }
+  },
+  {
     "id": "ruby",
     "weaponId": "spark",
     "simulacraImg": "https://i.imgur.com/7mAZA2E.png",
@@ -47,7 +90,7 @@
   {
     "id": "cobalt-b",
     "weaponId": "blazing-revolver",
-    "simulacraImg": "https://i.imgur.com/cimh8Ti.png",
+    "simulacraImg": "https://i.imgur.com/oLmVsRh.png",
     "gacha10pull": "https://i.imgur.com/uJVfjdP.png",
     "weaponImg": "https://i.imgur.com/ODDgHiX.png",
     "name": "Cobalt-B",

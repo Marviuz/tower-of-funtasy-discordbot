@@ -227,7 +227,6 @@
     "weaponId": "ryusen-toshin",
     "simulacraImg": "https://i.imgur.com/IpU77HD.png",
     "weaponImg": "https://i.imgur.com/LalxRZS.png",
-    "chinaOnly": true,
     "name": "Saki Fuwa",
     "rarity": "SSR",
     "weapon": "Ryusen Toshin",
@@ -250,10 +249,10 @@
     "advancement": [
       "When Frost Resonance is active, release any weapon skill **5** times in total to clear the cooldown of all weapon skills, and **double** the damage of [Circulation] and [Counterattack] for **25** seconds.",
       "Increase the current weapon's base ATK growth by **16%**.",
-      "Flowing Heart: Sword Shadow [Surge] damage increased to **900%** of Frost ATK.  \n                Silent Flow: Sword Shadow [Surge] cooldown reduced to **5** seconds.",
+      "<:CN:1035098249687744542> Flowing Heart: Sword Shadow [Surge] damage increased to **900%** of Frost ATK.  \n                Silent Flow: Sword Shadow [Surge] cooldown reduced to **5** seconds.",
       "Increase the current weapon's base HP growth by **32%**.",
       "Sword Shadow's [Surge] triggers Phantasia upon hitting a target, shares cooldown with Phantasia trigged by dodging.",
-      "Sword Shadow's [Surge] increases your Frost damage by **20%** for **15** seconds upon hitting a target. Activating Sword Shadow's block reduces surrounding enemies' Frost damage by **25%** for **12** seconds."
+      "<:CN:1035098249687744542> Sword Shadow's [Surge] increases your Frost damage by **20%** for **15** seconds upon hitting a target. Activating Sword Shadow's block reduces surrounding enemies' Frost damage by **25%** for **12** seconds."
     ],
     "awakening": {
       "1200": "When health is below **70%**, gain **40%** all-element resistance.",
@@ -420,7 +419,7 @@
   {
     "id": "cobalt-b",
     "weaponId": "blazing-revolver",
-    "simulacraImg": "https://i.imgur.com/cimh8Ti.png",
+    "simulacraImg": "https://i.imgur.com/oLmVsRh.png",
     "gacha10pull": "https://i.imgur.com/uJVfjdP.png",
     "weaponImg": "https://i.imgur.com/ODDgHiX.png",
     "name": "Cobalt-B",
