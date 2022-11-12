@@ -1,39 +1,119 @@
 [
     {
         "name": "Midlevel Control Room",
-        "weakness": ["ice"],
-        "level": 60,
-        "cs": 36000,
-        "boss": "Apophis",
-        "mecanims": "● Apophis does not have a shield here\n● Blast attack has huge radius, can be blocked with Omnium Handcannon\n● Generally the same attack pattern as the Apophis World Boss",
-        "rewards": [
-            { "name": "Energy Crystal Dust", "value": 1200},
-            { "name": "Cluster", "value": 10}
-        ]
+        "normal": {
+            "name": "Midlevel Control Room",
+            "weakness": ["ice"],
+            "level": 60,
+            "cs": 36000,
+            "boss": "Apophis",
+            "mecanims": "● Apophis does not have a shield here\n● Blast attack has huge radius, can be blocked with Omnium Handcannon\n● Generally the same attack pattern as the Apophis World Boss",
+            "rewards": [
+                { "name": "Energy Crystal Dust", "value": 1200},
+                { "name": "Cluster", "value": 10}
+            ]
+        },
+        "heroic": {
+            "name": "(Heroic) Midlevel Control Room",
+            "weakness": ["ice"],
+            "level": 70,
+            "cs": 54000,
+            "boss": "Apophis",
+            "mecanims": "● Apophis does not have a shield here\n● Blast attack has huge radius, can be blocked with Omnium Handcannon\n● Generally the same attack pattern as the Apophis World Boss",
+            "rewards": [
+                { "name": "Spacetime Crystal Dust", "value": 5},
+                { "name": "Spacetime Crystal Fragments", "value": 2},
+                { "name": "Falcon Combat Engine", "value": 1},
+                { "name": "Booster Module II", "value": 5}
+            ]
+        }        
     },
     {
         "name": "Phantasmic Zenith",
-        "weakness": ["volt", "physical"],
-        "level": 66,
-        "cs": 42000,
-        "boss": "Frigg and Valkyrie",
-        "mecanims": "● Both Frigg and Valkyrie must be defeated at the same time.\n● There are two portals; one leads to Frigg, the other leads to Valkyrie",
-        "rewards": [
-            { "name": "Energy Crystal Dust", "value": 1500},
-            { "name": "Cluster", "value": 15}
-        ]
+        "normal": {
+            "name": "Phantasmic Zenith",
+            "weakness": ["volt", "physical"],
+            "level": 66,
+            "cs": 42000,
+            "boss": "Frigg and Valkyrie",
+            "mecanims": "● Both Frigg and Valkyrie must be defeated at the same time.\n● There are two portals; one leads to Frigg, the other leads to Valkyrie",
+            "rewards": [
+                { "name": "Energy Crystal Dust", "value": 1500},
+                { "name": "Cluster", "value": 15}
+            ]
+        },
+        "heroic": {
+            "name": "(Heroic) Phantasmic Zenith",
+            "weakness": ["volt", "physical"],
+            "level": 73,
+            "cs": 58000,
+            "boss": "Frigg and Valkyrie",
+            "mecanims": "● Both Frigg and Valkyrie must be defeated at the same time.\n● There are two portals; one leads to Frigg, the other leads to Valkyrie",
+            "rewards": [
+                { "name": "Spacetime Crystal Dust", "value": 8},
+                { "name": "Spacetime Crystal Fragments", "value": 6},
+                { "name": "Falcon Combat Engine", "value": 2},
+                { "name": "Booster Module II", "value": 5}
+            ]
+        }
     },
     {
         "name": "Shattered Realm",
-        "weakness": ["flame", "ice"],
-        "level": "70",
-        "cs": 48000,
-        "boss": "Apostle Nemesis",
-        "mecanims": "● Two bosses much like Frigg and Valkyrie\n● If the bosses are close to one another, they will begin to heal rapidly.\n● A random teammate will be taken into a different dimension and receive damage over time; under any circumstances, **do not die here**\n● The other players must break the shield as quickly as possible if this happens.",
-        "rewards": [
-            { "name": "Energy Crystal Dust", "value": 1800},
-            { "name": "Cluster", "value": 20}
-        ]
+        "normal": {
+            "name": "Shattered Realm",
+            "weakness": ["flame", "ice"],
+            "level": 70,
+            "cs": 48000,
+            "boss": "Clone Angel: Dark Star I and Clone Angel: Dark Star II",
+            "mecanims": "● Two bosses much like Frigg and Valkyrie\n● If the bosses are close to one another, they will begin to heal rapidly.\n● A random teammate will be taken into a different dimension and receive damage over time; under any circumstances, **do not die here**\n● The other players must break the shield as quickly as possible if this happens.",
+            "rewards": [
+                { "name": "Energy Crystal Dust", "value": 1800},
+                { "name": "Cluster", "value": 20}
+            ]
+        },
+        "heroic": {
+            "name": "(Heroic) Shattered Realm",
+            "weakness": ["flame", "ice"],
+            "level": 77,
+            "cs": 62000,
+            "boss": "Clone Angel: Dark Star I and Clone Angel: Dark Star II",
+            "mecanims": "● Two bosses much like Frigg and Valkyrie\n● If the bosses are close to one another, they will begin to heal rapidly.\n● A random teammate will be taken into a different dimension and receive damage over time; under any circumstances, **do not die here**\n● The other players must break the shield as quickly as possible if this happens.",
+            "rewards": [
+                { "name": "Spacetime Crystal Dust", "value": "?"},
+                { "name": "Spacetime Crystal Fragments", "value": "?"},
+                { "name": "Falcon Combat Engine", "value": "?"},
+                { "name": "Booster Module II", "value": "?"}
+            ]
+        }
+    },
+    {
+        "name": "Battle Test Area",
+        "normal": {
+            "name": "Battle Test Area",
+            "weakness": ["flame", "ice"],
+            "level": 73,
+            "cs": 52000,
+            "boss": "Rudolph",
+            "mecanims": "Work in progress",
+            "rewards": [
+                { "name": "Energy Crystal Dust", "value": 2100},
+                { "name": "Cluster", "value": 25}
+            ]
+        },
+        "heroic": {
+            "name": "(Heroic) Battle Test Area",
+            "weakness": ["flame", "ice"],
+            "level": 80,
+            "cs": 66000,
+            "boss": "Rudolph",
+            "mecanims": "Work in progress",
+            "rewards": [
+                { "name": "Spacetime Crystal Dust", "value": "?"},
+                { "name": "Spacetime Crystal Fragments", "value": "?"},
+                { "name": "Falcon Combat Engine", "value": "?"},
+                { "name": "Booster Module II", "value": "?"}
+            ]
+        }
     }
 ]
 

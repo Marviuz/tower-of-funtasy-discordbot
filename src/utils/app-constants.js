@@ -64,6 +64,9 @@ exports.emojis = {
 
   energycrystaldust: "<:EnergyCrystalDust:1032557017254084618>",
   cluster: "<:Cluster:1032557031690870905>",
+  spacetimecrystaldust: "<:SpacetimeCrystalDust:1040750111610916884>",
+  spacetimecrystalfragments: "<:SpacetimeCrystalFragments:1040750112839835809>",
+  boostermoduleii: "<:BoosterModuleII:1040750116832825434>",
 
   cn: '<:CN:1035098249687744542>'
 };
@@ -107,6 +110,7 @@ exports.weapons = {
   stave_ice: '<:absolutezero:1031816828130951188>',
   sickle_fire: '<:scytheofcrow:1031821176596615188>',
   gun_fire: '<:blazingrevolver:1031821885043904512>',
+  dkatana_ice: '<:RyusenToshin:1040670807086596246>',
   dkatana_ice: '<:heartstream:1040486961556762674>',
   funnel_fire: '<:spark:1040488755640938537>',
 
@@ -139,8 +143,7 @@ exports.equippedWeapon = {
   stave_ice: 'https://i.imgur.com/bfsOa0t.png',
   sickle_fire: 'https://i.imgur.com/DIzXCpe.png',
   gun_fire: 'https://i.imgur.com/cimh8Ti.png',
-  dkatana_ice: 'https://i.imgur.com/IpU77HD.png',
-  funnel_fire: 'https://i.imgur.com/7mAZA2E.png',
+  dkatana_ice: 'https://i.imgur.com/Uo5WM9P.png',
 
   // SR
   hammer_ice: 'https://i.imgur.com/IjrrpxW.png',
