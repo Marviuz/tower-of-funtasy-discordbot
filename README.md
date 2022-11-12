@@ -48,8 +48,8 @@ Tower of Funtasy is a fan-made bot discord based on [Discord.js](https://discord
 - Create a `.env` file at the **root of the project** and **write** inside:
 
 ```js
-DISCORD_CLIENT_TOKEN={Your bot token}
-DISCORD_CLIENT_ID={Your application id}
+DISCORD_CLIENT_TOKEN={your bot token}
+DISCORD_CLIENT_ID={your application id}
 ```
 
 - Now you can **run** the project with execute `npm run dev` in the **project terminal**
