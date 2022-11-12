@@ -26,7 +26,7 @@ module.exports = {
     await interaction.deferReply();
     const simulacrum = await interaction.options.getString(NAME);
 
-    if (!simulacrum) return await interaction.editReply({ embeds: [{ title: 'Simulacra', fields: [{ name: ZERO_WIDTH_SPACE, value: [...simulacraCN].map(_ => (_.chinaOnly ? `${_.name} ${emojis.cn}` : _.name)).sort().join('\n') }] }] });
+    if (!simulacrum) return await interaction.editReply({ embeds: [{ title: 'Simulacra', fields: [{ name: ZERO_WIDTH_SPACE, value: [...simulacraCN].map(_ => (_.chinaOnly ? `${_.name} ${emojis.cn}` : _.name)).sort().join(', ') }], image: { url: "https://i8.ae/KruEg" } }] });
 
     const [match] = [...simulacra, ...simulacraCN].filter(({ name }) => name.toLowerCase() === simulacrum.toLowerCase());
 
