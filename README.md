@@ -77,7 +77,7 @@ DISCORD_CLIENT_ID={Your application id}
 | /reminder        | ToF View dailies/weeklies!                                  |
 | /simulacra       | View simulacra details                                      |
 | /userinfo        | View information of a player in ToF.                        |
-| /botinfo            | Give information about the bot                              |
+| /botinfo         | Give information about the bot                              |
 | /contribute      | Contribute to this project                                  |
 | /invite          | Invite this bot to youre server                             |
 | /support         | Oh! You wanna support me?!                                  |
