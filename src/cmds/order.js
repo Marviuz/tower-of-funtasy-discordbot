@@ -5,7 +5,7 @@ const { embed, actions, gachaTypes } = require('../embeds/pulls.embed');
 const { blackNucleusColor, RED } = require('../utils/app-constants');
 
 const NAME = path.parse(__filename).name;
-const DESCRIPTION = 'GACHAAAAAAAAAAAAAAAAA';
+const DESCRIPTION = 'Simulate an summon on a choice of banner (slow)';
 
 module.exports = {
   name: NAME,
