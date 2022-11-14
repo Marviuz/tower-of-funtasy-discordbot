@@ -21,7 +21,7 @@
 <p align="center">
   <a href="#-about">About</a>
   •
-  <a href="-prerequisites">Prerequisites</a>
+  <a href="#-prerequisites">Prerequisites</a>
   •
   <a href="#-commands">Commands</a>
   •
