@@ -19,15 +19,15 @@
 </p>
 
 <p align="center">
-  <a href="#about">About</a>
+  <a href="#-about">About</a>
   •
-  <a href="#prerequisites">Prerequisites</a>
+  <a href="-prerequisites">Prerequisites</a>
   •
-  <a href="#commands">Commands</a>
+  <a href="#-commands">Commands</a>
   •
-  <a href="#screenshot">Screenshot</a>
+  <a href="#-screenshot">Screenshot</a>
   •
-  <a href="#contributors">Contributors</a>
+  <a href="#-contributors">Contributors</a>
 </p>
 
 # 📜 About
