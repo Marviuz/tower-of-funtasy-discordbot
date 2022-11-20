@@ -79,10 +79,10 @@
             "boss": "Clone Angel: Dark Star I and Clone Angel: Dark Star II",
             "mecanims": "● Two bosses much like Frigg and Valkyrie\n● If the bosses are close to one another, they will begin to heal rapidly.\n● A random teammate will be taken into a different dimension and receive damage over time; under any circumstances, **do not die here**\n● The other players must break the shield as quickly as possible if this happens.",
             "rewards": [
-                { "name": "Spacetime Crystal Dust", "value": "?"},
-                { "name": "Spacetime Crystal Fragments", "value": "?"},
-                { "name": "Falcon Combat Engine", "value": "?"},
-                { "name": "Booster Module II", "value": "?"}
+                { "name": "Spacetime Crystal Dust", "value": "12"},
+                { "name": "Spacetime Crystal Fragments", "value": "10"},
+                { "name": "Falcon Combat Engine", "value": "3"},
+                { "name": "Booster Module II", "value": "5"}
             ]
         }
     },

@@ -19,23 +19,25 @@
 </p>
 
 <p align="center">
-  <a href="#about">About</a>
+  <a href="#-about">About</a>
   •
-  <a href="#prerequisites">Prerequisites</a>
+  <a href="#-prerequisites">Prerequisites</a>
   •
-  <a href="#commands">Commands</a>
+  <a href="#-commands">Commands</a>
   •
-  <a href="#screenshot">Screenshot</a>
+  <a href="#-screenshot">Screenshot</a>
   •
-  <a href="#contributors">Contributors</a>
+  <a href="#-contributors">Contributors</a>
 </p>
 
 # 📜 About
 
-Tower of Funtasy is a fan-made bot discord based on [Discord.js](https://discord.js.org) write in javascript which allows to have several information about the game [Tower of Fantasy](https://www.toweroffantasy-global.com). It will be the perfect tool for ToF community servers. 
+Tower of Funtasy is a fan-made Discord bot written with [Discord.js](https://discord.js.org) that provides several useful information about the game [Tower of Fantasy](https://www.toweroffantasy-global.com).It will be the perfect tool for ToF community servers.
+
 > **Note:** We try to keep the bot up to date with game updates, if you want to add information check that it is correct
 
 ## 🚧 Prerequisites
+
 - [Node.js 16.9+](https://nodejs.org/en/download/) (Check by entering `npm --version` in a **terminal**)
 - [discord js@14.6+](https://www.npmjs.com/package/discord.js)
 
@@ -48,8 +50,8 @@ Tower of Funtasy is a fan-made bot discord based on [Discord.js](https://discord
 - Create a `.env` file at the **root of the project** and **write** inside:
 
 ```js
-DISCORD_CLIENT_TOKEN={Your bot token}
-DISCORD_CLIENT_ID={Your application id}
+DISCORD_CLIENT_TOKEN={your bot token}
+DISCORD_CLIENT_ID={your application id}
 ```
 
 - Now you can **run** the project with execute `npm run dev` in the **project terminal**
@@ -68,23 +70,24 @@ DISCORD_CLIENT_ID={Your application id}
 <details>
     <summary>See all bot Commands</summary>
 
-| Command          | Description                                                 |
-| ---------------- | ----------------------------------------------------------- |
-| /help            | See all commands                                            |
-| /joint-operation | View today's Joint Operations                               |
-| /matrix          | View matrix details                                         |
-| /order           | Simulate an sommon on a choice of banner (slow)             |
-| /reminder        | ToF View dailies/weeklies!                                  |
-| /simulacra       | View simulacra details                                      |
-| /userinfo        | View information of a player in ToF.                        |
-| /botinfo         | Give information about the bot                              |
-| /contribute      | Contribute to this project                                  |
-| /invite          | Invite this bot to youre server                             |
-| /support         | Oh! You wanna support me?!                                  |
-| /vote            | Vote for support bot and creators                           |
-| /raid            | View raid detail                                            |
-| /password        | See all passwords for chests and doors in the map           |
-| /map             | Get all interactive maps links                              |
+| Command          | Description                                       |
+| ---------------- | ------------------------------------------------- |
+| /help            | See all commands                                  |
+| /joint-operation | View today's Joint Operations                     |
+| /matrix          | View matrix details                               |
+| /order           | Simulate an summon on a choice of banner (slow)   |
+| /password        | See all passwords for chests and doors in the map |
+| /reminder        | ToF View dailies/weeklies!                        |
+| /simulacra       | View simulacra details                            |
+| /userinfo        | View information of a player in ToF.              |
+| /botinfo         | Give information about the bot                    |
+| /contribute      | Contribute to this project                        |
+| /invite          | Invite this bot to youre server                   |
+| /map             | Get all interactive maps links                    |
+| /raid            | View raid detail                                  |
+| /vote            | Vote for support bot and creators                 |
+| /support         | Oh! You wanna support me?!                        |
+
 </details>
 
 ## 📸 Screenshot
@@ -107,7 +110,7 @@ Wanna support me?! Thank you I appreciate it!!!
 
 ## ✨ Contributors
 
-Want to **contribute** and appear here ? Open a [Pull Request](https://github.com/Marviuz/tower-of-funtasy-discordbot/pulls) 
+Want to **contribute** and appear here ? Open a [Pull Request](https://github.com/Marviuz/tower-of-funtasy-discordbot/pulls)
 
 <a href="https://github.com/SudhanPlayz/Discord-MusicBot/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=Marviuz/tower-of-funtasy-discordbot" />

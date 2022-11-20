@@ -2,12 +2,12 @@ const path = require('path');
 const { SlashCommandBuilder, ActionRowBuilder, ButtonBuilder, EmbedBuilder } = require('discord.js');
 
 const NAME = path.parse(__filename).name;
-const DESCRIPTION = 'Vote for support bot and creators';
+const DESCRIPTION = 'Vote to support the bot and creators';
 
 
 const embed = new EmbedBuilder()
-  .setTitle("Vote for me by clicking the button")
-  .setDescription("Thank you for supporting me")
+  .setTitle("Vote for the bot by clicking the button")
+  .setDescription("Thank you for supporting!");
 
 const buttons = new ActionRowBuilder()
   .addComponents(
