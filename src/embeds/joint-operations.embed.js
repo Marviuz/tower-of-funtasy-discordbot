@@ -2,29 +2,37 @@ const { EmbedBuilder } = require('discord.js');
 const { emojis } = require('../utils/app-constants');
 
 module.exports = async (data) => {
-  let date = data.timestamp[0];
-  let date2 = data.timestamp[1];
+  let dates = []
   let datemessage = "";
+  let closerday = Date.now()
+
+  u = true
+  if (u) {
+
+    data.availability.forEach(date => {
+      let day = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'].indexOf(date)
+      
+      let target = new Date();
+      target.setDate(new Date().getDate() + ((7-(new Date().getDay()))%7+day)); // next day
+      target.setHours(5); target.setMinutes(0); target.setSeconds(0); target.setMilliseconds(0);
+
+      dates.push(target.getTime())
+    })
+
+    console.log(new Date(dates[0]))
+
+    dates.forEach(day => {
+      if (closerday < day) { closerday = day }
+    });
+  
+
+    console.log(new Date(closerday))
 
 
-  if (new Date().getHours() >= 5 && (new Date().getDay() - 1) % 7 != new Date(data.timestamp[0] * 1000).getDay() || new Date().getHours() >= 5 && (new Date().getDay() - 1) % 7 != new Date(data.timestamp[1] * 1000).getDay()) {
+    if (new Date().getDay() === new Date(closerday).getDay()) { closerday += 86400000; }
 
-    // get the day of the reset (the next day)    
-    if (new Date().getDay() === new Date(date * 1000).getDay()) { date += 86400; }
-    
-    if (new Date().getDay() === new Date(date2 * 1000).getDay()) { date2 += 86400; }
+    //console.log(new Date(closerday))
 
-    
-    while (Date.now() > date * 1000) { date += 604800; }
-
-    while (Date.now() > date2 * 1000) { date2 += 604800; }
-
-
-    // we compare the dates of the 2 days when the jo is available to know which is the closest 
-    if (date - Math.round(Date.now() / 1000) > date2 - Math.round(Date.now() / 1000)) { date = date2; }
-
-    // UTC management
-    date += (new Date().getHours() - new Date().getUTCHours()) * 3600
 
     if (data.availability.includes(['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'][new Date().getDay()])) {
       datemessage = "(Available) Ends in:";
@@ -56,7 +64,7 @@ module.exports = async (data) => {
     .addFields(
       { name: 'Availability:', value: data.availability.join(', ') },
       { name: 'Enemy Resistances:', value: res },
-      { name: datemessage, value: `<t:${date}:R>` }
+      { name: datemessage, value: `<t:${Math.round(closerday / 1000)}:R>` }
     )
     .setImage(data.img);
 
