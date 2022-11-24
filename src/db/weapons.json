@@ -1,5 +1,13 @@
 [
   {
+    "id": "mobius",
+    "name": "Mobius",
+    "img": "https://i.imgur.com/yH3aJCq.png",
+    "rarity": "SSR",
+    "type": "dps",
+    "element": "physical"
+  },
+  {
     "id": "heartstream",
     "name": "Heartstream",
     "img": "https://i.imgur.com/87v8vfo.png",

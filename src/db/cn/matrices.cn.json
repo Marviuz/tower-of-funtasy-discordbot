@@ -1,5 +1,14 @@
 [
   {
+    "matrixId": "umi",
+    "chinaOnly": true,
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/umi.webp",
+    "name": "Umi",
+    "rarity": "SSR",
+    "two": "When dealing physical damage, final damage is increased by **8%/9%/10%/11%** and physical damage is increased by an additional **4%/4.5%/5%/5.5% for **3** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect.",
+    "four": "When equipped with **2** or more physical weapons, final damage is increased by **24%/26%/29%/32%**. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
+  },
+  {
     "matrixId": "saki-fuwa",
     "matrixImg": "https://toweroffantasy.info/static/images/matrices/sakifuwa.webp",
     "name": "Saki Fuwa",

@@ -1,5 +1,48 @@
 [
   {
+    "id": "umi",
+    "weaponId": "mobius",
+    "simulacraImg": "https://i.imgur.com/7uEkJpV.png",
+    "weaponImg": "https://i.imgur.com/g6EIfRL.png",
+    "chinaOnly": true,
+    "name": "Umi",
+    "rarity": "SSR",
+    "weapon": "Mobius",
+    "element": "physical",
+    "type": "dps",
+    "baseStats": ["attack", "health", "crit"],
+    "shatter": { "rank": "S", "value": 14 },
+    "charge": { "rank": "A", "value": 9 },
+    "materials": ["physical", "red", "black"],
+    "effect": [
+      {
+        "title": "Grievous",
+        "description": "Fully charged weapons will inflict damage equal to **137.00%** of ATK with the next attack, and make the target grievous for **7** seconds, taking **20%** extra damage."
+      },
+      {
+        "title": "Physical Reaction",
+        "description": "Increase physical ATK by **20%** and physical resistance by **40%**. Activate by equipping **2** or more physical weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Physical Resonance."
+      }
+    ],
+    "advancement": [
+      "When entering Magic Show, gain Mind Puppet, which increases Mobius' physical damage buff to **60%**. During Magic Show, recover **2%** HP and **10** weapon charge every second.",
+      "Increase the current weapon's base ATK growth by **16%**.",
+      "End Magic Show early to apply continuous AoE damage that lasts for **13** seconds, reduce Mobius' skill cooldown, and temporarily gain **50%** increased physical damage. If Magic Show's remaining duration is **13** seconds or longer before being cancelled, gain **200** weapon charge.  \n                &nbsp;  \n                The longer the remaining duration of Magic Show before being cancelled, the stronger the buffs. \n                The AoE deals up to **400%** damage per hit (cancel when duration > 13 seconds). Skill cooldown can be reduced by a maximum of **13** seconds. The physical damage buff's duration can be extended up to **20** seconds (this effect does not apply to Mobius).",
+      "Increase the current weapon's base ATK growth by **32%**.",
+      "When switching to Mobius, gain **30** points of Preheat Value, cooldown for **17** seconds. When entering Magic State, deal **840%** of ATK as AoE damage to nearby enemies, reducing their physical resistance by **10%** for **20** seconds.",
+      "During Magic Show, Mobius gains an additional whip. Normal attacks and dodge attacks will have a follow up hit, dealing **130%** of ATK. The additional hit is not considered a normal attack."
+    ],
+    "awakening": {
+      "1200": "Every time Umi uses **Magic Time**, increase final damage by **12%** for **30** seconds (can not be stacked).",
+      "4000": "Every time Umi uses **Magic Time**, increase final damage by **23%** for **30** seconds (can not be stacked)."
+    },
+    "gifts": {
+      "15": ["strangePlant"],
+      "30": ["strangeFragment", "bunnyDoll"],
+      "60": ["princeTataFigure", "linyeFigure"]
+    }
+  },
+  {
     "id": "alyss",
     "weaponId": "immortal-wings",
     "simulacraImg": "https://i.imgur.com/TCdA86x.png",
