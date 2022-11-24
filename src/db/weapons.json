@@ -1,5 +1,13 @@
 [
   {
+    "id": "heartstream",
+    "name": "Heartstream",
+    "img": "https://i.imgur.com/87v8vfo.png",
+    "rarity": "SSR",
+    "type": "defense",
+    "element": "ice"
+  },
+  {
     "id": "shadoweave",
     "name": "Shadoweave",
     "img": "https://i.imgur.com/DJmkavp.png",

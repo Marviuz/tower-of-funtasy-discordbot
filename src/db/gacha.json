@@ -1,5 +1,15 @@
 [
   {
+    "id": "heartstream",
+    "name": "Heartstream",
+    "img": "https://i.imgur.com/6nDuJBY.png",
+    "rarity": "SSR",
+    "type": "weapon",
+    "element": "ice",
+    "rate": "ssr",
+    "in": ["red"]
+  },
+  {
     "id": "shadoweave",
     "name": "Shadoweave",
     "img": "https://i.imgur.com/6rxGq1Y.png",
