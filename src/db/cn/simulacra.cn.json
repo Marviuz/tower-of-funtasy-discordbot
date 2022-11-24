@@ -1,5 +1,49 @@
 [
   {
+    "id": "fenrir",
+    "weaponId": "gleipnir",
+    "simulacraImg": "https://i.imgur.com/aCUvOAb.png",
+    "weaponImg": "https://i.imgur.com/mLTfcgq.png",
+    "chinaOnly": true,
+    "name": "Fenrir",
+    "rarity": "SSR",
+    "weapon": "Gleipnir",
+    "element": "volt",
+    "type": "dps",
+    "baseStats": ["attack", "health", "crit"],
+    "shatter": { "rank": "S", "value": 13.5 },
+    "charge": { "rank": "A", "value": 10.5 },
+    "materials": ["volt", "green", "blue"],
+    "effect": [
+      {
+        "title": "Volt",
+        "description": "When the weapon is fully charged, the next attack will **paralyze** targets for **1** second and electrify them for **6** seconds, negating all buffs and dealing damage equal to **144.00%** of ATK. Targets can't receive any buffs for the next **6** seconds."
+      },
+      {
+        "title": "Volt Resonance",
+        "description": "Increase volt ATK by **20%** and volt resistance by **40%**. Activate by equipping **2** or more volt weapons. This set effect also works with weapons in the off-hand slot. Volt Resonance will take priority if equipped with a Volt Reaction weapon."
+      }
+    ],
+    "advancement": [
+      "When **Soul Master** is used and goes on cooldown, gain the skill **Soundwave Frenzy**: Rush to the target and perform multiple attacks, with each hit adding **2** notes on the target, applying a short slowing effect, and restoring **100%** of ATK as HP. Deals **1542%** of ATK and has a cooldown of **15** seconds.  \n                When **3** or more notes are added and Soundwave Frenzy's cooldown is longer than **5** seconds, reset the cooldown (can be triggered once every **15** seconds).",
+      "Increase the current weapon's base ATK growth by **16%**.",
+      "During Musical World, losing **45%** of your total HP or using **Soundwave Frenzy** will activate **Musical World Shockwaves**, dealing **1215%** of ATK to targets inside Musical World.  \n                Losing **99%** of your total HP grants **1** Immunity (blocks damage and invincible for a short time) for **45** seconds, up to **1** stack.",
+      "Increase the current weapon's base ATK growth by **32%**.",
+      "Increase the damage of detonating notes to **70%** and the damage over time is increased to **2%** of max HP per second while intoxicated. During Musical World, if **Musical World Shockwave** is not triggered for **12** consecutive seconds while in combat, it will automatically be triggered once.",
+      "Increase crit rate by **30%** when using **Gleipnir**. The effect remains active for **5** seconds after switching to another weapon."
+    ],
+    "awakening": {
+      "1200": "When equipping **2** weapons of different elements, increase final damage by **13%**. When equipping **3** weapons of different elements, increase final damage by **18%**.",
+      "4000": "When equipping **2** weapons of different elements, increase final damage by **18%**. When equipping **3** weapons of different elements, increase final damage by **25%**."
+    },
+    "gifts": {
+      "20": ["strangePlant"],
+      "30": ["strangeFragment"],
+      "40": ["bunnyDoll"],
+      "80": ["princeTataFigure", "linyeFigure"]
+    }
+  },
+  {
     "id": "umi",
     "weaponId": "mobius",
     "simulacraImg": "https://i.imgur.com/7uEkJpV.png",

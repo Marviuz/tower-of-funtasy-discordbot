@@ -1,5 +1,15 @@
 [
   {
+    "id": "gleipnir",
+    "name": "Gleipnir",
+    "img": "https://i.imgur.com/tck9Ukr.png",
+    "rarity": "SSR",
+    "type": "weapon",
+    "element": "volt",
+    "rate": "ssr",
+    "in": []
+  },
+  {
     "id": "mobius",
     "name": "Mobius",
     "img": "https://i.imgur.com/6oIMimM.png",
