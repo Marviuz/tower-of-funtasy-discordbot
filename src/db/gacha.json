@@ -1,5 +1,15 @@
 [
   {
+    "id": "shadoweave",
+    "name": "Shadoweave",
+    "img": "https://i.imgur.com/6rxGq1Y.png",
+    "rarity": "SSR",
+    "type": "weapon",
+    "element": "altered",
+    "rate": "ssr",
+    "in": ["red"]
+  },
+  {
     "id": "spark",
     "name": "Spark",
     "img": "https://i.imgur.com/uibDpT6.png",
@@ -7,7 +17,7 @@
     "type": "weapon",
     "element": "flame",
     "rate": "SSR",
-    "in": ["red"]
+    "in": []
   },
   {
     "id": "combat-blade",
@@ -67,7 +77,7 @@
     "type": "weapon",
     "element": "ice",
     "rate": "ssr",
-    "in": ["red"]
+    "in": []
   },
   {
     "id": "guren-blade",
@@ -87,7 +97,7 @@
     "type": "weapon",
     "element": "flame",
     "rate": "ssr",
-    "in": ["red"]
+    "in": []
   },
   {
     "id": "absolute-zero",

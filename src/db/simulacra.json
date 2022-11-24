@@ -1,5 +1,49 @@
 [
   {
+    "id": "lin",
+    "weaponId": "shadoweave",
+    "simulacraImg": "https://i.imgur.com/60qGyJ2.png",
+    "weaponImg": "https://i.imgur.com/nek8aLc.png",
+    "name": "Lin",
+    "rarity": "SSR",
+    "weapon": "Shadoweave",
+    "element": "altered",
+    "type": "dps",
+    "baseStats": ["attack", "health", "crit"],
+    "shatter": { "rank": "S", "value": 11.5 },
+    "charge": { "rank": "S", "value": 11.5 },
+    "materials": ["red", "green", "black", "blue"],
+    "effect": [
+      {
+        "title": "Aberration",
+        "description": "When the weapon is fully charged, the next attack will mark the target, causing an explosion after **5** seconds. Additionally inflict **25%** of all damage received by the target while the mark exists, up to a total of **560%** of your ATK. Only 1 mark can be added on a target at a time."
+      },
+      {
+        "title": "Weapons Master",
+        "description": "When pairing Shadoweave with other weapons, the **Weapons Master** effect can be created. Epiphyllum will appear around the target randomly and explode within **1-3** seconds, dealing **25%** area damage."
+      }
+    ],
+    "advancement": [
+      "Normal attacks now deal area damage upon hit. When there is another epiphyllum within the epiphyllum explosion area, increase the damage of each of the subsequent epiphyllum explosions by **10%**, up to a maximum of **50%**.  \n            The epiphyllum generation interval from **Moonlight Realm** is now reduced to **0.5** seconds.",
+      "Increase the current weapon's base ATK growth by **16%**.",
+      "The epiphyllum generation interval from **Moonlight Realm** is now reduced to **0.3** seconds. Epiphyllums will attach to the enemy.  \n            The duration of **Moonlight Realm** is now increased to **20** seconds.",
+      "Increase the current weapon's base ATK growth by **32%**.",
+      "While under the effect of **Moonlight Realm**, gain **30** weapon charge every second and increase the damage of discharge skills by **15%**.",
+      "**Moonlight Realm** can be activated up to **2** times. Gain **1** charge from skill cooldown. Gain **1** charge from using discharge skills **3** times (effective in the background). The ATK bonus while inside **Moonlight Realm** is increased to **15%**."
+    ],
+    "awakening": {
+      "1200": "Increase epiphyllum explosion damage by **15%**.",
+      "4000": "Increase epiphyllum explosion damage by **20%**. Reduce all resistance by **7%** upon hit by epiphyllums for **7** seconds. This effect does not stack."
+    },
+    "gifts": {
+      "15": ["strangePlant"],
+      "30": ["bunnyDoll"],
+      "40": ["strangeFragment"],
+      "60": ["linyeFigure"],
+      "80": ["princeTataFigure"]
+    }
+  },
+  {
     "id": "saki-fuwa",
     "weaponId": "ryusen-toshin",
     "simulacraImg": "https://i.imgur.com/IpU77HD.png",

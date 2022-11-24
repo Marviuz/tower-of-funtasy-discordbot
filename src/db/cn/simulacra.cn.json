@@ -182,7 +182,6 @@
     "weaponId": "shadow-weaver",
     "simulacraImg": "https://i.imgur.com/2EVdvIN.png",
     "weaponImg": "https://i.imgur.com/DhoVehA.png",
-    "chinaOnly": true,
     "name": "Lin",
     "rarity": "SSR",
     "weapon": "Shadow Weaver",
@@ -195,11 +194,11 @@
     "effect": [
       {
         "title": "Aberration",
-        "description": "When the weapon is fully charged, the next attack will leave a mark on the enemy that explodes after **5** seconds. The explosion deals 25% of the damage dealt during the marked period, up to **560%** of ATK. Only one mark can exist at a time."
+        "description": "When the weapon is fully charged, the next attack will mark the target, causing an explosion after **5** seconds. Additionally inflict **25%** of all damage received by the target while the mark exists, up to a total of **560%** of your ATK. Only 1 mark can be added on a target at a time."
       },
       {
         "title": "Weapon Mastery",
-        "description": "Activate **Weapon Mastery** when used with other weapons. Nightblooms will randomly appear around the target and explode within **1-3** seconds, dealing **60%** AoE damage."
+        "description": "<:CN:1035098249687744542> When pairing Shadoweave with other weapons, the **Weapons Master** effect can be created. Epiphyllum will appear around the target randomly and explode within **1-3** seconds, dealing **60%** area damage."
       }
     ],
     "advancement": [
@@ -208,7 +207,7 @@
       "**Moonlight Realm** reduces the spawn time of Nightblooms to **0.3** seconds. Nightblooms now attach to enemy targets. The duration of **Moonlight Realm** is increased to **20** seconds.",
       "Increase the current weapon's base ATK growth by **32%**.",
       "While inside **Moonlight Realm**, gain **30** weapon charge per second and increase damage of discharge skills by **15%**.",
-      "**Moonlight Realm** can be activated up to **2** times. Gain **1** charge from skill cooldown. Gain **1** charge from using discharge skills **3** times (effective in the background). The damage bonus while inside **Moonlight Realm** is increased to **15%**."
+      "<:CN:1035098249687744542> **Moonlight Realm** can be activated up to **2** times. Gain **1** charge from skill cooldown. Gain **1** charge from using discharge skills **3** times (effective in the background). The damage bonus while inside **Moonlight Realm** is increased to **15%**."
     ],
     "awakening": {
       "1200": "Nightbloom's explosion damage increased by **15%**",

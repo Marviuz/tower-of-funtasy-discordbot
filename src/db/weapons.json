@@ -1,5 +1,13 @@
 [
   {
+    "id": "shadoweave",
+    "name": "Shadoweave",
+    "img": "https://i.imgur.com/DJmkavp.png",
+    "rarity": "SSR",
+    "type": "dps",
+    "element": "altered"
+  },
+  {
     "id": "spark",
     "name": "Spark",
     "img": "https://i.imgur.com/uibDpT6.png",
