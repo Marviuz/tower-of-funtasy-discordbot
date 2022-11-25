@@ -13,11 +13,12 @@ const solveCritRate = (crit, level) => {
 
 const formatStats = (statsToFormat) => {
   const _stats = Object.entries(statsToFormat).map(([k, v]) => {
-    
+
     if (k.endsWith("ExtraUpMult")) { return `${stats[k]} ${(Number(v) * 100).toFixed(2)}%`; }
 
     if (k.endsWith("Mult")) { return `${stats[`${k.substring(0, k.length - 4)}`]} ${(Number(v) * 100).toFixed(2)}%`; }
-    
+
+    if (k === "FinalCrit") { return `${stats[k]} ${(Number(v) * 100).toFixed(2)}%`; }
     return `${stats[k]} ${Number(v).toFixed(0)}`;
   }).join('\n');
 
@@ -30,6 +31,29 @@ module.exports = (_data) => {
   const equipments = _data.equipments;
   const stats = _data.stats;
 
+  const _e = Object.entries(equipments).map(([k, v]) => {
+    let name;
+    switch (k.replace(/\d/gm, '')) {
+      case 'core': name = 'Core'; break;
+      case 'visor': name = 'Visor'; break;
+      case 'cloth': name = 'Armor'; break;
+      case 'pants': name = 'Legguards'; break;
+      case 'shoes': name = 'Sabatons'; break;
+      case 'shawl': name = 'Spaulders'; break;
+      case 'belt': name = 'Belt'; break;
+      case 'glove': name = 'Handguards'; break;
+      case 'helmet': name = 'Helm'; break;
+      case 'armband': name = 'Bracers'; break;
+      default: name = '?';
+    }
+
+    return {
+      name: `${k ? emojis[k.replace(/\d/gm, '')] : k} ${name}`,
+      value: equipments[k] ? formatStats(v.stats) : 'Nothing equipped',
+      inline: true
+    };
+  });
+
   return {
     title: _data.nickname,
     description: `**Level:** ${_data.level}
@@ -38,18 +62,7 @@ module.exports = (_data) => {
     **Supressor**: ${_data.suppressor.replace('0', '').replace('_', '.')} — ${suppresors[_data.suppressor]}
     **Server:** ${_data.server}`,
     fields: [
-      { name: `${emojis.cloth} Armor`, value: equipments.cloth ? formatStats(equipments.cloth.stats) : 'Nothing equipped', inline: true },
-      { name: `${emojis.pants} Legguards`, value: equipments.pants ? formatStats(equipments.pants.stats) : 'Nothing equipped', inline: true },
-      { name: `${emojis.shoes} Sabatons`, value: equipments.shoes ? formatStats(equipments.shoes.stats) : 'Nothing equipped', inline: true },
-      { name: `${emojis.shawl} Spaulders`, value: equipments.shawl ? formatStats(equipments.shawl.stats) : 'Nothing equipped', inline: true },
-      { name: `${emojis.belt} Belt`, value: equipments.belt ? formatStats(equipments.belt.stats) : 'Nothing equipped', inline: true },
-      { name: `${emojis.glove} Handguards`, value: equipments.glove ? formatStats(equipments.glove.stats) : 'Nothing equipped', inline: true },
-      { name: `${emojis.helmet} Helm`, value: equipments.helmet ? formatStats(equipments.helmet.stats) : 'Nothing equipped', inline: true },
-      { name: `${emojis.armband} Bracers`, value: equipments.armband ? formatStats(equipments.armband.stats) : 'Nothing equipped', inline: true },
-
-      { name: equipments.core ? `${emojis[`${equipments.core.element}core`]} Core` : `${emojis.bluecore} Core`, value: equipments.core ? formatStats(equipments.core.stats) : 'Nothing equipped', inline: true },
-
-
+      ..._e,
 
       { name: ZERO_WIDTH_SPACE, value: ZERO_WIDTH_SPACE, inline: true },
 
@@ -67,7 +80,7 @@ module.exports = (_data) => {
       {
         name: ZERO_WIDTH_SPACE,
         value: `${emojis.critDmg} ${(stats.critdamage * 100).toFixed(2)}
-        ${emojis.crit} ${stats.critchance ? stats.critchance : 0}
+        ${emojis.crit} ${stats.critchance ? (stats.critchance * 100).toFixed(2) : 0}%
         ${emojis.hp} ${stats.hp.toFixed(0)}
         ${emojis.end} ${stats.end}
         ${emojis.endReg} ${stats.endreg ? stats.endreg : 0}`,
