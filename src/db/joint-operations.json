@@ -28,5 +28,17 @@
     "availability": ["wednesday", "sunday"],
     "resistance": ["flame", "volt"],
     "img": "https://i.imgur.com/7HUyc5D.png"
+  },
+  {
+    "name": "The End Game",
+    "availability": ["monday", "wednesday", "friday", "sunday"],
+    "resistance" : ["physical", "volt"],
+    "img": "https://i.imgur.com/UEJeCJP.png"
+  },
+  {
+    "name": "Sandess Valley",
+    "availability": ["thursday", "thursday", "saturday", "sunday"],
+    "resistance": ["flame", "ice"],
+    "img": "https://i.imgur.com/3bgxnXn.png"
   }
 ]

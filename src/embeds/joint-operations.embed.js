@@ -14,12 +14,10 @@ function getNextDate(day) {
   return nextDay;
 }
 
-
 module.exports = async (data) => {
   let dates = []
   let datemessage = "";
   let closerday = Date.now() + 864000000
-
 
   data.availability.forEach(date => {
     const day = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'].indexOf(date)
@@ -41,8 +39,6 @@ module.exports = async (data) => {
     datemessage = "Available in:";
   }
 
-  
-
   let res = "";
   data.resistance.forEach(element => {
     if (element != "no resistance") {
@@ -54,7 +50,6 @@ module.exports = async (data) => {
 
   const embed = new EmbedBuilder()
     .setTitle(data.name)
-
     .addFields(
       { name: 'Availability:', value: data.availability.join(', ') },
       { name: 'Enemy Resistances:', value: res },
