@@ -117,6 +117,7 @@ exports.weapons = {
   dkatana_ice: '<:RyusenToshin:1040670807086596246>',
   dkatana_ice: '<:heartstream:1040486961556762674>',
   funnel_fire: '<:spark:1040488755640938537>',
+  fan_superpower: '<:fan_superpower:1045572792545980426>',
 
   // SR
   hammer_ice: '<:pummeler:1031815906717859942>',
