@@ -1,53 +1,47 @@
 const { EmbedBuilder } = require('discord.js');
 const { emojis } = require('../utils/app-constants');
 
+function getNextDate(day) {
+  const dateCopy = new Date();
+
+  const nextDay = new Date(
+    dateCopy.setDate(
+      dateCopy.getDate() + ((7 - dateCopy.getDay() + day) % 7 || 7),
+    ),
+  );
+  nextDay.setHours(5); nextDay.setMinutes(0); nextDay.setSeconds(0); nextDay.setMilliseconds(0);
+
+  return nextDay;
+}
+
+
 module.exports = async (data) => {
   let dates = []
   let datemessage = "";
-  let closerday = Date.now()
-
-  u = true
-  if (u) {
-
-    data.availability.forEach(date => {
-      let day = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'].indexOf(date)
-      
-      let target = new Date();
-      target.setDate(new Date().getDate() + ((7-(new Date().getDay()))%7+day)); // next day
-      target.setHours(5); target.setMinutes(0); target.setSeconds(0); target.setMilliseconds(0);
-
-      dates.push(target.getTime())
-    })
-
-    console.log(new Date(dates[0]))
-
-    dates.forEach(day => {
-      if (closerday < day) { closerday = day }
-    });
-  
-
-    console.log(new Date(closerday))
+  let closerday = Date.now() + 864000000
 
 
-    if (new Date().getDay() === new Date(closerday).getDay()) { closerday += 86400000; }
+  data.availability.forEach(date => {
+    const day = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'].indexOf(date)
+    const target = getNextDate(day)
 
-    //console.log(new Date(closerday))
+    dates.push(target.getTime())
+  })
 
+  dates.forEach(day => {
+    if (closerday - Date.now() > day - Date.now()) { closerday = day }
+  });
 
-    if (data.availability.includes(['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'][new Date().getDay()])) {
-      datemessage = "(Available) Ends in:";
-    } else {
-      datemessage = "Available in:";
-    }
-
-  } else {
-    date += 86400;
-    while (Math.round(Date.now() / 1000) > date) {
-      date += 604800;
-    }
-
+  if (data.availability.includes(['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'][new Date().getDay()])) {
     datemessage = "(Available) Ends in:";
+
+    closerday = new Date(Date.now() + (new Date().getHours() < 5 ? 0 : 86400000))
+    closerday.setHours(5); closerday.setMinutes(0); closerday.setSeconds(0); closerday.setMilliseconds(0);
+  } else {
+    datemessage = "Available in:";
   }
+
+  
 
   let res = "";
   data.resistance.forEach(element => {

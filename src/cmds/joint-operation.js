@@ -33,17 +33,9 @@ module.exports = {
     if (selectedWeekday) {
       selectedJo = jointOperations.filter(_ => _.availability.includes(selectedWeekday));
     } else {
-      let today = ""
-      if(new Date().getHours() < 5) {
-        today = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'][(new Date().getDay()-1)%7];
-      } else {
-        today = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'][new Date().getDay()];
-      }
-
-      selectedJo = jointOperations.filter(_ => _.availability.includes(today));
+      const day = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'][new Date().getDay()];
+      selectedJo = jointOperations.filter(_ => _.availability.includes(day));
     }
-    
-
 
     const _jointOps = selectedJo.map(async _ => await jointOperationsEmbed(_));
     Promise.all(_jointOps)
