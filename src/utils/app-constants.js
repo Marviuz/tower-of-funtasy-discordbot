@@ -16,6 +16,8 @@ exports.emojis = {
   pants: '<:pants:1031754719460343848>',
   shawl: '<:shawl:1031755606916333598>',
   shoes: '<:shoes:1031755354037551154>',
+  core: '<:orangecore:1039222810603692133>',
+  visor: '<:visor:1045546899161239582>',
 
   physicalcore: '<:physicalcore:1034209217059508274>',
   firecore: '<:firecore:1034209197803454504>',
@@ -79,6 +81,7 @@ exports.stats = {
   ThunderAtk: this.emojis.vAtk,
   FireAtk: this.emojis.fAtk,
   Crit: this.emojis.crit,
+  FinalCrit: this.emojis.crit,
 
   // percentage 
   ThunderAtkExtraUpMult: '<:thunderatkextraupmult:1035597405720170516>',
@@ -92,7 +95,8 @@ exports.stats = {
   FireDef: this.emojis.fRes,
   IceDef: this.emojis.iRes,
   ThunderDef: this.emojis.vRes,
-  PhyDef: this.emojis.pRes
+  PhyDef: this.emojis.pRes,
+  SuperpowerDef: this.emojis.aRes
 };
 
 exports.weapons = {
@@ -113,6 +117,7 @@ exports.weapons = {
   dkatana_ice: '<:RyusenToshin:1040670807086596246>',
   dkatana_ice: '<:heartstream:1040486961556762674>',
   funnel_fire: '<:spark:1040488755640938537>',
+  fan_superpower: '<:fan_superpower:1045572792545980426>',
 
   // SR
   hammer_ice: '<:pummeler:1031815906717859942>',
