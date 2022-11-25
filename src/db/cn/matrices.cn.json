@@ -1,5 +1,31 @@
 [
   {
+    "matrixId": "fenrir",
+    "chinaOnly": true,
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/fenrir.webp",
+    "name": "Fenrir",
+    "rarity": "SSR",
+    "two": "Crit damage increased by **20%/24%/28%/32%**, does not stack. This effect works in the background, and if multiple sets are used, only the highest star set will take effect.",
+    "four": "Dealing volt damage increases final damage by **5%** for **10** seconds, up to **5/6/7/8** stacks. This effect works in the background, and if multiple sets are used, only the highest star set will take effect. "
+  },
+  {
+    "matrixId": "umi",
+    "chinaOnly": true,
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/umi.webp",
+    "name": "Umi",
+    "rarity": "SSR",
+    "two": "When dealing physical damage, final damage is increased by **8%/9%/10%/11%** and physical damage is increased by an additional **4%/4.5%/5%/5.5% for **3** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect.",
+    "four": "When equipped with **2** or more physical weapons, final damage is increased by **24%/26%/29%/32%**. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
+  },
+  {
+    "matrixId": "saki-fuwa",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/sakifuwa.webp",
+    "name": "Saki Fuwa",
+    "rarity": "SSR",
+    "two": "When Frost Resonance gets triggered: Every **3** seconds, deal frost damage equal to **65%/80%/95%/110%** of frost ATK to enemies within a 10-meter radius and apply the Icefrost effect: Inflict 5% slow effect that lasts for **3.5** seconds, freeze targets for **3** seconds at 3 stacks (does not apply to bosses), and increase frost damage taken by the target by **5%** for **18** seconds. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect.",
+    "four": "Attack the target **10** times to inflict a 12-second Flashfreeze mark. Flashfreeze: Increase frost damage edalt to the marked target by **11%/13%/15%/17%**. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
+  },
+  {
     "matrixId": "alyss",
     "chinaOnly": true,
     "matrixImg": "https://toweroffantasy.info/static/images/matrices/alyss.webp",
@@ -37,7 +63,6 @@
   },
   {
     "matrixId": "lin",
-    "chinaOnly": true,
     "matrixImg": "https://toweroffantasy.info/static/images/matrices/lin.webp",
     "name": "Lin",
     "rarity": "SSR",
@@ -46,7 +71,6 @@
   },
   {
     "matrixId": "saki-fuwa",
-    "chinaOnly": true,
     "matrixImg": "https://toweroffantasy.info/static/images/matrices/sakifuwa.webp",
     "name": "Saki Fuwa",
     "rarity": "SSR",

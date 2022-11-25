@@ -1,5 +1,45 @@
 [
   {
+    "id": "gleipnir",
+    "name": "Gleipnir",
+    "img": "https://i.imgur.com/tck9Ukr.png",
+    "rarity": "SSR",
+    "type": "weapon",
+    "element": "volt",
+    "rate": "ssr",
+    "in": []
+  },
+  {
+    "id": "mobius",
+    "name": "Mobius",
+    "img": "https://i.imgur.com/6oIMimM.png",
+    "rarity": "SSR",
+    "type": "weapon",
+    "element": "physical",
+    "rate": "ssr",
+    "in": []
+  },
+  {
+    "id": "heartstream",
+    "name": "Heartstream",
+    "img": "https://i.imgur.com/6nDuJBY.png",
+    "rarity": "SSR",
+    "type": "weapon",
+    "element": "ice",
+    "rate": "ssr",
+    "in": ["red"]
+  },
+  {
+    "id": "shadoweave",
+    "name": "Shadoweave",
+    "img": "https://i.imgur.com/6rxGq1Y.png",
+    "rarity": "SSR",
+    "type": "weapon",
+    "element": "altered",
+    "rate": "ssr",
+    "in": ["red"]
+  },
+  {
     "id": "spark",
     "name": "Spark",
     "img": "https://i.imgur.com/uibDpT6.png",
@@ -7,7 +47,7 @@
     "type": "weapon",
     "element": "flame",
     "rate": "SSR",
-    "in": ["red"]
+    "in": []
   },
   {
     "id": "combat-blade",
@@ -67,7 +107,7 @@
     "type": "weapon",
     "element": "ice",
     "rate": "ssr",
-    "in": ["red"]
+    "in": []
   },
   {
     "id": "guren-blade",
@@ -87,7 +127,7 @@
     "type": "weapon",
     "element": "flame",
     "rate": "ssr",
-    "in": ["red"]
+    "in": []
   },
   {
     "id": "absolute-zero",
