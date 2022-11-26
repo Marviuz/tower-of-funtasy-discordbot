@@ -1,44 +1,42 @@
 const { EmbedBuilder } = require('discord.js');
 const { emojis } = require('../utils/app-constants');
 
+function getNextDate(day) {
+  const dateCopy = new Date();
+
+  const nextDay = new Date(
+    dateCopy.setDate(
+      dateCopy.getDate() + ((7 - dateCopy.getDay() + day) % 7 || 7),
+    ),
+  );
+  nextDay.setHours(5); nextDay.setMinutes(0); nextDay.setSeconds(0); nextDay.setMilliseconds(0);
+
+  return nextDay;
+}
+
 module.exports = async (data) => {
-  let date = data.timestamp[0];
-  let date2 = data.timestamp[1];
+  let dates = []
   let datemessage = "";
+  let closerday = Date.now() + 864000000
 
+  data.availability.forEach(date => {
+    const day = ['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'].indexOf(date)
+    const target = getNextDate(day)
 
-  if (new Date().getHours() >= 5 && (new Date().getDay() - 1) % 7 != new Date(data.timestamp[0] * 1000).getDay() || new Date().getHours() >= 5 && (new Date().getDay() - 1) % 7 != new Date(data.timestamp[1] * 1000).getDay()) {
+    dates.push(target.getTime())
+  })
 
-    // get the day of the reset (the next day)    
-    if (new Date().getDay() === new Date(date * 1000).getDay()) { date += 86400; }
-    
-    if (new Date().getDay() === new Date(date2 * 1000).getDay()) { date2 += 86400; }
+  dates.forEach(day => {
+    if (closerday - Date.now() > day - Date.now()) { closerday = day }
+  });
 
-    
-    while (Date.now() > date * 1000) { date += 604800; }
-
-    while (Date.now() > date2 * 1000) { date2 += 604800; }
-
-
-    // we compare the dates of the 2 days when the jo is available to know which is the closest 
-    if (date - Math.round(Date.now() / 1000) > date2 - Math.round(Date.now() / 1000)) { date = date2; }
-
-    // UTC management
-    date += (new Date().getHours() - new Date().getUTCHours()) * 3600
-
-    if (data.availability.includes(['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'][new Date().getDay()])) {
-      datemessage = "(Available) Ends in:";
-    } else {
-      datemessage = "Available in:";
-    }
-
-  } else {
-    date += 86400;
-    while (Math.round(Date.now() / 1000) > date) {
-      date += 604800;
-    }
-
+  if (data.availability.includes(['sunday', 'monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday'][new Date().getDay()])) {
     datemessage = "(Available) Ends in:";
+
+    closerday = new Date(Date.now() + (new Date().getHours() < 5 ? 0 : 86400000))
+    closerday.setHours(5); closerday.setMinutes(0); closerday.setSeconds(0); closerday.setMilliseconds(0);
+  } else {
+    datemessage = "Available in:";
   }
 
   let res = "";
@@ -52,11 +50,10 @@ module.exports = async (data) => {
 
   const embed = new EmbedBuilder()
     .setTitle(data.name)
-
     .addFields(
       { name: 'Availability:', value: data.availability.join(', ') },
       { name: 'Enemy Resistances:', value: res },
-      { name: datemessage, value: `<t:${date}:R>` }
+      { name: datemessage, value: `<t:${Math.round(closerday / 1000)}:R>` }
     )
     .setImage(data.img);
 
