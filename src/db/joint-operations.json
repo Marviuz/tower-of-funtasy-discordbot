@@ -3,100 +3,42 @@
     "name": "Spacetime Training Ground",
     "availability": ["friday", "sunday"],
     "resistance": ["ice", "flame"],
-    "img": "https://i.imgur.com/zzk8Pmq.png",
-    "timestamp": [1666321200, 1666494000],
-    "rewards": [
-      { "type": "equipment", "id": "fortress-bracers" },
-      { "type": "equipment", "id": "fortress-armor" },
-      { "type": "equipment", "id": "elite-armbands" },
-      { "type": "equipment", "id": "elite-combat-suit" },
-      { "type": "equipment", "id": "falcon-wristbands" },
-      { "type": "equipment", "id": "falcon-combat-suit" },
-      { "type": "matrix", "id": "huma-matrix" },
-      { "type": "matrix", "id": "samir-matrix" },
-      { "type": "matrix", "id": "robarg-matrix" },
-      { "type": "matrix", "id": "bai-ling-matrix" },
-      { "type": "matrix", "id": "obstacle-removal-matrix" }
-    ]
+    "img": "https://i.imgur.com/zzk8Pmq.png"
   },
   {
     "name": "Deepsea Stronghold",
     "availability": ["tuesday", "saturday"],
     "resistance": ["physical", "ice"],
-    "img": "https://i.imgur.com/xjFmoag.png",
-    "timestamp": [1666062000, 1666407600],
-    "rewards": [
-      { "type": "equipment", "id": "fortress-legguards" },
-      { "type": "equipment", "id": "fortress-handguards" },
-      { "type": "equipment", "id": "elite-combat-leggings" },
-      { "type": "equipment", "id": "elite-gloves" },
-      { "type": "equipment", "id": "falcon-combat-leggings" },
-      { "type": "equipment", "id": "falcon-gloves" },
-      { "type": "matrix", "id": "king-matrix" },
-      { "type": "matrix", "id": "crow-matrix" },
-      { "type": "matrix", "id": "frost-bot-matrix" },
-      { "type": "matrix", "id": "echo-matrix" },
-      { "type": "matrix", "id": "obstacle-removal-matrix" }
-    ]
+    "img": "https://i.imgur.com/xjFmoag.png"
   },
   {
     "name": "Deepsea Proving Ground",
     "availability": ["thursday", "sunday"],
     "resistance": ["volt", "physical"],
-    "img": "https://i.imgur.com/jeWgSBr.png",
-    "timestamp": [1666234800, 1666494000],
-    "rewards": [
-      { "type": "equipment", "id": "fortress-sabatons" },
-      { "type": "equipment", "id": "fortress-belt" },
-      { "type": "equipment", "id": "elite-combat-boots" },
-      { "type": "equipment", "id": "elite-combat-belt" },
-      { "type": "equipment", "id": "falcon-combat-boots" },
-      { "type": "equipment", "id": "falcon-belt" },
-      { "type": "matrix", "id": "meryl-matrix" },
-      { "type": "matrix", "id": "zero-matrix" },
-      { "type": "matrix", "id": "apophis-matrix" },
-      { "type": "matrix", "id": "hilda-matrix" },
-      { "type": "matrix", "id": "obstacle-removal-matrix" }
-    ]
+    "img": "https://i.imgur.com/jeWgSBr.png"
   },
   {
     "name": "Quarantine Zone",
     "availability": ["monday", "saturday"],
     "resistance": ["no resistance"],
-    "img": "https://i.imgur.com/48Vboxa.png",
-    "timestamp": [1665975600, 1666407600],
-    "rewards": [
-      { "type": "equipment", "id": "fortress-bracers" },
-      { "type": "equipment", "id": "fortress-armor" },
-      { "type": "equipment", "id": "elite-armbands" },
-      { "type": "equipment", "id": "elite-combat-suit" },
-      { "type": "equipment", "id": "falcon-wristbands" },
-      { "type": "equipment", "id": "falcon-combat-suit" },
-      { "type": "matrix", "id": "tsubasa-matrix" },
-      { "type": "matrix", "id": "shiro-matrix" },
-      { "type": "matrix", "id": "barbarossa-matrix" },
-      { "type": "matrix", "id": "pepper-matrix" },
-      { "type": "matrix", "id": "obstacle-removal-matrix" }
-    ]
+    "img": "https://i.imgur.com/48Vboxa.png"
   },
   {
     "name": "Hyena Arena",
     "availability": ["wednesday", "sunday"],
     "resistance": ["flame", "volt"],
-    "img": "https://i.imgur.com/7HUyc5D.png",
-    "timestamp": [1666148400, 1666494000],
-    "rewards": [
-      { "type": "equipment", "id": "fortress-spaulders" },
-      { "type": "equipment", "id": "fortress-helm" },
-      { "type": "equipment", "id": "elite-shoulderguards" },
-      { "type": "equipment", "id": "elite-combat-helmet" },
-      { "type": "equipment", "id": "falcon-shoulderguards" },
-      { "type": "equipment", "id": "falcon-combat-helmet" },
-      { "type": "matrix", "id": "coco-ritter-matrix" },
-      { "type": "matrix", "id": "shiro-matrix" },
-      { "type": "matrix", "id": "sobek-matrix" },
-      { "type": "matrix", "id": "ene-matrix" },
-      { "type": "matrix", "id": "obstacle-removal-matrix" }
-    ]
+    "img": "https://i.imgur.com/7HUyc5D.png"
+  },
+  {
+    "name": "The End Game",
+    "availability": ["monday", "wednesday", "friday", "sunday"],
+    "resistance" : ["physical", "volt"],
+    "img": "https://i.imgur.com/UEJeCJP.png"
+  },
+  {
+    "name": "Sandess Valley",
+    "availability": ["thursday", "thursday", "saturday", "sunday"],
+    "resistance": ["flame", "ice"],
+    "img": "https://i.imgur.com/3bgxnXn.png"
   }
 ]

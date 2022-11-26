@@ -108,10 +108,10 @@
             "boss": "Rudolph",
             "mecanims": "Work in progress",
             "rewards": [
-                { "name": "Spacetime Crystal Dust", "value": "?"},
-                { "name": "Spacetime Crystal Fragments", "value": "?"},
-                { "name": "Falcon Combat Engine", "value": "?"},
-                { "name": "Booster Module II", "value": "?"}
+                { "name": "Spacetime Crystal Dust", "value": "20"},
+                { "name": "Spacetime Crystal Fragments", "value": "20"},
+                { "name": "Falcon Combat Engine", "value": "4"},
+                { "name": "Booster Module II", "value": "5"}
             ]
         }
     }
