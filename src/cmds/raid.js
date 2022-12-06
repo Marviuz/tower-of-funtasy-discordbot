@@ -26,7 +26,7 @@ module.exports = {
     .addStringOption(option => 
         option
           .setName(NAME)
-          .setDescription('Name of the simulacra')
+          .setDescription('Raid Name')
           .setRequired(true)
           .addChoices(
             { name: "Midlevel Control Room", value: "Midlevel Control Room" },

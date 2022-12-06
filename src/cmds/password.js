@@ -14,7 +14,6 @@ module.exports = {
     .setDescription(DESCRIPTION),
 
   async execute(interaction) {
-
     const embed = new EmbedBuilder()
         .setColor("White")
         .setTitle(`List of passwords`)

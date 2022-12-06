@@ -26,8 +26,8 @@ module.exports = {
           { name: "N", value: "N" }
         )
     )
-    .addStringOption(optionn =>
-      optionn.setName(NAME)
+    .addStringOption(option =>
+      option.setName(NAME)
         .setDescription('Name of the matrix')
         .setRequired(true)
         .setAutocomplete(true)
