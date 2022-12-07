@@ -43,11 +43,46 @@ for (const file of eventFiles) {
 client.login(process.env.DISCORD_CLIENT_TOKEN);
 
 
+//**********//
+// MONGO_DB //
+//**********//
+const { connect } = require('mongoose')
+const schedule = require('node-schedule');
+
+client.on("ready", async () => {
+  await connect(
+    process.env.MONGODB_URI,
+    {
+      keepAlive: true,
+    }
+  ).then(async () => {
+    console.log('Database Connected!')
+  
+    const channels = (await getallChannel())
+
+    channels.forEach(channel => {  // Registering all channels with game daily information was active
+      let rule = new schedule.RecurrenceRule();
+      rule.hour = 23;
+      rule.minute = 15;
+      rule.tz = channel.TimeZone;
+
+      schedule.scheduleJob(rule, () => {
+        client.channels.cache.get(channel.Channel_id).send(channel.Channel_id) // TODO : Function to send new content per day
+      });
+    })
+  });
+
+
+
+})
+
 //*********//
 // EXPRESS //
 //*********//
 
 const express = require('express');
+const { default: mongoose } = require('mongoose');
+const { getallChannel } = require('./src/db/models/Provider');
 const app = express();
 const port = process.env.PORT;
 app.get('*', (req, res) => {

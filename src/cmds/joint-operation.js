@@ -1,6 +1,6 @@
 const path = require('path');
 const { SlashCommandBuilder } = require('discord.js');
-const jointOperations = require('../db/joint-operations.json');
+const jointOperations = require('../db/local/joint-operations.json');
 const jointOperationsEmbed = require('../embeds/joint-operations.embed');
 
 const NAME = path.parse(__filename).name;

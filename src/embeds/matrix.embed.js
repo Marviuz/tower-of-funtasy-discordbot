@@ -1,7 +1,7 @@
 const { ButtonBuilder, ActionRowBuilder } = require('discord.js');
-const rarities = require('../db/rarities.json');
+const rarities = require('../db/local/matrices.json');
 const { emojis } = require('../utils/app-constants');
-const matricesCN = require('../db/cn/matrices.cn.json');
+const matricesCN = require('../db/local/cn/matrices.cn.json');
 
 const matrixEmbed = ({ matrixImg, matrixId, name, rarity, two, three, four, chinaOnly }) => {
 

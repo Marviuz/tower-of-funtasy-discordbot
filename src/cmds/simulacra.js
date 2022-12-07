@@ -1,8 +1,8 @@
 const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const path = require('path');
 
-const simulacra = require('../db/simulacra.json');
-const simulacraCN = require('../db/cn/simulacra.cn.json');
+const simulacra = require('../db/local/simulacra.json');
+const simulacraCN = require('../db/local/cn/simulacra.cn.json');
 const simulacraEmbed = require('../embeds/simulacra.embed');
 const { ZERO_WIDTH_SPACE, emojis } = require('../utils/app-constants');
 

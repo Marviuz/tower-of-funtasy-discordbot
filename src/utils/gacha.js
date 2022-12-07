@@ -1,6 +1,6 @@
 const GachaJS = require('gacha-js');
 
-const gachaItems = require('../db/gacha.json');
+const gachaItems = require('../db/local/gacha.json');
 
 const RULES = {
   BLACK_NUCLEUS: {

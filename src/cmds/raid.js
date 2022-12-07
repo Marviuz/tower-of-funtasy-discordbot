@@ -1,6 +1,6 @@
 const path = require('path');
 const { SlashCommandBuilder } = require('discord.js');
-const raids = require('../db/raid.json') 
+const raids = require('../db/local/raid.json') 
 const raidEmbed = require('../embeds/raid.embed')
 
 const NAME = path.parse(__filename).name;
