@@ -70,23 +70,24 @@ DISCORD_CLIENT_ID={your application id}
 <details>
     <summary>See all bot Commands</summary>
 
-| Command          | Description                                       |
-| ---------------- | ------------------------------------------------- |
-| /help            | See all commands                                  |
-| /joint-operation | View today's Joint Operations                     |
-| /matrix          | View matrix details                               |
-| /order           | Simulate an summon on a choice of banner (slow)   |
-| /password        | See all passwords for chests and doors in the map |
-| /reminder        | ToF View dailies/weeklies!                        |
-| /simulacra       | View simulacra details                            |
-| /userinfo        | View information of a player in ToF.              |
-| /botinfo         | Give information about the bot                    |
-| /contribute      | Contribute to this project                        |
-| /invite          | Invite this bot to youre server                   |
-| /map             | Get all interactive maps links                    |
-| /raid            | View raid detail                                  |
-| /vote            | Vote for support bot and creators                 |
-| /support         | Oh! You wanna support me?!                        |
+| Command             | Description                                                   |
+| ------------------- | ------------------------------------------------------------- |
+| /help               | See all commands                                              |
+| /joint-operation    | View today's Joint Operations                                 |
+| /matrix             | View matrix details                                           |
+| /order              | Simulate an summon on a choice of banner (slow)               |
+| /password           | See all passwords for chests and doors in the map             |
+| /reminder           | ToF View dailies/weeklies!                                    |
+| /simulacra          | View simulacra details                                        |
+| /userinfo           | View information of a player in ToF.                          |
+| /botinfo            | Give information about the bot                                |
+| /contribute         | Contribute to this project                                    |
+| /invite             | Invite this bot to youre server                               |
+| /map                | Get all interactive maps links                                |
+| /raid               | View raid detail                                              |
+| /vote               | Vote for support bot and creators                             |
+| /support            | Oh! You wanna support me?!                                    |
+| /game-daily-channel | Set up a channel that will indicate the things to do each day |
 
 </details>
 

@@ -42,7 +42,7 @@ module.exports = async (data) => {
   let res = "";
   data.resistance.forEach(element => {
     if (element != "no resistance") {
-      res += `${emojis[element]} ${element}, `;
+      res += `${emojis[element]} ${element[0].toUpperCase() + element.slice(1)}, `;
     } else {
       res = ":x: " + element;
     }
@@ -51,8 +51,8 @@ module.exports = async (data) => {
   const embed = new EmbedBuilder()
     .setTitle(data.name)
     .addFields(
-      { name: 'Availability:', value: data.availability.join(', ') },
-      { name: 'Enemy Resistances:', value: res },
+      { name: 'Availability:', value: data.availability.map($ => `${$[0].toUpperCase() + $.slice(1)}`).join(', ') },
+      { name: data.name === "Sadness Valley" || data.name === "The End Game" ? "Enemy's Weakness:" : "Enemy's Resistances:", value: res },
       { name: datemessage, value: `<t:${Math.round(closerday / 1000)}:R>` }
     )
     .setImage(data.img);

@@ -8,7 +8,7 @@ const schedule = require('node-schedule');
 const { Channelexist, deleteChannel } = require('../db/models/Provider');
 
 const NAME = path.parse(__filename).name;
-const DESCRIPTION = 'View today\'s Joint Operations';
+const DESCRIPTION = 'Set up a channel that will indicate the things to do each day';
 
 module.exports = {
   name: NAME,

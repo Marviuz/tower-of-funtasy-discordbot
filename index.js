@@ -47,7 +47,9 @@ client.login(process.env.DISCORD_CLIENT_TOKEN);
 // MONGO_DB //
 //**********//
 const { connect } = require('mongoose')
+const { getallChannel } = require('./src/db/models/Provider');
 const schedule = require('node-schedule');
+const daily_message = require('./src/utils/daily-message');
 
 client.on("ready", async () => {
   await connect(
@@ -56,24 +58,22 @@ client.on("ready", async () => {
       keepAlive: true,
     }
   ).then(async () => {
-    console.log('Database Connected!')
+    console.log('Database Connected!');
   
-    const channels = (await getallChannel())
+    const channels = (await getallChannel());
 
     channels.forEach(channel => {  // Registering all channels with game daily information was active
       let rule = new schedule.RecurrenceRule();
-      rule.hour = 23;
-      rule.minute = 15;
+
+      rule.hour = 5;
+      rule.minute = 0;
       rule.tz = channel.TimeZone;
 
       schedule.scheduleJob(rule, () => {
-        client.channels.cache.get(channel.Channel_id).send(channel.Channel_id) // TODO : Function to send new content per day
+        client.channels.cache.get(channel.Channel_id).send({ embeds: [daily_message(channel.TimeZone)] });
       });
     })
   });
-
-
-
 })
 
 //*********//
@@ -81,8 +81,6 @@ client.on("ready", async () => {
 //*********//
 
 const express = require('express');
-const { default: mongoose } = require('mongoose');
-const { getallChannel } = require('./src/db/models/Provider');
 const app = express();
 const port = process.env.PORT;
 app.get('*', (req, res) => {
