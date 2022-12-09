@@ -19,17 +19,17 @@ module.exports = {
     .setDescription(DESCRIPTION)
     .setDefaultMemberPermissions(PermissionFlagsBits.Administrator)
     .addChannelOption(option =>
-		option.setName('channel')
-			.setDescription('The channel to echo into')
-      .setRequired(true)
-			.addChannelTypes(ChannelType.GuildText)
+      option.setName('channel')
+        .setDescription('The channel to echo into')
+        .setRequired(true)
+        .addChannelTypes(ChannelType.GuildText)
     )
-    .addStringOption(option => 
+    .addStringOption(option =>
       option.setName('status')
         .setDescription('Set the status of daily channel')
         .setRequired(true)
         .setChoices(
-          { name: 'Unable', value: 'unable' },
+          { name: 'Enable', value: 'enable' },
           { name: 'Disable', value: 'disable' },
         )
     )
@@ -37,7 +37,7 @@ module.exports = {
       option.setName('country')
         .setDescription('Name of the country (default UTC+0)')
     ),
-    
+
   async execute(interaction) {
     await interaction.deferReply();
 
@@ -45,37 +45,37 @@ module.exports = {
     const set = interaction.options.getString('status');
     let country = interaction.options.getString('country');
 
-    if (!country) { country = "island" } // UTC timeZone
+    if (!country) { country = "island"; } // UTC timeZone
 
     if (CT.getTimezones(country).length == 0) return await interaction.editReply({ embeds: [{ color: RED, title: 'Please enter a valid country name' }] });
-    
+
     const timeZone = CT.getTimezones(country)[0];
 
     const embed = new EmbedBuilder()
       .setTitle('Game Daily Channel')
       .setColor('White')
-      .setDescription('A message will be sent every day at 5am to inform about things to do on the game')
+      .setDescription('A message will be sent daily at 5am to inform about things to do on the game')
       .addFields(
         { name: ':earth_africa: TimeZone:', value: `\`${timeZone}\`` },
         { name: ':beginner: Server:', value: `\`${channel.guild.name}\`` },
-        { name: ':keyboard: Channel:', value: `\`${channel.name}\`` },
-        { name: ':gear: Status:', value: `\`${set}\`` },
+        { name: ':keyboard: Channel:', value: `\`#${channel.name}\`` },
+        { name: ':gear: Status:', value: `\`${set === 'enable' ? '✅' : '❌'} ${set}d\`` },
       )
       .setFooter({ text: client.user.username, iconURL: client.user.displayAvatarURL() })
-      .setTimestamp()
+      .setTimestamp();
 
-    const isSet = (await Channelexist(channel))
+    const isSet = (await Channelexist(channel));
 
     if (isSet == 0) {
-      if (set == 'disable') return await interaction.editReply({ embeds: [{ color: RED, title: 'The game daily system can be disabled on this channel beacause is not set' }] });
-      
+      if (set == 'disable') return await interaction.editReply({ embeds: [{ color: RED, title: 'The game daily system is disabled in this channel' }] });
+
       interaction.editReply({ embeds: [embed] });
 
       await new gamedailychannelSchema({
         Guild_id: channel.guild.id,
         Channel_id: channel.id,
         TimeZone: timeZone
-      }).save()
+      }).save();
 
       const rule = new schedule.RecurrenceRule();
       rule.hour = new Date().getHours();
@@ -83,18 +83,18 @@ module.exports = {
       rule.tz = timeZone;
 
       schedule.scheduleJob(rule, () => {
-        channel.send("UWU")
+        channel.send("UWU");
       });
 
 
     } else {
       if (set == 'disable') {
-        deleteChannel(channel)
+        deleteChannel(channel);
         return interaction.editReply({ embeds: [embed] });
       }
 
       return await interaction.editReply({ embeds: [{ color: RED, title: 'Game daily information are already set for this channel' }] });
     }
-    
+
   },
 };
