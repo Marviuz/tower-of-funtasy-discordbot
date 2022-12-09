@@ -46,8 +46,8 @@ client.login(process.env.DISCORD_CLIENT_TOKEN);
 //**********//
 // MONGO_DB //
 //**********//
-const { connect } = require('mongoose')
-const { getallChannel } = require('./src/db/models/Provider');
+const { connect } = require('mongoose');
+const { getallChannel } = require('./src/db/models/provider');
 const schedule = require('node-schedule');
 const daily_message = require('./src/utils/daily-message');
 
@@ -59,7 +59,7 @@ client.on("ready", async () => {
     }
   ).then(async () => {
     console.log('Database Connected!');
-  
+
     const channels = (await getallChannel());
 
     channels.forEach(channel => {  // Registering all channels with game daily information was active
@@ -72,9 +72,9 @@ client.on("ready", async () => {
       schedule.scheduleJob(rule, () => {
         client.channels.cache.get(channel.Channel_id).send({ embeds: [daily_message(channel.TimeZone)] });
       });
-    })
+    });
   });
-})
+});
 
 //*********//
 // EXPRESS //
