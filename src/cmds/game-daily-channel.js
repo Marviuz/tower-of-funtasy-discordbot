@@ -5,7 +5,7 @@ const { RED } = require('../utils/app-constants');
 const client = require('../../index');
 const { gamedailychannelSchema } = require('../db/models/schema.game-daily-channel');
 const schedule = require('node-schedule');
-const { Channelexist, deleteChannel } = require('../db/models/Provider');
+const { Channelexist, deleteChannel } = require('../db/models/provider');
 
 const NAME = path.parse(__filename).name;
 const DESCRIPTION = 'Set up a channel that will indicate the things to do each day';
