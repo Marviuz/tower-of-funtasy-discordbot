@@ -6,6 +6,7 @@ const client = require('../../index');
 const { gamedailychannelSchema } = require('../db/models/schema.game-daily-channel');
 const schedule = require('node-schedule');
 const { Channelexist, deleteChannel } = require('../db/models/provider');
+const daily_message = require('../utils/daily-message');
 
 const NAME = path.parse(__filename).name;
 const DESCRIPTION = 'Set up a channel that will indicate the things to do each day';
@@ -29,7 +30,7 @@ module.exports = {
         .setDescription('Set the status of daily channel')
         .setRequired(true)
         .setChoices(
-          { name: 'Enable', value: 'enable' },
+          { name: 'Unable', value: 'unable' },
           { name: 'Disable', value: 'disable' },
         )
     )
@@ -54,12 +55,12 @@ module.exports = {
     const embed = new EmbedBuilder()
       .setTitle('Game Daily Channel')
       .setColor('White')
-      .setDescription('A message will be sent daily at 5am to inform about things to do on the game')
+      .setDescription('A message will be sent every day at 5am to inform about things to do on the game')
       .addFields(
         { name: ':earth_africa: TimeZone:', value: `\`${timeZone}\`` },
         { name: ':beginner: Server:', value: `\`${channel.guild.name}\`` },
-        { name: ':keyboard: Channel:', value: `\`#${channel.name}\`` },
-        { name: ':gear: Status:', value: `\`${set === 'enable' ? '✅' : '❌'} ${set}d\`` },
+        { name: ':keyboard: Channel:', value: `\`${channel.name}\`` },
+        { name: ':gear: Status:', value: `\`${set}\`` },
       )
       .setFooter({ text: client.user.username, iconURL: client.user.displayAvatarURL() })
       .setTimestamp();
@@ -67,7 +68,7 @@ module.exports = {
     const isSet = (await Channelexist(channel));
 
     if (isSet == 0) {
-      if (set == 'disable') return await interaction.editReply({ embeds: [{ color: RED, title: 'The game daily system is disabled in this channel' }] });
+      if (set == 'disable') return await interaction.editReply({ embeds: [{ color: RED, title: 'The game daily system can be disabled on this channel beacause is not set' }] });
 
       interaction.editReply({ embeds: [embed] });
 
@@ -78,14 +79,13 @@ module.exports = {
       }).save();
 
       const rule = new schedule.RecurrenceRule();
-      rule.hour = new Date().getHours();
-      rule.minute = new Date().getMinutes() + 1;
+      rule.hour = 5;
+      rule.minute = 0;
       rule.tz = timeZone;
 
       schedule.scheduleJob(rule, () => {
-        channel.send("UWU");
+        channel.send({ embeds: [daily_message(timeZone)] });
       });
-
 
     } else {
       if (set == 'disable') {
