@@ -6,7 +6,6 @@ const client = require('../../index');
 const { gamedailychannelSchema } = require('../db/models/schema.game-daily-channel');
 const schedule = require('node-schedule');
 const { Channelexist, deleteChannel } = require('../db/models/Provider');
-const daily_message = require('../utils/daily-message');
 
 const NAME = path.parse(__filename).name;
 const DESCRIPTION = 'Set up a channel that will indicate the things to do each day';
@@ -79,12 +78,12 @@ module.exports = {
       }).save()
 
       const rule = new schedule.RecurrenceRule();
-      rule.hour = 5
-      rule.minute = 0;
+      rule.hour = new Date().getHours();
+      rule.minute = new Date().getMinutes() + 1;
       rule.tz = timeZone;
 
       schedule.scheduleJob(rule, () => {
-        channel.send({ embeds: [daily_message(channel.TimeZone)] })
+        channel.send("UWU")
       });
 
 
