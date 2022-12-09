@@ -23,12 +23,15 @@
   "dependencies": {
     "@discordjs/rest": "^1.1.0",
     "axios": "^1.1.3",
+    "country-timezone": "^1.0.8",
     "discord.js": "^14.3.0",
     "express": "^4.18.1",
     "gacha-js": "github:marviuz/gacha-js",
     "imgur": "^2.2.0",
     "lodash.sample": "^4.2.1",
+    "mongoose": "^6.7.5",
     "node-html-to-image": "^3.2.4",
+    "node-schedule": "^2.1.0",
     "pretty-ms": "^7.0.1"
   },
   "devDependencies": {

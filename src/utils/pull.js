@@ -2,8 +2,8 @@ const { blackNucleus, goldNucleus } = require('./gacha');
 const generatePull = require('./generate-pull');
 const uploadToImgur = require('../services/imgur');
 
-const simulacra = require('../db/simulacra.json');
-const rarities = require('../db/rarities.json');
+const simulacra = require('../db/local/simulacra.json');
+const rarities = require('../db/local/rarities.json');
 
 const pull = async (isTen, type, { id, username, discriminator }) => {
   let pulls;

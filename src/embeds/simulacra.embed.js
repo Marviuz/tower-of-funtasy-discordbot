@@ -1,7 +1,7 @@
 const { ActionRowBuilder, ButtonBuilder } = require('discord.js');
-const rarities = require('../db/rarities.json');
+const rarities = require('../db/local/rarities.json');
 const { emojis } = require("../utils/app-constants");
-const simulacraCN = require("../db/cn/simulacra.cn.json")
+const simulacraCN = require("../db/local/cn/simulacra.cn.json")
 
 
 const simulacraEmbed = ({ name, rarity, weapon, element, type, baseStats, shatter, charge, effect, advancement, awakening, weaponImg, simulacraImg, chinaOnly }) => {

@@ -1,9 +1,10 @@
 const { SlashCommandBuilder } = require('discord.js');
 const path = require('path');
 
-const matrices = require('../db/matrices.json');
-const matricesCN = require('../db/cn/matrices.cn.json');
+const matrices = require('../db/local/matrices.json');
+const matricesCN = require('../db/local/cn/matrices.cn.json');
 const matrixEmbed = require('../embeds/matrix.embed');
+
 
 const NAME = path.parse(__filename).name;
 const DESCRIPTION = 'View matrix details';
@@ -26,8 +27,8 @@ module.exports = {
           { name: "N", value: "N" }
         )
     )
-    .addStringOption(optionn =>
-      optionn.setName(NAME)
+    .addStringOption(option =>
+      option.setName(NAME)
         .setDescription('Name of the matrix')
         .setRequired(true)
         .setAutocomplete(true)

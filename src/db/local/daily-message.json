@@ -1,0 +1,227 @@
+{
+    "Monday": {
+        "jo": [
+            {
+                "name": "Quarantine Area",
+                "resistance": ["no resistance"],
+                "rewards": [
+                    "armband",
+                    "armor",
+                    "matrix_tsubasa",
+                    "matrix_shiro"
+                ]
+            },
+            {
+                "name": "The End Game",
+                "resistance": ["volt", "physical"],
+                "rewards": [
+                    "phy_armor",
+                    "volt_armor",
+                    "matrix_meryl"
+                ]
+            }
+        ],
+        "Other": [
+            "A new **Void Rift** attempt was gained",
+            "The number of **Raids** have been reset",
+            "The **Artifial Island Bosses** have respawn",
+            "The Claire's Dream Machine have been reset"
+        ]
+    },
+    "Tuesday": {
+        "jo": [
+            {
+                "name": "Deepsea Stronghold",
+                "resistance": ["physical", "ice"],
+                "rewards": [
+                    "pants",
+                    "glove",
+                    "matrix_king",
+                    "matrix_crow"
+                ]
+            },
+            {
+                "name": "Sadness Valley",
+                "resistance": ["flame", "ice"],
+                "rewards": [
+                    "ice_armor",
+                    "fire_armor",
+                    "matrix_meryl"
+                ]
+            }   
+        ],
+        "Other": [
+            "A new **Frontier Clash** attempt was gained"
+        ]
+    },
+    "Wednestay": {
+        "jo": [
+            {
+                "name": "Hyena Area",
+                "resistance": ["flame", "volt"],
+                "rewards": [
+                    "shawl",
+                    "helmet",
+                    "matrix_shiro",
+                    "matrix_cocoritter"
+                ]
+            },
+            {
+                "name": "The End Game",
+                "resistance" : ["physical", "volt"],
+                "rewards": [
+                    "phy_armor",
+                    "volt_armor",
+                    "matrix_meryl"
+                ]
+            }  
+        ],
+        "Other": [
+            "A new **Void Rift** attempt was gained"
+        ]
+    },
+    "Thursday": {
+        "jo": [
+            {
+                "name": "Deepsea Proving Ground",
+                "resistance": ["volt", "physical"],
+                "rewards": [
+                    "shoes",
+                    "belt",
+                    "matrix_meryl",
+                    "matrix_zero"
+                ]
+            },
+            {
+                "name": "Sadness Valley",
+                "resistance": ["flame", "ice"],
+                "rewards": [
+                    "ice_armor",
+                    "fire_armor",
+                    "matrix_meryl"
+                ]
+            }
+        ],
+        "Other": [
+            "A new **Frontier Clash** attempt was gained"
+        ]
+    },
+    "Friday": {
+        "jo": [
+            {
+                "name": "Spacetime Training Ground",
+                "resistance": ["ice", "flame"],
+                "rewards": [
+                    "armband",
+                    "armor",
+                    "matrix_huma",
+                    "matrix_samir"
+                ]
+            },
+            {
+                "name": "The End Game",
+                "resistance" : ["physical", "volt"],
+                "rewards": [
+                    "phy_armor",
+                    "volt_armor",
+                    "matrix_meryl"
+                ]
+            }
+            
+        ],
+        "Other": [
+            "A new **Void Rift** attempt was gained"
+        ]
+    },
+    "Saturday": {
+        "jo": [
+            {
+                "name": "Quarantine Area",
+                "resistance": ["no resistance"],
+                "rewards": [
+                    "armband",
+                    "armor",
+                    "matrix_tsubasa",
+                    "matrix_shiro"
+                ]
+            },
+            {
+                "name": "Deepsea Stronghold",
+                "resistance": ["physical", "ice"],
+                "rewards": [
+                    "pants",
+                    "glove",
+                    "matrix_king",
+                    "matrix_crow"
+                ]
+            },
+            {
+                "name": "Sadness Valley",
+                "resistance": ["flame", "ice"],
+                "rewards": [
+                    "ice_armor",
+                    "fire_armor",
+                    "matrix_meryl"
+                ]
+            }
+        ],
+        "Other": [
+            "A new **Frontier Clash** attempt was gained"
+        ]
+    },
+    "Sunday": {
+        "jo": [
+            {
+                "name": "Hyena Area",
+                "resistance": ["flame", "volt"],
+                "rewards": [
+                    "shawl",
+                    "helmet",
+                    "matrix_shiro",
+                    "matrix_cocoritter"
+                ]
+            },
+            {
+                "name": "Deepsea Proving Ground",
+                "resistance": ["volt", "physical"],
+                "rewards": [
+                    "shoes",
+                    "belt",
+                    "matrix_meryl",
+                    "matrix_zero"
+                ]
+            },
+            {
+                "name": "Spacetime Training Ground",
+                "resistance": ["ice", "flame"],
+                "rewards": [
+                    "armband",
+                    "armor",
+                    "matrix_huma",
+                    "matrix_samir"
+                ]
+            },
+            {
+                "name": "The End Game",
+                "resistance" : ["physical", "volt"],
+                "rewards": [
+                    "phy_armor",
+                    "volt_armor",
+                    "matrix_meryl"
+                ]
+            },
+            {
+                "name": "Sadness Valley",
+                "resistance": ["flame", "ice"],
+                "rewards": [
+                    "ice_armor",
+                    "fire_armor",
+                    "matrix_meryl"
+                ]
+            }
+        ],
+        "Other": [
+            "Last day to make your **Bygone Phantasm**"
+        ]
+    }
+}
