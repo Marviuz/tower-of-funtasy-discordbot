@@ -5,7 +5,7 @@ const { RED } = require('../utils/app-constants');
 const client = require('../../index');
 const { gamedailychannelSchema } = require('../db/models/schema.game-daily-channel');
 const schedule = require('node-schedule');
-const { Channelexist, deleteChannel } = require('../db/models/Provider');
+const { Channelexist, deleteChannel } = require('../db/models/provider');
 const daily_message = require('../utils/daily-message');
 
 const NAME = path.parse(__filename).name;
@@ -20,12 +20,12 @@ module.exports = {
     .setDescription(DESCRIPTION)
     .setDefaultMemberPermissions(PermissionFlagsBits.Administrator)
     .addChannelOption(option =>
-		option.setName('channel')
-			.setDescription('The channel to echo into')
-      .setRequired(true)
-			.addChannelTypes(ChannelType.GuildText)
+      option.setName('channel')
+        .setDescription('The channel to echo into')
+        .setRequired(true)
+        .addChannelTypes(ChannelType.GuildText)
     )
-    .addStringOption(option => 
+    .addStringOption(option =>
       option.setName('status')
         .setDescription('Set the status of daily channel')
         .setRequired(true)
@@ -38,7 +38,7 @@ module.exports = {
       option.setName('country')
         .setDescription('Name of the country (default UTC+0)')
     ),
-    
+
   async execute(interaction) {
     await interaction.deferReply();
 
@@ -46,10 +46,10 @@ module.exports = {
     const set = interaction.options.getString('status');
     let country = interaction.options.getString('country');
 
-    if (!country) { country = "island" } // UTC timeZone
+    if (!country) { country = "island"; } // UTC timeZone
 
     if (CT.getTimezones(country).length == 0) return await interaction.editReply({ embeds: [{ color: RED, title: 'Please enter a valid country name' }] });
-    
+
     const timeZone = CT.getTimezones(country)[0];
 
     const embed = new EmbedBuilder()
@@ -63,20 +63,20 @@ module.exports = {
         { name: ':gear: Status:', value: `\`${set}\`` },
       )
       .setFooter({ text: client.user.username, iconURL: client.user.displayAvatarURL() })
-      .setTimestamp()
+      .setTimestamp();
 
-    const isSet = (await Channelexist(channel))
+    const isSet = (await Channelexist(channel));
 
     if (isSet == 0) {
       if (set == 'disable') return await interaction.editReply({ embeds: [{ color: RED, title: 'The game daily system can be disabled on this channel beacause is not set' }] });
-      
+
       interaction.editReply({ embeds: [embed] });
 
       await new gamedailychannelSchema({
         Guild_id: channel.guild.id,
         Channel_id: channel.id,
         TimeZone: timeZone
-      }).save()
+      }).save();
 
       const rule = new schedule.RecurrenceRule();
       rule.hour = 5;
@@ -84,17 +84,17 @@ module.exports = {
       rule.tz = timeZone;
 
       schedule.scheduleJob(rule, () => {
-        channel.send({ embeds: [daily_message(timeZone)] })
+        channel.send({ embeds: [daily_message(timeZone)] });
       });
 
     } else {
       if (set == 'disable') {
-        deleteChannel(channel)
+        deleteChannel(channel);
         return interaction.editReply({ embeds: [embed] });
       }
 
       return await interaction.editReply({ embeds: [{ color: RED, title: 'Game daily information are already set for this channel' }] });
     }
-    
+
   },
 };
