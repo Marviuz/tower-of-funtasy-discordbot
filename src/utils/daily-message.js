@@ -19,7 +19,7 @@ function daily_message(TimeZone) {
     
     const weekday = formatter.formatToParts(new Date())[0].value;
 
-    let jo = ""
+    let jo = []
     dailydata[weekday]["jo"].forEach(data => {
         let res = ""
         data.resistance.forEach(element => {
@@ -30,16 +30,17 @@ function daily_message(TimeZone) {
             }
         });
 
-        jo += `\n\n**${data.name}**\n` + "\`Rewards:\` " + data.rewards.map($ => `${emojis[$]}  ${ formatString($) }`).join(", ") + `\n \`${data.name === "Sadness Valley" || data.name === "The End Game" ? "Weakness" : "Resistances"}:\` ${res}`
+        jo.push({ name: data.name, value: "\`Rewards:\` " + data.rewards.map($ => `${emojis[$]}  ${ formatString($) }`).join(", ") + `\n \`${data.name === "Sadness Valley" || data.name === "The End Game" ? "Weakness" : "Resistances"}:\` ${res} ${dailydata[weekday]["jo"].indexOf(data)+1 == dailydata[weekday]["jo"].length ? "\n\nTo see **more details** please use the </joint-operation:1021352197860098088> command" : ""}` })
     });
 
     const embed = new EmbedBuilder()
         .setTitle("Today's availability " + `(${weekday})`)
         .setColor('White')
+        .setDescription("**Joint Operations available**:\n")
         .setFooter({ text: client.user.username, iconURL: client.user.displayAvatarURL() })
         .setTimestamp()
         .addFields(
-            { name: "**Joint Operations available**:\n", value: jo + "\n\nTo see **more details** please use the </joint-operation:1021352197860098088> command" },
+            ...jo,
             { name: "Other:", value: dailydata[weekday]["Other"].map($ => $).join("\n") }
         )
       
