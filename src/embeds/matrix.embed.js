@@ -1,5 +1,5 @@
 const { ButtonBuilder, ActionRowBuilder } = require('discord.js');
-const rarities = require('../db/local/matrices.json');
+const rarities = require('../db/local/rarities.json');
 const { emojis } = require('../utils/app-constants');
 const matricesCN = require('../db/local/cn/matrices.cn.json');
 
