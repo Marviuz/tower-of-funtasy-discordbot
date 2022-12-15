@@ -6,7 +6,7 @@
                 "resistance": ["no resistance"],
                 "rewards": [
                     "armband",
-                    "armor",
+                    "cloth",
                     "matrix_tsubasa",
                     "matrix_shiro"
                 ]
@@ -15,7 +15,7 @@
                 "name": "The End Game",
                 "resistance": ["volt", "physical"],
                 "rewards": [
-                    "phy_armor",
+                    "physical_armor",
                     "volt_armor",
                     "matrix_meryl"
                 ]
@@ -70,7 +70,7 @@
                 "name": "The End Game",
                 "resistance" : ["physical", "volt"],
                 "rewards": [
-                    "phy_armor",
+                    "physical_armor",
                     "volt_armor",
                     "matrix_meryl"
                 ]
@@ -113,7 +113,7 @@
                 "resistance": ["ice", "flame"],
                 "rewards": [
                     "armband",
-                    "armor",
+                    "cloth",
                     "matrix_huma",
                     "matrix_samir"
                 ]
@@ -122,7 +122,7 @@
                 "name": "The End Game",
                 "resistance" : ["physical", "volt"],
                 "rewards": [
-                    "phy_armor",
+                    "physical_armor",
                     "volt_armor",
                     "matrix_meryl"
                 ]
@@ -140,7 +140,7 @@
                 "resistance": ["no resistance"],
                 "rewards": [
                     "armband",
-                    "armor",
+                    "cloth",
                     "matrix_tsubasa",
                     "matrix_shiro"
                 ]
@@ -196,7 +196,7 @@
                 "resistance": ["ice", "flame"],
                 "rewards": [
                     "armband",
-                    "armor",
+                    "cloth",
                     "matrix_huma",
                     "matrix_samir"
                 ]
@@ -205,7 +205,7 @@
                 "name": "The End Game",
                 "resistance" : ["physical", "volt"],
                 "rewards": [
-                    "phy_armor",
+                    "physical_armor",
                     "volt_armor",
                     "matrix_meryl"
                 ]
