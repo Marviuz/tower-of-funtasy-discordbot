@@ -1,6 +1,6 @@
 {
   "name": "tower-of-funtasy-discordbot",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "A fan-made ToF discord bot",
   "main": "index.js",
   "scripts": {
@@ -29,6 +29,7 @@
     "gacha-js": "github:marviuz/gacha-js",
     "imgur": "^2.2.0",
     "lodash.sample": "^4.2.1",
+    "moment-timezone": "^0.5.40",
     "mongoose": "^6.7.5",
     "node-html-to-image": "^3.2.4",
     "node-schedule": "^2.1.0",

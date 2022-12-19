@@ -1,7 +1,9 @@
 const path = require('path');
 const { SlashCommandBuilder } = require('discord.js');
 const raids = require('../db/local/raid.json') 
-const raidEmbed = require('../embeds/raid.embed')
+const raidEmbed = require('../embeds/raid.embed');
+const { getUserTimezone } = require('../db/models/provider');
+const client = require('../../index');
 
 const NAME = path.parse(__filename).name;
 const DESCRIPTION = 'View raid detail';
@@ -40,8 +42,10 @@ module.exports = {
     const difficulty = interaction.options.getString("difficulty")
 
     const [match] = raids.filter(({ name }) => name.toLowerCase() === raid.toLowerCase());
+    const timeZone = (await getUserTimezone(interaction.user.id))
+    const setregionID = (await client.application.commands.fetch()).find(_ => _.name == "setregion");
 
-    const { embed } = raidEmbed(match[difficulty]);
+    const { embed } = raidEmbed(match[difficulty], timeZone, setregionID.id);
     await interaction.reply({ embeds: [embed] });
 
   },

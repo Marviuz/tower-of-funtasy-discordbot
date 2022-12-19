@@ -1,5 +1,7 @@
 const { EmbedBuilder } = require('discord.js');
 const { emojis } = require('../utils/app-constants');
+const moment = require('moment-timezone');
+
 
 function getNextDate(day) {
   const dateCopy = new Date();
@@ -14,7 +16,7 @@ function getNextDate(day) {
   return nextDay;
 }
 
-module.exports = async (data) => {
+module.exports = async (data, timeZone, setregionID) => {
   let dates = []
   let datemessage = "";
   let closerday = Date.now() + 864000000
@@ -48,12 +50,17 @@ module.exports = async (data) => {
     }
   });
 
+  closerday = new Date(closerday.getTime() + (new Date().getTimezoneOffset() * 60000)) // Set time to UTC
+
+  if(timeZone != 0) closerday = new Date(closerday.getTime() + (moment().tz(timeZone).utcOffset() * 60000))
+
+
   const embed = new EmbedBuilder()
     .setTitle(data.name)
     .addFields(
       { name: 'Availability:', value: data.availability.map($ => `${$[0].toUpperCase() + $.slice(1)}`).join(', ') },
       { name: data.name === "Sadness Valley" || data.name === "The End Game" ? "Enemy's Weakness:" : "Enemy's Resistances:", value: res },
-      { name: datemessage, value: `<t:${Math.round(closerday / 1000)}:R>` }
+      { name: datemessage, value: `<t:${Math.round(closerday / 1000)}:R> ${timeZone == 0 ? `\n_Your personal timezone has not been defined, use </setregion:${setregionID}> to set it_` : ""}` }
     )
     .setImage(data.img);
 

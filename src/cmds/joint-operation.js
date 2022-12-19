@@ -2,6 +2,7 @@ const path = require('path');
 const { SlashCommandBuilder } = require('discord.js');
 const jointOperations = require('../db/local/joint-operations.json');
 const jointOperationsEmbed = require('../embeds/joint-operations.embed');
+const { getUserTimezone } = require('../db/models/provider');
 
 const NAME = path.parse(__filename).name;
 const DESCRIPTION = 'View today\'s Joint Operations';
@@ -37,7 +38,10 @@ module.exports = {
       selectedJo = jointOperations.filter(_ => _.availability.includes(day));
     }
 
-    const _jointOps = selectedJo.map(async _ => await jointOperationsEmbed(_));
+    const timeZone = (await getUserTimezone(interaction.user.id))
+    const setregionID = (await client.application.commands.fetch()).find(_ => _.name == "setregion");
+
+    const _jointOps = selectedJo.map(async _ => await jointOperationsEmbed(_, timeZone, setregionID.id));
     Promise.all(_jointOps)
       .then(values => {
         interaction.editReply({ embeds: values.map(_ => _.embed) });
