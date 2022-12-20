@@ -15,7 +15,7 @@ function daily_message(TimeZone) {
     const formatter = new Intl.DateTimeFormat('en-US', {
         timeZone: TimeZone,
         weekday: 'long',
-      })
+    })
     
     const weekday = formatter.formatToParts(new Date())[0].value;
 

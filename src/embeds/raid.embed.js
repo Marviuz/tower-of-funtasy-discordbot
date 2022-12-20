@@ -1,16 +1,20 @@
-const { EmbedBuilder, AttachmentBuilder } = require('discord.js');
+const { EmbedBuilder } = require('discord.js');
 const { emojis } = require('../utils/app-constants')
+const moment = require('moment-timezone');
 
-const raidEmbed = ({ name, weakness, level, cs, boss, mecanims, rewards }) => {
+const raidEmbed = ({ name, weakness, level, cs, boss, mecanims, rewards }, timeZone, setregionID) => {
+    const dateCopy = new Date();
+ 
+    let reset = new Date(
+      dateCopy.setDate(
+        dateCopy.getDate() + ((7 - dateCopy.getDay() + 1) % 7 || 7),
+      ),
+    );
+    reset.setHours(5); reset.setMinutes(0); reset.setSeconds(0); reset.setMilliseconds(0);
+    reset = new Date(reset.getTime() + (new Date().getTimezoneOffset() * 60000)) // Set time to UTC
 
-    let reset = 1665975600
-    while (Math.round(Date.now() / 1000) > reset) {
-      reset += 604800
-    }
-
-    // UTC management
-    reset += (new Date().getHours() - new Date().getUTCHours()) * 3600
-
+    if(timeZone != 0) reset = new Date(reset.getTime() + (moment().tz(timeZone).utcOffset() * 60000))
+    
   return {
     embed: new EmbedBuilder()
       .setColor('Purple')
@@ -22,7 +26,7 @@ const raidEmbed = ({ name, weakness, level, cs, boss, mecanims, rewards }) => {
         { name: 'Rewards:', value: rewards.map($ => `${$.name != 'Falcon Combat Engine' ? emojis[$.name.toLowerCase().replace(/ /g,'')] : emojis['bluecore']} ${$.name}: ${$.value}`).join('\n'), inline: true},
         { name: 'Team:', value: `${emojis['dps']} Attack x4\n ${emojis['support']} Benediction x2\n ${emojis['defense']} Fortitude x2`, inline: true},
         { name: 'Boss:', value: boss, inline: true},
-        { name: 'Reset:', value: `<t:${reset}:R>`},
+        { name: 'Reset:', value: `<t:${Math.round(reset / 1000)}:R> ${timeZone == 0 ? `\n_Your personal timezone has not been defined, use </setregion:${setregionID}> to set it_` : ""}`},
         { name: 'Mecanims:', value: mecanims }
     ),
   };
