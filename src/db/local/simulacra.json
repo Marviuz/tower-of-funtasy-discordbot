@@ -1,5 +1,89 @@
 [
   {
+    "id": "tian-lang",
+    "weaponId": "powerbreak",
+    "simulacraImg": "https://i.imgur.com/jFlpgF4.png",
+    "weaponImg": "https://i.imgur.com/aXDOUUB.png",
+    "name": "Tian Lang",
+    "rarity": "SSR",
+    "weapon": "Powerbreak",
+    "element": "volt",
+    "type": "dps",
+    "baseStats": ["attack", "health", "crit"],
+    "shatter": { "rank": "S", "value": 12.5 },
+    "charge": { "rank": "A", "value": 8 },
+    "materials": ["volt", "green", "blue"],
+    "effect": [
+      {
+        "title": "Volt",
+        "description": "When the weapon is fully charged, the next attack will **paralyze** targets for **1** second and electrify them for **6** seconds, negating all buffs and dealing damage equal to **144.00%** of ATK. Targets can't receive any buffs for the next **6** seconds."
+      },
+      {
+        "title": "Volt Resonance",
+        "description": "Increase volt ATK by **15%** and volt resistance by **25%**. Activate by equipping **2** or more volt weapons. This set's effects do not work with others."
+      }
+    ],
+    "advancement": [
+      "Charging battery grants 1 stack of Overload, increasing max HP by **7.5%** but increases damage received by **2%** (except when your HP is lower than 50 &times; volt ATK). Stacks up to **8** times and if not refreshed, lose one stack every **6** seconds.",
+      "Increase the current weapon's base ATK growth by **16%**.",
+      "Unleash any volt weapon's skill or discharge skill to gain **2** stacks of Overload. At **8** stacks gain immunity to control effects.",
+      "Increase the current weapon's base HP growth by **32%**.",
+      "Every stack of Overload grants a **1%** final damage buff.",
+      "Greedy Wolf's lightning conductor effect is increased to: **10%** lightning damage boost for every conductor for **25** seconds."
+    ],
+    "awakening": {
+      "1200": "Using a volt weapon's skill or discharge skill grants **1** free dodge, stacking up to **2** times, and increases volt damage by **12%** for **8** seconds, does not stack.",
+      "4000": "Using a volt weapon's skill or discharge skill grants **1** free dodge, stacking up to **3** times, and increases volt damage by **18%** for **8** seconds, does not stack."
+    },
+    "gifts": {
+      "20": ["strangePlant"],
+      "30": ["strangeFragment", "bunnyDoll"],
+      "80": ["princeTataFigure", "linyeFigure"]
+    }
+  },
+  {
+    "id": "lyra",
+    "weaponId": "vespers",
+    "simulacraImg": "https://i.imgur.com/r02nXC9.png",
+    "weaponImg": "https://i.imgur.com/ZnbFHJo.png",
+    "name": "Lyra",
+    "rarity": "SSR",
+    "weapon": "Vespers",
+    "element": "physical",
+    "type": "support",
+    "baseStats": ["attack", "resistance", "health"],
+    "shatter": { "rank": "S", "value": 12 },
+    "charge": { "rank": "A", "value": 10 },
+    "materials": ["physical", "black", "red"],
+    "effect": [
+      {
+        "title": "Grievous",
+        "description": "Fully charged weapons will inflict damage equal to **137.00%** of ATK with the next attack, and make the target grievous for **7** seconds, taking **20%** extra damage."
+      },
+      {
+        "title": "Physical Resonance",
+        "description": "When equipped with **2** or more Physical weapons, increase Physical ATK by **15%** and Physical Resistance by **25%**, taking effect in the background."
+      }
+    ],
+    "advancement": [
+      "When using any weapon skill or discharge skill, if your personal Guardian count is maxed, your Guardians' durations will be refreshed, and deal damage equal to the number of guardians on the field * **30%** of Physical ATK, (maximum 8 guardians for supports and 6 for non-supports).",
+      "Increase the current weapon's base ATK growth by **16%**.",
+      "Increases Guardian damage by **20%**. Using any weapon skill or discharge skill while you have the Blessing Resonance will increase Guardian final damage by **15%** for 10 seconds.",
+      "Increase the current weapon's base ATK growth by **32%**.",
+      "Forgiveness Guard: After releasing resonance 5 times, receive 1 chance to negate fatal damage for the wielder and the guarded target. After a teammate negates fatal damage, they will consume Forgiveness Guard and recover **5%** of max HP. Unavailable in Apex League. Enlightenment Guard After releasing resonance 5 times. After the wielder negates fatal damage, they will consume 1 stack of enlightenment guard and recover **5%** of max HP.",
+      "Using any weapon skill or discharge skill will increase your final damage and healing equivalent to the number of Guardians. Each Guardian will increase final damage and healing by **1.6%** for a maximum of **8%** for 25 seconds."
+    ],
+    "awakening": {
+      "1200": "While you have Blessing Resonance active, increase the HP of all team members by 12.5%, does not stack.",
+      "4000": "While you have Blessing Resonance active, increase the HP of all team members by 12.5%, does not stack. Increase your own HP an additional 12.5%.Each time you successfully release a skill while having Hyperbody, or your health is greater than 50%, provide 12 seconds of Hyperbody to all allies."
+    },
+    "gifts": {
+      "15": ["strangePlant"],
+      "30": ["strangeFragment", "bunnyDoll"],
+      "60": ["princeTataFigure", "linyeFigure"]
+    }
+  },
+  {
     "id": "lin",
     "weaponId": "shadoweave",
     "simulacraImg": "https://i.imgur.com/60qGyJ2.png",
