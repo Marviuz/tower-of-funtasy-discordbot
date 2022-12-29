@@ -58,6 +58,24 @@ DISCORD_CLIENT_ID={your application id}
 
 > **Note:** If you encounter a problem in the installation of the project, create a new [issue](https://github.com/Marviuz/tower-of-funtasy-discordbot/issues) and explain the problem so we can fix it
 
+## 🏗️ Project Structure
+
+```
+Tower-of-Funtasy
+└───src
+    ├───assets
+    ├───cmds
+    ├───db
+    │   ├───local
+    │   │   └───cn
+    │   └───models
+    ├───embeds
+    ├───events
+    ├───services
+    ├───templates
+    └───utils
+```
+
 ## 🔧 Include
 
 - Discord [Slash command](https://discord.com/blog/welcome-to-the-new-era-of-discord-apps?ref=badge)
@@ -88,6 +106,8 @@ DISCORD_CLIENT_ID={your application id}
 | /vote               | Vote for support bot and creators                             |
 | /support            | Oh! You wanna support me?!                                    |
 | /game-daily-channel | Set up a channel that will indicate the things to do each day |
+| /setregion          | Allows to adapt the time displayed according to the region    |
+| /bug-report         | Warn the staff of a bug found                                 |
 
 </details>
 
