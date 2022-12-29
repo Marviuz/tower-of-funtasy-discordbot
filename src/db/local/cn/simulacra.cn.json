@@ -183,7 +183,6 @@
     "weaponId": "powerbreak",
     "simulacraImg": "https://i.imgur.com/jFlpgF4.png",
     "weaponImg": "https://i.imgur.com/aXDOUUB.png",
-    "chinaOnly": true,
     "name": "Tian Lang",
     "rarity": "SSR",
     "weapon": "Powerbreak",
@@ -200,16 +199,16 @@
       },
       {
         "title": "Volt Reaction",
-        "description": "Increase volt ATK by **20%** and volt resistance by **40%**. Activate by equipping **2** or more volt weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Volt Resonance."
+        "description": "<:CN:1035098249687744542> Increase volt ATK by **20%** and volt resistance by **40%**. Activate by equipping **2** or more volt weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Volt Resonance."
       }
     ],
     "advancement": [
-      "Charging battery grants 1 stack of Overload, increasing max HP by **20%** but increases damage received by **12%** (except when your HP is lower than 50 &times; volt ATK). Stacks up to **8** times and if not refreshed, lose one stack every **6** seconds.",
+      "<:CN:1035098249687744542> Charging battery grants 1 stack of Overload, increasing max HP by **20%** but increases damage received by **12%** (except when your HP is lower than 50 &times; volt ATK). Stacks up to **8** times and if not refreshed, lose one stack every **6** seconds.",
       "Increase the current weapon's base ATK growth by **16%**.",
       "Unleash any volt weapon's skill or discharge skill to gain **2** stacks of Overload. At **8** stacks gain immunity to control effects.",
       "Increase the current weapon's base HP growth by **32%**.",
-      "Every stack of Overload grants a **1.5%** final damage buff.",
-      "Greedy Wolf's lightning conductor effect is increased to: **25%** lightning damage boost for every conductor for **25** seconds."
+      "<:CN:1035098249687744542> Every stack of Overload grants a **1.5%** final damage buff.",
+      "<:CN:1035098249687744542> Greedy Wolf's lightning conductor effect is increased to: **25%** lightning damage boost for every conductor for **25** seconds."
     ],
     "awakening": {
       "1200": "Using a volt weapon's skill or discharge skill grants **1** free dodge, stacking up to **2** times, and increases volt damage by **12%** for **8** seconds, does not stack.",
@@ -226,7 +225,6 @@
     "weaponId": "vespers",
     "simulacraImg": "https://i.imgur.com/r02nXC9.png",
     "weaponImg": "https://i.imgur.com/ZnbFHJo.png",
-    "chinaOnly": true,
     "name": "Lyra",
     "rarity": "SSR",
     "weapon": "Vespers",
@@ -243,16 +241,16 @@
       },
       {
         "title": "Physical Resonance",
-        "description": "When equipped with **2** or more Physical weapons, increase Physical ATK by **20%** and Physical Resistance by **40%**, taking effect in the background."
+        "description": "<:CN:1035098249687744542> When equipped with **2** or more Physical weapons, increase Physical ATK by **20%** and Physical Resistance by **40%**, taking effect in the background."
       }
     ],
     "advancement": [
-      "When using any weapon skill or discharge skill, if your personal Guardian count is maxed, your Guardians' durations will be refreshed, and deal damage equal to the number of guardians on the field * **100%** of Physical ATK, (maximum 8 guardians for supports and 6 for non-supports).",
+      "<:CN:1035098249687744542> When using any weapon skill or discharge skill, if your personal Guardian count is maxed, your Guardians' durations will be refreshed, and deal damage equal to the number of guardians on the field * **100%** of Physical ATK, (maximum 8 guardians for supports and 6 for non-supports).",
       "Increase the current weapon's base ATK growth by **16%**.",
       "Increases Guardian damage by **20%**. Using any weapon skill or discharge skill while you have the Blessing Resonance will increase Guardian final damage by **15%** for 10 seconds.",
       "Increase the current weapon's base ATK growth by **32%**.",
-      "Triggering Guardian of Forgiveness 5 times protects you and your guarded target from fatal damage **1** time. Afterwards, the Guardian of Forgiveness will be consumed and restore **15%** HP (does not take effect in Apex League).\n                Triggering Guardian of Repentance 5 times protects you from fatal damage **2** times. Can protect up to **5** maximum times, after which one usage will be consumed to restore **15%** HP (does not take effect in Apex League).",
-      "Using any weapon skill or discharge skill will increase your final damage and healing equivalent to the number of Guardians. Each Guardian will increase final damage and healing by **3%** for a maximum of **15%** for 25 seconds."
+      "<:CN:1035098249687744542> Triggering Guardian of Forgiveness 5 times protects you and your guarded target from fatal damage **1** time. Afterwards, the Guardian of Forgiveness will be consumed and restore **15%** HP (does not take effect in Apex League).\n                Triggering Guardian of Repentance 5 times protects you from fatal damage **2** times. Can protect up to **5** maximum times, after which one usage will be consumed to restore **15%** HP (does not take effect in Apex League).",
+      "<:CN:1035098249687744542> Using any weapon skill or discharge skill will increase your final damage and healing equivalent to the number of Guardians. Each Guardian will increase final damage and healing by **3%** for a maximum of **15%** for 25 seconds."
     ],
     "awakening": {
       "1200": "While you have Blessing Resonance active, increase the HP of all team members by 12.5%, does not stack.",
@@ -678,7 +676,7 @@
       },
       {
         "title": "Volt Resonance",
-        "description": "When equipped with **2** or more Volt weapons, increase Volt ATK by **20%** and Volt Resistance by **40%**, taking effect in the background."
+        "description": "<:CN:1035098249687744542> When equipped with **2** or more Volt weapons, increase Volt ATK by **20%** and Volt Resistance by **40%**, taking effect in the background."
       }
     ],
     "advancement": [
