@@ -1,10 +1,14 @@
 const path = require('path');
 const { SlashCommandBuilder } = require('discord.js');
-const nodemailer = require("nodemailer");
-
+const { Octokit } = require('@octokit/core');
+const { RED } = require('../utils/app-constants');
 
 const NAME = path.parse(__filename).name;
 const DESCRIPTION = 'Warn the staff of a bug found';
+
+const octokit = new Octokit({
+  auth: process.env.GITHUB_TOKEN
+});
 
 module.exports = {
   name: NAME,
@@ -14,52 +18,36 @@ module.exports = {
     .setName(NAME)
     .setDescription(DESCRIPTION)
     .addStringOption(option =>
+      option.setName('title')
+        .setDescription('Subject/bug title')
+        .setRequired(true)
+    )
+    .addStringOption(option =>
       option.setName('description')
         .setDescription('Bug description')
         .setRequired(true)
     ),
   async execute(interaction) {
+    const title = await interaction.options.getString('title');
     const description = await interaction.options.getString('description');
 
-    const transporter = nodemailer.createTransport({
-        service: 'gmail',
-        auth: {
-          user: process.env.REPORT_MAIL,
-          pass: process.env.REPORT_MAIL_PASSWORD
-        }
-    })
+    await interaction.deferReply();
 
-    const mailOptions = {
-        from: process.env.REPORT_MAIL,
-        to: process.env.REPORT_MAIL,
-        subject: 'A new bug has been reported',
-        html: `
-            <div style="background: #272626"; border-radius: 15px>
-                <h3 style="padding: 10px 0px 0px 10px; color: #fff">Username:</h3>
-                <div style="display: flex; background: #404040; width: 250px; border-radius: 10px; margin-left: 10px">
-                    <img style="height: 30px; width: 30px; padding: 5px; border-radius: 50%; margin-top: auto; margin-bottom: auto" src="${interaction.user.displayAvatarURL()}">
-                    <p style="margin-left: 5px; color: #fff">${interaction.user.tag}</p>
-                </div>
-                <h3 style="padding: 10px 0px 0px 10px; color: #fff">Guild:</h3>
-                <div style="display: flex; background: #404040; width: 250px; border-radius: 10px; margin-left: 10px; align-items: center; ">
-                    <img style="height: 30px; width: 30px; padding: 5px; border-radius: 50%; margin-top: auto; margin-bottom: auto" src="${interaction.member.guild.iconURL()}">
-                    <p style="margin-left: 5px; color: #fff">${interaction.member.guild.name}</p>
-                </div>
-                <h3 style="padding: 10px 0px 0px 10px; color: #fff">Description:</h3>
-                <p style="padding: 0px 0px 10px 10px; color: #fff">${description}</p>
-            </div>           
-        `
-    };
-
-
-      transporter.sendMail(mailOptions, function(error, info){
-        if (error) {
-          console.log(error);
-        } else {
-          console.log('Email sent: ' + info.response);
-        }
+    try {
+      const res = await octokit.request('POST /repos/{owner}/{repo}/issues', {
+        owner: 'Marviuz',
+        repo: 'tower-of-funtasy-discordbot',
+        title: `[BUG] ${title}`,
+        body: `By: ${interaction.user.tag}\n${description}`,
+        labels: [
+          'bug'
+        ]
       });
 
-    await interaction.reply(description);
+      await interaction.editReply({ embeds: [{ title: 'Bug sent!', color: RED, description: res.data.html_url }] });
+    } catch (err) {
+      console.error(err);
+      await interaction.editReply({ embeds: [{ title: 'Something went wrong!!!', color: RED }] });
+    }
   },
 };
