@@ -108,6 +108,7 @@ Tower-of-Funtasy
 | /game-daily-channel | Set up a channel that will indicate the things to do each day |
 | /setregion          | Allows to adapt the time displayed according to the region    |
 | /bug-report         | Warn the staff of a bug found                                 |
+| /crit               | Get crit rate according to the crit and the level             |
 
 </details>
 
