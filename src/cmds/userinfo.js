@@ -2,7 +2,7 @@ const path = require('path');
 const { SlashCommandBuilder, ActionRowBuilder, SelectMenuBuilder } = require('discord.js');
 const axios = require('axios');
 const userInfoEmbed = require('../embeds/userinfo.embed');
-const { YELLOW } = require('../utils/app-constants');
+const { YELLOW, RED } = require('../utils/app-constants');
 
 const NAME = path.parse(__filename).name;
 const DESCRIPTION = 'View information of a player in ToF.';
@@ -49,6 +49,9 @@ module.exports = {
     ),
   async execute(interaction) {
     await interaction.deferReply();
+
+    return interaction.editReply({ embeds: [{ color: RED, title: 'As of the global version v2.2 update, due to changes by Hotta/Level Infinite with how requests to the game are made. The scryglass system of incin.net site is no longer functional.' }] }) // This command must have been disabled because the api used was blocked
+
 
     const region = await interaction.options.getString('region');
     const nickname = await interaction.options.getString('name');
