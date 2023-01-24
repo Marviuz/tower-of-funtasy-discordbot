@@ -11,7 +11,6 @@ module.exports = client = new Client({
   }
 });
 
-
 require('./src/deploy-commands'); // Register commands
 
 // Command handling
@@ -86,8 +85,31 @@ client.on("ready", async () => {
 
 const express = require('express');
 const app = express();
-const port = process.env.PORT;
-app.get('*', (req, res) => {
-  res.send('Hello world');
+
+//Website Stats
+
+app.get('/stats', (req, res) => {
+  let totalMembers = 0
+  let totalCommands = 0
+
+  client.guilds.cache.forEach(guild => {
+      totalMembers += guild.memberCount
+  });
+
+  fs.readdirSync(path.join(__dirname, 'src/cmds')).filter(file => file.endsWith('.js')).forEach(command => {
+      totalCommands += 1
+  })
+  
+  res.send(
+    {
+      members: totalMembers,
+      commands: totalCommands,
+      server: client.guilds.cache.size
+
+    }
+  );
 });
-app.listen(port, () => console.log(port));
+
+app.listen(process.env.PORT || 3000, () => {
+  console.log("Server running...")
+})
