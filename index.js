@@ -47,7 +47,7 @@ client.login(process.env.DISCORD_CLIENT_TOKEN);
 // MONGO_DB //
 //**********//
 const { connect } = require('mongoose');
-const { getallChannel } = require('./src/db/models/provider');
+const { getallChannel, getAllVitality } = require('./src/db/models/provider');
 const schedule = require('node-schedule');
 const daily_message = require('./src/utils/daily-message');
 
@@ -73,6 +73,10 @@ client.on("ready", async () => {
         client.channels.cache.get(channel.Channel_id).send({ embeds: [daily_message(channel.TimeZone)] });
       });
     });
+
+    const vitality = (await getAllVitality())
+
+
   });
 });
 

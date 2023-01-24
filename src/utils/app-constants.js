@@ -84,6 +84,7 @@ exports.emojis = {
   spacetimecrystaldust: "<:SpacetimeCrystalDust:1040750111610916884>",
   spacetimecrystalfragments: "<:SpacetimeCrystalFragments:1040750112839835809>",
   boostermoduleii: "<:BoosterModuleII:1040750116832825434>",
+  vitality: "<:vitality:1060640229540773990>",
 
   cn: '<:CN:1035098249687744542>'
 };
