@@ -1,14 +1,11 @@
-const { gamedailychannelSchema } = require('../models/schema.game-daily-channel')
-const { userSchema } = require('../models/schema.user')
+const { gamedailychannelSchema } = require('../models/schema.game-daily-channel');
+const { userSchema } = require('../models/schema.user');
+const { schemaVitality, vitalitySchema } = require('./schema.vitality');
 
-/*
-  _____ _                            _ 
- / ____| |                          | |
-| |    | |__   __ _ _ __  _ __   ___| |
-| |    | '_ \ / _` | '_ \| '_ \ / _ \ |
-| |____| | | | (_| | | | | | | |  __/ |
- \_____|_| |_|\__,_|_| |_|_| |_|\___|_|                                     
-*/                                
+
+//=============================================
+//                  USER
+//=============================================                             
 
 async function Channelexist(channel) {
     const data = await gamedailychannelSchema.findOne({ Channel_id: channel.id })
@@ -23,15 +20,9 @@ async function getallChannel() {
     return await gamedailychannelSchema.find({})
 }
 
-/*
- _    _               
-| |  | |              
-| |  | |___  ___ _ __ 
-| |  | / __|/ _ \ '__|
-| |__| \__ \  __/ |   
- \____/|___/\___|_|   
-*/                   
-               
+//=============================================
+//                  USER
+//=============================================
 
 async function getUserTimezone(id) {
     const data = await userSchema.findOne({id: id});
@@ -42,10 +33,24 @@ async function editUserTimezone(id, timezone) {
     await userSchema.findOneAndUpdate({id: id}, {TimeZone: timezone});
 }
 
+//=============================================
+//                  VITALITY
+//=============================================
+
+async function setVitalitySchedule() {
+    return await vitalitySchema.find({});
+}
+
+async function getAllVitality() {
+    return await vitalitySchema.find({});
+}
+
 module.exports = {
     Channelexist,
     deleteChannel,
     getallChannel,
     getUserTimezone,
-    editUserTimezone
+    editUserTimezone,
+    getAllVitality,
+    setVitalitySchedule
 }
