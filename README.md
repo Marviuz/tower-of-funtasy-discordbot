@@ -134,7 +134,7 @@ Wanna support me?! Thank you I appreciate it!!!
 
 Want to **contribute** and appear here ? Open a [Pull Request](https://github.com/Marviuz/tower-of-funtasy-discordbot/pulls)
 
-<a href="https://github.com/SudhanPlayz/Discord-MusicBot/graphs/contributors">
+<a href="https://github.com/Marviuz/tower-of-funtasy-discordbot/graphs/contributors">
   <img src="https://contributors-img.web.app/image?repo=Marviuz/tower-of-funtasy-discordbot" />
 </a>
 
