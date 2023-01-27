@@ -1,5 +1,48 @@
 [
   {
+    "id": "lan",
+    "weaponId": "lingguang",
+    "simulacraImg": "https://i.imgur.com/V02mhBL.png",
+    "weaponImg": "https://i.imgur.com/DkUbh6m.png",
+    "chinaOnly": true,
+    "name": "Lan",
+    "rarity": "SSR",
+    "weapon": "Lingguang",
+    "element": "flame",
+    "type": "defense",
+    "baseStats": ["attack", "resistance", "health"],
+    "shatter": { "rank": "SS", "value": 15.80 },
+    "charge": { "rank": "A", "value": 8.00 },
+    "materials": ["flame", "red", "black"],
+    "effect": [
+      {
+        "title": "Flame",
+        "description": "Fully charged weapons will set the target on fire for **8** seconds with the next attack, causing ongoing damage of **58.00%** of ATK every second. Ignited targets receive **50%** efficacy from healing."
+      },
+      {
+        "title": "Flame Resonance",
+        "description": "Increase flame ATK by 20% and flame resistance by 40%. Activate by equipping 2 or more flame weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Flame Resonance."
+      }
+    ],
+    "advancement": [
+      "[Plume Gathering]: When Lingguang is equipped, [Ammo Consumption] and damage, charge, and shatter of other weapons is multiplied by [Plume Gathering]'s amount. [Glittering Flame]: When a target near a plume is detonated or hit by [Bursting Flame], deal **30%** of the damage from detonation/[Bursting Flame] to 3 nearby targets with the highest HP (can include the target itself).",
+      "Increase the current weapon's base HP growth by **16%**.",
+      "When releasing any weapon discharge, all plumes on the field will trigger a mini [Bursting Flame] effect that has **30%** effectiveness; Enemies near plumes have their attack reduced by **15%**; After dealing damage for the first time after you enter combat, **3** plumes will be generated near the target immediately.",
+      "Increase the current weapon's base ATK growth by **32%**.",
+      "[Bursting Flame] ignores enemies' flame resistance by **50%**. Enemies affected by [Erosion] will now take **15%** more flame damage instead.",
+      "Normal attack chain and Airborne normal attack chain gains **66.7%** damage bonus. [Plume Gathering] value will be increased by **2** for the following movements: Plume spin, discharge, and [Bursting Flame]."
+    ],
+    "awakening": {
+      "1200": "When using Fortitude Resonance, expand the boundary triggered by accumulating power. Reduce incoming flame and frost damage by **16%** to yourself and teammates inside the boundary.",
+      "4000": "When using Fortitude Resonance, expand the boundary triggered by accumulating power. Reduce incoming flame and frost damage by **24%** and increase final damage by **8%** to yourself and teammates inside the boundary."
+    },
+    "gifts": {
+      "15": ["hua"],
+      "30": ["tuzi", "jimu"],
+      "60": ["xiaoyeye", "jiujie"]
+    }
+  },
+  {
     "id": "fenrir",
     "weaponId": "gleipnir",
     "simulacraImg": "https://i.imgur.com/aCUvOAb.png",
@@ -135,7 +178,6 @@
     "weaponId": "cross-sniper",
     "simulacraImg": "https://i.imgur.com/om9gMII.png",
     "weaponImg": "https://i.imgur.com/vg8h8Al.png",
-    "chinaOnly": true,
     "name": "Annabella",
     "rarity": "SSR",
     "weapon": "Cross Sniper",

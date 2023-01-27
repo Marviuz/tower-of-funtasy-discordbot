@@ -69,7 +69,11 @@ client.on("ready", async () => {
       rule.tz = channel.TimeZone;
 
       schedule.scheduleJob(rule, () => {
-        client.channels.cache.get(channel.Channel_id).send({ embeds: [daily_message(channel.TimeZone)] });
+        try {
+          client.channels.cache.get(channel.Channel_id).send({ embeds: [daily_message(channel.TimeZone)] });
+        } catch (error) {
+          console.error(error)
+        }
       });
     });
 
@@ -78,6 +82,17 @@ client.on("ready", async () => {
 
   });
 });
+
+
+const { AutoPoster } = require('topgg-autoposter')
+
+const poster = AutoPoster(process.env.BOTGG_TOKEN, client) // your discord.js or eris client
+
+// optional
+poster.on('posted', (stats) => { // ran when succesfully posted
+  console.log(`Posted stats to Top.gg | ${stats.serverCount} servers`)
+})
+
 
 //*********//
 // EXPRESS //
