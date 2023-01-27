@@ -90,7 +90,7 @@ const botinfoEmbed = () => {
                 name: 'Links:',
                 value: `
                 <:github:892323399806890084> [Github Repository](${repository.url.replace('.git', ' ')})
-                :globe_with_meridians: Website not available
+                :globe_with_meridians: [Website](https://tower-of-funtasy.com)
                 `
             },
         )

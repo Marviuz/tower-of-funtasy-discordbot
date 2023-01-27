@@ -33,8 +33,9 @@
     "moment-timezone": "^0.5.40",
     "mongoose": "^6.7.5",
     "node-html-to-image": "^3.2.4",
-    "node-schedule": "^2.1.0",
-    "pretty-ms": "^7.0.1"
+    "node-schedule": "^2.1.1",
+    "pretty-ms": "^7.0.1",
+    "topgg-autoposter": "^2.0.1"
   },
   "devDependencies": {
     "dotenv": "^16.0.1",
