@@ -83,7 +83,7 @@ client.on("ready", async () => {
   });
 });
 
-
+/*
 const { AutoPoster } = require('topgg-autoposter')
 
 const poster = AutoPoster(process.env.BOTGG_TOKEN, client) // your discord.js or eris client
@@ -92,7 +92,7 @@ const poster = AutoPoster(process.env.BOTGG_TOKEN, client) // your discord.js or
 poster.on('posted', (stats) => { // ran when succesfully posted
   console.log(`Posted stats to Top.gg | ${stats.serverCount} servers`)
 })
-
+*/
 
 //*********//
 // EXPRESS //

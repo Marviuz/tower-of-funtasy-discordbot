@@ -1,10 +1,9 @@
-const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
+const { SlashCommandBuilder } = require('discord.js');
 const path = require('path');
 
 const simulacra = require('../db/local/simulacra.json');
 const simulacraCN = require('../db/local/cn/simulacra.cn.json');
 const simulacraEmbed = require('../embeds/simulacra.embed');
-const { ZERO_WIDTH_SPACE, emojis } = require('../utils/app-constants');
 
 const NAME = path.parse(__filename).name;
 const DESCRIPTION = 'View simulacra details';
@@ -17,25 +16,37 @@ module.exports = {
     .setName(NAME)
     .setDescription(DESCRIPTION)
     .addStringOption(option =>
-      option.setName(NAME)
+      option.setName("element")
         .setDescription('Name of the simulacra')
-      // .setRequired(true)
-      // .addChoices(...[...simulacraCn, ...simulacra].map(simulacra => ({ name: simulacra.name, value: simulacra.name.toLowerCase() })))
+       .setRequired(true)
+       .setChoices(
+        { name: "Flame", value: "flame" },
+        { name: "Volt", value: "volt" },
+        { name: "Frost", value: "ice" },
+        { name: "Physical", value: "physical" },
+        { name: "Altered", value: "altered" }
+      )
+    )
+    .addStringOption(option =>
+      option.setName(NAME)
+        .setDescription('Name of the matrix')
+        .setRequired(true)
+        .setAutocomplete(true)
     ),
+
+  async autocomplete(interaction) {
+    const simulacras = [...simulacraCN].filter(simulacra => simulacra.element === interaction.options.getString("element"));
+
+    await interaction.respond(
+      simulacras.map(simulacra => ({ name: simulacra.name, value: simulacra.name.toLowerCase() })),
+    );
+  },
+  
   async execute(interaction) {
     await interaction.deferReply();
     const simulacrum = await interaction.options.getString(NAME);
 
-    if (!simulacrum) return await interaction.editReply({ embeds: [{ title: 'Simulacra', fields: [{ name: ZERO_WIDTH_SPACE, value: [...simulacraCN].map(_ => (_.chinaOnly ? `${_.name} ${emojis.cn}` : _.name)).sort().join(', ') }], image: { url: "https://i8.ae/KruEg" } }] });
-
-    const [match] = [...simulacra, ...simulacraCN].filter(({ name }) => name.toLowerCase() === simulacrum.toLowerCase());
-
-
-    const error = new EmbedBuilder()
-      .setColor("Red")
-      .setTitle("No match!")
-      .setDescription("Try `/simulacra` to see the list of simulacra avaible")
-    if (!match) return await interaction.editReply({ embeds: [error] }); // TODO: Better message
+    const [match] = [...simulacra, ...simulacraCN].filter(({ name }) => name.toLowerCase() === simulacrum.toLowerCase());Z
 
     const { embed, actions, buttons } = simulacraEmbed(match);
 
