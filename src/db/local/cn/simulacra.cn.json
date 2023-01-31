@@ -194,7 +194,7 @@
       },
       {
         "title": "Flame Reaction",
-        "description": "Increase flame ATK by 20% and flame resistance by 40%. Activate by equipping 2 or more flame weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Flame Resonance."
+        "description": "<:CN:1035098249687744542> Increase flame ATK by 20% and flame resistance by 40%. Activate by equipping 2 or more flame weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Flame Resonance."
       },
       {
         "title": "Peace of Mind",
@@ -202,16 +202,16 @@
       }
     ],
     "advancement": [
-      "Hitting the target **2** times with Scoped Shot will create an **optical space** at the target location for **12** seconds. Enemies within the space will trigger a burn settlement and then automatically trigger 2 burn settlements. When enemies leave the space, their movement speed is reduced by **80%** for **5** seconds, cooldown **12** seconds.  \n                Enemies targeted by the Scoped Shot shot will be scared for **1.5** seconds, reducing their attack speed and movement speed by **80%**, cooldown **4** seconds.",
+      "<:CN:1035098249687744542> Hitting the target **2** times with Scoped Shot will create an **optical space** at the target location for **12** seconds. Enemies within the space will trigger a burn settlement and then automatically trigger 2 burn settlements. When enemies leave the space, their movement speed is reduced by **80%** for **5** seconds, cooldown **12** seconds.  \n                Enemies targeted by the Scoped Shot shot will be scared for **1.5** seconds, reducing their attack speed and movement speed by **80%**, cooldown **4** seconds.",
       "Increase the current weapon's base ATK growth by **16%**.",
-      "After a critical hit by Scoped Shot, recover **50%** of damage dealt as HP (up to **15%** of Max HP) and gain **50** weapon charge.  \n                Peace of Mind: each stack increases final crit rate by **9%** (up to **27%**), and maximum crit damage conversion is **13.5%**.",
+      "<:CN:1035098249687744542> After a critical hit by Scoped Shot, recover **50%** of damage dealt as HP (up to **15%** of Max HP) and gain **50** weapon charge.  \n                Peace of Mind: each stack increases final crit rate by **9%** (up to **27%**), and maximum crit damage conversion is **13.5%**.",
       "Increase the current weapon's base ATK growth by **32%**.",
       "**Violent Bullet Enhancement** - \"Enhanced Scorch\" state increases the target's scorching damage to **30%**.  \n                **Deception Magic Bullet Enhancement** - Gas detonation damage ignores the target's flame resistance by **30%**.",
-      "Increase Scoped Shot's damage by **20%**."
+      "<:CN:1035098249687744542> Increase Scoped Shot's damage by **20%**."
     ],
     "awakening": {
-      "1200": "Every time gas explosion hits at least **1** enemy, the damage of Cross Sniper is increased by **10%** for **20** seconds, stacks **2** times.",
-      "4000": "Every time gas explosion hits at least **1** enemy, the damage of Cross Sniper is increased by **18%** for **20** seconds, stacks **2** times."
+      "1200": "<:CN:1035098249687744542> Every time gas explosion hits at least **1** enemy, the damage of Cross Sniper is increased by **10%** for **20** seconds, stacks **2** times.",
+      "4000": "<:CN:1035098249687744542> Every time gas explosion hits at least **1** enemy, the damage of Cross Sniper is increased by **18%** for **20** seconds, stacks **2** times."
     },
     "gifts": {
       "15": ["strangePlant"],
