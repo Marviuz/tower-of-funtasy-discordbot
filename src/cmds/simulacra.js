@@ -46,7 +46,7 @@ module.exports = {
     await interaction.deferReply();
     const simulacrum = await interaction.options.getString(NAME);
 
-    const [match] = [...simulacra, ...simulacraCN].filter(({ name }) => name.toLowerCase() === simulacrum.toLowerCase());Z
+    const [match] = [...simulacra, ...simulacraCN].filter(({ name }) => name.toLowerCase() === simulacrum.toLowerCase());
 
     const { embed, actions, buttons } = simulacraEmbed(match);
 
