@@ -24,7 +24,7 @@ module.exports = {
         { name: "Volt", value: "volt" },
         { name: "Frost", value: "ice" },
         { name: "Physical", value: "physical" },
-        { name: "Altered", value: "altered" }
+        { name: "Altered", value: "aberration" }
       )
     )
     .addStringOption(option =>
