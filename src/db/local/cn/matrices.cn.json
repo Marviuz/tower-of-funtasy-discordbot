@@ -1,5 +1,37 @@
 [
   {
+    "matrixId": "icarus",
+    "chinaOnly": true,
+    "matrixImg": "https://i8.ae/RinBH",
+    "name": "Icarus",
+    "two": "While equipped with Fractured Light/**2** different elements/**2** different weapon types, increase the damage of all elements by **12%/15%/18%/21%**. This effect works in the background, and if multiple sets are used, the highest star set will take effect.",
+    "four": "When dealing frost damage, increase the damage of all elements by **27%/31%/35%/39%** for **25** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
+  },
+  {
+    "matrixId": "lan",
+    "chinaOnly": true,
+    "matrixImg": "https://i8.ae/dMdvW",
+    "name": "Lan",
+    "two": "When using at least **1** flame weapon, increase flame attack by **12%/14%/16%/18%**, increase flame damage by **7%/8%/9%/10%**. This effect works in the background, and if multiple sets are used, the highest star set will take effect.",
+    "four": "Different effects are obtained according to the number of different elemental weapons equipped: for each flame/ice/physical/lightning weapon equpped, increase flame/ice/physical/lightning damage by **9%/11%/13%/15%**. For each altered weapon equipped, increase final damage by **12%/14%/17%/20%**. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
+  },
+  {
+    "matrixId": "habra",
+    "chinaOnly": true,
+    "matrixImg": "https://i8.ae/NrjCs",
+    "name": "Habra",
+    "two": "Increases final damage by **12%/14%/17%/21%**.",
+    "four": "Increases final damage by **15%/17%/20%/24%**. This effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
+  },
+  {
+    "matrixId": "scylla",
+    "chinaOnly": true,
+    "matrixImg": "https://i8.ae/rHqOy",
+    "name": "Scylla",
+    "two": "Increases critical damage and shatter by **15%/18%/22%/27%**.",
+    "four": "Increases Ice, Fire, Volt, Physical, and Altered damage by **15%/17%/20%/24%** when 2 or more weapons of different elements are equipped. This effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
+  },
+  {
     "matrixId": "fenrir",
     "chinaOnly": true,
     "matrixImg": "https://toweroffantasy.info/static/images/matrices/fenrir.webp",
@@ -36,38 +68,35 @@
   },
   {
     "matrixId": "annabella",
-    "chinaOnly": true,
     "matrixImg": "https://toweroffantasy.info/static/images/matrices/annabella.webp",
     "name": "Annabella",
     "rarity": "SSR",
-    "two": "Hitting a target with a Flame weapon increases final damage by **6%/7%/8%/9%** and final crit rate by **2.5%/2.5%/3%/3%** for **30** seconds, up to **2** stacks. This effect works in the background, and if multiple sets are used, the highest star set will take effect.",
-    "four": "Equip 2 or more Flame weapons to activate the \"Flowing Flames\" effect; increase final damage by **13%/15%/17%/19%**, and after a critical hit increase crit damage by **21%/24%/27%/30%** for **10** seconds. When the charged attack hits an enemy **3** times, recover **1** dodge, cooldown **2** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
+    "two": "<:CN:1035098249687744542> Hitting a target with a Flame weapon increases final damage by **6%/7%/8%/9%** and final crit rate by **2.5%/2.5%/3%/3%** for **30** seconds, up to **2** stacks. This effect works in the background, and if multiple sets are used, the highest star set will take effect.",
+    "four": "<:CN:1035098249687744542> Equip 2 or more Flame weapons to activate the \"Flowing Flames\" effect; increase final damage by **13%/15%/17%/19%**, and after a critical hit increase crit damage by **21%/24%/27%/30%** for **10** seconds. When the charged attack hits an enemy **3** times, recover **1** dodge, cooldown **2** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
   },
   {
     "matrixId": "tian-lang",
-    "chinaOnly": true,
     "matrixImg": "https://toweroffantasy.info/static/images/matrices/tianlang.webp",
     "name": "Tian Lang",
     "rarity": "SSR",
-    "two": "Dealing volt damage has a **40%** chance to release chain lightning, dealing **60%/100%/150%/200%** of volt ATK to up to **7** targets, cooldown **2** seconds. Triggering the lightning chain increases volt damage by **12%** for **6** seconds. This effect works in the background, and if multiple sets are used, only the highest star set will take effect.",
-    "four": "Using a volt weapon's skill or discharge skill increases volt damage by **25%/28%/31%/34%** for **15** seconds. This effect works in the background, and if multiple sets are used, only the highest star set will take effect. "
+    "two": "<:CN:1035098249687744542> Dealing volt damage has a **40%** chance to release chain lightning, dealing **60%/100%/150%/200%** of volt ATK to up to **7** targets, cooldown **2** seconds. Triggering the lightning chain increases volt damage by **12%** for **6** seconds. This effect works in the background, and if multiple sets are used, only the highest star set will take effect.",
+    "four": "<:CN:1035098249687744542> Using a volt weapon's skill or discharge skill increases volt damage by **25%/28%/31%/34%** for **15** seconds. This effect works in the background, and if multiple sets are used, only the highest star set will take effect. "
   },
   {
     "matrixId": "lyra",
-    "chinaOnly": true,
     "matrixImg": "https://toweroffantasy.info/static/images/matrices/lyra.webp",
     "name": "Lyra",
     "rarity": "SSR",
-    "two": "Using this weapon grants a **20%/25%/30%/35%** ATK buff. The lower your health, the higher your healing received, up to **100%**.",
-    "four": "Dealing Physical damage grants a **5%** Physical damage buff with a cooldown of **0.1** seconds, stacking up to **5** times. When fully stacked, gain an additional **6%/10%/14%/18%** Physical damage buff for **5** seconds. Dodging grants up to **3** stacks of Block for **10** seconds, blocking up to **60%** of current health and at least **20%** of max health. When using multiple sets, only the highest star set will take effect."
+    "two": "<:CN:1035098249687744542> Using this weapon grants a **20%/25%/30%/35%** ATK buff. The lower your health, the higher your healing received, up to **100%**.",
+    "four": "<:CN:1035098249687744542> Dealing Physical damage grants a **5%** Physical damage buff with a cooldown of **0.1** seconds, stacking up to **5** times. When fully stacked, gain an additional **6%/10%/14%/18%** Physical damage buff for **5** seconds. Dodging grants up to **3** stacks of Block for **10** seconds, blocking up to **60%** of current health and at least **20%** of max health. When using multiple sets, only the highest star set will take effect."
   },
   {
     "matrixId": "lin",
     "matrixImg": "https://toweroffantasy.info/static/images/matrices/lin.webp",
     "name": "Lin",
     "rarity": "SSR",
-    "two": "Successful attacks increase your attack power by **3%/3.7%/4.3%/5%** for 18 seconds, stacking up to 5 times. If multiple sets are used, only the highest star set will take effect.",
-    "four": "Traveling 5 meters within Moonlight Realm will grant 1 stack of [Moon's Realm], increasing your total damage by **7%/8.3%/9.6%/11%** for 15 seconds, stacking up to 3 times. Effect is active in the background. If multiple sets are used, only the highest star set will take effect."
+    "two": "<:CN:1035098249687744542> Successful attacks increase your attack power by **3%/3.7%/4.3%/5%** for 18 seconds, stacking up to 5 times. If multiple sets are used, only the highest star set will take effect.",
+    "four": "<:CN:1035098249687744542> Traveling 5 meters within Moonlight Realm will grant 1 stack of [Moon's Realm], increasing your total damage by **7%/8.3%/9.6%/11%** for 15 seconds, stacking up to 3 times. Effect is active in the background. If multiple sets are used, only the highest star set will take effect."
   },
   {
     "matrixId": "saki-fuwa",
