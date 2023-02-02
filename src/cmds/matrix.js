@@ -25,7 +25,7 @@ module.exports = {
     await interaction.deferReply()
     const matrix = await interaction.options.getString(NAME);
 
-    if (!matrix) return await interaction.editReply({ embeds: [{ title: 'Matrix', fields: [{ name: ZERO_WIDTH_SPACE, value: [...matricesCN].map(_ => (_.chinaOnly ? `${_.name} ${emojis.cn}` : _.name)).sort().join(', ') }], image: { url: "https://i8.ae/DewNO" } }] });
+    if (!matrix) return await interaction.editReply({ embeds: [{ title: 'Matrices', fields: [{ name: ZERO_WIDTH_SPACE, value: [...matricesCN].map(_ => (_.chinaOnly ? `${_.name} ${emojis.cn}` : _.name)).sort().join(', ') }], image: { url: "https://i8.ae/DewNO" } }] });
 
     const [match] = [...matrices, ...matricesCN].filter(({ name }) => name.toLowerCase() === matrix.toLowerCase());
 

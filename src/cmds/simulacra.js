@@ -17,7 +17,7 @@ module.exports = {
     .setDescription(DESCRIPTION)
     .addStringOption(option =>
       option.setName("element")
-        .setDescription('Name of the simulacra')
+        .setDescription('Element of simulacra')
        .setRequired(true)
        .setChoices(
         { name: "Flame", value: "flame" },
@@ -29,7 +29,7 @@ module.exports = {
     )
     .addStringOption(option =>
       option.setName(NAME)
-        .setDescription('Name of the matrix')
+        .setDescription('Name of the simulacra')
         .setRequired(true)
         .setAutocomplete(true)
     ),
