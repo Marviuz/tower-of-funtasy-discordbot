@@ -10,34 +10,30 @@
     "element": "flame",
     "type": "dps",
     "baseStats": ["attack", "health", "crit"],
-    "shatter": { "rank": "S", "value": 12 },
+    "shatter": { "rank": "S", "value": 12.50 },
     "charge": { "rank": "A", "value": 9 },
     "materials": ["flame", "red", "black"],
     "effect": [
       {
         "title": "Flame",
-        "description": "Fully charged weapons will set the target on fire for 8 seconds with the next attack, causing ongoing damage of 58.00% of ATK every second. Ignited targets receive 50% efficacy from healing."
+        "description": "Fully charged weapons will set the target on fire for **8** seconds with the next attack, causing ongoing damage of **58.00%** of ATK every second. Ignited targets receive **50%** efficacy from healing."
       },
       {
         "title": "Flame Reaction",
-        "description": "Increase flame ATK by 20% and flame resistance by 40%. Activate by equipping 2 or more flame weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Flame Resonance."
-      },
-      {
-        "title": "Peace of Mind",
-        "description": "Using Cross Sniper's skill, discharge, charged attack, or dodge increases Cross Sniper's final crit rate by 5% for 15 seconds. Stacks up to 3 times. If crit rate exceeds 100%, 50% of the excess crit rate is converted to crit damage (up to 7.5%)."
+        "description": "Increase flame ATK by 15% and flame resistance by 25%. Activate by equipping 2 or more flame weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Flame Resonance."
       }
     ],
     "advancement": [
-      "Hitting the target **2** times with Scoped Shot will create an **optical space** at the target location for **12** seconds. Enemies within the space will trigger a burn settlement and then automatically trigger 2 burn settlements. When enemies leave the space, their movement speed is reduced by **80%** for **5** seconds, cooldown **12** seconds.  \n                Enemies targeted by the Scoped Shot shot will be scared for **1.5** seconds, reducing their attack speed and movement speed by **80%**, cooldown **4** seconds.",
+      "Hitting a target 2 times with Cross Snipe creates an Optical Space for 12 seconds at the target location. After an enemy in the Optical Space triggers burn tally, burn tally will be triggered an additional 2 times. When an enemy leaves the Optical Space, their speed is reduced by 80% for 2.5 seconds. Cooldown: 12 seconds.\nTargets of Cross Snipe will be terrified (speed is slowed by 80%) for 1.5 seconds. Cooldown: 4 seconds.",
       "Increase the current weapon's base ATK growth by **16%**.",
-      "After a critical hit by Scoped Shot, recover **50%** of damage dealt as HP (up to **15%** of Max HP) and gain **50** weapon charge.  \n                Peace of Mind: each stack increases final crit rate by **9%** (up to **27%**), and maximum crit damage conversion is **13.5%**.",
+      "After a critical hit by Scoped Shot, recover **50%** of damage dealt as HP (up to **15%** of Max HP) and gain **50** weapon charge.  \n                Peace of Mind: each stack increases final crit rate by **6%** (up to **18%**), and maximum crit damage conversion is **9%**.",
       "Increase the current weapon's base ATK growth by **32%**.",
       "**Violent Bullet Enhancement** - \"Enhanced Scorch\" state increases the target's scorching damage to **30%**.  \n                **Deception Magic Bullet Enhancement** - Gas detonation damage ignores the target's flame resistance by **30%**.",
-      "Increase Scoped Shot's damage by **20%**."
+      "Increase Scoped Shot's damage by **12%**."
     ],
     "awakening": {
-      "1200": "Every time gas explosion hits at least **1** enemy, the damage of Cross Sniper is increased by **10%** for **20** seconds, stacks **2** times.",
-      "4000": "Every time gas explosion hits at least **1** enemy, the damage of Cross Sniper is increased by **18%** for **20** seconds, stacks **2** times."
+      "1200": "Every time gas explosion hits at least **1** enemy, the damage of Cross Sniper is increased by **8%** for **20** seconds, stacks **2** times.",
+      "4000": "Every time gas explosion hits at least **1** enemy, the damage of Cross Sniper is increased by **15%** for **20** seconds, stacks **2** times."
     },
     "gifts": {
       "15": ["strangePlant"],

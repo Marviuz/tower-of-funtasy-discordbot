@@ -1,5 +1,29 @@
 [
   {
+    "matrixId": "annabella",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/annabella.webp",
+    "name": "Annabella",
+    "rarity": "SSR",
+    "two": "Hitting a target with a Flame weapon increases final damage by **3%/3.4%/3.8%/4.2%** and final crit rate by **2%/2%/2.4%/2.4%** for **25** seconds, up to **2** stacks. This effect works in the background, and if multiple sets are used, the highest star set will take effect.",
+    "four": "Equip 2 or more Flame weapons to activate the \"Flowing Flames\" effect; increase final damage by **7%/8%/9%/10%**, and after a critical hit increase crit damage by **12%/14%/16%/18%** for **25** seconds. When the charged attack hits an enemy **3** times, recover **1** dodge, cooldown **2** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
+  },
+  {
+    "matrixId": "tian-lang",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/tianlang.webp",
+    "name": "Tian Lang",
+    "rarity": "SSR",
+    "two": "Dealing volt damage has a **40%** chance to release chain lightning, dealing **50%/65%/90%/120%** of volt ATK to up to **7** targets, cooldown **2** seconds. Triggering the lightning chain increases volt damage by **6%** for **6** seconds. This effect works in the background, and if multiple sets are used, only the highest star set will take effect.",
+    "four": "Using a volt weapon's skill or discharge skill increases volt damage by **12%/14%/16%/18%** for **15** seconds. This effect works in the background, and if multiple sets are used, only the highest star set will take effect. "
+  },
+  {
+    "matrixId": "lyra",
+    "matrixImg": "https://toweroffantasy.info/static/images/matrices/lyra.webp",
+    "name": "Lyra",
+    "rarity": "SSR",
+    "two": "Using this weapon grants a **13%/17%/21%/25%** ATK buff. The lower your health, the higher your healing received, up to **100%**.",
+    "four": "When dealing physical damage, increase physical damage by 2.7% with a cooldown of 0.1 seconds. Stack up to 5 times. Upon reaching the maximum stacks, increase physical damage by an additional 3.5%/7%/10.5%/14% for 5 seconds. Only the highest star rating's effect is applied when obtained repeatedly. Obtain 1 block for each dodge, blocking damage up to 60% of current HP, but not less than 20% of Max HP. Stack up to 3 blocks for 10 seconds."
+  },
+  {
     "matrixId": "lin",
     "matrixImg": "https://toweroffantasy.info/static/images/matrices/lin.webp",
     "name": "Lin",

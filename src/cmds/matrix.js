@@ -1,10 +1,10 @@
-const { SlashCommandBuilder } = require('discord.js');
+const { SlashCommandBuilder, EmbedBuilder } = require('discord.js');
 const path = require('path');
 
 const matrices = require('../db/local/matrices.json');
 const matricesCN = require('../db/local/cn/matrices.cn.json');
 const matrixEmbed = require('../embeds/matrix.embed');
-
+const { ZERO_WIDTH_SPACE, emojis } = require('../utils/app-constants');
 
 const NAME = path.parse(__filename).name;
 const DESCRIPTION = 'View matrix details';
@@ -17,38 +17,23 @@ module.exports = {
     .setName(NAME)
     .setDescription(DESCRIPTION)
     .addStringOption(option =>
-      option.setName("rarity")
-        .setDescription('Quality of the matrix')
-        .setRequired(true)
-        .setChoices(
-          { name: "SSR", value: "SSR" },
-          { name: "SR", value: "SR" },
-          { name: "R", value: "R" },
-          { name: "N", value: "N" }
-        )
-    )
-    .addStringOption(option =>
       option.setName(NAME)
         .setDescription('Name of the matrix')
-        .setRequired(true)
-        .setAutocomplete(true)
     ),
 
-  async autocomplete(interaction) {
-    const matrixs = [...matricesCN].filter(matrix => matrix.rarity === interaction.options.getString("rarity"));
-
-    await interaction.respond(
-      matrixs.map(matrix => ({ name: matrix.name, value: matrix.name.toLowerCase() })),
-    );
-  },
-
-
   async execute(interaction) {
+    await interaction.deferReply()
     const matrix = await interaction.options.getString(NAME);
+
+    if (!matrix) return await interaction.editReply({ embeds: [{ title: 'Matrices', fields: [{ name: ZERO_WIDTH_SPACE, value: [...matricesCN].map(_ => (_.chinaOnly ? `${_.name} ${emojis.cn}` : _.name)).sort().join(', ') }], image: { url: "https://i8.ae/DewNO" } }] });
 
     const [match] = [...matrices, ...matricesCN].filter(({ name }) => name.toLowerCase() === matrix.toLowerCase());
 
-    if (!match) return await interaction.reply('No match!'); // TODO: Better message
+    const error = new EmbedBuilder()
+    .setColor("Red")
+    .setTitle("No match!")
+    .setDescription("Try `/matrix` to see the list of matrix avaible")
+    if (!match) return await interaction.editReply({ embeds: [error] }); // TODO: Better message
 
     const { embed, action, button } = matrixEmbed(match);
 
