@@ -22,10 +22,20 @@ module.exports = {
     ),
 
   async execute(interaction) {
-    await interaction.deferReply()
     const matrix = await interaction.options.getString(NAME);
 
-    if (!matrix) return await interaction.editReply({ embeds: [{ title: 'Matrices', fields: [{ name: ZERO_WIDTH_SPACE, value: [...matricesCN].map(_ => (_.chinaOnly ? `${_.name} ${emojis.cn}` : _.name)).sort().join(', ') }], image: { url: "https://i8.ae/DewNO" } }] });
+    if (!matrix) return await interaction.reply({ embeds: [
+      { 
+        title: 'Matrices', 
+        fields: [
+          { name: emojis["rarity_SSR"], value: [...matricesCN].filter(_ => _.rarity == "SSR").map(_ => (_.chinaOnly ? `${_.name} ${emojis.cn}` : _.name)).sort().join(', ') },
+          { name: emojis["rarity_SR"], value: [...matricesCN].filter(_ => _.rarity == "SR").map(_ => (_.chinaOnly ? `${_.name} ${emojis.cn}` : _.name)).sort().join(', ') },
+          { name: emojis["rarity_R"], value: [...matricesCN].filter(_ => _.rarity == "R").map(_ => (_.chinaOnly ? `${_.name} ${emojis.cn}` : _.name)).sort().join(', ') },
+          { name: emojis["rarity_N"], value: [...matricesCN].filter(_ => _.rarity == "N").map(_ => (_.chinaOnly ? `${_.name} ${emojis.cn}` : _.name)).sort().join(', ') },
+        ], 
+        image: { url: "https://i8.ae/DewNO" }
+      }] 
+    });
 
     const [match] = [...matrices, ...matricesCN].filter(({ name }) => name.toLowerCase() === matrix.toLowerCase());
 
@@ -53,12 +63,12 @@ module.exports = {
       button.id === 'global' ? button.id = 'cn' : button.id = 'global'
       CN === '' ? CN = 'CN' : CN = ''
       
-      await i.editReply({ embeds: [embed['matrix'+CN]], components: [action()] });
+      await i.reply({ embeds: [embed['matrix'+CN]], components: [action()] });
     })
 
     collector.on('end', async collected => {
       console.log(`Collected ${collected.size} items`);
-      await interaction.editReply({ components: [] });
+      await interaction.reply({ components: [] });
     });
   },
 };

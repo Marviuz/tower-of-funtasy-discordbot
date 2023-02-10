@@ -87,7 +87,12 @@ exports.emojis = {
   boostermoduleii: "<:BoosterModuleII:1040750116832825434>",
   vitality: "<:vitality:1060640229540773990>",
 
-  cn: '<:CN:1035098249687744542>'
+  cn: '<:CN:1035098249687744542>',
+
+  rarity_N: '<:rarity_N:1070986853563506688>',
+  rarity_R: '<:rarity_R:1070987095461601280>',
+  rarity_SR: '<:rarity_SR:1070987101274902588>',
+  rarity_SSR: '<:rarity_SSR:1070987104043139112>'
 };
 
 exports.stats = {
