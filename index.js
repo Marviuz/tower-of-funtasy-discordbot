@@ -70,8 +70,7 @@ client.on("ready", async () => {
 
       schedule.scheduleJob(rule, () => {
         try {
-          //client.channels.cache.get(channel.Channel_id).send({ embeds: [daily_message(channel.TimeZone)] });
-          console.log("test")
+          client.channels.cache.get(channel.Channel_id).send({ embeds: [daily_message(channel.TimeZone)] });
         } catch (error) {
           console.error(error)
         }
