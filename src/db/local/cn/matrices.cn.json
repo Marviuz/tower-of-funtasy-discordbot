@@ -4,6 +4,7 @@
     "chinaOnly": true,
     "matrixImg": "https://i8.ae/RinBH",
     "name": "Icarus",
+    "rarity": "SSR",
     "two": "While equipped with Fractured Light/**2** different elements/**2** different weapon types, increase the damage of all elements by **12%/15%/18%/21%**. This effect works in the background, and if multiple sets are used, the highest star set will take effect.",
     "four": "When dealing frost damage, increase the damage of all elements by **27%/31%/35%/39%** for **25** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
   },
@@ -12,6 +13,7 @@
     "chinaOnly": true,
     "matrixImg": "https://i8.ae/dMdvW",
     "name": "Lan",
+    "rarity": "SSR",
     "two": "When using at least **1** flame weapon, increase flame attack by **12%/14%/16%/18%**, increase flame damage by **7%/8%/9%/10%**. This effect works in the background, and if multiple sets are used, the highest star set will take effect.",
     "four": "Different effects are obtained according to the number of different elemental weapons equipped: for each flame/ice/physical/lightning weapon equpped, increase flame/ice/physical/lightning damage by **9%/11%/13%/15%**. For each altered weapon equipped, increase final damage by **12%/14%/17%/20%**. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
   },
@@ -20,6 +22,7 @@
     "chinaOnly": true,
     "matrixImg": "https://i8.ae/NrjCs",
     "name": "Habra",
+    "rarity": "SSR",
     "two": "Increases final damage by **12%/14%/17%/21%**.",
     "four": "Increases final damage by **15%/17%/20%/24%**. This effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
   },
@@ -28,6 +31,7 @@
     "chinaOnly": true,
     "matrixImg": "https://i8.ae/rHqOy",
     "name": "Scylla",
+    "rarity": "SSR",
     "two": "Increases critical damage and shatter by **15%/18%/22%/27%**.",
     "four": "Increases Ice, Fire, Volt, Physical, and Altered damage by **15%/17%/20%/24%** when 2 or more weapons of different elements are equipped. This effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
   },
@@ -308,49 +312,49 @@
   },
   {
     "matrixId": "wind-blade-matrix",
-    "matrixImg": "https://toweroffantasy.info/static/images/matrices/windblade.webp",
+    "matrixImg": "https://toweroffantasy.info/images/Icon/yizhi/256/icon_matrix_R6_256.png",
     "name": "Wind Blade",
     "rarity": "R",
     "three": "Increase shatter capability by **18%**."
   },
   {
     "matrixId": "obstacle-removal-matrix",
-    "matrixImg": "https://toweroffantasy.info/static/images/matrices/obstacleremoval.webp",
+    "matrixImg": "https://toweroffantasy.info/images/Icon/yizhi/256/icon_matrix_R7_256.png",
     "name": "Obstacle Removal",
     "rarity": "R",
     "three": "Damage taken reduced by **6%**"
   },
   {
     "matrixId": "self-explosive-matrix",
-    "matrixImg": "https://toweroffantasy.info/static/images/matrices/selfexplosive.webp",
+    "matrixImg": "https://toweroffantasy.info/images/Icon/yizhi/256/icon_matrix_R1_256.png",
     "name": "Self Explosive",
     "rarity": "R",
     "three": "Increase damage dealt by flame weapons by **6%**."
   },
   {
     "matrixId": "functional-dash-matrix",
-    "matrixImg": "https://toweroffantasy.info/static/images/matrices/functionaldash.webp",
+    "matrixImg": "https://toweroffantasy.info/images/Icon/yizhi/256/icon_matrix_R2_256.png",
     "name": "Functional Dash",
     "rarity": "R",
     "three": "Increase damage dealt by frost weapons by **6%**."
   },
   {
     "matrixId": "standard-operation-matrix",
-    "matrixImg": "https://toweroffantasy.info/static/images/matrices/standardoperation.webp",
+    "matrixImg": "https://toweroffantasy.info/images/Icon/yizhi/256/icon_matrix_R3_256.png",
     "name": "Standard Operation",
     "rarity": "R",
     "three": "Increase damage dealt by volt weapons by **6%**."
   },
   {
     "matrixId": "plunder-matrix",
-    "matrixImg": "https://toweroffantasy.info/static/images/matrices/plunder.webp",
+    "matrixImg": "https://toweroffantasy.info/images/Icon/yizhi/256/icon_matrix_R4_256.png",
     "name": "Plunder",
     "rarity": "R",
     "three": "Increase damage dealt by physical weapons by **6%**."
   },
   {
     "matrixId": "wandering-aberrant-matrix",
-    "matrixImg": "https://toweroffantasy.info/static/images/matrices/wanderingaberrant.webp",
+    "matrixImg": "https://toweroffantasy.info/images/Icon/yizhi/256/icon_matrix_N1_256.png",
     "name": "Wandering Aberrant",
     "rarity": "N",
     "three": "Increase damage dealt by **4%**."

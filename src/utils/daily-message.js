@@ -19,7 +19,7 @@ function daily_message(TimeZone) {
     
     const weekday = formatter.formatToParts(new Date())[0].value;
 
-    let jo = []
+    const jo = []
     dailydata[weekday]["jo"].forEach(data => {
         let res = ""
         data.resistance.forEach(element => {
