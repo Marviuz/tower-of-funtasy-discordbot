@@ -6,7 +6,7 @@ const schedule = require('node-schedule');
 const vitalityEmbed = require('../embeds/vitality.embed');
 
 const NAME = path.parse(__filename).name;
-const DESCRIPTION = 'Calculates the percentage of critical according to the crit and the level';
+const DESCRIPTION = 'Set up a scheduler that informs you when your vitality is filled';
 
 module.exports = {
     name: NAME,
