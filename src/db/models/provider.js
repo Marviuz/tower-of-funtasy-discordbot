@@ -37,12 +37,12 @@ async function editUserTimezone(id, timezone) {
 //                  VITALITY
 //=============================================
 
-async function setVitalitySchedule() {
+async function getAllVitality() {
     return await vitalitySchema.find({});
 }
 
-async function getAllVitality() {
-    return await vitalitySchema.find({});
+async function deleteVitalitySchedule(userId) {
+    await vitalitySchema.deleteOne({ id: userId })
 }
 
 module.exports = {
@@ -52,5 +52,5 @@ module.exports = {
     getUserTimezone,
     editUserTimezone,
     getAllVitality,
-    setVitalitySchedule
+    deleteVitalitySchedule
 }

@@ -46,9 +46,11 @@ client.login(process.env.DISCORD_CLIENT_TOKEN);
 // MONGO_DB //
 //**********//
 const { connect } = require('mongoose');
-const { getallChannel, getAllVitality } = require('./src/db/models/provider');
+const { getallChannel, getAllVitality, deleteVitalitySchedule } = require('./src/db/models/provider');
 const schedule = require('node-schedule');
 const daily_message = require('./src/utils/daily-message');
+const vitalityEmbed = require('./src/embeds/vitality.embed');
+
 
 client.on("ready", async () => {
   await connect(
@@ -79,7 +81,17 @@ client.on("ready", async () => {
 
     const vitality = (await getAllVitality())
 
-
+    vitality.forEach(vitality => {
+      if (vitality.timestamp > Date.now()) {
+        schedule.scheduleJob(new Date(vitality.timestamp), async () => {
+          const user = await client.users.fetch(vitality.id)
+          await user.send({ content: `<@${vitality.id}>`, embeds: [vitalityEmbed(vitality.desired)] })
+          await deleteVitalitySchedule(vitality.id)
+        }); 
+      } else {
+        deleteVitalitySchedule(vitality.id)
+      }
+    })
   });
 });
 
