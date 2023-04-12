@@ -18,14 +18,15 @@ module.exports = {
         .setChoices(
           { name: 'Aesperia', value: 'Aesperia 1 https://i8.ae/GRBPr' },
           { name: 'Artificial Island', value: 'Artificial Island 2 https://i8.ae/PgFZC' },
-          { name: 'Vera', value: 'Vera 3 https://i8.ae/jqKuz' },
-          { name: 'Mirroria (Global)', value: 'Mirroria (Global) 4 https://i8.ae/DoAsE' },
-          { name: 'Destiny Breakout', value: '<:CN:1035098249687744542> Destiny Breakout https://i8.ae/CLYvG' },
-          { name: 'Third City', value: '<:CN:1035098249687744542> Third City 6 https://i8.ae/CLYvG' },
-          { name: 'Discovery Abyss', value: '<:CN:1035098249687744542> Discovery Abyss 7 https://i8.ae/CLYvG' },
-          { name: 'City Gate', value: '<:CN:1035098249687744542> City Gate 8 https://i8.ae/CLYvG' },
+          { name: 'Third City', value: 'Third City 6 https://i8.ae/CLYvG' },
+          { name: 'Confounding Labyrintn', value: 'Confounding Labyrintn 7 https://i8.ae/CLYvG' },
+          { name: 'City Gate', value: 'City Gate 8 https://i8.ae/CLYvG' },
           { name: 'Grayspace', value: 'Grayspace 9 https://i8.ae/YpkKf' },
-          { name: 'Mirroria (CN)', value: '<:CN:1035098249687744542> Mirroria (CN) 10 https://i8.ae/mdItr' },
+          { name: 'Mirroria', value: 'Mirroria 10 https://i8.ae/mdItr' },
+          { name: 'Vera', value: 'Vera 11 https://i8.ae/jqKuz' },
+          { name: 'The Grand Sea Island', value: 'The Grand Sea Island 12 https://i8.ae/CLYvG' },
+          { name: 'Innars', value: 'Innars 13 https://i8.ae/CLYvG' },
+          { name: 'Dragon Breath Volcano', value: 'Dragon Breath Volcano 14 https://i8.ae/CLYvG' },
         )
     ),
   async execute(interaction) {
