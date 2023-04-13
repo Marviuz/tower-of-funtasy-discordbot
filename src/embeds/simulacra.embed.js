@@ -68,12 +68,14 @@ const simulacraEmbed = ({ name, rarity, weapon, element, type, baseStats, shatte
     effect: {
       color: Number(rarities[rarity].replace('#', '0x')),
       title: chinaOnly ? `${emojis.cn} ${name}` : name,
+      url: `https://toweroffantasy.info/simulacra/${name.replace(' ', '-').toLowerCase()}`,
       fields: effect.map($ => ({ name: $.title, value: $.description })),
       image: { url: simulacraImg }
     },
     advancement: {
       color: Number(rarities[rarity].replace('#', '0x')),
       title: chinaOnly ? `${emojis.cn} ${name}` : name,
+      url: `https://toweroffantasy.info/simulacra/${name.replace(' ', '-').toLowerCase()}`,
       thumbnail: { url: weaponImg },
       fields: advancement.map(($, i) => ({ name: `${i + 1} ⭐`, value: $ })),
       image: { url: simulacraImg }
@@ -81,6 +83,7 @@ const simulacraEmbed = ({ name, rarity, weapon, element, type, baseStats, shatte
     awakening: {
       color: Number(rarities[rarity].replace('#', '0x')),
       title: chinaOnly ? `${emojis.cn} ${name}` : name,
+      url: `https://toweroffantasy.info/simulacra/${name.replace(' ', '-').toLowerCase()}`,
       thumbnail: { url: weaponImg },
       fields: [
         { name: 1200, value: awakening['1200'] },
@@ -111,12 +114,14 @@ const simulacraEmbed = ({ name, rarity, weapon, element, type, baseStats, shatte
     effectCN: {
       color: Number(rarities[CN.rarity].replace('#', '0x')),
       title: chinaOnly ? `${emojis.cn} ${name}` : name,
+      url: `https://toweroffantasy.info/simulacra/${name.replace(' ', '-').toLowerCase()}`,
       fields: CN.effect.map($ => ({ name: $.title, value: $.description })),
       image: { url: simulacraImg }
     },
     advancementCN: {
       color: Number(rarities[CN.rarity].replace('#', '0x')),
       title: chinaOnly ? `${emojis.cn} ${name}` : name,
+      url: `https://toweroffantasy.info/simulacra/${name.replace(' ', '-').toLowerCase()}`,
       thumbnail: { url: weaponImg },
       fields: CN.advancement.map(($, i) => ({ name: `${i + 1} ⭐`, value: $ })),
       image: { url: simulacraImg }
@@ -124,6 +129,7 @@ const simulacraEmbed = ({ name, rarity, weapon, element, type, baseStats, shatte
     awakeningCN: {
       color: Number(rarities[rarity].replace('#', '0x')),
       title: chinaOnly ? `${emojis.cn} ${name}` : name,
+      url: `https://toweroffantasy.info/simulacra/${name.replace(' ', '-').toLowerCase()}`,
       thumbnail: { url: weaponImg },
       fields: [
         { name: 1200, value: CN.awakening['1200'] },
