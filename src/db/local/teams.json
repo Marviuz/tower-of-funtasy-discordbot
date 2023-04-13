@@ -1,0 +1,139 @@
+{
+    "Frost": [
+        {
+            "Attack": [    
+                ["lin", "alyss", "sakifuwa"],
+                ["icarus", "alyss", "sakifuwa"],
+                ["lin", "alyss", "frigg"],
+                ["frigg", "alyss", "sakifuwa"],
+                ["fiona", "alyss", "sakifuwa"],
+                ["fiona", "alyss", "icarus"]
+            ],
+            "Fortitude": [    
+                ["icarus", "sakifuwa", "meryl"],
+                ["lin", "meryl", "sakifuwa"],
+                ["cocoritter", "meryl", "sakifuwa"],
+                ["ene", "meryl", "sakifuwa"]
+            ],
+            "Benediction": [    
+                ["lyra", "sakifuwa", "cocoritter"],
+                ["lyra", "alyss", "cocoritter"],
+                ["sakifuwa", "nemesis", "cocoritter"]
+            ],
+            "Balance": [    
+                ["cocoritter", "alyss", "sakifuwa"]
+            ]
+        }
+    ],
+    "Volt": {
+        "Attack": [      
+            ["tianlang", "fenrir", "lin"],
+            ["tianlang", "fenrir", "nemesis"],
+            ["lin", "samir", "nemesis"],
+            ["lin", "crow", "fenrir"],
+            ["tianlang", "fenrir", "rubilia"],
+            ["fiona", "fenrir", "rubilia"],
+            ["lin", "fenrir", "rubilia"]
+        ],
+        "Fortitude": [],
+        "Benediction": [      
+            ["cocoritter", "nemesis", "fenrir"],
+            ["lyra", "nemesis", "fenrir"]
+        ],
+        "Balance": []
+    },
+    "Flame": {
+        "Attack": [    
+            ["lin", "annabella", "ruby"],
+            ["lan", "annabella", "ruby"],
+            ["lin", "annabella", "lan"],
+            ["lin", "cobalt", "ruby"]
+        ],
+        "Fortitude": [    
+            ["sakifuwa", "ruby", "huma"],
+            ["huma", "lan", "sakifuwa"],
+            ["huma", "lan", "ruby"],
+            ["huma", "lan", "zero"]
+        ],
+        "Benediction": [    
+            ["zero", "annabella", "fiona"]
+        ],
+        "Balance": [    
+            ["lan", "annabella", "zero"],
+            ["lan", "annabella", "fiona"]
+        ]
+    },
+    "Physical": {
+        "Attack": [      
+            ["lin", "umi", "lyra"],
+            ["lin", "umi", "shiro"],
+            ["lin", "umi", "claudia"],
+            ["lin", "umi", "gunonno"],
+            ["lyra", "umi", "gunonno"],
+            ["fiona", "umi", "gunonno"]
+        ],
+        "Fortitude": [],
+        "Benediction": [      
+            ["umi", "lyra", "fiona"]
+        ],
+        "Balance": []
+    },
+    "Altered": {
+        "Attack": [
+            ["lin", "fiona", "claudia"],
+            ["lin", "fiona", "frigg"]
+        ],
+        "Fortitude": [],
+        "Benediction": [
+            ["lin", "fiona", "nemesis"],
+            ["lin", "fiona", "cocoritter"],
+            ["lin", "fiona", "lyra"]
+        ],
+        "Balance": [
+            ["lin", "fiona", "lan"]
+        ],
+        "All": [
+            ["lin", "fiona", "claudia"],
+            ["lin", "fiona", "frigg"],
+            ["lin", "fiona", "nemesis"],
+            ["lin", "fiona", "cocoritter"],
+            ["lin", "fiona", "lyra"],
+            ["lin", "fiona", "lan"]
+        ]
+    },
+    "Rainbow": {
+        "Attack": [
+            ["lin", "fenrir", "gunonno"],
+            ["lin", "fenrir", "sakifuwa"],
+            ["garnett", "fenrir", "gunonno"]
+        ],
+        "Fortitude": [
+            ["gunonno", "sakifuwa", "lan"]
+        ],
+        "Benediction": [],
+        "Balance": [],
+        "All": [
+            ["lin", "fenrir", "gunonno"],
+            ["lin", "fenrir", "sakifuwa"],
+            ["garnett", "fenrir", "gunonno"],
+            ["gunonno", "sakifuwa", "lan"]
+        ]
+    },
+    "None": {
+        "Attack": [],
+        "Fortitude": [
+            ["huma", "sakifuwa", "lin"],
+            ["lan", "sakifuwa", "lin"]
+          ],
+        
+        "Benediction": [
+            ["lyra", "cocoritter", "zero"],
+            ["lyra", "cocoritter", "nemesis"],
+            ["lyra", "nemesis", "zero"],
+            ["lyra", "nemesis", "fiona"],
+            ["zero", "nemesis", "fiona"],
+            ["zero", "cocoritter", "fiona"]
+          ],
+        "Balance": "tooMany"
+    }
+}

@@ -1,17 +1,134 @@
 [
   {
+    "id": "rubilia",
+    "weaponId": "lost-melody",
+    "simulacraImg": "https://i.imgur.com/J7IKXte.png",
+    "weaponImg": "https://i8.ae/oUmPt",
+    "chinaOnly": true,
+    "name": "Rubilia",
+    "rarity": "SSR",
+    "weapon": "Lost Melody",
+    "element": "volt",
+    "type": "dps",
+    "baseStats": ["attack", "crit", "health"],
+    "shatter": { "rank": "A", "value": 10.00 },
+    "charge": { "rank": "S", "value": 12.00 },
+    "materials": ["volt", "red", "blue"],
+    "effect": [
+      {
+        "title": "Volt",
+        "description": "When the weapon is fully charged, the next attack will **paralyze** targets for **1** second and electrify them for **6** seconds, negating all buffs and dealing damage equal to **144.00%** of ATK. Targets can't receive any buffs for the next **6** seconds."
+      },
+      {
+        "title": "Volt Resonance",
+        "description": "Increase Volt ATK by **20%** and Volt Resistance by **40%**. Activate by equipping **2** or more Volt weapons. This set effect works in the off-hand slot. Effect does not stack with Volt Resonance."
+      }
+    ],
+    "advancement": [
+      "After **Echo** is triggered, each crystal thorn will deal damage equal to **193.3%** of ATK to nearby targets every **2** seconds.",
+      "Increase the current weapon's base ATK growth by **16%**.",
+      "Release any weapon or discharge skill, generate **1** crystal thorn.",
+      "Increase the current weapon's base ATK growth by **32%**.",
+      "The healing crystal thorns receive from **Echo** is increased to **50%**.",
+      "After successfully releasing **Hella's Embrace**, volt damage is increased by **20%** for **30** seconds."
+    ],
+    "awakening": {
+      "1200": "For every volt weapon equipped, increase volt ATK by 6%.",
+      "4000": "For every volt weapon equipped, increase volt ATK by 8%. The duration of Suppression is increased to 120 seconds."
+    }
+  },
+  {
+    "id": "gunonno",
+    "weaponId": "little-huricane",
+    "simulacraImg": "https://i.imgur.com/v09HNcq.png",
+    "weaponImg": "https://i8.ae/tsHmB",
+    "chinaOnly": true,
+    "name": "Gunonno",
+    "rarity": "SSR",
+    "weapon": "Little Hurricane",
+    "element": "physical",
+    "type": "dps",
+    "baseStats": ["attack", "crit", "health"],
+    "shatter": { "rank": "S", "value": 12.00 },
+    "charge": { "rank": "S", "value": 14.00 },
+    "materials": ["physical", "red", "black"],
+    "effect": [
+      {
+        "title": "Grievous",
+        "description": "Fully charged weapons will inflict damage equal to **137.00%** of ATK with the next attack, and make the target grievous for **7** seconds, taking **20%** extra damage."
+      },
+      {
+        "title": "Physical Resonance",
+        "description": "Physical Resonance: Increase Physical ATK by **20%** and Physical Resistance by **40%**. Activate by equipping **2** or more Physical weapons. This set effect works in the off-hand slot. Cannot stack with effects of the same type."
+      },
+      {
+        "title": "Balanced Elements",
+        "description": "Increase final damage by **15%**. Activate by equipping **2** or more weapons of the same element, except for Physical weapons. This set effect works in the off-hand slot."
+      }
+    ],
+    "advancement": [
+      "The shatter of **Treasure Digging**, **Octopus Ball Boiling Pot** and **Xiaopi Opens the Road** is increased by **80%**. When your shield is less than **50%** of max HP, using the previously mentioned skills will apply a shield equal to **50%** of max HP and lasts for **8** seconds. Can only be triggered once every **5** seconds. (Does not take effect in Apex League)",
+      "Increase the current weapon's base ATK growth by **16%**.",
+      "The limit of Xiaopi's shatter and touching the courtyard is increased to **45**. After releasing Xiaopi's big trick, physical damage dealt is increased by **25%** for **30** seconds.",
+      "Increase the current weapon's base ATK growth by **32%**.",
+      "After triggering treasure mark, refresh the duration of the target's serious injury state. When dealing damage to a target whose HP is lower than **80%**, physical damage dealt is increased by **25%**. This effect works in the background.",
+      "The damage caused by treasure mark is increased by **140%** of ATK."
+    ],
+    "awakening": {
+      "1200": "Using Expedition Team Attack triggers Complete Rampage, the final damage dealt to enemies with Serious Injury is increased by 12% for 30 seconds.",
+      "4000": "Using Expedition Team Attack triggers Complete Rampage, the final damage dealt to enemies with Serious Injury is increased by 23% for 30 seconds. Serious Injury will increase movement speed by 50% when the user is underwater."
+    }
+  },
+  {
+    "id": "fiona",
+    "weaponId": "lunar-stars",
+    "simulacraImg": "https://i.imgur.com/Z2FnV1D.png",
+    "weaponImg": "https://i8.ae/OofUi",
+    "chinaOnly": true,
+    "name": "Fiona",
+    "rarity": "SSR",
+    "weapon": "Lunar Stars",
+    "element": "aberration",
+    "type": "support",
+    "baseStats": ["attack", "resistance", "health"],
+    "shatter": { "rank": "S", "value": 11.50 },
+    "charge": { "rank": "S", "value": 11.50 },
+    "materials": ["red", "green", "black"],
+    "effect": [
+      {
+        "title": "Altered",
+        "description": "When the weapon is fully charged, the next attack will mark the target, causing an explosion after 5 seconds. Additionally inflict **25%** of all damage received by the target while the mark exists, up to a total of **560.00%** of your ATK. Only 1 mark can be added on a target at a time."
+      },
+      {
+        "title": "Altered Resonance",
+        "description": "Increase ATK by **30%** and altered resistance by **60%**. Activate by equipping **2** or more altered weapons. This set effect also works with weapons in the off-hand slot. Does not stack with Altered Reaction as Altered Resonance will take priority."
+      }
+    ],
+    "advancement": [
+      "Use any weapon skill or discharge to gain **1** elemental crystal, up to **5** stacks, which decay after **6** seconds. Elemental crystals increase your final damage by **4%** * (**crystal count** + **1**) / **2**, and healing by **6%** * (**crystal count** + **1**) / **2**.",
+      "Increase the current weapon's base ATK growth by **16%**.",
+      "While not using Benediction Resonance and the target's health is lower than (**crystal count** + **2**)**%**, **Lunar Stars** can instantly kill the enemy (ineffective against players).\nWhen using Benediction Resonance and the target's health is lower than (**crystal count** * **2** + **2**)**%**, **Lunar Stars** can instantly kill the enemy (ineffective against players).",
+      "Increase the current weapon's base ATK growth by **32%**.",
+      "Gain **1** elemental crystal every time you use Scattering Technique. The decay time for an elemental crystal is increased to **20** seconds.\nUpon taking lethal damage, consume **3** elemental crystals to neutralize the damage and temporarily become invincible, cooldown **25** seconds.",
+      "Increase final damage by **7%** * (**crystal count** + **3**) / **2**."
+    ],
+    "awakening": {
+      "1200": "Increase final damage by **16%**",
+      "4000": "Increase final damage by **18%**.\n\n**Scattering Technique Enhancement**:\n\nWater Gathering Enhancement: Increase all elemental damage by 20%.\n\nSurge Enhancement: When Lunar Stars are the active weapon, increase Surge's damage by 150%, and when Altered Resonance is active, increase Surge's damage by an additional 100%.\n\nWave Pressure Enhancement: Increase the damage of weapon skills and discharge by 45%.\n\nVortex Enhancement: When dealing physical damage while the Vortex is active, increase final damage, up to 64% (10 seconds to reach the max value).\n\nShackle Enhancement: When using Benediction Resonance, extend water prison's duration to 5 seconds and the basic resistance reduction effect is increased by 15%.\n\nNourishing Spring Enhancement: When using Fortitude Resonance, increase resistance by (max HP / 50000)%, up to 20%."
+    }
+  },
+  {
     "id": "icarius",
     "weaponId": "fractured-light",
     "simulacraImg": "https://i8.ae/ESMtn",
     "weaponImg": "https://i8.ae/cIgvL",
-    "chinaOnly": true,
     "name": "Icarius",
     "rarity": "SSR",
     "weapon": "Fractured Light",
     "element": "ice",
     "type": "dps",
     "baseStats": ["attack", "health", "crit"],
-    "shatter": { "rank": "A", "value": 9.5 },
+    "shatter": { "rank": "A", "value": 9.50 },
     "charge": { "rank": "A", "value": 8.00 },
     "materials": ["ice", "green", "blue"],
     "effect": [
@@ -21,20 +138,20 @@
       },
       {
         "title": "Frost Resonance",
-        "description": "Increase frost ATK by **20%** and frost resistance by **40%**. Activate by equipping **2** or more frost weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Frost Resonance."
+        "description": "<:CN:1035098249687744542> Increase frost ATK by **20%** and frost resistance by **40%**. Activate by equipping **2** or more frost weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Frost Resonance."
       },
       {
         "title": "Elementary Mastery",
-        "description": "Increase final damage by **2.5%** for every element equipped. This effect works in the background."
+        "description": "<:CN:1035098249687744542> Increase final damage by **2.5%** for every element equipped. This effect works in the background."
       }
     ],
     "advancement": [
-      "Using any weapon's skill will cause the speeding yo-yos to **resonate**, dealing **30%** of your missing HP as damage to nearby targets (minimum **70%** of max ATK, maximum **3,000%** of max ATK) using the current weapon's element.\nUsing any weapon's discharge will cause the speeding yo-yos to **modulate**, dealing **20%** of your max HP as damage to nearby targets (maximum **2,000%** of max ATK) using the current weapon's element.",
+      "<:CN:1035098249687744542> Using any weapon's skill will cause the speeding yo-yos to **resonate**, dealing **30%** of your missing HP as damage to nearby targets (minimum **70%** of max ATK, maximum **3,000%** of max ATK) using the current weapon's element.\nUsing any weapon's discharge will cause the speeding yo-yos to **modulate**, dealing **20%** of your max HP as damage to nearby targets (maximum **2,000%** of max ATK) using the current weapon's element.",
       "Increase the current weapon's base ATK growth by **16%**.",
-      "When casting Desolate Day, speeding yo-yos can trigger **12** seconds of **extreme speed**: increase speeding yo-yos' speed by **80%**, damage by **60%**, and its hits deal short-range AoE damage.",
+      "<:CN:1035098249687744542> When casting Desolate Day, speeding yo-yos can trigger **12** seconds of **extreme speed**: increase speeding yo-yos' speed by **80%**, damage by **60%**, and its hits deal short-range AoE damage.",
       "Increase the current weapon's base HP growth by **32%**.",
       "Increase damage of speeding yo-yos and Quiet by **50%**.",
-      "Increase final damage by **10%** while speeding yo-yos are active."
+      "<:CN:1035098249687744542> Increase final damage by **10%** while speeding yo-yos are active."
     ],
     "awakening": {
       "1200": "Increase final damage by **10%** while Fractured Light is equipped, and increase shatter by **20%** while using Fractured Light.",
@@ -46,7 +163,6 @@
     "weaponId": "lingguang",
     "simulacraImg": "https://i.imgur.com/uXHXiGx.png",
     "weaponImg": "https://i.imgur.com/DkUbh6m.png",
-    "chinaOnly": true,
     "name": "Lan",
     "rarity": "SSR",
     "weapon": "Lingguang",
@@ -63,7 +179,7 @@
       },
       {
         "title": "Flame Resonance",
-        "description": "Increase flame ATK by 20% and flame resistance by 40%. Activate by equipping 2 or more flame weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Flame Resonance."
+        "description": "<:CN:1035098249687744542> Increase flame ATK by 20% and flame resistance by 40%. Activate by equipping 2 or more flame weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Flame Resonance."
       }
     ],
     "advancement": [
@@ -71,8 +187,8 @@
       "Increase the current weapon's base HP growth by **16%**.",
       "When releasing any weapon discharge, all plumes on the field will trigger a mini [Bursting Flame] effect that has **30%** effectiveness; Enemies near plumes have their attack reduced by **15%**; After dealing damage for the first time after you enter combat, **3** plumes will be generated near the target immediately.",
       "Increase the current weapon's base ATK growth by **32%**.",
-      "[Bursting Flame] ignores enemies' flame resistance by **50%**. Enemies affected by [Erosion] will now take **15%** more flame damage instead.",
-      "Normal attack chain and Airborne normal attack chain gains **66.7%** damage bonus. [Plume Gathering] value will be increased by **2** for the following movements: Plume spin, discharge, and [Bursting Flame]."
+      "<:CN:1035098249687744542> [Bursting Flame] ignores enemies' flame resistance by **50%**. Enemies affected by [Erosion] will now take **15%** more flame damage instead.",
+      "<:CN:1035098249687744542> Normal attack chain and Airborne normal attack chain gains **66.7%** damage bonus. [Plume Gathering] value will be increased by **2** for the following movements: Plume spin, discharge, and [Bursting Flame]."
     ],
     "awakening": {
       "1200": "When using Fortitude Resonance, expand the boundary triggered by accumulating power. Reduce incoming flame and frost damage by **16%** to yourself and teammates inside the boundary.",
@@ -89,7 +205,6 @@
     "weaponId": "gleipnir",
     "simulacraImg": "https://i.imgur.com/aCUvOAb.png",
     "weaponImg": "https://i.imgur.com/mLTfcgq.png",
-    "chinaOnly": true,
     "name": "Fenrir",
     "rarity": "SSR",
     "weapon": "Gleipnir",
@@ -106,16 +221,16 @@
       },
       {
         "title": "Volt Resonance",
-        "description": "Increase volt ATK by **20%** and volt resistance by **40%**. Activate by equipping **2** or more volt weapons. This set effect also works with weapons in the off-hand slot. Volt Resonance will take priority if equipped with a Volt Reaction weapon."
+        "description": "<:CN:1035098249687744542> Increase volt ATK by **20%** and volt resistance by **40%**. Activate by equipping **2** or more volt weapons. This set effect also works with weapons in the off-hand slot. Volt Resonance will take priority if equipped with a Volt Reaction weapon."
       }
     ],
     "advancement": [
-      "When **Soul Master** is used and goes on cooldown, gain the skill **Soundwave Frenzy**: Rush to the target and perform multiple attacks, with each hit adding **2** notes on the target, applying a short slowing effect, and restoring **100%** of ATK as HP. Deals **1542%** of ATK and has a cooldown of **15** seconds.  \n                When **3** or more notes are added and Soundwave Frenzy's cooldown is longer than **5** seconds, reset the cooldown (can be triggered once every **15** seconds).",
+      "<:CN:1035098249687744542> When **Soul Master** is used and goes on cooldown, gain the skill **Soundwave Frenzy**: Rush to the target and perform multiple attacks, with each hit adding **2** notes on the target, applying a short slowing effect, and restoring **100%** of ATK as HP. Deals **1542%** of ATK and has a cooldown of **15** seconds.  \n                When **3** or more notes are added and Soundwave Frenzy's cooldown is longer than **5** seconds, reset the cooldown (can be triggered once every **15** seconds).",
       "Increase the current weapon's base ATK growth by **16%**.",
-      "During Musical World, losing **45%** of your total HP or using **Soundwave Frenzy** will activate **Musical World Shockwaves**, dealing **1215%** of ATK to targets inside Musical World.  \n                Losing **99%** of your total HP grants **1** Immunity (blocks damage and invincible for a short time) for **45** seconds, up to **1** stack.",
+      "<:CN:1035098249687744542> During Musical World, losing **45%** of your total HP or using **Soundwave Frenzy** will activate **Musical World Shockwaves**, dealing **1215%** of ATK to targets inside Musical World.  \n                Losing **99%** of your total HP grants **1** Immunity (blocks damage and invincible for a short time) for **45** seconds, up to **1** stack.",
       "Increase the current weapon's base ATK growth by **32%**.",
-      "Increase the damage of detonating notes to **70%** and the damage over time is increased to **2%** of max HP per second while intoxicated. During Musical World, if **Musical World Shockwave** is not triggered for **12** consecutive seconds while in combat, it will automatically be triggered once.",
-      "Increase crit rate by **30%** when using **Gleipnir**. The effect remains active for **5** seconds after switching to another weapon."
+      "<:CN:1035098249687744542> Increase the damage of detonating notes to **70%** and the damage over time is increased to **2%** of max HP per second while intoxicated. During Musical World, if **Musical World Shockwave** is not triggered for **12** consecutive seconds while in combat, it will automatically be triggered once.",
+      "<:CN:1035098249687744542> Increase crit rate by **30%** when using **Gleipnir**. The effect remains active for **5** seconds after switching to another weapon."
     ],
     "awakening": {
       "1200": "When equipping **2** weapons of different elements, increase final damage by **13%**. When equipping **3** weapons of different elements, increase final damage by **18%**.",
@@ -133,7 +248,6 @@
     "weaponId": "mobius",
     "simulacraImg": "https://i.imgur.com/7uEkJpV.png",
     "weaponImg": "https://i.imgur.com/g6EIfRL.png",
-    "chinaOnly": true,
     "name": "Umi",
     "rarity": "SSR",
     "weapon": "Mobius",
@@ -150,16 +264,16 @@
       },
       {
         "title": "Physical Reaction",
-        "description": "Increase physical ATK by **20%** and physical resistance by **40%**. Activate by equipping **2** or more physical weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Physical Resonance."
+        "description": "<:CN:1035098249687744542> Increase physical ATK by **20%** and physical resistance by **40%**. Activate by equipping **2** or more physical weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Physical Resonance."
       }
     ],
     "advancement": [
-      "When entering Magic Show, gain Mind Puppet, which increases Mobius' physical damage buff to **60%**. During Magic Show, recover **2%** HP and **10** weapon charge every second.",
+      "<:CN:1035098249687744542> When entering Magic Show, gain Mind Puppet, which increases Mobius' physical damage buff to **60%**. During Magic Show, recover **2%** HP and **10** weapon charge every second.",
       "Increase the current weapon's base ATK growth by **16%**.",
-      "End Magic Show early to apply continuous AoE damage that lasts for **13** seconds, reduce Mobius' skill cooldown, and temporarily gain **50%** increased physical damage. If Magic Show's remaining duration is **13** seconds or longer before being cancelled, gain **200** weapon charge.  \n                &nbsp;  \n                The longer the remaining duration of Magic Show before being cancelled, the stronger the buffs. \n                The AoE deals up to **400%** damage per hit (cancel when duration > 13 seconds). Skill cooldown can be reduced by a maximum of **13** seconds. The physical damage buff's duration can be extended up to **20** seconds (this effect does not apply to Mobius).",
+      "<:CN:1035098249687744542> End Magic Show early to apply continuous AoE damage that lasts for **13** seconds, reduce Mobius' skill cooldown, and temporarily gain **50%** increased physical damage. If Magic Show's remaining duration is **13** seconds or longer before being cancelled, gain **200** weapon charge.  \n                &nbsp;  \n                The longer the remaining duration of Magic Show before being cancelled, the stronger the buffs. \n                The AoE deals up to **400%** damage per hit (cancel when duration > 13 seconds). Skill cooldown can be reduced by a maximum of **13** seconds. The physical damage buff's duration can be extended up to **20** seconds (this effect does not apply to Mobius).",
       "Increase the current weapon's base ATK growth by **32%**.",
       "When switching to Mobius, gain **30** points of Preheat Value, cooldown for **17** seconds. When entering Magic State, deal **840%** of ATK as AoE damage to nearby enemies, reducing their physical resistance by **10%** for **20** seconds.",
-      "During Magic Show, Mobius gains an additional whip. Normal attacks and dodge attacks will have a follow up hit, dealing **130%** of ATK. The additional hit is not considered a normal attack."
+      "<:CN:1035098249687744542> During Magic Show, Mobius gains an additional whip. Normal attacks and dodge attacks will have a follow up hit, dealing **130%** of ATK. The additional hit is not considered a normal attack."
     ],
     "awakening": {
       "1200": "Every time Umi uses **Magic Time**, increase final damage by **12%** for **30** seconds (can not be stacked).",
@@ -176,7 +290,6 @@
     "weaponId": "immortal-wings",
     "simulacraImg": "https://i.imgur.com/TCdA86x.png",
     "weaponImg": "https://i.imgur.com/QInIlcX.png",
-    "chinaOnly": true,
     "name": "Alyss",
     "rarity": "SSR",
     "weapon": "Immortal Wings",
@@ -193,16 +306,16 @@
       },
       {
         "title": "Frost Reaction",
-        "description": "Increase frost ATK by **20%** and frost resistance by **40%**. Activate by equipping **2** or more frost weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Frost Resonance."
+        "description": "<:CN:1035098249687744542> Increase frost ATK by **20%** and frost resistance by **40%**. Activate by equipping **2** or more frost weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Frost Resonance."
       }
     ],
     "advancement": [
-      "Using a frost weapon's skill while inside Cold Field will activate Alyss' support. Alyss will cast her discharge skill and then the weapon skill that triggered Alyss' support. This will be considered as using a discharge skill, triggering effects activated by discharge.",
+      "<:CN:1035098249687744542> Using a frost weapon's skill while inside Cold Field will activate Alyss' support. Alyss will cast her discharge skill and then the weapon skill that triggered Alyss' support. This will be considered as using a discharge skill, triggering effects activated by discharge.",
       "Increase the current weapon's base ATK growth by **16%**.",
-      "Every time Night of the White Star is triggered, gain Alyss' aid, increasing Night of the White Star's and \"Frostbite\" damage by **30%** for **12** seconds, stacking up to **3** times.",
+      "<:CN:1035098249687744542> Every time Night of the White Star is triggered, gain Alyss' aid, increasing Night of the White Star's and \"Frostbite\" damage by **30%** for **12** seconds, stacking up to **3** times.",
       "Increase the current weapon's base ATK growth by **32%**.",
-      "Increase Immortal Wing's basic attack and Space Fracture damage by **50%**. When taking fatal damage, receive Alyss' protection one time, resisting the hit and becomming immune to damage for a short time, cooldown **60** seconds.",
-      "When Alyss' aid reaches 3 stacks, increase frost damage by **15%**."
+      "<:CN:1035098249687744542> Increase Immortal Wing's basic attack and Space Fracture damage by **50%**. When taking fatal damage, receive Alyss' protection one time, resisting the hit and becomming immune to damage for a short time, cooldown **60** seconds.",
+      "<:CN:1035098249687744542> When Alyss' aid reaches 3 stacks, increase frost damage by **15%**."
     ],
     "awakening": {
       "1200": "After successfully casting a weapon skill, gain **13%** final damage boost for **12** seconds.",
