@@ -30,6 +30,7 @@ module.exports = {
           { name: 'Raincaller Island Tower (-757.8, -569.9)', value: "`password`: 5972", inline: true},
           { name: 'Ruins D-02:', value: ":green_circle: `Easy`: 2887\n :orange_circle: `Normal`: 0713\n :red_circle: `Hard`: 1027"},
         )
+        .setImage("https://i.imgur.com/ics7XjG.png")
         
     await interaction.reply({ embeds: [embed] });
   },

@@ -1,57 +1,78 @@
 [
   {
-    "matrixId": "icarus",
+    "matrixId": "rubilia",
+    "matrixImg": "https://i.imgur.com/tqj0QRe.png",
     "chinaOnly": true,
+    "name": "Rubilia",
+    "rarity": "SSR",
+    "two": "Increases max HP by **105k/120k/135k/150k** and volt ATK by **16%/19%/22%/25%**. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect.",
+    "four": "Increases the limit of the number of crystal thorns that Lost Melody (Rubilia's weapon) can create by **6**. After hitting a target with an electric weapon, all elemental damage to the enemy is increased by **25%/30%/35%/40%** for **30** seconds. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
+  },
+  {
+    "matrixId": "gunonno",
+    "matrixImg": "https://i.imgur.com/UTH8dca.png",
+    "chinaOnly": true,
+    "name": "Gunonno",
+    "rarity": "SSR",
+    "two": "When at least **1** physical weapon is equipped, the damage of all elements is increased **12%/15%/18%/21%**. This effect works in the background and only the set with the highest advancement will take effect.",
+    "four": "Releasing the weapon skill or discharge of a physical weapon, increase the damage done by all elements by **27%/31%/35%/39%** for **25** seconds. Stamina consumption is reduced by **40%** while using Little Hurricane. This effect works in the background and only the set with the highest advancement will take effect."
+  },
+  {
+    "matrixId": "fiona",
+    "matrixImg": "https://i.imgur.com/TYuE8bZ.png",
+    "chinaOnly": true,
+    "name": "Fiona",
+    "rarity": "SSR",
+    "two": "After successfully dealing damage, increase ATK by **18%/22%/26%/30%** for **30** seconds, does not stack. Only the highest star set will take effect.",
+    "four": "While not using Benediction Resonance, cast Scattering Technique to increase final damage by **28%/32%/36%/40%** for **20** seconds. If you have Benediction Resonance, the final damage buff is reduced to **14%/16%/18%/20%** but applies to your teammates as well. Receive an additional (base ATK/10000)% final damage increase based on your ATK, up to **5%**. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
+  },
+  {
+    "matrixId": "icarus",
     "matrixImg": "https://i8.ae/RinBH",
     "name": "Icarus",
     "rarity": "SSR",
-    "two": "While equipped with Fractured Light/**2** different elements/**2** different weapon types, increase the damage of all elements by **12%/15%/18%/21%**. This effect works in the background, and if multiple sets are used, the highest star set will take effect.",
-    "four": "When dealing frost damage, increase the damage of all elements by **27%/31%/35%/39%** for **25** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
+    "two": "<:CN:1035098249687744542> While equipped with Fractured Light/**2** different elements/**2** different weapon types, increase the damage of all elements by **12%/15%/18%/21%**. This effect works in the background, and if multiple sets are used, the highest star set will take effect.",
+    "four": "<:CN:1035098249687744542> When dealing frost damage, increase the damage of all elements by **27%/31%/35%/39%** for **25** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
   },
   {
     "matrixId": "lan",
-    "chinaOnly": true,
     "matrixImg": "https://i8.ae/dMdvW",
     "name": "Lan",
     "rarity": "SSR",
-    "two": "When using at least **1** flame weapon, increase flame attack by **12%/14%/16%/18%**, increase flame damage by **7%/8%/9%/10%**. This effect works in the background, and if multiple sets are used, the highest star set will take effect.",
-    "four": "Different effects are obtained according to the number of different elemental weapons equipped: for each flame/ice/physical/lightning weapon equpped, increase flame/ice/physical/lightning damage by **9%/11%/13%/15%**. For each altered weapon equipped, increase final damage by **12%/14%/17%/20%**. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
+    "two": "<:CN:1035098249687744542> When using at least **1** flame weapon, increase flame attack by **12%/14%/16%/18%**, increase flame damage by **7%/8%/9%/10%**. This effect works in the background, and if multiple sets are used, the highest star set will take effect.",
+    "four": "<:CN:1035098249687744542> Different effects are obtained according to the number of different elemental weapons equipped: for each flame/ice/physical/lightning weapon equpped, increase flame/ice/physical/lightning damage by **9%/11%/13%/15%**. For each altered weapon equipped, increase final damage by **12%/14%/17%/20%**. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
   },
   {
     "matrixId": "habra",
-    "chinaOnly": true,
     "matrixImg": "https://i8.ae/NrjCs",
     "name": "Habra",
     "rarity": "SSR",
-    "two": "Increases final damage by **12%/14%/17%/21%**.",
-    "four": "Increases final damage by **15%/17%/20%/24%**. This effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
+    "two": "<:CN:1035098249687744542> Increases final damage by **12%/14%/17%/21%**.",
+    "four": "<:CN:1035098249687744542> Increases final damage by **15%/17%/20%/24%**. This effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
   },
   {
     "matrixId": "scylla",
-    "chinaOnly": true,
     "matrixImg": "https://i8.ae/rHqOy",
     "name": "Scylla",
     "rarity": "SSR",
-    "two": "Increases critical damage and shatter by **15%/18%/22%/27%**.",
-    "four": "Increases Ice, Fire, Volt, Physical, and Altered damage by **15%/17%/20%/24%** when 2 or more weapons of different elements are equipped. This effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
+    "two": "<:CN:1035098249687744542> Increases critical damage and shatter by **15%/18%/22%/27%**.",
+    "four": "<:CN:1035098249687744542> Increases Ice, Fire, Volt, Physical, and Altered damage by **15%/17%/20%/24%** when 2 or more weapons of different elements are equipped. This effect is also active in the off-hand slot, but only the set with the highest star rating will take effect."
   },
   {
     "matrixId": "fenrir",
-    "chinaOnly": true,
     "matrixImg": "https://toweroffantasy.info/static/images/matrices/fenrir.webp",
     "name": "Fenrir",
     "rarity": "SSR",
-    "two": "Crit damage increased by **20%/24%/28%/32%**, does not stack. This effect works in the background, and if multiple sets are used, only the highest star set will take effect.",
-    "four": "Dealing volt damage increases final damage by **5%** for **10** seconds, up to **5/6/7/8** stacks. This effect works in the background, and if multiple sets are used, only the highest star set will take effect. "
+    "two": "<:CN:1035098249687744542> Crit damage increased by **20%/24%/28%/32%**, does not stack. This effect works in the background, and if multiple sets are used, only the highest star set will take effect.",
+    "four": "<:CN:1035098249687744542> Dealing volt damage increases final damage by **5%** for **10** seconds, up to **5/6/7/8** stacks. This effect works in the background, and if multiple sets are used, only the highest star set will take effect. "
   },
   {
     "matrixId": "umi",
-    "chinaOnly": true,
     "matrixImg": "https://toweroffantasy.info/static/images/matrices/umi.webp",
     "name": "Umi",
     "rarity": "SSR",
-    "two": "When dealing physical damage, final damage is increased by **8%/9%/10%/11%** and physical damage is increased by an additional **4%/4.5%/5%/5.5% for **3** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect.",
-    "four": "When equipped with **2** or more physical weapons, final damage is increased by **24%/26%/29%/32%**. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
+    "two": "<:CN:1035098249687744542> When dealing physical damage, final damage is increased by **8%/9%/10%/11%** and physical damage is increased by an additional **4%/4.5%/5%/5.5%** for **3** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect.",
+    "four": "<:CN:1035098249687744542> When equipped with **2** or more physical weapons, final damage is increased by **24%/26%/29%/32%**. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
   },
   {
     "matrixId": "saki-fuwa",
@@ -63,12 +84,11 @@
   },
   {
     "matrixId": "alyss",
-    "chinaOnly": true,
     "matrixImg": "https://toweroffantasy.info/static/images/matrices/alyss.webp",
     "name": "Alyss",
     "rarity": "SSR",
-    "two": "Switching to this weapon grants a **8.75%/10%/11.25%/12.5%** final damage boost, with an additional **5%** frost damage boost if it's a frost weapon, for **18** seconds. If multiple sets are used, the highest star set will take effect.",
-    "four": "Unleashing a discharge skill with Immortal Wings grants a **12%/13.5%/15%/17%** damage boost for **18** seconds, stacking up to **2** times. Lose **1** stack when the buff expires. This effect works in the background, and if multiple sets are used, the highest star set will take effect. Stamina consumption is reduced by **50%** during Latent Configuration."
+    "two": "<:CN:1035098249687744542> Switching to this weapon grants a **8.75%/10%/11.25%/12.5%** final damage boost, with an additional **5%** frost damage boost if it's a frost weapon, for **18** seconds. If multiple sets are used, the highest star set will take effect.",
+    "four": "<:CN:1035098249687744542> Unleashing a discharge skill with Immortal Wings grants a **12%/13.5%/15%/17%** damage boost for **18** seconds, stacking up to **2** times. Lose **1** stack when the buff expires. This effect works in the background, and if multiple sets are used, the highest star set will take effect. Stamina consumption is reduced by **50%** during Latent Configuration."
   },
   {
     "matrixId": "annabella",
