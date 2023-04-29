@@ -11,13 +11,13 @@ module.exports = {
   data: new SlashCommandBuilder()
     .setName(NAME)
     .setDescription(DESCRIPTION)
-    .addStringOption(option =>
-        option.setName('role'),
-        option.setDescription('Role of the team'),
+    .addStringOption(option => option
+      .setName('role')
+      .setDescription('Role of the team')
     )
-    .addStringOption(option =>
-        option.setName('element'),
-        option.setDescription('Element of the team'),
+    .addStringOption(option => option
+      .setName('element')
+      .setDescription('Element of the team')
     ),
 
   async execute(interaction) {

@@ -19,6 +19,15 @@
                     "volt_armor",
                     "matrix_meryl"
                 ]
+            },
+            {
+                "name": "Carnival Party",
+                "resistance": ["ice", "physical"],
+                "rewards": [
+                    "ice_armor",
+                    "physical_armor",
+                    "matrix_meryl"
+                ]
             }
         ],
         "Other": [
@@ -48,7 +57,16 @@
                     "fire_armor",
                     "matrix_meryl"
                 ]
-            }   
+            },
+            {
+                "name": "Pursuit of Fate",
+                "resistance": ["volt", "flame"],
+                "rewards": [
+                    "volt_armor",
+                    "fire_armor",
+                    "matrix_meryl"
+                ]
+            }  
         ],
         "Other": [
             "A new **Frontier Clash** attempt was gained"
@@ -74,7 +92,16 @@
                     "volt_armor",
                     "matrix_meryl"
                 ]
-            }  
+            },
+            {
+                "name": "Carnival Party",
+                "resistance": ["ice", "physical"],
+                "rewards": [
+                    "ice_armor",
+                    "physical_armor",
+                    "matrix_meryl"
+                ]
+            }
         ],
         "Other": [
             "A new **Void Rift** attempt was gained"
@@ -100,7 +127,16 @@
                     "fire_armor",
                     "matrix_meryl"
                 ]
-            }
+            },
+            {
+                "name": "Pursuit of Fate",
+                "resistance": ["volt", "flame"],
+                "rewards": [
+                    "volt_armor",
+                    "fire_armor",
+                    "matrix_meryl"
+                ]
+            } 
         ],
         "Other": [
             "A new **Frontier Clash** attempt was gained"
@@ -126,8 +162,16 @@
                     "volt_armor",
                     "matrix_meryl"
                 ]
-            }
-            
+            },
+            {
+                "name": "Carnival Party",
+                "resistance": ["ice", "physical"],
+                "rewards": [
+                    "ice_armor",
+                    "physical_armor",
+                    "matrix_meryl"
+                ]
+            } 
         ],
         "Other": [
             "A new **Void Rift** attempt was gained"
@@ -163,7 +207,16 @@
                     "fire_armor",
                     "matrix_meryl"
                 ]
-            }
+            },
+            {
+                "name": "Pursuit of Fate",
+                "resistance": ["volt", "flame"],
+                "rewards": [
+                    "volt_armor",
+                    "fire_armor",
+                    "matrix_meryl"
+                ]
+            } 
         ],
         "Other": [
             "A new **Frontier Clash** attempt was gained"
@@ -216,6 +269,24 @@
                 "rewards": [
                     "ice_armor",
                     "fire_armor",
+                    "matrix_meryl"
+                ]
+            },
+            {
+                "name": "Pursuit of Fate",
+                "resistance": ["volt", "flame"],
+                "rewards": [
+                    "volt_armor",
+                    "fire_armor",
+                    "matrix_meryl"
+                ]
+            },
+            {
+                "name": "Carnival Party",
+                "resistance": ["ice", "physical"],
+                "rewards": [
+                    "ice_armor",
+                    "physical_armor",
                     "matrix_meryl"
                 ]
             }
