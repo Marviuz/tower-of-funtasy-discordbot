@@ -1,9 +1,93 @@
 [
   {
+    "id": "yulan",
+    "weaponId": "pian-zhen",
+    "simulacraImg": "https://i.imgur.com/a6iSu85.png",
+    "weaponImg": "https://toweroffantasy.info/images/Icon/weapon/Icon/item_Weapon_SSR_yulan_Ice01.webp",
+    "chinaOnly": true,
+    "name": "Yulan",
+    "rarity": "SSR",
+    "weapon": "Pian Zhen",
+    "element": "ice",
+    "type": "dps",
+    "baseStats": ["attack", "health", "crit"],
+    "shatter": { "rank": "S", "value": 12.50 },
+    "charge": { "rank": "A", "value": 10.00 },
+    "materials": ["ice", "green", "blue"],
+    "effect": [
+      {
+        "title": "Ice Shell",
+        "description": "Fully charged weapons will **freeze** the target for **2** seconds and leave it frostbitten for **6** seconds. Breaking the ice shell causes additional damage equal to **151.00%** of ATK. While frostbitten, the target's weapon charge rate is reduced by **50%**."
+      },
+      {
+        "title": "Frost Resonance",
+        "description": "Increase frost ATK by **20%** and frost resistance by **40%**. Activate by equipping **2** or more frost weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Frost Resonance."
+      },
+      {
+        "title": "Icr Crusher - Swift Cut",
+        "description": "When **Pian Zhen** is equipped, any weapon's discharge skill will deal **400%** * Frost ATK + **6.7%** of your Max HP + **240%** * sum of your elemental resistances + **800%** * your Crit Damage worth of damage to nearby targets. For every **0.5** seconds you are in combat, the next Swift Cut's damage will be increased by **1x**, up to **30** times. If there is more than one Swift Cut, the maximum value is used. Swift Cut's damage is considered that of a discharge skill. If equipped with at least **1** Volt/Physical/Flame weapon, the Swift Cut damage multiplier is increased to **2.5x**. Ice Crusher is not affected by damage boosting effects other than Titan equipment rare attributes, and does not trigger additional attack effects."
+      }
+    ],
+    "advancement": [
+      "In **Martial Artist** style, each time **Pian Zhen** expends **3** or more stacks of **Inner Strength**, **1** stack of **Inner Strength** is returned, the wanderer's final damage is increased by **5%**, and **Pian Zhen's** normal and dodge attacks' damage is increased by **50%** for **30** seconds. In **Marauder** style, each time **Pian Zhen** expends **3** or more stacks of **Battle Spirit**, **1** stack of **Battle Spirit** is returned, and the wanderer's final damage is increased by **5%** for **15** seconds.",
+      "Increase the current weapon's base ATK growth by **16%**.",
+      "In **Martial Artist** style, if you don't get a stack of **Inner Strength** within **4** seconds, you will gain **2** stacks next time (instead of 1). In any form, when **Pian Zhen** consumes **3** or more stacks of **Inner Strength** or Combat Spirit, the wanderer will restore **10%** of their Max HP (**20%** when solo). This effect has a cooldown of **8** seconds in **Marauder** style, and no cooldown in **Martial Artist** style.",
+      "Increase the current weapon's base ATK growth by **32%**.",
+      "After **Pian Zhen** consumes stacks of **Inner Strength** or **Battle Spirit**, gain the ability to block lethal damage 1 time and subsequently restore **20%** ​​of your Max HP (unavailable in Apex League), or **40%** in solo play. This effect can only trigger once every **60** seconds.",
+      "In **Martial Artist** style, **Pian Zhen's** normal and dodge attacks' damage is increased by **60%**, and after consuming stacks of **Inner Strength**, final damage is increased by **10%** for **30** seconds. In **Marauder** style, after consuming stacks of **Battle Spirit**, final damage is increased by **15%** for **30** seconds."
+    ],
+    "awakening":{
+      "1200": "Final damage is increased by **13%**. In the **Way of Taoist** style, final damage is increased by an additional **14%**, and hitting with **Abyss Leap** takes **8%** more frost damage to the target for **20** seconds.\n\nEach equipped frost weapon increases the damage from spending stacks of Morale (**Looting Formation**) by **30%**. If **3** frost Weapons are equipped, final damage is increased by an additional **8%**.",
+      "4000": "Final damage is increased by **18%**. In the **Way of Taoist** style, final damage is increased by an additional **14%**, and hitting with **Abyss Leap** takes **8%** more frost damage to the target for **20** seconds.\n\nEach equipped frost weapon increases the damage from spending stacks of Morale (**Looting Formation**) by **30%**. If **3** frost Weapons are equipped, final damage is increased by an additional **8%**."
+    }
+  },
+  {
+    "id": "garnett",
+    "weaponId": "pine-comet",
+    "simulacraImg": "https://i.imgur.com/MLCyaTm.png",
+    "weaponImg": "https://toweroffantasy.info/images/Icon/weapon/Icon/item_Weapon_SSR_liuhuo.webp",
+    "chinaOnly": true,
+    "name": "Garnett",
+    "rarity": "SSR",
+    "weapon": "Pine Comet",
+    "element": "flame",
+    "type": "dps",
+    "baseStats": ["attack", "health", "crit"],
+    "shatter": { "rank": "S", "value": 12.50 },
+    "charge": { "rank": "SS", "value": 15.00 },
+    "materials": ["flame", "green", "blue"],
+    "effect": [
+      {
+        "title": "Flame",
+        "description": "Fully charged weapons will set the target on fire for **8** seconds with the next attack, causing ongoing damage of **58.00%** of ATK every second. Ignited targets receive **50%** efficacy from healing."
+      },
+      {
+        "title": "Flame Resonance",
+        "description": "Increase flame ATK by **20%** and flame resistance by **40%**. Activate by equipping **2** or more flame weapons. This set effect also works with weapons in the off-hand slot. Effect does not stack with Flame Resonance."
+      },
+      {
+        "title": "Explosive Flame - Field",
+        "description": "When Pine Comet hits an enemy with any attack, deal damage equal to (**1500%** of ATK + **25%** * max HP + **900%** * sum of all elemental resistances + **3000%** * crit dmg) to nearby targets, which can be triggered once every **1.5** seconds. This damage is seen as normal attack damage. For every weapon different than Flame equipped, increase the explosion damage by **2.5**. This damage is not affected by damage increasing or decreasing effects other than the rare attributes of Titan Gear, and will not trigger normal attack effects."
+      }
+    ],
+    "advancement":[
+      "When a **sparrowfeather** hits a target, a diffusion effect is created, dealing damage equal to **85%** of ATK on the initial target, and spreads the **Ignited Sparrow** effect to nearby targets while refreshing the duration of **Ignited Sparrow**. Cooldown: **5** seconds.",
+      "Increase the current weapon's base ATK growth by **16%**.",
+      "When your HP is under **50%**, consume **1 sparrowfeather** every **0.5** seconds and recover **2%** of max HP until max HP is reached or all **sparrowfeathers** are used. While not in a team, increase this effect to **4%**. This effect also works in the off-hand slot.",
+      "Increase the current weapon's base ATK growth by **32%**.",
+      "When you receive fatal damage, negate fatal damage once and gain immunity for a short period of time, and immediately get **60 sparrowfeathers** and **1000** weapon charge. This effect can be triggered once every 60 seconds, and also works in the background.",
+      "When you are in the **ultimate** state, increase flame damage by an additional **20%**."
+    ],
+    "awakening": {
+      "1200": "Increase final damage by **13%**. When **Pine Comet** is in the off-hand slot, the cooldown for the damage dealt by **sparrowfeather** is decreased to **1** second.",
+      "4000": "Increase final damage by **18%**. When **Pine Comet** is in the off-hand slot, the cooldown for the damage dealt by **sparrowfeather** is decreased to **1** second. When triggering sparrowfeather, aditionally spread **Ion Burn** and **Cross Burn**. While in a party, decrease incoming damage by **5%**. If Fortitude resonance is activated, increase this effect to **8%**."
+    }
+  },
+  {
     "id": "rubilia",
     "weaponId": "lost-melody",
     "simulacraImg": "https://i.imgur.com/J7IKXte.png",
-    "weaponImg": "https://i8.ae/oUmPt",
+    "weaponImg": "https://toweroffantasy.info/images/Icon/weapon/Icon/item_Weapon_SSR_Rubilia_Thunder01.webp",
     "chinaOnly": true,
     "name": "Rubilia",
     "rarity": "SSR",
@@ -41,7 +125,7 @@
     "id": "gunonno",
     "weaponId": "little-huricane",
     "simulacraImg": "https://i.imgur.com/v09HNcq.png",
-    "weaponImg": "https://i8.ae/tsHmB",
+    "weaponImg": "https://toweroffantasy.info/images/Icon/weapon/Icon/item_Weapon_SSR_Chainsaw_physic01.webp",
     "chinaOnly": true,
     "name": "Gunonno",
     "rarity": "SSR",
@@ -83,7 +167,7 @@
     "id": "fiona",
     "weaponId": "lunar-stars",
     "simulacraImg": "https://i.imgur.com/Z2FnV1D.png",
-    "weaponImg": "https://i8.ae/OofUi",
+    "weaponImg": "https://toweroffantasy.info/images/Icon/weapon/Icon/item_Weapon_SSR_feiouna.webp",
     "chinaOnly": true,
     "name": "Fiona",
     "rarity": "SSR",
@@ -121,7 +205,7 @@
     "id": "icarius",
     "weaponId": "fractured-light",
     "simulacraImg": "https://i8.ae/ESMtn",
-    "weaponImg": "https://i8.ae/cIgvL",
+    "weaponImg": "https://toweroffantasy.info/images/Icon/weapon/Icon/item_Weapon_SSR_yoyo_Ice01.webp",
     "name": "Icarius",
     "rarity": "SSR",
     "weapon": "Fractured Light",

@@ -1,5 +1,23 @@
 [
   {
+    "matrixId": "yulan",
+    "matrixImg": "https://i.imgur.com/AcCyekK.png",
+    "chinaOnly": true,
+    "name": "Yulan",
+    "rarity": "SSR",
+    "two": "When at least **1** frost weapon is equipped, nearby targets will take **260%** ATK damage every second while in combat. Using any frost weapon's skill or discharge skill increases final damage **6%/9%/12%/15%** for **30** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect.",
+    "four": "After **Pian Zhen** consumes stacks of Inner Strength or **Battle Spirit**, final damage is increased by **12%** for **15** seconds. Dealing frost damage increases all elemental damage by **28%/32%/36%/40%** for **30** seconds. This effect works in the background, and if multiple sets are used, the highest star set will take effect."
+  },
+  {
+    "matrixId": "garnett",
+    "matrixImg": "https://i.imgur.com/TBZzZEU.png",
+    "chinaOnly": true,
+    "name": "Garnett",
+    "rarity": "SSR",
+    "two": "Increase final damage by **12%/15%/18%/21%**. This Matrix's effect is also active in the off-hand slot, but only the set with the highest star rating will take effect. The number of sparrowfeathers that can be obtained per dodge is increased to **20**.",
+    "four": "When equipped with at least **1** flame weapon, increase elemental damage by **28%/32%/36%/40%**. After using Pine Comet's 'Four-Way Sparrow', increase elemental damage by an additional **15%**, where this additional increase in damage will gradually decrease to **10%** over the span of **25** seconds."
+  },
+  {
     "matrixId": "rubilia",
     "matrixImg": "https://i.imgur.com/tqj0QRe.png",
     "chinaOnly": true,
