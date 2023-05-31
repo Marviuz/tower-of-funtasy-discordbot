@@ -186,6 +186,20 @@ exports.equippedWeapon = {
   spear_ice: 'https://i.imgur.com/4HZWizO.png',
 };
 
+exports.roles = {
+  "dps": "https://index.lunarheart.repl.co/new_media/rolesandeles/DPS.png",
+  "benediction": "https://index.lunarheart.repl.co/new_media/rolesandeles/Benediction.png",
+  "fortitude": "https://index.lunarheart.repl.co/new_media/rolesandeles/Fortitude.png"
+}
+
+exports.elements = {
+  "altered": "https://index.lunarheart.repl.co/new_media/rolesandeles/Altered.png",
+  "frost": "https://index.lunarheart.repl.co/new_media/rolesandeles/Frost.png",
+  "flame": "https://index.lunarheart.repl.co/new_media/rolesandeles/Flame.png",
+  "volt": "https://index.lunarheart.repl.co/new_media/rolesandeles/Volt.png",
+  "physical": "https://index.lunarheart.repl.co/new_media/rolesandeles/Physical.png"
+}
+
 exports.suppresors = {
   '01_0': '<:01_0:1032120631321444452>',
   '01_1': '<:01_1:1032120727165485086>',

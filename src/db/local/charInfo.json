@@ -17,7 +17,7 @@
       "name": "Saki Fuwa",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/SakiFuwa.png",
       "element": "frost",
-      "role": "tank",
+      "role": "fortitude",
       "resonance": true
     },
     "icarus": {
@@ -46,7 +46,7 @@
       "name": "Lan",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Lan.png",
       "element": "flame",
-      "role": "tank",
+      "role": "fortitude",
       "resonance": true
     },
     "annabella": {
@@ -96,7 +96,7 @@
       "name": "Nemesis",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Nemesis.png",
       "element": "volt",
-      "role": "healer",
+      "role": "benediction",
       "resonance": true
     },
     "baiyuekui": {
@@ -125,14 +125,14 @@
       "name": "Lyra",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Lyra.png",
       "element": "physical",
-      "role": "healer",
+      "role": "benediction",
       "resonance": true
     },
     "marc": {
       "name": "Marc",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Marc.png",
       "element": "physical",
-      "role": "tank",
+      "role": "fortitude",
       "resonance": true
     },
     "claudia": {
@@ -146,21 +146,21 @@
       "name": "Fiona",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Fiona.png",
       "element": "altered",
-      "role": "healer",
+      "role": "benediction",
       "resonance": true
     },
     "cocoritter": {
       "name": "Cocoritter",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Cocoritter.png",
       "element": "frost",
-      "role": "healer",
+      "role": "benediction",
       "resonance": false
     },
     "huma": {
       "name": "Huma",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Huma.png",
       "element": "flame",
-      "role": "tank",
+      "role": "fortitude",
       "resonance": false
     },
     "crow": {
@@ -181,7 +181,7 @@
       "name": "Meryl",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Meryl.png",
       "element": "frost",
-      "role": "tank",
+      "role": "fortitude",
       "resonance": false
     },
     "samir": {
@@ -209,7 +209,7 @@
       "name": "Zero",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Zero.png",
       "element": "flame",
-      "role": "healer",
+      "role": "benediction",
       "resonance": false
     },
     "bailing": {
@@ -230,7 +230,7 @@
       "name": "Ene",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Ene.png",
       "element": "frost",
-      "role": "tank",
+      "role": "fortitude",
       "resonance": false
     },
     "hilda": {
@@ -244,7 +244,7 @@
       "name": "Pepper",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Pepper.png",
       "element": "volt",
-      "role": "healer",
+      "role": "benediction",
       "resonance": false
     }
   }
