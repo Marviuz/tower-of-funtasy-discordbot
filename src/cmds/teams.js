@@ -1,5 +1,5 @@
 const path = require('path');
-const { SlashCommandBuilder, AttachmentBuilder, EmbedBuilder } = require('discord.js');
+const { SlashCommandBuilder, AttachmentBuilder, EmbedBuilder, ActionRowBuilder, ButtonBuilder } = require('discord.js');
 const teamsData = require('../db/local/teams.json');
 const simulacraData = require('../db/local/charInfo.json');
 const { createCanvas, loadImage, registerFont } = require('canvas');
@@ -48,9 +48,11 @@ module.exports = {
     const element = interaction.options.getString('element');
 
     const teams = teamsData[element][role];
-    await interaction.reply(":hourglass_flowing_sand: **Loading teams ...**")
+    await interaction.reply(`:hourglass_flowing_sand: Search for \`${element}\`, \`${role}\` teams`)
 
-    let attachments = []
+    let imgIndex = 0;
+    let attachments = [];
+
     
     for (const team of teams) {
       let canvasWidth = 800;
@@ -59,8 +61,8 @@ module.exports = {
       let canvas = createCanvas(canvasWidth, canvasHeight);
       let context = canvas.getContext('2d');
 
-      let i = 0;
-      
+      let i = 0;      
+
       for (const simulacrum of team) {
         let image = await loadImage(simulacraData[simulacrum].img);
 
@@ -86,22 +88,101 @@ module.exports = {
       }
       
       let buffer = canvas.toBuffer();
-      let attachment = new AttachmentBuilder(buffer, 'file.jpg')
-      
-      attachments.push(attachment)
+      let attachment = new AttachmentBuilder(buffer, 'file.jpg');
+      console.log(imgIndex)
+      attachment.setName(`${imgIndex}.png`);
+
+      attachments.push(attachment);
+      imgIndex++;
     }    
 
 
-    /*
     const embed = new EmbedBuilder()
       .setTitle(`Meta ${role[0].toUpperCase() + role.slice(1)} ${element[0].toUpperCase() + element.slice(1)} Team`)
       .setDescription(`Here are the meta ${role[0].toUpperCase() + role.slice(1)} ${element[0].toUpperCase() + element.slice(1)} teams`)
       .setColor(0x00AE86)
-      .setImage(attachments[0].attachment)
-    */
+      .setImage("attachment://0.png")
+      .setFooter({ text: `Page 1/${teams.length}` });
+    
+    let page = 0
 
-    await interaction.editReply({ embeds: [embed], content: "", files: attachments });
+    let buttons = [
+      {
+        id: 'start',
+        emoji: '⏪'
+      },
+      {
+        id: 'previous',
+        emoji: '◀️'
+      },
+      {
+        id: 'next',
+        emoji: '▶️'
+      },
+      {
+        id: 'end',
+        emoji: '⏩'
+      }
+    ];
+
+
+    const row = new ActionRowBuilder();
+    buttons.forEach(button => {
+      row.addComponents(
+        new ButtonBuilder()
+          .setCustomId(button.id)
+          .setEmoji(button.emoji)
+          .setStyle(1)
+          .setDisabled(page === 0 && (button.id === 'start' || button.id === 'previous'))
+      );
+    });
+
+
+    buttons.forEach(button => {
+      const filter = i => i.customId === button.id && i.message.interaction.id === interaction.id;
+      const collector = interaction.channel.createMessageComponentCollector({ filter });
+      collector.on('collect', async i => {
+        await i.deferUpdate();
+
+        console.log(page)
+
+        switch (i.customId) {
+          case 'start':
+            page = 0;
+            break;
+          case 'next':
+            page++;
+            break;
+          case 'previous':
+            page--;
+            break;
+          case 'end':
+            page = teams.length - 1;
+            break;
+          }
+
+          row.components[0].setDisabled(page === 0);
+          row.components[1].setDisabled(page === 0);
+
+          row.components[2].setDisabled(page === teams.length - 1);
+          row.components[3].setDisabled(page === teams.length - 1);
+
+          embed.setImage(`attachment://${page}.png`);
+          embed.setFooter({ text: `Page ${page + 1}/${teams.length}` });
+
+          await interaction.editReply({ embeds: [embed], components: [row], files: [attachments[page]] });
+      });
+
+      collector.on('end', async collected => {
+        console.log(`Collected ${collected.size} items`);
+        await interaction.editReply({ components: [] });
+      });
+    });
+
+
+
+    await interaction.editReply({ embeds: [embed], content: "", components: [row], files: [attachments[0]] });
 
 
   },
-};
+}
