@@ -3,7 +3,7 @@ const { SlashCommandBuilder, AttachmentBuilder, EmbedBuilder, ActionRowBuilder, 
 const teamsData = require('../db/local/teams.json');
 const simulacraData = require('../db/local/charInfo.json');
 const { createCanvas, loadImage, registerFont } = require('canvas');
-const { roles, elements } = require("../utils/app-constants")
+const { roles, elements, arrow } = require("../utils/app-constants")
 
 const NAME = path.parse(__filename).name;
 const DESCRIPTION = 'Allows giving meta teams according to different characteristics';
@@ -25,6 +25,7 @@ module.exports = {
         { name: 'Fortitude', value: 'fortitude' },
         { name: 'Benediction', value: 'benediction' },
         { name: 'Balance', value: 'balance' },
+        { name: 'All', value: 'all'}
       )
     )
     .addStringOption(option => option
@@ -48,6 +49,22 @@ module.exports = {
     const element = interaction.options.getString('element');
 
     const teams = teamsData[element][role];
+
+    /* Error handling */
+
+    const noMatch = new EmbedBuilder()
+      .setColor("Red")
+      .setTitle(":x: No team found")
+    
+    const toMany = new EmbedBuilder()
+      .setColor("Red")
+      .setTitle(":x: To many teams found")
+
+    if ( teams.length === 0 ) return await interaction.reply({ embeds: [noMatch] }); // TODO: Better message
+    if ( teams === "tooMany" ) return await interaction.reply({ embeds: [toMany] }); // TODO: Better message
+
+    
+
     await interaction.reply(`:hourglass_flowing_sand: Search for \`${element}\`, \`${role}\` teams`)
 
     let imgIndex = 0;
@@ -89,7 +106,6 @@ module.exports = {
       
       let buffer = canvas.toBuffer();
       let attachment = new AttachmentBuilder(buffer, 'file.jpg');
-      console.log(imgIndex)
       attachment.setName(`${imgIndex}.png`);
 
       attachments.push(attachment);
@@ -109,19 +125,19 @@ module.exports = {
     let buttons = [
       {
         id: 'start',
-        emoji: '⏪'
+        emoji: `${arrow['start']}]}`
       },
       {
         id: 'previous',
-        emoji: '◀️'
+        emoji: `${arrow['previous']}]}`
       },
       {
         id: 'next',
-        emoji: '▶️'
+        emoji: `${arrow['next']}]}`
       },
       {
         id: 'end',
-        emoji: '⏩'
+        emoji: `${arrow['end']}]}`
       }
     ];
 
@@ -133,7 +149,7 @@ module.exports = {
           .setCustomId(button.id)
           .setEmoji(button.emoji)
           .setStyle(1)
-          .setDisabled(page === 0 && (button.id === 'start' || button.id === 'previous'))
+          .setDisabled(page === 0 && (button.id === 'start' || button.id === 'previous') || page === teams.length - 1 && (button.id === 'next' || button.id === 'end'))
       );
     });
 
@@ -143,8 +159,6 @@ module.exports = {
       const collector = interaction.channel.createMessageComponentCollector({ filter });
       collector.on('collect', async i => {
         await i.deferUpdate();
-
-        console.log(page)
 
         switch (i.customId) {
           case 'start':
