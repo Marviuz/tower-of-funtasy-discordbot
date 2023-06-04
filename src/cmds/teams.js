@@ -48,8 +48,33 @@ module.exports = {
     const role = interaction.options.getString('role');
     const element = interaction.options.getString('element');
 
-    const teams = teamsData[element][role];
 
+    if ( role === "all" && element === "all" ) {
+      var teams = [];
+      for (const element in teamsData) {
+        for (const role in teamsData[element]) {
+          teams.push(teamsData[element][role])
+        }
+      }
+    } else if ( role === "all" ) {
+      var teams = [];
+      for (const role in teamsData[element]) {
+
+        console.log(teamsData[element][role])
+        teams.push(teamsData[element][role])
+
+
+      }
+    } else if ( element === "all" ) {
+      var teams = [];
+      for (const elements in teamsData) {
+        for (const element in teamsData[elements]) {
+          console.log(element[0])
+        }
+      }
+    } else {
+      var teams = teamsData[element][role];
+    }
     /* Error handling */
 
     const noMatch = new EmbedBuilder()
@@ -94,7 +119,7 @@ module.exports = {
         context.textAlign = 'center';
         context.textBaseline = 'top';
 
-        let textY = canvasWidth / 3 + 15;
+        let textY = canvasWidth / 3 + 5;
 
         context.fillText(simulacraData[simulacrum].name, (canvasWidth / 6) * (2 * i + 1), textY);
 
