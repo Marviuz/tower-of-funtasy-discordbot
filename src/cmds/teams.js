@@ -2,12 +2,19 @@ const path = require('path');
 const { SlashCommandBuilder, AttachmentBuilder, EmbedBuilder, ActionRowBuilder, ButtonBuilder } = require('discord.js');
 const teamsData = require('../db/local/teams.json');
 const simulacraData = require('../db/local/charInfo.json');
-const { createCanvas, loadImage, registerFont } = require('canvas');
-const { roles, elements, arrow } = require("../utils/app-constants")
+const { createCanvas, loadImage } = require('canvas');
+const { roles, elements, arrow } = require("../utils/app-constants");
 
 const NAME = path.parse(__filename).name;
 const DESCRIPTION = 'Allows giving meta teams according to different characteristics';
 
+
+function goToCompLink(characterNames) {
+  const searchParams = encodeURIComponent(JSON.stringify(characterNames));
+  const url = 'https://teammaker.lunarheart.repl.co/results/comp/info.html?characterNames=' + searchParams;
+
+  return url;
+}
 
 module.exports = {
   name: NAME,
@@ -53,28 +60,24 @@ module.exports = {
       var teams = [];
       for (const element in teamsData) {
         for (const role in teamsData[element]) {
-          teams.push(teamsData[element][role])
+          teams = teams.concat(teamsData[element][role])
         }
       }
+      teams.pop();
     } else if ( role === "all" ) {
       var teams = [];
       for (const role in teamsData[element]) {
-
-        console.log(teamsData[element][role])
-        teams.push(teamsData[element][role])
-
-
+        teams = teams.concat(teamsData[element][role])
       }
     } else if ( element === "all" ) {
       var teams = [];
       for (const elements in teamsData) {
-        for (const element in teamsData[elements]) {
-          console.log(element[0])
-        }
+        teams = teams.concat(teamsData[elements][role])
       }
     } else {
       var teams = teamsData[element][role];
     }
+
     /* Error handling */
 
     const noMatch = new EmbedBuilder()
@@ -140,6 +143,7 @@ module.exports = {
 
     const embed = new EmbedBuilder()
       .setTitle(`Meta ${role[0].toUpperCase() + role.slice(1)} ${element[0].toUpperCase() + element.slice(1)} Team`)
+      .setURL(goToCompLink(teams[0]))
       .setDescription(`Here are the meta ${role[0].toUpperCase() + role.slice(1)} ${element[0].toUpperCase() + element.slice(1)} teams`)
       .setColor(0x00AE86)
       .setImage("attachment://0.png")
@@ -208,6 +212,7 @@ module.exports = {
 
           embed.setImage(`attachment://${page}.png`);
           embed.setFooter({ text: `Page ${page + 1}/${teams.length}` });
+          embed.setURL(goToCompLink(teams[page]));
 
           await interaction.editReply({ embeds: [embed], components: [row], files: [attachments[page]] });
       });
