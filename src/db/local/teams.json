@@ -1,32 +1,30 @@
 {
-    "Frost": [
-        {
-            "Attack": [    
-                ["lin", "alyss", "sakifuwa"],
-                ["icarus", "alyss", "sakifuwa"],
-                ["lin", "alyss", "frigg"],
-                ["frigg", "alyss", "sakifuwa"],
-                ["fiona", "alyss", "sakifuwa"],
-                ["fiona", "alyss", "icarus"]
-            ],
-            "Fortitude": [    
-                ["icarus", "sakifuwa", "meryl"],
-                ["lin", "meryl", "sakifuwa"],
-                ["cocoritter", "meryl", "sakifuwa"],
-                ["ene", "meryl", "sakifuwa"]
-            ],
-            "Benediction": [    
-                ["lyra", "sakifuwa", "cocoritter"],
-                ["lyra", "alyss", "cocoritter"],
-                ["sakifuwa", "nemesis", "cocoritter"]
-            ],
-            "Balance": [    
-                ["cocoritter", "alyss", "sakifuwa"]
-            ]
-        }
-    ],
-    "Volt": {
-        "Attack": [      
+    "frost": {
+        "attack": [    
+            ["lin", "alyss", "sakifuwa"],
+            ["icarus", "alyss", "sakifuwa"],
+            ["lin", "alyss", "frigg"],
+            ["frigg", "alyss", "sakifuwa"],
+            ["fiona", "alyss", "sakifuwa"],
+            ["fiona", "alyss", "icarus"]
+        ],
+        "fortitude": [    
+            ["icarus", "sakifuwa", "meryl"],
+            ["lin", "meryl", "sakifuwa"],
+            ["cocoritter", "meryl", "sakifuwa"],
+            ["ene", "meryl", "sakifuwa"]
+        ],
+        "benediction": [    
+            ["lyra", "sakifuwa", "cocoritter"],
+            ["lyra", "alyss", "cocoritter"],
+            ["sakifuwa", "nemesis", "cocoritter"]
+        ],
+        "balance": [    
+            ["cocoritter", "alyss", "sakifuwa"]
+        ]
+    },
+    "volt": {
+        "attack": [      
             ["tianlang", "fenrir", "lin"],
             ["tianlang", "fenrir", "nemesis"],
             ["lin", "samir", "nemesis"],
@@ -35,36 +33,36 @@
             ["fiona", "fenrir", "rubilia"],
             ["lin", "fenrir", "rubilia"]
         ],
-        "Fortitude": [],
-        "Benediction": [      
+        "fortitude": [],
+        "benediction": [      
             ["cocoritter", "nemesis", "fenrir"],
             ["lyra", "nemesis", "fenrir"]
         ],
-        "Balance": []
+        "balance": []
     },
-    "Flame": {
-        "Attack": [    
+    "flame": {
+        "attack": [    
             ["lin", "annabella", "ruby"],
             ["lan", "annabella", "ruby"],
             ["lin", "annabella", "lan"],
             ["lin", "cobalt", "ruby"]
         ],
-        "Fortitude": [    
+        "fortitude": [    
             ["sakifuwa", "ruby", "huma"],
             ["huma", "lan", "sakifuwa"],
             ["huma", "lan", "ruby"],
             ["huma", "lan", "zero"]
         ],
-        "Benediction": [    
+        "benediction": [    
             ["zero", "annabella", "fiona"]
         ],
-        "Balance": [    
+        "balance": [    
             ["lan", "annabella", "zero"],
             ["lan", "annabella", "fiona"]
         ]
     },
-    "Physical": {
-        "Attack": [      
+    "physical": {
+        "attack": [      
             ["lin", "umi", "lyra"],
             ["lin", "umi", "shiro"],
             ["lin", "umi", "claudia"],
@@ -72,27 +70,27 @@
             ["lyra", "umi", "gunonno"],
             ["fiona", "umi", "gunonno"]
         ],
-        "Fortitude": [],
-        "Benediction": [      
+        "fortitude": [],
+        "benediction": [      
             ["umi", "lyra", "fiona"]
         ],
-        "Balance": []
+        "balance": []
     },
-    "Altered": {
-        "Attack": [
+    "altered": {
+        "attack": [
             ["lin", "fiona", "claudia"],
             ["lin", "fiona", "frigg"]
         ],
-        "Fortitude": [],
-        "Benediction": [
+        "fortitude": [],
+        "benediction": [
             ["lin", "fiona", "nemesis"],
             ["lin", "fiona", "cocoritter"],
             ["lin", "fiona", "lyra"]
         ],
-        "Balance": [
+        "balance": [
             ["lin", "fiona", "lan"]
         ],
-        "All": [
+        "all": [
             ["lin", "fiona", "claudia"],
             ["lin", "fiona", "frigg"],
             ["lin", "fiona", "nemesis"],
@@ -101,32 +99,32 @@
             ["lin", "fiona", "lan"]
         ]
     },
-    "Rainbow": {
-        "Attack": [
+    "rainbow": {
+        "attack": [
             ["lin", "fenrir", "gunonno"],
             ["lin", "fenrir", "sakifuwa"],
             ["garnett", "fenrir", "gunonno"]
         ],
-        "Fortitude": [
+        "fortitude": [
             ["gunonno", "sakifuwa", "lan"]
         ],
-        "Benediction": [],
-        "Balance": [],
-        "All": [
+        "benediction": [],
+        "balance": [],
+        "all": [
             ["lin", "fenrir", "gunonno"],
             ["lin", "fenrir", "sakifuwa"],
             ["garnett", "fenrir", "gunonno"],
             ["gunonno", "sakifuwa", "lan"]
         ]
     },
-    "None": {
-        "Attack": [],
-        "Fortitude": [
+    "none": {
+        "attack": [],
+        "fortitude": [
             ["huma", "sakifuwa", "lin"],
             ["lan", "sakifuwa", "lin"]
           ],
         
-        "Benediction": [
+        "benediction": [
             ["lyra", "cocoritter", "zero"],
             ["lyra", "cocoritter", "nemesis"],
             ["lyra", "nemesis", "zero"],
@@ -134,6 +132,6 @@
             ["zero", "nemesis", "fiona"],
             ["zero", "cocoritter", "fiona"]
           ],
-        "Balance": "tooMany"
+        "balance": "tooMany"
     }
 }

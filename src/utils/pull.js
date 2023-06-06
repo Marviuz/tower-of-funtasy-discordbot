@@ -53,6 +53,8 @@ const pull = async (isTen, type, { id, username, discriminator }) => {
     return $;
   });
 
+  console.log(_pulls);
+
   // Generate pull image
   const imgGen = await generatePull(_pulls);
   const base64Image = new Buffer.from(imgGen).toString('base64');

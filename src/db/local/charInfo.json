@@ -1,35 +1,41 @@
 {
     "frigg": {
+      "name": "Frigg",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Frigg.png",
       "element": "frost",
       "role": "dps",
       "resonance": true
     },
     "alyss": {
+      "name": "Alyss",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Alyss.png",
       "element": "frost",
       "role": "dps",
       "resonance": true
     },
     "sakifuwa": {
+      "name": "Saki Fuwa",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/SakiFuwa.png",
       "element": "frost",
-      "role": "tank",
+      "role": "fortitude",
       "resonance": true
     },
     "icarus": {
+      "name": "Icarus",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Icarus.png",
       "element": "frost",
       "role": "dps",
       "resonance": true
     },
     "lin": {
+      "name": "Lin",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Lin.png",
       "element": "altered",
       "role": "dps",
       "resonance": true
     },
     "garnett": {
+      "name": "Garnett",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Garnett.png",
       "element": "flame",
       "role": "dps",
@@ -37,36 +43,42 @@
       "rainbowResonance": true
     },
     "lan": {
+      "name": "Lan",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Lan.png",
       "element": "flame",
-      "role": "tank",
+      "role": "fortitude",
       "resonance": true
     },
     "annabella": {
+      "name": "Annabella",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Annabella.png",
       "element": "flame",
       "role": "dps",
       "resonance": true
     },
     "ruby": {
+      "name": "Ruby",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Ruby.png",
       "element": "flame",
       "role": "dps",
       "resonance": true
     },
     "cobalt": {
+      "name": "Cobalt-B",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Cobalt-B.png",
       "element": "flame",
       "role": "dps",
       "resonance": true
     },
     "rubilia": {
+      "name": "Rubilia",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Rubilia.png",
       "element": "volt",
       "role": "dps",
       "resonance": true
     },
     "fenrir": {
+      "name": "Fenrir",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Fenrir.png",
       "element": "volt",
       "role": "dps",
@@ -74,24 +86,28 @@
       "rainbowResonance": true
     },
     "tianlang": {
+      "name": "Tian Lang",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/TianLang.png",
       "element": "volt",
       "role": "dps",
       "resonance": true
     },
     "nemesis": {
+      "name": "Nemesis",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Nemesis.png",
       "element": "volt",
-      "role": "healer",
+      "role": "benediction",
       "resonance": true
     },
     "baiyuekui": {
+      "name": "Baiyuekui",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Baiyuekui.png",
       "element": "volt",
       "role": "dps",
       "resonance": true
     },
     "gunonno": {
+      "name": "Gunonno",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Gunonno.png",
       "element": "physical",
       "role": "dps",
@@ -99,117 +115,136 @@
       "rainbowResonance": true
     },
     "umi": {
+      "name": "Umi",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Umi.png",
       "element": "physical",
       "role": "dps",
       "resonance": true
     },
     "lyra": {
+      "name": "Lyra",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Lyra.png",
       "element": "physical",
-      "role": "healer",
+      "role": "benediction",
       "resonance": true
     },
     "marc": {
+      "name": "Marc",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Marc.png",
       "element": "physical",
-      "role": "tank",
+      "role": "fortitude",
       "resonance": true
     },
     "claudia": {
+      "name": "Claudia",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Claudia.png",
       "element": "physical",
       "role": "dps",
       "resonance": true
     },
     "fiona": {
+      "name": "Fiona",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Fiona.png",
       "element": "altered",
-      "role": "healer",
+      "role": "benediction",
       "resonance": true
     },
     "cocoritter": {
+      "name": "Cocoritter",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Cocoritter.png",
       "element": "frost",
-      "role": "healer",
+      "role": "benediction",
       "resonance": false
     },
     "huma": {
+      "name": "Huma",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Huma.png",
       "element": "flame",
-      "role": "tank",
+      "role": "fortitude",
       "resonance": false
     },
     "crow": {
+      "name": "Crow",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Crow.png",
       "element": "volt",
       "role": "dps",
       "resonance": false
     },
     "king": {
+      "name": "King",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/King.png",
       "element": "flame",
       "role": "dps",
       "resonance": false
     },
     "meryl": {
+      "name": "Meryl",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Meryl.png",
       "element": "frost",
-      "role": "tank",
+      "role": "fortitude",
       "resonance": false
     },
     "samir": {
+      "name": "Samir",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Samir.png",
       "element": "volt",
       "role": "dps",
       "resonance": false
     },
     "shiro": {
+      "name": "Shiro",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Shiro.png",
       "element": "physical",
       "role": "dps",
       "resonance": false
     },
     "tsubasa": {
+      "name": "Tsubasa",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Tsubasa.png",
       "element": "frost",
       "role": "dps",
       "resonance": false
     },
     "zero": {
+      "name": "Zero",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Zero.png",
       "element": "flame",
-      "role": "healer",
+      "role": "benediction",
       "resonance": false
     },
     "bailing": {
+      "name": "Bai Ling",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/BaiLing.png",
       "element": "physical",
       "role": "dps",
       "resonance": false
     },
     "echo": {
+      "name": "Echo",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Echo.png",
       "element": "volt",
       "role": "dps",
       "resonance": false
     },
     "ene": {
+      "name": "Ene",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Ene.png",
       "element": "frost",
-      "role": "tank",
+      "role": "fortitude",
       "resonance": false
     },
     "hilda": {
+      "name": "Hilda",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Hilda.png",
       "element": "frost",
       "role": "dps",
       "resonance": false
     },
     "pepper": {
+      "name": "Pepper",
       "img": "https://index.lunarheart.repl.co/new_media/simulacra/Pepper.png",
       "element": "volt",
-      "role": "healer",
+      "role": "benediction",
       "resonance": false
     }
   }

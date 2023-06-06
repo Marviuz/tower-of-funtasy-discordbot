@@ -38,12 +38,12 @@ module.exports = {
     });
 
     const [match] = [...matrices, ...matricesCN].filter(({ name }) => name.toLowerCase() === matrix.toLowerCase());
-
+    
     const error = new EmbedBuilder()
     .setColor("Red")
     .setTitle("No match!")
     .setDescription("Try `/matrix` to see the list of matrix avaible")
-    if (!match) return await interaction.editReply({ embeds: [error] }); // TODO: Better message
+    if (!match) return await interaction.reply({ embeds: [error] }); // TODO: Better message
 
     const { embed, action, button } = matrixEmbed(match);
 

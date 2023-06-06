@@ -59,7 +59,7 @@ module.exports = async (data, timeZone, setregionID) => {
     .setTitle(data.name)
     .addFields(
       { name: 'Availability:', value: data.availability.map($ => `${$[0].toUpperCase() + $.slice(1)}`).join(', ') },
-      { name: data.name === "Sadness Valley" || data.name === "The End Game" ? "Enemy's Weakness:" : "Enemy's Resistances:", value: res },
+      { name: data.name === "Sadness Valley" || data.name === "The End Game" || data.name === "Carnival Party" || data.name === "Pursuit of Fate" ? "Enemy's Weakness:" : "Enemy's Resistances:", value: res },
       { name: datemessage, value: `<t:${Math.round(closerday / 1000)}:R> ${timeZone == 0 ? `\n_Your personal timezone has not been defined, use </setregion:${setregionID}> to set it_` : ""}` }
     )
     .setImage(data.img);
